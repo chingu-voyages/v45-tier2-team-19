@@ -7,7 +7,7 @@ import Table from "./Table"
 
 const Body = function Body() {
     return (
-        <div>
+        <div id="layoutBody">
             <Header />
             <Map />
             <Graphs />

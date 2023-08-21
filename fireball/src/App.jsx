@@ -1,20 +1,13 @@
-import Header from './layout/Header'
-import Footer from './layout/Footer'
+
+import Body from './layout/Body'
 import './App.css'
 
 function App() {
   return (
     <div>
-      <Header />
-      <Footer />
+
+      <Body />
     </div>
-  )
-
-
-  return (
-    <>
-
-    </>
   )
 }
 

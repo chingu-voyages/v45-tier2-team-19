@@ -47,9 +47,25 @@ footer{
   background-color:darkblue;
   height:20vh;
 }
+#tableContainer{
+  display:flex;
+  flex-wrap:wrap;
+  width:35%;
+}
 
 table{
   border:2px solid red;
+}
+.testDiv{
+  height:10em;
+  width:10em;
+ 
+  background-color:yellow;
+  border:2px solid green;
+  
+}
+.growDiv{
+  flex-grow:3;
 }
 
 td{
@@ -60,19 +76,18 @@ td{
 
 #graphsContainer{
   display:grid;
-  width:25vw;
+  width:fit-content;
   overflow:hidden;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows:1fr 1fr;
+  grid-template-rows:1fr 1fr 1fr;
   height:100vh;
-  align-items: center;
-  gap: 1em;
+  
   
 }
 
 #graphsContainer img {
   display:block;
-  width:100%;
+  height:100%;
 }
 
 

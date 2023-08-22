@@ -1,20 +1,9 @@
 function Table() {
     return (
         <div id="tableContainer">
-            <td>
-                <tr>row 1</tr>
-                <tr>row 1</tr>
-                <tr>row 1</tr>
-                <tr>row 1</tr>
-                <tr>row 1</tr>
-            </td>
-            <td>
-                <tr>row 2</tr>
-                <tr>row 2</tr>
-                <tr>row 2</tr>
-                <tr>row 2</tr>
-                <tr>row 2</tr>
-            </td>
+            <div className='testDiv growDiv'>test</div>
+            <div className='testDiv'>test</div>
+            <div className='testDiv '>test</div>
         </div>
     )
 }

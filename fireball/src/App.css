@@ -6,7 +6,9 @@
   max-width:100vw;
 }
 *{
-  font-family:'Plus Jakarta Sans'
+  font-family: 'Overpass', sans-serif;
+
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 footer{
   display:grid;
@@ -24,10 +26,15 @@ footer{
   display:flex;
   flex-direction:column;
 }
+
+.search::after{
+  content:"🔎"
+}
 .checkGroup{
   display:flex;
   flex-direction:column;
-  align-items:left;
+  width:100%;
+  align-items:flex-start;
 
 }
 
@@ -43,9 +50,11 @@ header{
 }
 
 footer{
-  display:flex;
+  display:grid;
+  grid-template-columns:1fr 1fr;
   background-color:darkblue;
-  height:20vh;
+  height:20vw;
+  justify-content:center;
 }
 #tableContainer{
   display:flex;
@@ -76,18 +85,16 @@ td{
 
 #graphsContainer{
   display:grid;
-  width:fit-content;
-  overflow:hidden;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows:1fr 1fr 1fr;
-  height:100vh;
+  grid-template-columns: repeat(25%,3);
+  grid-template-rows:repeat(25%,3);
+  
   
   
 }
 
 #graphsContainer img {
   display:block;
-  height:100%;
+  width:100%;
 }
 
 

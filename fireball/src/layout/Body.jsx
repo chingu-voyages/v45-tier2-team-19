@@ -9,9 +9,10 @@ const Body = function Body() {
     return (
         <div id="layoutBody">
             <Header />
+            <Table />
             <Map />
             <Graphs />
-            <Table />
+
             <Footer />
         </div>
     )

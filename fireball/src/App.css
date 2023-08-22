@@ -27,8 +27,14 @@ footer{
   flex-direction:column;
 }
 
-.search::after{
-  content:"🔎"
+
+#searchContainer{
+  display:flex;
+  border:1px solid white;
+}
+
+.search{
+  border:none;
 }
 .checkGroup{
   display:flex;
@@ -84,18 +90,25 @@ td{
 }
 
 #graphsContainer{
-  display:grid;
-  grid-template-columns: repeat(25%,3);
-  grid-template-rows:repeat(25%,3);
+  display:flex;
+  flex-wrap:wrap;
+  width:100%;
+
+  
   
   
   
 }
 
 #graphsContainer img {
-  display:block;
-  width:100%;
+  width:25%;
+padding:2em;
+  
+
 }
 
 
-
+.seeMore{
+  width:100%;
+  justify-self:center;
+}

@@ -1,11 +1,15 @@
-import { Search } from 'react-icons'
+import { MdSearch } from 'react-icons/md'
 const SearchBox = function () {
     return (
         <form action="">
             <div id='searchContainer'>
                 <label htmlFor="search"></label>
-                <input className="search" placeholder={`Search${<Search />}`} type="search" name="search" id="" />
+                <input className="search" placeholder='search' type="search" name="search" id="" />
+                <div className="searchIcon">
+                    <MdSearch />
+                </div>
             </div>
+
             <div className="checkGroup">
                 <label htmlFor="check1"></label>
                 <input type="checkbox" name="" id="" />
@@ -18,6 +22,7 @@ const SearchBox = function () {
                 <label htmlFor="check1"></label>
                 <input type="checkbox" name="" id="" />
             </div>
+
         </form >
 
     )

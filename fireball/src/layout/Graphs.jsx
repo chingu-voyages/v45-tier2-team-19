@@ -12,7 +12,7 @@ const Graphs = function () {
             <img src={graph} alt="" />
             <img src={graph} alt="" />
             <img src={graph} alt="" />
-            <button>...See More</button>
+            <button className="seeMore">...See More</button>
         </div>
 
 

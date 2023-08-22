@@ -1,4 +1,4 @@
-import { useTable } from 'react-table'
+import { useTable, usePagination } from 'react-table'
 import { useMemo } from 'react'
 import fakeData from '../data.json'
 function Table() {
@@ -24,8 +24,8 @@ function Table() {
         }
 
     ], [])
-    const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
-        useTable({ columns, data });
+    const { getTableProps, nextPage, previousPage, getTableBodyProps, headerGroups, page, prepareRow } =
+        useTable({ columns, data }, usePagination);
 
     return (
         <div className="tableContainer">
@@ -42,7 +42,7 @@ function Table() {
                     ))}
                 </thead>
                 <tbody {...getTableBodyProps()}>
-                    {rows.map((row, index) => {
+                    {page.map((row, index) => {
                         prepareRow(row);
                         return (
                             <tr key={`{${index}tr}`} {...row.getRowProps()}>
@@ -54,6 +54,8 @@ function Table() {
                     })}
                 </tbody>
             </table>
+            <button onClick={() => previousPage()}>Next</button>
+            <button onClick={() => { nextPage() }}>Previous</button>
         </div>
     )
 }

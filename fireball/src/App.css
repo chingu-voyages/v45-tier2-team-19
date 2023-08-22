@@ -2,8 +2,10 @@
   display:flex;
   justify-content:space-between;
   align-content:center;
+  align-items:center;
   flex-direction:column;
   max-width:100vw;
+  justify-content:center;
 }
 *{
   font-family: 'Overpass', sans-serif;
@@ -13,11 +15,13 @@
 footer{
   display:grid;
   justify-content: center;
+  width:100%;
 }
 
 #mapContainer{
   display:flex;
   flex-direction:column;
+  width:90vw;
   
 }
 
@@ -49,8 +53,10 @@ header ul{
 }
 
 header{
+  width:100%;
   background-color:darkblue;
   height: 20vw;
+  
 }
 
 footer{
@@ -108,7 +114,9 @@ padding:2em;
 .tableContainer{
   display:flex;
   justify-content:center;
-  height:500px;
+  flex-direction:column;
+  align-items:center;
+  
   overflow:scroll;
   background-color:darkblue;
   color:white;

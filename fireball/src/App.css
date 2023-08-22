@@ -17,14 +17,13 @@ footer{
 
 #mapContainer{
   display:flex;
-  grid-template-rows:1fr 1fr;
-  height:25vw;
+  flex-direction:column;
   
 }
 
 #mapContainer form,.checkGroup{
   display:flex;
-  flex-direction:column;
+  
 }
 
 
@@ -38,7 +37,6 @@ footer{
 }
 .checkGroup{
   display:flex;
-  flex-direction:column;
   width:100%;
   align-items:flex-start;
 

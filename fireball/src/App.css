@@ -8,15 +8,30 @@
 *{
   font-family:'Plus Jakarta Sans'
 }
-#footer{
-  display:flex;
-
+footer{
+  display:grid;
+  justify-content: center;
 }
 
 #mapContainer{
   display:flex;
+  grid-template-rows:1fr 1fr;
   height:25vw;
+  
 }
+
+#mapContainer form,.checkGroup{
+  display:flex;
+  flex-direction:column;
+}
+.checkGroup{
+  display:flex;
+  flex-direction:column;
+  align-items:left;
+
+}
+
+  
 
 header ul{
   list-style:none;
@@ -44,16 +59,21 @@ td{
 }
 
 #graphsContainer{
+  display:grid;
   width:25vw;
   overflow:hidden;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows:1fr 1fr;
+  height:100vh;
+  align-items: center;
+  gap: 1em;
+  
 }
 
 #graphsContainer img {
-  width:50%;
+  display:block;
+  width:100%;
 }
 
-#graphsContainer,#tableContainer,#mapContainer,#footer{
-  display:flex;
-  justify-content: center;
-  width:100vw;
-}
+
+

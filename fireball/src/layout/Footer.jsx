@@ -1,9 +1,12 @@
 const Footer = function () {
     return (
-        <div id="footer">
+
+        <footer>
             <div id='footerLogo'>Logo</div>
             <div id='madeBy'>Made By</div>
-        </div>
+        </footer>
+
+
     )
 }
 

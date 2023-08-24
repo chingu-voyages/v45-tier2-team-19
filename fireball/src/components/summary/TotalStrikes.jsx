@@ -1,12 +1,14 @@
 import React from "react";
 import { useDataContext } from "../../hooks/useDataContext";
-// import "./mass.css";
+import "./summary.css";
 
 export default function TotalStrikes() {
   //   const [meteorData, setData] = useState([]);
   //   const [loading, setLoading] = useState(false);
   const meteorData = useDataContext();
+  //   console.log(meteorData); // Returns array with data in another array
 
+  //OLD FETCH
   //   useEffect(() => {
   //     fetchData();
   //   }, []);
@@ -26,7 +28,8 @@ export default function TotalStrikes() {
   //     }
   //   };
 
-  const strikesCount = meteorData.length;
+  const strikesCount = meteorData.data.length;
+  //   console.log(meteorData.data); // Returns array of data points
 
   return (
     <div className="mass-container">

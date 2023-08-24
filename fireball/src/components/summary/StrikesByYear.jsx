@@ -1,6 +1,4 @@
 import React from "react";
-import { useState, useEffect } from "react";
-import * as d3Fetch from "d3-fetch";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Chart } from "chart.js/auto";
 import { Bar } from "react-chartjs-2";
@@ -125,9 +123,9 @@ function StrikesByYear() {
       style={{
         width: 700,
         color: "white",
-        marginTop: 50,
+        // marginTop: 50,
         background: "rgb(229,231,245)",
-        margin: "1rem",
+        margin: "0.5rem",
         // border: "5px solid white",
         borderRadius: "8px",
       }}

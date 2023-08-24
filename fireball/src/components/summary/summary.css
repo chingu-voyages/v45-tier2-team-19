@@ -1,9 +1,14 @@
+.summary-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
 .mass-container {
   background-color: rgb(229, 231, 245);
   border-radius: 8px;
   padding: 1rem;
   max-width: 700px;
-  margin: 1rem;
+  margin: 0.5rem;
 }
 .title {
   color: rgb(105, 105, 106);

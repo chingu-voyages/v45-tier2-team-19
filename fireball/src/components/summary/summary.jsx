@@ -4,6 +4,7 @@ import AverageMass from "./AverageMass";
 import TotalStrikes from "./TotalStrikes";
 import StrikesByComposition from "./StrikesByComposition";
 import { useDataContext } from "../../hooks/useDataContext";
+import "./summary.css";
 
 function Summary() {
   const { data, loading } = useDataContext();
@@ -14,10 +15,10 @@ function Summary() {
       {loading ? (
         <div>Loading...</div>
       ) : (
-        <div>
+        <div className="summary-container">
           <StrikesByYear />
-          <StrikesByComposition />
           <TotalStrikes />
+          <StrikesByComposition />
           <AverageMass />
         </div>
       )}

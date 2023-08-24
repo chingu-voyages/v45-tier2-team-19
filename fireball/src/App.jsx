@@ -1,5 +1,7 @@
 import "./App.css";
+
 import { useDataContext } from "./hooks/useDataContext";
+import Summary from "./components/summary/summary";
 
 function App() {
   const { data, loading } = useDataContext();
@@ -10,7 +12,11 @@ function App() {
 
   console.log(data);
 
-  return <></>;
+  return (
+    <div>
+      <Summary />
+    </div>
+  );
 }
 
 export default App;

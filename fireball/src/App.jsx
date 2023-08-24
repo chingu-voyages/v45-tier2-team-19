@@ -14,9 +14,9 @@ function App() {
   console.log(data);
 
   return (
-    <div>
-      <Body />
-    </div>
+
+    <Body />
+
   );
 
 }

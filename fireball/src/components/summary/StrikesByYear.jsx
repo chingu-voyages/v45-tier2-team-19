@@ -19,15 +19,17 @@ function StrikesByYear() {
   meteorData.forEach((meteor) => {
     const year = new Date(meteor.year).getFullYear();
 
-    //Filter out empty fields, falsy data, and NaN, filters out data before 1900
-    if (year > 1899) {
-      if (!isNaN(year)) {
-        if (!strikesByYear[year]) {
-          strikesByYear[year] = 0;
+    //Filter out empty fields, falsy data, and NaN, filters out data before 1900, after 2012
+    if (year < 2013) {
+      if (year > 1899) {
+        if (!isNaN(year)) {
+          if (!strikesByYear[year]) {
+            strikesByYear[year] = 0;
+          }
         }
-      }
 
-      strikesByYear[year]++;
+        strikesByYear[year]++;
+      }
     }
   });
 

@@ -2,7 +2,6 @@ body{
   display:flex;
   flex-direction:column;
   align-content:center;
-  background-color:plum;
   padding:0px;
   margin:0px;
   
@@ -17,7 +16,7 @@ body{
   width:100%;
   margin:0px;
   padding:0px;
-  background-color:palegoldenrod;
+  background-color:black;
 }
 
 *{
@@ -73,6 +72,18 @@ body{
 
 header ul{
   list-style:none;
+  width:fit-content;
+}
+
+header ul{
+  background-color:palegoldenrod;
+  color:black;
+  padding:1em;
+  width:fit-content;
+}
+header ul:hover{
+  background-color:white;
+  cursor:pointer;
 }
 
 header{
@@ -80,6 +91,14 @@ header{
   background-color:darkblue;
   height: 20vw;
   
+}
+
+.headerLogo{
+  display:block;
+  height:200px;
+  width:auto;
+  border-radius:50%;
+
 }
 
 footer{

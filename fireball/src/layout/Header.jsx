@@ -1,10 +1,12 @@
+import logo from '../assets/fireballLogo.jpg'
+
 const Header = function () {
     return (
 
 
         <header className='headerContainer'>
             <div id="headerLogo">
-                <img src="" alt="header logo" />
+                <img className="headerLogo" src={logo} alt="header logo" />
             </div>
             <nav>
                 <ul>

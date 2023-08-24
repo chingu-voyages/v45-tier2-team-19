@@ -36,3 +36,10 @@
   /* border: 1px solid black;
   border-radius: 8px; */
 }
+
+@media (max-width: 480px) {
+  .summary-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

@@ -6,11 +6,12 @@ import TotalStrikes from "./TotalStrikes";
 // import StrikesByComposition from "./StrikesByComposition";
 // import * as d3Fetch from "d3-fetch";
 // import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
-// import { Doughnut } from "react-chartjs-2";
+import { useDataContext } from "./hooks/useDataContext";
 
 function Summary() {
-  const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const { data, loading } = useDataContext();
+  //   const [data, setData] = useState([]);
+  //   const [loading, setLoading] = useState(false);
 
   return (
     <div>

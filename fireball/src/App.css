@@ -160,3 +160,14 @@ tr,td,th{
   justify-content:space-between;
   width:100%;
 }
+
+.loading{
+  position:absolute;
+  display:flex;
+  height:100%;
+  width:100%;
+  justify-content: center;
+  align-items: center;
+  background-color:black;
+  z-index: 99;
+}

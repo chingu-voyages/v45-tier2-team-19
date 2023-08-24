@@ -5,9 +5,10 @@ import Graphs from "./Graphs"
 import Table from "./Table"
 
 
-const Body = function Body() {
+const Body = function Body({ loading }) {
     return (
         <div id="layoutBody">
+            {loading == true && <div className='loading'>Loading...</div>}
             <Header />
             <Table />
             <Map />

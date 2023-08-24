@@ -99,7 +99,7 @@ function StrikesByComposition() {
       }}
     >
       <Line data={chartData} options={chartOptions} />
-      <div className="learn-more-container">
+      {/* <div className="learn-more-container">
         <h4 className="title">Learn more about each meteorite type below</h4>
         <div className="types-of-meteorites-grid">
           <div className="grid-item">
@@ -137,7 +137,7 @@ function StrikesByComposition() {
             <a href="https://www.mindat.org/min-49710.html">H4 Meteorites</a>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

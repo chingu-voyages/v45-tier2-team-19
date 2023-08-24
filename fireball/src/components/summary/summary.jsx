@@ -2,15 +2,11 @@ import React from "react";
 import StrikesByYear from "./StrikesByYear";
 // import AverageMass from "./AverageMass";
 import TotalStrikes from "./TotalStrikes";
-// import StrikesByComposition from "./StrikesByComposition";
-// import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
-import { Chart } from "chart.js/auto";
+import StrikesByComposition from "./StrikesByComposition";
 import { useDataContext } from "../../hooks/useDataContext";
 
 function Summary() {
   const { data, loading } = useDataContext();
-  //   const [data, setData] = useState([]);
-  //   const [loading, setLoading] = useState(false);
 
   return (
     <div>
@@ -20,7 +16,7 @@ function Summary() {
       ) : (
         <div>
           <StrikesByYear />
-          {/* <StrikesByComposition /> */}
+          <StrikesByComposition />
           <TotalStrikes />
           {/* <AverageMass /> */}
         </div>

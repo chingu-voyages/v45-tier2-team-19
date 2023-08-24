@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "chart.js": "^4.3.3",
-    "react-chartjs-2": "^5.2.0"
+    "d3-fetch": "^3.0.1"
   }
 }

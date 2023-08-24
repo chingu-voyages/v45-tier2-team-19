@@ -123,3 +123,13 @@ padding:2em;
   border: 2px solid pink;
   margin:5em;
 }
+
+tr,td,th{
+  height:50px;
+}
+
+.nextPrevButtons{
+  display:flex;
+  justify-content:space-between;
+  width:100%;
+}

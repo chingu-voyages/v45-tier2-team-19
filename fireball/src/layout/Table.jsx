@@ -54,8 +54,10 @@ function Table() {
                     })}
                 </tbody>
             </table>
-            <button onClick={() => previousPage()}>Next</button>
-            <button onClick={() => { nextPage() }}>Previous</button>
+            <div className="nextPrevButtons">
+                <button onClick={() => previousPage()}>Previous</button>
+                <button onClick={() => { nextPage() }}>Next</button>
+            </div>
         </div>
     )
 }

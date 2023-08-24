@@ -1,4 +1,4 @@
-import graph from '../assets/neodamage_lg_updated.jpg'
+import Summary from '../components/summary/summary'
 
 const Graphs = function () {
     return (
@@ -6,13 +6,7 @@ const Graphs = function () {
 
 
         <div id="graphsContainer">
-            <img src={graph} alt="" />
-            <img src={graph} alt="" />
-            <img src={graph} alt="" />
-            <img src={graph} alt="" />
-            <img src={graph} alt="" />
-            <img src={graph} alt="" />
-            <button className="seeMore">...See More</button>
+            <Summary />
         </div>
 
 

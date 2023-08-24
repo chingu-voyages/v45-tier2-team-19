@@ -1,8 +1,8 @@
 
 import "./App.css";
+import Body from './layout/Body'
 
 import { useDataContext } from "./hooks/useDataContext";
-import Summary from "./components/summary/summary";
 
 function App() {
   const { data, loading } = useDataContext();
@@ -14,9 +14,9 @@ function App() {
   console.log(data);
 
   return (
-    <div>
-      <Summary />
-    </div>
+
+    <Body />
+
   );
 
 }

@@ -1,3 +1,4 @@
+/*BODY*/
 body{
   display:flex;
   flex-direction:column;
@@ -25,7 +26,7 @@ body{
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
-
+/*MAP COMPONENT*/
 #mapContainer{
   display:flex;
   flex-direction:column;
@@ -149,18 +150,6 @@ footer li{
 }
 
 
-.testDiv{
-  height:10em;
-  width:10em;
- 
-  background-color:yellow;
-  border:2px solid green;
-  
-}
-.growDiv{
-  flex-grow:3;
-}
-
 td{
   border:2px solid blue;
   height:10vw;
@@ -218,6 +207,8 @@ tr,td,th{
   justify-content:space-between;
   width:100%;
 }
+
+/*LOADING DIV*/
 
 .loading{
   position:absolute;

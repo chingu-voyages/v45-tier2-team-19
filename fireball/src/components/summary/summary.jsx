@@ -1,6 +1,6 @@
 import React from "react";
 import StrikesByYear from "./StrikesByYear";
-// import AverageMass from "./AverageMass";
+import AverageMass from "./AverageMass";
 import TotalStrikes from "./TotalStrikes";
 import StrikesByComposition from "./StrikesByComposition";
 import { useDataContext } from "../../hooks/useDataContext";
@@ -18,7 +18,7 @@ function Summary() {
           <StrikesByYear />
           <StrikesByComposition />
           <TotalStrikes />
-          {/* <AverageMass /> */}
+          <AverageMass />
         </div>
       )}
     </div>

@@ -24,7 +24,7 @@ export default function AverageMass() {
   return (
     <div className="mass-container">
       <span>
-        <h3 className="title">Total Average Mass of Meteorites: </h3>
+        <h3 className="title">Total Average Mass</h3>
         <div className="data-text">
           <h4>{overallAvgMass} grams</h4>
           <h4>{kilograms} kilograms</h4>

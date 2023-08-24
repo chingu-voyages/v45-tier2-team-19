@@ -102,6 +102,9 @@ function StrikesByYear() {
       legend: {
         display: false,
       },
+      tooltip: {
+        displayColors: false,
+      },
       title: {
         display: true,
         text: "Meteorite Strikes by Year from 1900-2012",

@@ -6,11 +6,15 @@ const Header = function () {
 
         <header className='headerContainer'>
             <div id="headerLogo">
-                <img className="headerLogo" src={logo} alt="header logo" />
+                <img className="logo" src={logo} alt="header logo" />
             </div>
             <nav>
                 <ul>
                     <a href="#"><li>Home</li></a>
+                    <a href="#"><li>Table</li></a>
+                    <a href="#"><li>Maps</li></a>
+                    <a href="#"><li>Graphs</li></a>
+                    <a href="#"><li>Cool Facts</li></a>
 
                 </ul>
             </nav>

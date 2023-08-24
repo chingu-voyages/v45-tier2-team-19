@@ -3,19 +3,29 @@ const Footer = function () {
     return (
 
         <footer>
-            <div id='footerLogo'>
-                <img className="headerLogo" src={logo} alt="header logo" />
+            <div id='logo'>
+                <img className="logo" src={logo} alt="header logo" />
             </div>
             <div id='madeBy'>
-                <a href="">
-                    <ul>
+
+                <ul>
+                    <a href="">
                         <li>Alex</li>
+                    </a>
+                    <a href="">
                         <li>Crystal</li>
+                    </a>
+                    <a href="">
                         <li>Chris</li>
+                    </a>
+                    <a href="">
                         <li>Younes</li>
+                    </a>
+                    <a href="">
                         <li>Sarita</li>
-                    </ul>
-                </a>
+                    </a>
+                </ul>
+
             </div>
         </footer>
 

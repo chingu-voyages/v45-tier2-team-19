@@ -71,29 +71,33 @@ body{
   
 
 header ul{
+  display:flex;
   list-style:none;
-  width:fit-content;
+  width:100%;
 }
 
-header ul{
+header li{
   background-color:palegoldenrod;
   color:black;
   padding:1em;
   width:fit-content;
 }
-header ul:hover{
+header li:hover{
   background-color:white;
   cursor:pointer;
 }
 
 header{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
   width:100%;
   background-color:darkblue;
   height: 20vw;
   
 }
 
-.headerLogo{
+.logo{
   display:block;
   height:200px;
   width:auto;
@@ -109,9 +113,16 @@ footer{
   height:20vw;
   justify-content:center;
   display:grid;
+ 
   
 }
 
+
+footer li{
+  list-style: none;
+  color:white;
+  font-size:larger;
+}
 
 
 .testDiv{

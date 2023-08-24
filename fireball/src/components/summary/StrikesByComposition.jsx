@@ -91,7 +91,7 @@ function StrikesByComposition() {
       style={{
         width: 700,
         color: "white",
-        // marginTop: 50,
+        marginTop: "0.5rem",
         background: "rgb(229,231,245)",
         margin: "0.5rem",
         // border: "5px solid white",

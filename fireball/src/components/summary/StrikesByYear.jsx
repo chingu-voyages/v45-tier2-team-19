@@ -112,12 +112,6 @@ function StrikesByYear() {
           size: 18,
         },
       },
-      // labels: {
-      //   color: "rgb(12, 22, 79)",
-      //   font: {
-      //     size: 18, // Set the font size of the legend label text to 18
-      //   },
-      // },
     },
   };
 
@@ -126,7 +120,7 @@ function StrikesByYear() {
       style={{
         width: 700,
         color: "white",
-        // marginTop: 50,
+        marginTop: "0.5rem",
         background: "rgb(229,231,245)",
         margin: "0.5rem",
         // border: "5px solid white",

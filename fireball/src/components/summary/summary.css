@@ -13,3 +13,21 @@
 .data-text {
   color: rgb(38, 182, 183);
 }
+.learn-more-container {
+  padding-top: 3rem;
+  margin-top: 1rem;
+  background-color: rgb(38, 182, 183);
+  border-radius: 8px;
+}
+
+.types-of-meteorites-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+.grid-item {
+  padding: 1rem;
+  margin: 0.5rem;
+  /* border: 1px solid black;
+  border-radius: 8px; */
+}

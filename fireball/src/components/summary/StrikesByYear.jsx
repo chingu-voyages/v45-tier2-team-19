@@ -4,33 +4,12 @@ import * as d3Fetch from "d3-fetch";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Chart } from "chart.js/auto";
 import { Bar } from "react-chartjs-2";
-// import { useMeteorDataContext } from "../MeteorContext"; //This wasn't working, but I'll use it eventually.
+import { useDataContext } from "../../hooks/useDataContext";
 
 //Thanks Alex for your work putting much of this together! Your work is much appreciated! :)
 function StrikesByYear() {
-  //   const meteorData = useMeteorDataContext();
-  const [meteorData, setData] = useState([]);
-  // const [groups, setGroups] = useState([]);
-  const [loading, setLoading] = useState(false);
-
-  useEffect(() => {
-    fetchData();
-  }, []);
-
-  const fetchData = async () => {
-    setLoading(true);
-    try {
-      let data = await d3Fetch.csv(
-        "https://gist.githubusercontent.com/uKiJo/8655699e6f0a64c84d25ad652a9ca072/raw/8ed19eadc38db9a5606d3831c1c717d6b5358920/meteorite-landing.csv"
-      );
-
-      setLoading(false);
-      setData(data);
-      return data; //Array of like 45,000 objects
-    } catch (err) {
-      console.log(err);
-    }
-  };
+  const meteorData = useDataContext().data;
+  console.log(meteorData);
 
   if (meteorData === 0) return;
 

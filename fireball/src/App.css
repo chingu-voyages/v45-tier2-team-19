@@ -68,21 +68,33 @@ body{
 
 }
 
-  
+  /*HEADER*/
 
-header ul{
+header nav, header ul{
   display:flex;
   list-style:none;
   width:100%;
+  justify-content: center;
+  align-items:center;
+  background-color:palegoldenrod;
+  padding:0px;
+  
+}
+header nav{
+  height:100%
 }
 
 header li{
-  background-color:palegoldenrod;
+  display:flex;
+  align-items:center;
+  height:100%;
+  margin:0px;
   color:black;
-  padding:1em;
+  padding:0px;
   width:fit-content;
+  text-align:center;
 }
-header li:hover{
+header a:hover{
   background-color:white;
   cursor:pointer;
 }
@@ -97,6 +109,16 @@ header{
   
 }
 
+header ul a {
+  height:100%;
+  padding:0px 1em 0px 1em;
+}
+
+header ul {
+  height:100%;
+}
+
+
 .logo{
   display:block;
   height:200px;
@@ -105,6 +127,8 @@ header{
 
 }
 
+
+/*FOOTER*/
 footer{
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -143,6 +167,8 @@ td{
   width:10vw;
 }
 
+/*SUMMARY*/
+
 #graphsContainer{
   display:flex;
   width:100%;
@@ -167,6 +193,8 @@ padding:2em;
   width:100%;
   justify-self:center;
 }
+
+/*TABLE*/
 
 .tableContainer{
   display:flex;

@@ -1,5 +1,6 @@
 
 import "./App.css";
+import Body from './layout/Body'
 
 import { useDataContext } from "./hooks/useDataContext";
 import Summary from "./components/summary/summary";
@@ -15,7 +16,7 @@ function App() {
 
   return (
     <div>
-      <Summary />
+      <Body />
     </div>
   );
 

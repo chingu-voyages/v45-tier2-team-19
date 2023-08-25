@@ -7,7 +7,7 @@ const Footer = function () {
                 <img className="logo" src={logo} alt="header logo" />
             </div>
             <div id='madeBy'>
-
+                <h2>App Created By:</h2>
                 <ul>
                     <a href="">
                         <li>Alex</li>

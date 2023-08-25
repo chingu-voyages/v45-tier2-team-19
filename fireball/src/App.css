@@ -70,6 +70,15 @@ body{
 }
 
   /*HEADER*/
+  header{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:100%;
+    background-color:#0C164F;
+    height: 20vw;
+    
+  }
 
 header nav, header ul{
   display:flex;
@@ -77,8 +86,10 @@ header nav, header ul{
   width:100%;
   justify-content: center;
   align-items:center;
-  background-color:palegoldenrod;
+  align-content:space-between;
+  background-color:#34F3F4;;
   padding:0px;
+  align-content:space-between;
   
 }
 header nav{
@@ -100,15 +111,7 @@ header a:hover{
   cursor:pointer;
 }
 
-header{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  width:100%;
-  background-color:darkblue;
-  height: 20vw;
-  
-}
+
 
 header ul a {
   height:100%;
@@ -125,6 +128,7 @@ header ul {
   height:200px;
   width:auto;
   border-radius:50%;
+  padding:1em;
 
 }
 
@@ -133,28 +137,36 @@ header ul {
 footer{
   display:grid;
   grid-template-columns:1fr 1fr;
-  background-color:darkblue;
+  background-color:#0C164F;
   width:100%;
   height:20vw;
   justify-content:center;
+  justify-items:center;
   display:grid;
  
   
 }
-
 
 footer li{
   list-style: none;
   color:white;
   font-size:larger;
 }
-
-
-td{
-  border:2px solid blue;
-  height:10vw;
-  width:10vw;
+footer li:hover{
+  color:#34F3F4;;
 }
+
+footer a:hover{
+  
+  cursor:pointer;
+  text-decoration:underline;
+}
+
+
+
+
+
+
 
 /*SUMMARY*/
 
@@ -190,22 +202,33 @@ padding:2em;
   justify-content:center;
   flex-direction:column;
   align-items:center;
-  
-  overflow:scroll;
-  background-color:darkblue;
-  color:white;
-  margin:5em;
+  overflow:hidden;
+  background-color:#0C164F;
+  height:100vh;
   max-height:100vh;
-}
+  margin-top:2em 0em 2em 0em;
+  
+  }
 
 tr,td,th{
-  height:50px;
+  height:5px;
 }
 
 .nextPrevButtons{
   display:flex;
-  justify-content:space-between;
   width:100%;
+  justify-content:center;
+  
+}
+td{
+  border:2px solid white;
+  height:fit-content;
+  width:fit-content;
+}
+
+.tableContainer button{
+  background-color:purple;
+  margin:0em 2em 0em 2em;
 }
 
 /*LOADING DIV*/
@@ -220,3 +243,4 @@ tr,td,th{
   background-color:black;
   z-index: 99;
 }
+

@@ -21,6 +21,7 @@ const App = function () {
       <Header />
       <Table />
       <Map />
+
       <Summary />
       <Footer />
     </div>

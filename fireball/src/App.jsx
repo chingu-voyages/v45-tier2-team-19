@@ -1,6 +1,5 @@
-
 import "./App.css";
-import Body from './layout/Body'
+import Body from "./components/Body";
 
 import { useDataContext } from "./hooks/useDataContext";
 
@@ -13,12 +12,7 @@ function App() {
 
   console.log(data);
 
-  return (
-
-    <Body />
-
-  );
-
+  return <Body />;
 }
 
 export default App;

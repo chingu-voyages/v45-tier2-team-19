@@ -13,7 +13,7 @@ body{
   padding:0px;
 }
 
-#layoutBody{
+.App{
   width:100%;
   margin:0px;
   padding:0px;
@@ -158,7 +158,7 @@ td{
 
 /*SUMMARY*/
 
-#graphsContainer{
+.summaryContainer{
   display:flex;
   width:100%;
  justify-content:center;

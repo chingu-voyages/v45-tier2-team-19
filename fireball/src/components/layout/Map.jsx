@@ -1,4 +1,4 @@
-import mapImg from '../assets/simple-world-map-vector-13.jpg'
+import mapImg from '../../assets/simple-world-map-vector-13.jpg'
 import SearchBox from './SearchBox'
 
 const Map = function () {

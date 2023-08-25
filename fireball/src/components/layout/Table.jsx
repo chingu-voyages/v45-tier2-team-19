@@ -1,6 +1,6 @@
 import { useTable, usePagination } from 'react-table'
 import { useMemo } from 'react'
-import fakeData from '../data.json'
+import fakeData from '../../data.json'
 function Table() {
 
     const data = useMemo(() => fakeData, [])

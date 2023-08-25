@@ -1,4 +1,4 @@
-import logo from '../assets/fireballLogo.jpg'
+import logo from '../../assets/fireballLogo.jpg'
 
 const Header = function () {
     return (

@@ -1,10 +1,14 @@
 
 import "./App.css";
-import Body from './layout/Body'
+import Summary from "./components/summary/summary";
+import Header from "./components/layout/Header";
+import Footer from "./components/layout/Footer";
+import Table from "./components/layout/Table";
+import Map from "./components/layout/Map";
 
 import { useDataContext } from "./hooks/useDataContext";
 
-function App() {
+const App = function () {
   const { data, loading } = useDataContext();
 
 
@@ -12,8 +16,16 @@ function App() {
   console.log(data);
 
   return (
+    <div className="App">
+      {loading == true && <div className='loading'>Loading...</div>}
+      <Header />
+      <Table />
+      <Map />
+      <Summary />
+      <Footer />
+    </div>
 
-    <Body loading={loading} />
+
 
   );
 

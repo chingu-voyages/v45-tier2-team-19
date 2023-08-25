@@ -143,6 +143,7 @@ footer{
   justify-content:center;
   justify-items:center;
   display:grid;
+
  
   
 }
@@ -175,6 +176,7 @@ footer a:hover{
   width:100%;
  justify-content:center;
  align-self:center;
+ 
 
   
   
@@ -227,7 +229,7 @@ td{
 }
 
 .tableContainer button{
-  background-color:purple;
+  background-color:#0C164F;
   margin:0em 2em 0em 2em;
 }
 

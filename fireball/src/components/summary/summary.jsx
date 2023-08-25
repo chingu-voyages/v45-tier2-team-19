@@ -9,7 +9,7 @@ const Summary = function () {
   const { data, loading } = useDataContext();
 
   return (
-    <div className='summaryContainer'>
+    <div id="summary" className='summaryContainer'>
       <div >
         <h2>Summary Content</h2>
         {loading ? (

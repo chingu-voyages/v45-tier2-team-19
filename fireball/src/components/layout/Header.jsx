@@ -13,7 +13,7 @@ const Header = function () {
                     <a href="#"><li>Home</li></a>
                     <a href="#"><li>Table</li></a>
                     <a href="#"><li>Maps</li></a>
-                    <a href="#"><li>Graphs</li></a>
+                    <a href="#summary"><li>Summary</li></a>
                     <a href="#"><li>Cool Facts</li></a>
 
                 </ul>

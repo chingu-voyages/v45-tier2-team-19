@@ -24,8 +24,8 @@ const Navbar = function ({ headerHeight }) {
 
     return (
         <div className='navbar'>
-            < nav style={sticky ? { width: '100%', position: 'fixed', left: '0px', top: '0px', height: 'fit-content' } : {}}>
-                <ul>
+            < nav style={sticky ? { width: '100%', position: 'fixed', left: '0px', top: '0px', height: '50px' } : {}}>
+                <ul >
                     <a href="#"><li>Home</li></a>
                     <a href="#table"><li>Table</li></a>
                     <a href="#mapContainer"><li>Maps</li></a>
@@ -34,7 +34,7 @@ const Navbar = function ({ headerHeight }) {
 
                 </ul>
             </nav >
-        </div>
+        </div >
     )
 }
 

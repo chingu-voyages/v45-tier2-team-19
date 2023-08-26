@@ -8,7 +8,7 @@ const Header = function () {
     const headerRef = useRef(null)
 
     useEffect(() => {
-        setHeaderHeight(headerRef.current.clientHeight)
+        setHeaderHeight(headerRef.current.scrollHeight)
 
     }, [])
 

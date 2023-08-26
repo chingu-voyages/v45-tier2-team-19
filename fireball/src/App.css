@@ -32,6 +32,7 @@ body{
   flex-direction:column;
   align-items: center;
   max-width:100%;
+  padding-top:5em;
 
   
 }
@@ -94,9 +95,9 @@ header nav, header ul{
   align-content:space-between;
   
 }
-header nav{
+/* header nav{
   height:100%
-}
+} */
 
 header li{
   display:flex;
@@ -108,7 +109,7 @@ header li{
   width:fit-content;
   text-align:center;
 }
-header a:hover{
+.navbar a:hover{
   background-color:white;
   cursor:pointer;
 }

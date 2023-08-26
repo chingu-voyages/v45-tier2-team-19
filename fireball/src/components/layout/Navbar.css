@@ -1,4 +1,16 @@
-.navbar nav ,navbar ul{
+.navbar nav a,.navbar ul,.navbar nav{
+    height:100%;
+}
+
+.navbar a:hover{
+    background-color:white;
+    cursor:pointer;
+}
+
+
+
+
+.navbar{
     display:flex;
   list-style:none;
   width:100%;
@@ -9,3 +21,4 @@
   padding:0px;
   align-content:space-between;
 }
+

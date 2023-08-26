@@ -1,5 +1,6 @@
 import "./App.css";
 import { useDataContext } from "./hooks/useDataContext";
+import DataSets from "./components/detailsDisplay/DataSets";
 
 function App() {
   const { data, loading } = useDataContext();
@@ -10,7 +11,11 @@ function App() {
 
   console.log(data);
 
-  return <></>;
+  return (
+    <>
+      <DataSets />
+    </>
+  );
 }
 
 export default App;

@@ -59,7 +59,7 @@ function Table() {
             </table>
             <div className="nextPrevButtons">
                 <button onClick={() => previousPage()}>Previous</button>
-                <Button text='test button' />
+                <Button onClick={() => { alert('hello') }} text='test button' />
                 <Input placeholder="placeholder" label='test label' />
                 <Dropdown label='test label' options={[1, 2, 3]} />
                 <button onClick={() => { nextPage() }}>Next</button>

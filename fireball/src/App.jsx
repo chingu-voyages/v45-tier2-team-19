@@ -5,6 +5,7 @@ import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import Table from "./components/layout/Table";
 import Map from "./components/layout/Map";
+import Button from "./components/layout/Button";
 
 import { useDataContext } from "./hooks/useDataContext";
 
@@ -18,10 +19,11 @@ const App = function () {
   return (
     <div className="App">
       {loading == true && <div className='loading'>Loading...</div>}
+
       <Header />
+      <Button text='test button' />
       <Table />
       <Map />
-
       <Summary />
       <Footer />
     </div>

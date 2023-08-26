@@ -176,6 +176,8 @@ footer a:hover{
   width:100%;
  justify-content:center;
  align-self:center;
+
+ 
  
 
   
@@ -184,18 +186,7 @@ footer a:hover{
   
 }
 
-#graphsContainer img {
-  width:25%;
-padding:2em;
-  
 
-}
-
-
-.seeMore{
-  width:100%;
-  justify-self:center;
-}
 
 /*TABLE*/
 
@@ -205,7 +196,7 @@ padding:2em;
   flex-direction:column;
   align-items:center;
   overflow:hidden;
-  background-color:#0C164F;
+  background-color:rgb(232, 81, 34);
   height:100vh;
   max-height:100vh;
   margin-top:2em 0em 2em 0em;
@@ -214,6 +205,7 @@ padding:2em;
 
 tr,td,th{
   height:5px;
+  color:black;
 }
 
 .nextPrevButtons{
@@ -236,13 +228,15 @@ td{
 /*LOADING DIV*/
 
 .loading{
-  position:absolute;
   display:flex;
-  height:100%;
-  width:100%;
+  position:relative;
+  top:0px;
+  left:0px;
+  height:100vh;
+  width: 100vw;
+  background-color:black;
+  color:white;
   justify-content: center;
   align-items: center;
-  background-color:black;
-  z-index: 99;
 }
 

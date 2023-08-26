@@ -1,6 +1,9 @@
 import { useTable, usePagination } from 'react-table'
 import { useMemo } from 'react'
 import fakeData from '../../data.json'
+import Button from './Button'
+import Input from './Input'
+import Dropdown from './DropDown'
 function Table() {
 
     const data = useMemo(() => fakeData, [])
@@ -56,6 +59,9 @@ function Table() {
             </table>
             <div className="nextPrevButtons">
                 <button onClick={() => previousPage()}>Previous</button>
+                <Button text='test button' />
+                <Input placeholder="placeholder" label='test label' />
+                <Dropdown label='test label' options={[1, 2, 3]} />
                 <button onClick={() => { nextPage() }}>Next</button>
             </div>
         </div>

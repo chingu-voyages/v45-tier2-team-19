@@ -1,6 +1,4 @@
-import styles from "./DataSets.module.css";
-
-export default function ColumnFilter({ column }) {
+export const ColumnFilter = ({ column }) => {
   const { filterValue, setFilter } = column;
 
   const clearFilter = () => {
@@ -14,9 +12,9 @@ export default function ColumnFilter({ column }) {
         onChange={(e) => setFilter(e.target.value)}
         placeholder={`Filter by ${column.Header}`}
       />
-      <button className={styles.clrBtn} onClick={clearFilter}>
+      <button className="clrBtn" onClick={clearFilter}>
         Clear
       </button>
     </span>
   );
-}
+};

@@ -1,0 +1,65 @@
+table {
+  font-family: "PlusJakartaSans-Regular", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  background-color: rgb(16, 40, 173);
+  color: white;
+}
+
+table td,
+table th {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+/* table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  } */
+
+table tr:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: rgb(12, 22, 79);
+  color: white;
+}
+
+.clrBtn {
+  background-color: red;
+  margin-left: 10px;
+  padding: 3px;
+  color: white;
+  cursor: pointer;
+}
+.clrBtn:hover {
+  background-color: rgb(228, 113, 113);
+}
+.clrBtn:active {
+  padding: 2px;
+}
+
+.paginationContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 25px;
+  align-items: center;
+}
+
+.paginationContainer button {
+  padding: 5px;
+  margin: 0 5px;
+  color: white;
+  background-color: rgb(16, 40, 173);
+}
+
+.pageNumbers {
+  background-color: rgb(16, 40, 173);
+  color: white;
+  padding: 5px;
+}

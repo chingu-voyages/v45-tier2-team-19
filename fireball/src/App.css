@@ -229,7 +229,7 @@ td{
 
 .loading{
   display:flex;
-  position:relative;
+  position:fixed;
   top:0px;
   left:0px;
   height:100vh;

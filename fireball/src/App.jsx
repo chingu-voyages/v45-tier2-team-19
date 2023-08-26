@@ -5,7 +5,7 @@ import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import Table from "./components/layout/Table";
 import Map from "./components/layout/Map";
-import Button from "./components/layout/Button";
+import TestComponents from "./components/layout/testComponents";
 
 import { useDataContext } from "./hooks/useDataContext";
 
@@ -21,7 +21,7 @@ const App = function () {
       {loading == true && <div className='loading'>Loading...</div>}
 
       <Header />
-      <Button text='test button' />
+      <TestComponents />
       <Table />
       <Map />
       <Summary />

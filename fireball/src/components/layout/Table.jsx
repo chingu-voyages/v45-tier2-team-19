@@ -31,7 +31,7 @@ function Table() {
         useTable({ columns, data }, usePagination);
 
     return (
-        <div className="tableContainer">
+        <div id="table" className="tableContainer">
             <table {...getTableProps()}>
                 <thead>
                     {headerGroups.map((headerGroup, index) => (
@@ -59,9 +59,7 @@ function Table() {
             </table>
             <div className="nextPrevButtons">
                 <button onClick={() => previousPage()}>Previous</button>
-                <Button onClick={() => { alert('hello') }} text='test button' />
-                <Input placeholder="placeholder" label='test label' />
-                <Dropdown label='test label' options={[1, 2, 3]} />
+
                 <button onClick={() => { nextPage() }}>Next</button>
             </div>
         </div>

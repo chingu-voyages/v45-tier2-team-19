@@ -1,23 +1,26 @@
+import { useState, useEffect, useRef } from 'react'
 import logo from '../../assets/fireballLogo.jpg'
+import Navbar from './Navbar'
 
 const Header = function () {
+
+    const [headerHeight, setHeaderHeight] = useState(0)
+    const headerRef = useRef(null)
+
+    useEffect(() => {
+        setHeaderHeight(headerRef.current.clientHeight)
+
+    }, [])
+
     return (
 
 
-        <header className='headerContainer'>
+        <header ref={headerRef} className='headerContainer'>
             <div id="headerLogo">
                 <img className="logo" src={logo} alt="header logo" />
             </div>
-            <nav>
-                <ul>
-                    <a href="#"><li>Home</li></a>
-                    <a href="#"><li>Table</li></a>
-                    <a href="#"><li>Maps</li></a>
-                    <a href="#summary"><li>Summary</li></a>
-                    <a href="#"><li>Cool Facts</li></a>
+            <Navbar headerHeight={headerHeight} />
 
-                </ul>
-            </nav>
         </header>
 
     )

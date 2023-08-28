@@ -1,7 +1,7 @@
 table {
   font-family: "PlusJakartaSans-Regular", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
-  width: 100%;
+  max-height: 483px;
   background-color: rgb(16, 40, 173);
   color: white;
 }
@@ -11,10 +11,6 @@ table th {
   border: 1px solid black;
   padding: 8px;
 }
-
-/* table tr:nth-child(even) {
-    background-color: #f2f2f2;
-  } */
 
 table tr:hover {
   background-color: #ddd;
@@ -62,4 +58,35 @@ table th {
   background-color: rgb(16, 40, 173);
   color: white;
   padding: 5px;
+}
+
+.custom-loader {
+  width: 120px;
+  height: 22px;
+  border-radius: 40px;
+  color: #f2f2fb;
+  border: 2px solid;
+  position: relative;
+  overflow: hidden;
+}
+
+.custom-loader::before {
+  content: "";
+  position: absolute;
+  margin: 2px;
+  width: 14px;
+  top: 0;
+  bottom: 0;
+  left: -20px;
+  border-radius: inherit;
+  background: #f40606;
+  box-shadow: -10px 0 12px 3px #f40606;
+  clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%, -30px 50%);
+  animation: ct4 2s infinite linear;
+}
+
+@keyframes ct4 {
+  100% {
+    left: calc(100% + 20px);
+  }
 }

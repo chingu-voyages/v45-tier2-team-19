@@ -1,5 +1,5 @@
 import styles from "./DataSets.module.css";
-import { useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useTable, useSortBy, useFilters, usePagination } from "react-table";
 import { useDataContext } from "../../hooks/useDataContext";
 
@@ -11,17 +11,20 @@ import "./table.css";
 function DataSets() {
   const originalData = useDataContext().data;
 
-  const formattedData = useMemo(
-    () =>
-      originalData.map((item) => ({
-        ...item,
-        name: item.name || "n/a",
-        year: item.year || "n/a",
-        mass: item.mass ? `${item.mass} (g)` : "n/a",
-        recclass: item.recclass || "n/a",
-      })),
-    [originalData]
-  );
+  const [isLoading, setIsLoading] = useState(true);
+  const [formattedData, setFormattedData] = useState([]);
+
+  useEffect(() => {
+    const formatted = originalData.map((item) => ({
+      ...item,
+      name: item.name || "n/a",
+      year: item.year || "n/a",
+      mass: item.mass ? `${item.mass} (g)` : "n/a",
+      recclass: item.recclass || "n/a",
+    }));
+    setFormattedData(formatted);
+    setIsLoading(false);
+  }, [originalData]);
 
   const columns = useMemo(() => COLUMNS, []);
 
@@ -61,79 +64,92 @@ function DataSets() {
 
   return (
     <div className={styles.datasetsContainer}>
-      <table {...getTableProps()}>
-        <thead>
-          {headerGroups.map((headerGroup) => (
-            // eslint-disable-next-line react/jsx-key
-            <>
-              <tr {...headerGroup.getHeaderGroupProps()}>
-                {headerGroup.headers.map((column) => (
+      {isLoading ? (
+        <div className="custom-loader"></div>
+      ) : (
+        <>
+          <table {...getTableProps()}>
+            <thead>
+              {headerGroups.map((headerGroup) => (
+                // eslint-disable-next-line react/jsx-key
+                <>
+                  <tr {...headerGroup.getHeaderGroupProps()}>
+                    {headerGroup.headers.map((column) => (
+                      // eslint-disable-next-line react/jsx-key
+                      <th
+                        {...column.getHeaderProps(
+                          column.getSortByToggleProps()
+                        )}
+                      >
+                        {column.render("Header")}
+                        <div>
+                          {column.canFilter ? column.render("Filter") : null}
+                        </div>
+                        {/* <span>{renderSortingArrow(column)}</span> */}
+                      </th>
+                    ))}
+                  </tr>
+                </>
+              ))}
+            </thead>
+            <tbody {...getTableBodyProps()}>
+              {page.map((row) => {
+                prepareRow(row);
+                return (
                   // eslint-disable-next-line react/jsx-key
-                  <th {...column.getHeaderProps(column.getSortByToggleProps())}>
-                    {column.render("Header")}
-                    <div>
-                      {column.canFilter ? column.render("Filter") : null}
-                    </div>
-                    {/* <span>{renderSortingArrow(column)}</span> */}
-                  </th>
-                ))}
-              </tr>
-            </>
-          ))}
-        </thead>
-        <tbody {...getTableBodyProps()}>
-          {page.map((row) => {
-            prepareRow(row);
-            return (
-              // eslint-disable-next-line react/jsx-key
-              <tr {...row.getRowProps()}>
-                {row.cells.map((cell) => {
-                  // eslint-disable-next-line react/jsx-key
-                  return (
-                    // eslint-disable-next-line react/jsx-key
-                    <td {...cell.getCellProps()}>{cell.render("Cell")}</td>
-                  );
-                })}
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
-      <div className="paginationContainer">
-        <button onClick={() => gotoPage(0)} disabled={!canPreviousPage}>
-          {"<<"}
-        </button>
-        <button onClick={() => previousPage()} disabled={!canPreviousPage}>
-          Previous
-        </button>
-        <span className="pageNumbers">
-          Page{" "}
-          <strong>
-            {pageIndex + 1} of {pageOptions.length}
-          </strong>{" "}
-        </span>
+                  <tr {...row.getRowProps()}>
+                    {row.cells.map((cell) => {
+                      // eslint-disable-next-line react/jsx-key
+                      return (
+                        // eslint-disable-next-line react/jsx-key
+                        <td {...cell.getCellProps()}>{cell.render("Cell")}</td>
+                      );
+                    })}
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+          <div className="paginationContainer">
+            <button onClick={() => gotoPage(0)} disabled={!canPreviousPage}>
+              {"<<"}
+            </button>
+            <button onClick={() => previousPage()} disabled={!canPreviousPage}>
+              Previous
+            </button>
+            <span className="pageNumbers">
+              Page{" "}
+              <strong>
+                {pageIndex + 1} of {pageOptions.length}
+              </strong>{" "}
+            </span>
 
-        <button onClick={() => nextPage()} disabled={!canNextPage}>
-          Next
-        </button>
-        <button onClick={() => gotoPage(pageCount - 1)} disabled={!canNextPage}>
-          {">>"}
-        </button>
-        <span>
-          | Go to page
-          <input
-            type="number"
-            defaultValue={pageIndex + 1}
-            onChange={(e) => {
-              const pageNumber = e.target.value
-                ? Number(e.target.value) - 1
-                : 0;
-              gotoPage(pageNumber);
-            }}
-            style={{ width: "40px" }}
-          />
-        </span>
-      </div>
+            <button onClick={() => nextPage()} disabled={!canNextPage}>
+              Next
+            </button>
+            <button
+              onClick={() => gotoPage(pageCount - 1)}
+              disabled={!canNextPage}
+            >
+              {">>"}
+            </button>
+            <span>
+              | Go to page
+              <input
+                type="number"
+                defaultValue={pageIndex + 1}
+                onChange={(e) => {
+                  const pageNumber = e.target.value
+                    ? Number(e.target.value) - 1
+                    : 0;
+                  gotoPage(pageNumber);
+                }}
+                style={{ width: "40px" }}
+              />
+            </span>
+          </div>
+        </>
+      )}
     </div>
   );
 }

@@ -1,4 +1,4 @@
-.dropdownComponentContainer{
-    display:flex;
+.dropdownComponentContainer {
+    display: flex;
     justify-content: space-between;
 }

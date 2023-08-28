@@ -29,11 +29,11 @@ const GeoPath = memo(({ map, data, clusters, onMouseOver, onMouseOut }) => {
 
   // const { data: clusters, loading } = useGetClusters();
 
-  const dd = data
-    .filter((d) => d.reclat)
-    .map((d) => {
-      return [+d.reclat, +d.reclong];
-    });
+  // const dd = data
+  //   .filter((d) => d.reclat)
+  //   .map((d) => {
+  //     return [+d.reclat, +d.reclong];
+  //   });
 
   // const kmeanscl = kmeans(dd, 130, 50).clusters;
   // console.log("zoomscale", zoomScale);

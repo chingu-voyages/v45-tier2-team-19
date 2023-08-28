@@ -83,7 +83,7 @@ body{
 .navbar{
   width:100%;
 }
-header nav, header ul{
+/* header nav, header ul{
   display:flex;
   list-style:none;
   width:100%;
@@ -94,7 +94,7 @@ header nav, header ul{
   padding:0px;
   align-content:space-between;
   
-}
+} */
 /* header nav{
   height:100%
 } */

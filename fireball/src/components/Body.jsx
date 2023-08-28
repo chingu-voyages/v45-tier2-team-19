@@ -10,7 +10,7 @@ const Body = function Body() {
     <div id="layoutBody">
       <Header />
       <Table />
-      {/* <Map /> */}
+      <Map />
       <Summary />
 
       <Footer />

@@ -10,31 +10,6 @@
   align-content:space-between;
 }
 
-<<<<<<< HEAD
-.navbar ul{
-  display:flex;
-  padding:0px;
-  margin:0px;
-  height:100%;
-  height:50px;
-  list-style:none;
-}
-
-.navbar a{
-  height:100%;
-  display:flex;
-  align-items:center;
-  padding:0px 1em 0px 1em;
-  font-size:larger;
-  color:black;
-}
-
-.navbar a:hover{
-  cursor:pointer;
-  background-color:white;
-  color:black;
-}
-=======
 .navbar{
     width:100%;
   }
@@ -79,4 +54,3 @@
   .navbar ul {
     height:100%;
   }
->>>>>>> 44b4cf75f61097fdddd90d7d4e1962e7df979296

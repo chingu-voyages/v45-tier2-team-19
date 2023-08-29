@@ -51,11 +51,13 @@ const StrikesByMass = function () {
     })
 
     return (
-        <div>
-            <h1>Largest Meteors</h1>
-            {topTenList}
-            <h1>Smallest Meteors</h1>
-            {bottomTenList}
+        <div className='mass-container '>
+            <div className="data-text">
+                <h1>Largest Meteors</h1>
+                {topTenList}
+                <h1>Smallest Meteors</h1>
+                {bottomTenList}
+            </div>
         </div>
     )
 }

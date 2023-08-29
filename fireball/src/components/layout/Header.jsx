@@ -9,6 +9,7 @@ const Header = function () {
 
     useEffect(() => {
         setHeaderHeight(headerRef.current.clientHeight)
+        setHeaderHeight(headerRef.current.clientHeight)
 
     }, [])
 
@@ -16,14 +17,18 @@ const Header = function () {
 
 
         <div className="headerContainer">
-            <header ref={headerRef} >
-                <div id="headerLogo">
-                    <img className="logo" src={logo} alt="header logo" />
-                </div>
+<<<<<<< HEAD
+    <header ref={headerRef} >
+=======
+            <header ref={headerRef} className='headerContainer'>
+>>>>>>> 44b4cf75f61097fdddd90d7d4e1962e7df979296
+            <div id="headerLogo">
+                <img className="logo" src={logo} alt="header logo" />
+            </div>
 
-            </header>
-            <Navbar headerHeight={headerHeight} />
-        </div>
+        </header>
+        <Navbar headerHeight={headerHeight} />
+    </div>
 
     )
 }

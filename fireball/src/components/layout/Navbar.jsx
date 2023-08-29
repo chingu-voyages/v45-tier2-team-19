@@ -1,5 +1,5 @@
 import './Navbar.css'
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect } from 'react'
 
 
 const Navbar = function ({ headerHeight }) {
@@ -12,7 +12,7 @@ const Navbar = function ({ headerHeight }) {
         if (window.scrollY > headerHeight) {
             setSticky(true)
 
-        } else if (window.scrollY == 0) {
+        } else {
             setSticky(false)
         }
 

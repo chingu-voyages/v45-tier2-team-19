@@ -37,13 +37,25 @@ const StrikesByMass = function () {
     console.log('topTen', topTen)
 
     const topTenList = topTen.map((meteor, index) => {
-        return <p key={index}>{meteor}</p>
+        return <p key={index}>{meteor} grams</p>
+
+    })
+
+    smallestArray.sort(function (a, b) {
+        return a - b
+    })
+
+    let smallestArraySlice = smallestArray.slice(0, 10)
+    const bottomTenList = smallestArraySlice.map((meteor, index) => {
+        return <p key={index}>{meteor} grams</p>
     })
 
     return (
         <div>
-            <h1>Strikes By Mass</h1>
+            <h1>Largest Meteors</h1>
             {topTenList}
+            <h1>Smallest Meteors</h1>
+            {bottomTenList}
         </div>
     )
 }

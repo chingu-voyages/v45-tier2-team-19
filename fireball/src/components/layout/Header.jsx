@@ -8,20 +8,22 @@ const Header = function () {
     const headerRef = useRef(null)
 
     useEffect(() => {
-        setHeaderHeight(headerRef.current.scrollHeight)
+        setHeaderHeight(headerRef.current.clientHeight)
 
     }, [])
 
     return (
 
 
-        <header ref={headerRef} className='headerContainer'>
-            <div id="headerLogo">
-                <img className="logo" src={logo} alt="header logo" />
-            </div>
-            <Navbar headerHeight={headerHeight} />
+        <div className="headerContainer">
+            <header ref={headerRef} >
+                <div id="headerLogo">
+                    <img className="logo" src={logo} alt="header logo" />
+                </div>
 
-        </header>
+            </header>
+            <Navbar headerHeight={headerHeight} />
+        </div>
 
     )
 }

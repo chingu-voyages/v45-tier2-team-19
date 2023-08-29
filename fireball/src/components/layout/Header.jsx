@@ -10,18 +10,22 @@ const Header = function () {
     useEffect(() => {
         setHeaderHeight(headerRef.current.scrollHeight)
 
-    }, [])
+    }, [headerRef.current.scrollHeight])
+
+
 
     return (
 
 
-        <header ref={headerRef} className='headerContainer'>
-            <div id="headerLogo">
-                <img className="logo" src={logo} alt="header logo" />
-            </div>
-            <Navbar headerHeight={headerHeight} />
+        <div ref={headerRef} className="headerContainer">
+            <header className='headerContainer'>
+                <div id="headerLogo">
+                    <img className="logo" src={logo} alt="header logo" />
+                </div>
 
-        </header>
+            </header>
+            <Navbar headerHeight={headerHeight} />
+        </div>
 
     )
 }

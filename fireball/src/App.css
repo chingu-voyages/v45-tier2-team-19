@@ -83,7 +83,7 @@ body{
 .navbar{
   width:100%;
 }
-header nav, header ul{
+.navbar, .navbar ul{
   display:flex;
   list-style:none;
   width:100%;
@@ -99,7 +99,7 @@ header nav, header ul{
   height:100%
 } */
 
-header li{
+.navbar li{
   display:flex;
   align-items:center;
   height:100%;
@@ -116,12 +116,12 @@ header li{
 
 
 
-header ul a {
+.navbar ul a {
   height:100%;
   padding:0px 1em 0px 1em;
 }
 
-header ul {
+.navbar ul {
   height:100%;
 }
 

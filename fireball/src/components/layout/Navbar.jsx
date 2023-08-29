@@ -1,5 +1,5 @@
 import './Navbar.css'
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect } from 'react'
 
 
 const Navbar = function ({ headerHeight }) {
@@ -24,7 +24,7 @@ const Navbar = function ({ headerHeight }) {
 
     return (
         <div className='navbar'>
-            < nav style={sticky ? { width: '100%', position: 'fixed', left: '0px', top: '0px', height: '50px' } : {}}>
+            < nav style={sticky ? { width: '100%', position: 'fixed', left: '0px', top: '0px', height: '50px', margin: '0px' } : {}}>
                 <ul >
                     <a href="#"><li>Home</li></a>
                     <a href="#table"><li>Table</li></a>

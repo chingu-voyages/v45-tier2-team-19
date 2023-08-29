@@ -15,15 +15,13 @@ const Header = function () {
     return (
 
 
-        <div className="headerContainer">
-            <header ref={headerRef} className='headerContainer'>
-                <div id="headerLogo">
-                    <img className="logo" src={logo} alt="header logo" />
-                </div>
-
-            </header>
+        <header ref={headerRef} className='headerContainer'>
+            <div id="headerLogo">
+                <img className="logo" src={logo} alt="header logo" />
+            </div>
             <Navbar headerHeight={headerHeight} />
-        </div>
+
+        </header>
 
     )
 }

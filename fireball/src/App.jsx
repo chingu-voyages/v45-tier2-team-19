@@ -1,21 +1,39 @@
 import "./App.css";
+
+import Summary from "./components/summary/summary";
+import Header from "./components/layout/Header";
+import Footer from "./components/layout/Footer";
+import Table from "./components/layout/Table";
+import Map from "./components/layout/Map";
+import TestComponents from "./components/layout/testComponents";
+
+
 import { useDataContext } from "./hooks/useDataContext";
 import DataSets from "./components/detailsDisplay/DataSets";
 
-function App() {
+const App = function () {
   const { data, loading } = useDataContext();
 
-  if (loading) {
-    return <div>Loading...</div>;
-  }
+
 
   console.log(data);
 
+
+
   return (
-    <>
-      <DataSets />
-    </>
+    <div className="App">
+      {loading == true && <div className='loading'>Loading...</div>}
+
+      <Header />
+      <TestComponents />
+     <DataSets />
+      <Table />
+      <Map />
+      <Summary />
+      <Footer />
+    </div>
   );
+
 }
 
 export default App;

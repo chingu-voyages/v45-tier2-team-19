@@ -6,10 +6,15 @@ body {
   padding: 0px;
   margin: 0px;
 }
-
+/* 
 #root {
   width: 100%;
   padding: 0px;
+} */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .App {
@@ -157,7 +162,8 @@ footer a:hover {
   display: flex;
   width: 100%;
   justify-content: center;
-  align-self: center;
+  /* align-self: center; */
+  /* The align-self was causing the container to overflow, not be centered on smaller screens. */
   padding-top: 2rem;
   padding-bottom: 2rem;
 }

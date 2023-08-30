@@ -1,18 +1,24 @@
 .searchComponent{
     display:flex;
-    align-items: center;
-    border:1px solid grey;
-    background-color: grey;
-    border-radius:15px;
+    align-items:center;
+    border-radius:5px;
+    overflow:hidden;
     padding:0px;
+    height:2em;
 }
 
-.searchComponent input {
+.searchComponent:focus{
+    
+}
+
+textArea, .searchComponent input {
     border:none;
     background-color:grey;
-    margin-left:5px;
+    margin-left:0px 0px 0px 5px;
     height:100%;
+    
 }
+
 
 .searchComponent label{
     background-color: darkblue;
@@ -21,8 +27,14 @@
     height:100%;
 }
 
-.searchBox{
+#searchBox{
+   padding-left:1em;
+}
+
+.searchComponent button{
     height:100%;
-    margin:0px;
-    padding:0px;
+    border-radius:0px;
+}
+.inputContainer{
+    height:100%;
 }

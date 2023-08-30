@@ -1,12 +1,13 @@
 import './SearchBox.css'
+import { MdSearch } from 'react-icons/md'
+import { Input } from '@mui/material/Input'
 
 const SearchBox = function () {
     return (
         <div>
             <div className="searchComponent">
-                <label htmlFor='searchBox'></label>
-                <input type="text" name="searchBox" placeholder='search' id="searchBox" />
-                <div><button>🔎</button></div>
+                <Input variant="standard" />
+                <div><button><MdSearch /></button></div>
             </div>
 
         </div>

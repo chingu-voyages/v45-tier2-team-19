@@ -1,8 +1,17 @@
 table {
   font-family: "PlusJakartaSans-Regular", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
-  max-height: 483px;
+  width: 100%;
+  table-layout: fixed;
   background-color: rgb(16, 40, 173);
+  color: white;
+}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: rgb(12, 22, 79);
   color: white;
 }
 
@@ -15,14 +24,6 @@ table th {
 table tr:hover {
   background-color: #ddd;
   color: black;
-}
-
-table th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: center;
-  background-color: rgb(12, 22, 79);
-  color: white;
 }
 
 .clrBtn {

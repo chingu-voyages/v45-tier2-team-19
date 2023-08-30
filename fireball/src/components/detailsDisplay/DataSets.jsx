@@ -14,16 +14,18 @@ function DataSets() {
   const [formattedData, setFormattedData] = useState([]);
 
   useEffect(() => {
-    const formatted = originalData.map((item) => ({
-      ...item,
-      name: item.name || "n/a",
-      year: item.year || "n/a",
-      mass: `${item.mass} (g)` || "n/a",
-      recclass: item.recclass || "n/a",
-      // location: item.location || "n/a",
-    }));
-    setFormattedData(formatted);
-    setIsLoading(false);
+    if (originalData) {
+      const formatted = originalData.map((item) => ({
+        ...item,
+        name: item.name || "n/a",
+        year: item.year || "n/a",
+        mass: `${item.mass} (g)` || "n/a",
+        recclass: item.recclass || "n/a",
+        // location: item.location || "n/a",
+      }));
+      setFormattedData(formatted);
+      setIsLoading(false);
+    }
   }, [originalData]);
 
   const columns = useMemo(() => COLUMNS, []);

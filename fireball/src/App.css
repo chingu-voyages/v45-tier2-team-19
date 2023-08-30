@@ -73,7 +73,8 @@ body {
 
 }
 
-<<<<<<< HEAD
+
+
 /*HEADER*/
 header {
   display: flex;
@@ -142,26 +143,25 @@ header ul {
   width: auto;
   border-radius: 50%;
   padding: 1em;
-=======
-  /*HEADER*/
- 
+}
+
+/*HEADER*/
 
 
 
 
-.logo{
-  display:block;
-  height:10em;
-  width:auto;
-  border-radius:50%;
-  padding:1em;
->>>>>>> 72e0382a7a3fdb1bcbf647db33ed3af93e244e11
+
+.logo {
+  display: block;
+  height: 10em;
+  width: auto;
+  border-radius: 50%;
+  padding: 1em;
 
 }
 
 
 /*FOOTER*/
-<<<<<<< HEAD
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -171,9 +171,10 @@ footer {
   justify-content: center;
   justify-items: center;
   display: grid;
+}
 
 
-=======
+/* =======
 footer{
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -187,7 +188,7 @@ footer{
   display:grid;
 >>>>>>> 72e0382a7a3fdb1bcbf647db33ed3af93e244e11
 
-}
+} */
 
 footer li {
   list-style: none;

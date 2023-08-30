@@ -5,16 +5,12 @@ body {
   align-content: center;
   padding: 0px;
   margin: 0px;
+  max-width: 100%;
 }
-/* 
+
 #root {
   width: 100%;
   padding: 0px;
-} */
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  text-align: center;
 }
 
 .App {

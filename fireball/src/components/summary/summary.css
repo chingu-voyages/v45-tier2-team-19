@@ -7,7 +7,6 @@
 
 .strikes-container {
   background-color: rgb(229, 231, 245);
-
   border-radius: 8px;
   padding: 1rem;
   /* max-width: 700px; */
@@ -48,5 +47,6 @@
   .summary-container {
     display: grid;
     grid-template-columns: 1fr;
+    max-width: 100%;
   }
 }

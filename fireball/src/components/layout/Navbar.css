@@ -1,13 +1,14 @@
 .headerContainer {
+  background-image: url('../../assets/stars.jpg');
+  background-size: cover;
   display: grid;
   grid-template-rows: 1fr 1fr;
   justify-content: center;
+  align-items: center;
   width: 100vw;
   height: 20vw;
-  background-image: url('../../assets/stars.jpg');
-  background-size: cover;
-  align-items: center;
-  align-content: center;
+  
+ 
 
 }
 

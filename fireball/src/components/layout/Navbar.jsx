@@ -39,11 +39,11 @@ const Navbar = function ({ headerHeight }) {
                 style={
                     sticky
                         ? {
-                            // width: "100%",
+
                             position: "fixed",
                             left: "0px",
                             top: "0px",
-                            // height: "4em",
+
 
                         }
                         : {}

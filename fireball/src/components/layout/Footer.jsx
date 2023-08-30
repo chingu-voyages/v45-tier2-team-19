@@ -1,4 +1,6 @@
 import logo from "../../assets/fireballLogo.jpg";
+import "./Footer.css";
+
 const Footer = function () {
   return (
     <footer>

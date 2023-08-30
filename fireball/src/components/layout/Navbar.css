@@ -4,11 +4,14 @@
   justify-content: center;
   width: 100vw;
   height: 20vw;
-  background-image: url("../../assets/stars.jpg");
+  background-image: url('../../assets/stars.jpg');
   background-size: cover;
   align-items: center;
   align-content: center;
+
 }
+
+
 
 .navbar,
 .navbar nav {

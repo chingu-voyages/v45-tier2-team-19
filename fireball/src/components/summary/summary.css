@@ -22,9 +22,6 @@
 }
 .title {
   color: rgb(105, 105, 106);
-
-  /* color: rgb(12, 22, 79); */
-  /* background-color: rgb(38, 182, 183); */
 }
 .data-text {
   color: rgb(38, 182, 183);
@@ -44,11 +41,9 @@
 .grid-item {
   padding: 1rem;
   margin: 0.5rem;
-  /* border: 1px solid black;
-  border-radius: 8px; */
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .summary-container {
     display: grid;
     grid-template-columns: 1fr;

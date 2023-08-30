@@ -10,7 +10,7 @@ export default function TotalStrikes() {
   //   console.log(meteorData.data); // Returns array of data points
 
   return (
-    <div className="mass-container">
+    <div className="strikes-container">
       <span>
         <h3 className="title">Total Number of Strikes: </h3>
         <div className="data-text">

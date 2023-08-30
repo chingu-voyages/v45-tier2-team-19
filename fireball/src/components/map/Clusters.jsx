@@ -1,5 +1,5 @@
 const Clusters = () => {
-  return <></>;
+  return <div>clusters</div>;
 };
 
 export default Clusters;

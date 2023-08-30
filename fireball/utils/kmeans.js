@@ -41,7 +41,7 @@ export function kmeans(data, k, maxIterations) {
 
     for (const point of data) {
       const minDistances = centroids.map((centroid) =>
-        euclideanDistance(point, centroid)
+        euclideanDistance(point, centroid),
       );
 
       const minDistance = Math.min(...minDistances);
@@ -77,7 +77,7 @@ export function kmeans(data, k, maxIterations) {
 
     for (const point of data) {
       const distances = centroids.map((centroid) =>
-        euclideanDistance(point, centroid)
+        euclideanDistance(point, centroid),
       );
       // debugger;
       const closestClusterIndex = distances.indexOf(Math.min(...distances));
@@ -95,7 +95,7 @@ export function kmeans(data, k, maxIterations) {
     // Check for convergence
     if (
       centroids.every(
-        (centroid, i) => euclideanDistance(centroid, newCentroids[i]) < 0.001
+        (centroid, i) => euclideanDistance(centroid, newCentroids[i]) < 0.001,
       )
     ) {
       // console.log(centroids);
@@ -128,7 +128,7 @@ function euclideanDistance(point1, point2) {
   const squaredDistances = point1.map((coord, i) => (coord - point2[i]) ** 2);
   const sumOfSquaredDistances = squaredDistances.reduce(
     (acc, val) => acc + val,
-    0
+    0,
   );
   return Math.sqrt(sumOfSquaredDistances);
 }

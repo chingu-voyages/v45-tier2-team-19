@@ -71,18 +71,8 @@ body{
 }
 
   /*HEADER*/
-  header{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    width:100%;
-    background-color:#0C164F;
-    height: 20vw;
-    
-  }
-.navbar{
-  width:100%;
-}
+ 
+
 header nav, header ul{
   display:flex;
   list-style:none;
@@ -128,7 +118,7 @@ header ul {
 
 .logo{
   display:block;
-  height:200px;
+  height:5em;
   width:auto;
   border-radius:50%;
   padding:1em;
@@ -141,6 +131,8 @@ footer{
   display:grid;
   grid-template-columns:1fr 1fr;
   background-color:#0C164F;
+  background-image:url('./assets/stars.jpg');
+  background-size:cover;
   width:100%;
   height:20vw;
   justify-content:center;

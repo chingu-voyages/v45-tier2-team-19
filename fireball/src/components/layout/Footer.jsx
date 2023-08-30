@@ -1,5 +1,5 @@
 import logo from '../../assets/fireballLogo.jpg';
-import { FaLinkedIn } from 'react-icons/fa6';
+
 
 
 
@@ -21,7 +21,7 @@ const Footer = function () {
                     <a href="">
                         <li>Crystal</li>
                     </a>
-                    <FaLinkedIn />
+
                     <a href="">
                         <li>Chris</li>
                     </a>

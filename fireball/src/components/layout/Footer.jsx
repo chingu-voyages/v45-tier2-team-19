@@ -1,8 +1,13 @@
-import logo from '../../assets/fireballLogo.jpg'
+import logo from '../../assets/fireballLogo.jpg';
+import { FaLinkedIn } from 'react-icons/fa6';
+
+
+
 const Footer = function () {
     return (
 
         <footer>
+
             <div id='logo'>
                 <img className="logo" src={logo} alt="header logo" />
             </div>
@@ -12,9 +17,11 @@ const Footer = function () {
                     <a href="">
                         <li>Alex</li>
                     </a>
+
                     <a href="">
                         <li>Crystal</li>
                     </a>
+                    <FaLinkedIn />
                     <a href="">
                         <li>Chris</li>
                     </a>

@@ -24,6 +24,9 @@ const Footer = function () {
                     <a href="">
                         <li>Sarita</li>
                     </a>
+                    <a href="Photo by Felix Mittermeier: https://www.pexels.com/photo/blue-and-purple-cosmic-sky-956999/">
+                        <li>Background Image</li>
+                    </a>
                 </ul>
 
             </div>

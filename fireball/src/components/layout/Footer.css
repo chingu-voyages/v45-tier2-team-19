@@ -1,0 +1,37 @@
+/*FOOTER*/
+footer {
+  /* position:fixed;
+    bottom:0px;
+    left:0px; */
+  background-image: url('../../assets/stars.jpg');
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #0C164F;
+
+  width: 100%;
+  height: fit-content;
+  justify-content: center;
+  justify-items: center;
+  display: grid;
+
+
+
+}
+
+footer li {
+  list-style: none;
+  color: white;
+  font-size: larger;
+}
+
+footer li:hover {
+  color: #34F3F4;
+  ;
+}
+
+footer a:hover {
+
+  cursor: pointer;
+  text-decoration: underline;
+}

@@ -9,12 +9,15 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|jsx|json|css)\"",
+    "check-format": "prettier --ignore-path .gitignore --list-different \"**/*.+(js|jsx|json|css)\"",
     "preview": "vite preview",
     "validate": "npm run lint && npm run test && npm run build",
     "setup": "npm install && npm run validate"
   },
   "husky": {
-    "pre-commit": "npm run format"
+    "hooks": {
+      "pre-commit": "npm run check-format"
+    }
   },
   "dependencies": {
     "chart.js": "^4.3.3",

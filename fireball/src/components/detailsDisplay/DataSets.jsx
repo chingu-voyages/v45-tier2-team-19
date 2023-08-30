@@ -14,13 +14,36 @@ function DataSets() {
   const [isLoading, setIsLoading] = useState(true);
   const [formattedData, setFormattedData] = useState([]);
 
+  // const fetchLocationData = async (latitude, longitude) => {
+  //   const API_KEY = "SQ2wqGDLvUAL1TEwaOucCOLQaAs81Eto";
+
+  //   if (latitude && longitude && API_KEY) {
+  //     const apiUrl = `https://api.tomtom.com/search/2/reverseGeocode/${latitude},${longitude}.json?key=${API_KEY}`;
+
+  //     try {
+  //       const response = await fetch(apiUrl);
+  //       if (response.ok) {
+  //         const data = await response.json();
+  //         return data;
+  //       } else {
+  //         console.error("API request failed");
+  //       }
+  //     } catch (error) {
+  //       console.error("Error:", error);
+  //     }
+  //   }
+
+  //   return null;
+  // };
+
   useEffect(() => {
     const formatted = originalData.map((item) => ({
       ...item,
       name: item.name || "n/a",
       year: item.year || "n/a",
-      mass: item.mass ? `${item.mass} (g)` : "n/a",
+      mass: `${item.mass} (g)` || "n/a",
       recclass: item.recclass || "n/a",
+      // location: item.location || "n/a",
     }));
     setFormattedData(formatted);
     setIsLoading(false);
@@ -63,7 +86,7 @@ function DataSets() {
   const { pageIndex } = state;
 
   return (
-    <div className={styles.datasetsContainer}>
+    <div>
       {isLoading ? (
         <div className="custom-loader"></div>
       ) : (
@@ -71,12 +94,11 @@ function DataSets() {
           <table {...getTableProps()}>
             <thead>
               {headerGroups.map((headerGroup) => (
-                // eslint-disable-next-line react/jsx-key
                 <>
                   <tr {...headerGroup.getHeaderGroupProps()}>
                     {headerGroup.headers.map((column) => (
-                      // eslint-disable-next-line react/jsx-key
                       <th
+                        key={column.id}
                         {...column.getHeaderProps(
                           column.getSortByToggleProps()
                         )}
@@ -85,7 +107,6 @@ function DataSets() {
                         <div>
                           {column.canFilter ? column.render("Filter") : null}
                         </div>
-                        {/* <span>{renderSortingArrow(column)}</span> */}
                       </th>
                     ))}
                   </tr>
@@ -96,13 +117,12 @@ function DataSets() {
               {page.map((row) => {
                 prepareRow(row);
                 return (
-                  // eslint-disable-next-line react/jsx-key
-                  <tr {...row.getRowProps()}>
+                  <tr key={row.id} {...row.getRowProps()}>
                     {row.cells.map((cell) => {
-                      // eslint-disable-next-line react/jsx-key
                       return (
-                        // eslint-disable-next-line react/jsx-key
-                        <td {...cell.getCellProps()}>{cell.render("Cell")}</td>
+                        <td key={cell.column.id} {...cell.getCellProps()}>
+                          {cell.render("Cell")}
+                        </td>
                       );
                     })}
                   </tr>
@@ -133,7 +153,8 @@ function DataSets() {
             >
               {">>"}
             </button>
-            <span>
+
+            <span className="goto">
               | Go to page
               <input
                 type="number"

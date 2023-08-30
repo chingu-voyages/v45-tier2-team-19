@@ -39,6 +39,16 @@ table th {
   padding: 2px;
 }
 
+.goto {
+  color: white;
+  margin-left: 20px;
+  display: flex;
+}
+
+.goto input {
+  margin-left: 10px;
+}
+
 .paginationContainer {
   display: flex;
   flex-direction: row;

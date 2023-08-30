@@ -1,5 +1,6 @@
 import { useDataContext } from "../../hooks/useDataContext";
 import { useEffect } from "react";
+import './StrikesByMass.css'
 const StrikesByMass = function () {
     const meteorData = useDataContext().data;
 
@@ -17,11 +18,11 @@ const StrikesByMass = function () {
     let smallestArray = []
     meteorData.forEach((meteor) => {
         if (meteor['mass (g)'] > 500000) {
-            largestArray.push(meteor['mass (g)'])
+            largestArray.push(`Name: ${meteor.name} - Mass: ${meteor['mass (g)']}`)
         }
 
         if (meteor['mass (g)'] < .1 && meteor['mass (g)'] && meteor['mass (g)'] != "0") {
-            smallestArray.push(meteor['mass (g)'])
+            smallestArray.push(`Name: ${meteor.name} - Mass: ${meteor['mass (g)']}`)
         }
 
 
@@ -37,7 +38,7 @@ const StrikesByMass = function () {
     console.log('topTen', topTen)
 
     const topTenList = topTen.map((meteor, index) => {
-        return <p key={index}>{meteor} grams</p>
+        return <p key={index}>{meteor}</p>
 
     })
 
@@ -47,16 +48,23 @@ const StrikesByMass = function () {
 
     let smallestArraySlice = smallestArray.slice(0, 10)
     const bottomTenList = smallestArraySlice.map((meteor, index) => {
-        return <p key={index}>{meteor} grams</p>
+        return <p key={index}>{meteor}</p>
     })
 
     return (
-        <div className='mass-container '>
-            <div className="data-text">
-                <h1>Largest Meteors</h1>
-                {topTenList}
-                <h1>Smallest Meteors</h1>
-                {bottomTenList}
+        <div className='mass-container  '>
+            <div className="data-text largest-smallest">
+
+                <div>
+                    <h1>Largest Meteors</h1>
+                    {topTenList}
+
+                </div>
+
+                <div>
+                    <h1>Smallest Meteors</h1>
+                    {bottomTenList}
+                </div>
             </div>
         </div>
     )

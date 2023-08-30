@@ -12,12 +12,8 @@
     "check-format": "prettier --ignore-path .gitignore --list-different \"**/*.+(js|jsx|json|css)\"",
     "preview": "vite preview",
     "validate": "npm run lint && npm run test && npm run build",
-    "setup": "npm install && npm run validate"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "prettier --write . && git add -A ."
-    }
+    "setup": "npm install && npm run validate",
+    "prepare": "cd .. && husky install fireball/.husky"
   },
   "dependencies": {
     "chart.js": "^4.3.3",

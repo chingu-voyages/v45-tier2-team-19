@@ -4,7 +4,7 @@ import Summary from "./components/summary/summary";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import Table from "./components/layout/Table";
-import Map from "./components/layout/Map";
+import Map from './components/map/Map';
 import TestComponents from "./components/layout/testComponents";
 
 

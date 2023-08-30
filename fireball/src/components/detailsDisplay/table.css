@@ -101,3 +101,20 @@ table tr:hover {
     left: calc(100% + 20px);
   }
 }
+
+@media screen and (max-width: 480px) {
+  table {
+    max-height: none;
+    width: 100%;
+    /* overflow-x: auto; */
+  }
+  .paginationContainer {
+    width: 100%;
+  }
+  .filterInput {
+    width: 80%;
+    margin-bottom: 5px;
+    height: 30px;
+    font-size: 8px;
+  }
+}

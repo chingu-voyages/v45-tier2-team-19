@@ -1,3 +1,5 @@
+import "./table.css";
+
 export const ColumnFilter = ({ column }) => {
   const { filterValue, setFilter } = column;
 
@@ -11,6 +13,7 @@ export const ColumnFilter = ({ column }) => {
         value={filterValue || ""}
         onChange={(e) => setFilter(e.target.value)}
         placeholder={`Filter by ${column.Header}`}
+        className="filterInput"
       />
       <button className="clrBtn" onClick={clearFilter}>
         Clear

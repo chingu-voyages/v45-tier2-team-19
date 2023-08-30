@@ -25,7 +25,9 @@ body {
 
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
-
+.mapContainer{
+ z-index:-1;
+}
 
 
 

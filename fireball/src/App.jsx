@@ -25,7 +25,7 @@ const App = function () {
       <Header />
       <TestComponents />
       <Table />
-      <Map />
+      <div className="mapContainer"><Map /></div>
       <Summary />
       <Footer />
     </div>

@@ -1,4 +1,5 @@
 import logo from '../../assets/fireballLogo.jpg';
+import './Footer.css'
 
 
 

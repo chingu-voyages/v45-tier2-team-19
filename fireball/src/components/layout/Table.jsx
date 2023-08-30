@@ -38,6 +38,7 @@ function Table() {
                         <tr key={index} {...headerGroup.getHeaderGroupProps()}>
                             {headerGroup.headers.map((column) => (
                                 <th key={`${index}th`} {...column.getHeaderProps()}>
+                                    
                                     {column.render("Header")}
                                 </th>
                             ))}

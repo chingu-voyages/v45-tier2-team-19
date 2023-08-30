@@ -13,6 +13,9 @@
     "validate": "npm run lint && npm run test && npm run build",
     "setup": "npm install && npm run validate"
   },
+  "husky": {
+    "pre-commit": "npm run format"
+  },
   "dependencies": {
     "chart.js": "^4.3.3",
     "d3-array": "^3.2.4",

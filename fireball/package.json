@@ -16,7 +16,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run check-format"
+      "pre-commit": "prettier --list-different . && git add -A ."
     }
   },
   "dependencies": {

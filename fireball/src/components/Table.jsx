@@ -26,7 +26,7 @@ function Table() {
         accessor: "year",
       },
     ],
-    []
+    [],
   );
   const {
     getTableProps,

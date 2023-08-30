@@ -47,7 +47,7 @@ const GeoPath = memo(({ map, data, clusters, onMouseOver, onMouseOut }) => {
   ];
 
   const matchedCondition = conditions.find(
-    (condition) => zoomScale >= condition.min && zoomScale < condition.max
+    (condition) => zoomScale >= condition.min && zoomScale < condition.max,
   );
 
   // Set clusterIndex based on the matched condition or a default value if none match
@@ -61,7 +61,7 @@ const GeoPath = memo(({ map, data, clusters, onMouseOver, onMouseOut }) => {
   const radiusValue2 = (d) => d.points.length;
   const sizeScale = useMemo(
     () => scaleSqrt([0, max(data, radiusValue)], [1, 15]),
-    []
+    [],
   );
 
   // const sizeScale2 = useMemo(
@@ -158,7 +158,7 @@ const GeoPath = memo(({ map, data, clusters, onMouseOver, onMouseOut }) => {
 
       .on(
         "zoom",
-        debouncedHandleZoom
+        debouncedHandleZoom,
         // (event) => {
         //   // setZoomScale(event.transform.k);
         //   // zoomScaleRef.current = event.transform.k;

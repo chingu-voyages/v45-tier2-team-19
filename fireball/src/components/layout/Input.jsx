@@ -1,13 +1,17 @@
-import './Input.css'
+import "./Input.css";
 
 const Input = function ({ label, placeholder }) {
-    return (
-        <div className="inputComponentContainer">
-            <label htmlFor="inputComponent">{label}</label>
-            <input className='inputComponent' name='inputComponent' type='text' placeholder={placeholder ? 'placehoder' : ""}></input>
+  return (
+    <div className="inputComponentContainer">
+      <label htmlFor="inputComponent">{label}</label>
+      <input
+        className="inputComponent"
+        name="inputComponent"
+        type="text"
+        placeholder={placeholder ? "placehoder" : ""}
+      ></input>
+    </div>
+  );
+};
 
-        </div >
-    )
-}
-
-export default Input
+export default Input;

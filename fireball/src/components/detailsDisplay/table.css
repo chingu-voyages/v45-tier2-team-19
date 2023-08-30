@@ -106,10 +106,14 @@ table tr:hover {
   table {
     max-height: none;
     width: 100%;
-    /* overflow-x: auto; */
   }
   .paginationContainer {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .goto {
+    margin-top: 15px;
   }
   .filterInput {
     width: 80%;

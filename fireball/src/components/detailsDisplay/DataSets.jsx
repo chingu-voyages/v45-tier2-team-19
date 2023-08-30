@@ -137,22 +137,21 @@ function DataSets() {
                 {">>"}
               </button>
             </div>
-            <div className="gotoContainer">
-              <span className="goto">
-                | Go to page
-                <input
-                  type="number"
-                  defaultValue={pageIndex + 1}
-                  onChange={(e) => {
-                    const pageNumber = e.target.value
-                      ? Number(e.target.value) - 1
-                      : 0;
-                    gotoPage(pageNumber);
-                  }}
-                  style={{ width: "40px" }}
-                />
-              </span>
-            </div>
+
+            <span className="goto">
+              | Go to page
+              <input
+                type="number"
+                defaultValue={pageIndex + 1}
+                onChange={(e) => {
+                  const pageNumber = e.target.value
+                    ? Number(e.target.value) - 1
+                    : 0;
+                  gotoPage(pageNumber);
+                }}
+                style={{ width: "40px" }}
+              />
+            </span>
           </div>
         </>
       )}

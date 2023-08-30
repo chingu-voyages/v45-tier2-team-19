@@ -1,0 +1,9 @@
+.dropdownComponentContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdownComponentContainer select{
+    margin-left:2em;
+    width:fit-content;
+}

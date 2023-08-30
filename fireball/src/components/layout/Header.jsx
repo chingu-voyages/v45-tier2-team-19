@@ -10,6 +10,7 @@ const Header = function () {
     useEffect(() => {
         setHeaderHeight(headerRef.current.clientHeight)
 
+
     }, [])
 
     return (

@@ -1,0 +1,33 @@
+.inputComponent{
+    border-radius:.5em;
+    border:2px solid black;
+    height:2em;
+    width:10em;
+display:block;
+margin-right:1em;
+}
+.inputComponentContainer label {
+    display:block;
+    padding-right:1em;
+}
+
+.inputComponentContainer{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:fit-content;
+    width:fit-content
+
+}
+
+.inputComponent:focus{
+    border:1px solid darkblue;
+}
+
+.inputComponent:invalid{
+    border:1px solid red;
+}
+.inputComponent:invalid:after{
+    content:"❗"
+}
+

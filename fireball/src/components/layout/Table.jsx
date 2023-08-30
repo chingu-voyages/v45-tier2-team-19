@@ -1,9 +1,9 @@
 import { useTable, usePagination } from 'react-table'
 import { useMemo } from 'react'
 import fakeData from '../../data.json'
-import Button from './Button'
-import Input from './Input'
-import Dropdown from './DropDown'
+import Button from '../reusableComponents/Button'
+import Input from '../reusableComponents/Input'
+import Dropdown from '../reusableComponents/Dropdown'
 function Table() {
 
     const data = useMemo(() => fakeData, [])

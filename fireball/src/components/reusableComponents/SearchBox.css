@@ -1,0 +1,28 @@
+.searchComponent{
+    display:flex;
+    align-items: center;
+    border:1px solid grey;
+    background-color: grey;
+    border-radius:15px;
+    padding:0px;
+}
+
+.searchComponent input {
+    border:none;
+    background-color:grey;
+    margin-left:5px;
+    height:100%;
+}
+
+.searchComponent label{
+    background-color: darkblue;
+    padding:0px;
+    margin:0px;
+    height:100%;
+}
+
+.searchBox{
+    height:100%;
+    margin:0px;
+    padding:0px;
+}

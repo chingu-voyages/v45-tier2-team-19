@@ -1,6 +1,6 @@
 .headerContainer {
-  background-image: url('magicpattern-mesh-gradient-1691785771850.png');
-  background-size: cover;
+  background-image: url('../../assets/comet.svg');
+  background-size: contain;
   display: grid;
   grid-template-rows: 1fr 1fr;
   justify-content: center;

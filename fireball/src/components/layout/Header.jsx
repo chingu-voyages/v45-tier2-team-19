@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import logo from "../../assets/fireballLogo.jpg";
 import Navbar from "./Navbar";
-import Comets from '../../assets/comet.svg'
+import Comets from "../../assets/comet.svg";
 
 const Header = function () {
   const [headerHeight, setHeaderHeight] = useState(0);
@@ -14,10 +14,10 @@ const Header = function () {
   return (
     <div className="headerContainer">
       <header ref={headerRef} className="headerContainer">
-        <div id="headerLogo">
-          <img className='comets' src={Comets}></img>
+        <img className="comets" src={Comets}></img>
+        {/* <div id="headerLogo">
           <img className="logo" src={logo} alt="header logo" />
-        </div>
+        </div> */}
       </header>
       <Navbar headerHeight={headerHeight} />
     </div>

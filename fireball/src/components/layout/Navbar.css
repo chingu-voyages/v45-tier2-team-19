@@ -1,19 +1,9 @@
 .headerContainer {
-  background-image:url('magicpattern-mesh-gradient-1691785771850.png');
-  background-size:cover;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  justify-content: center;
-  align-items: center;
+  background-image: url("../../assets/meteorBg2.svg");
+  background-size: inherit;
   width: 100vw;
   height: 20vw;
-  
- 
-
 }
-
-
-
 .navbar,
 .navbar nav {
   display: flex;

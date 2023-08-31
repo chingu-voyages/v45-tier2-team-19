@@ -117,15 +117,16 @@ function StrikesByYear() {
 
   return (
     <div
-      style={{
-        width: 700,
-        color: "white",
-        marginTop: "0.5rem",
-        background: "rgb(229,231,245)",
-        margin: "0.5rem",
-        // border: "5px solid white",
-        borderRadius: "8px",
-      }}
+      className="strikes-by-year-container"
+      // style={{
+      //   width: 700,
+      //   color: "white",
+      //   marginTop: "0.5rem",
+      //   background: "rgb(229,231,245)",
+      //   margin: "0.5rem",
+      //   // border: "5px solid white",
+      //   borderRadius: "8px",
+      // }}
     >
       <Bar data={chartData} options={chartOptions} />
     </div>

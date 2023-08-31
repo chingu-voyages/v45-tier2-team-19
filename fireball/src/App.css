@@ -6,6 +6,8 @@ body {
   padding: 0px;
   margin: 0px;
 
+  max-width: 100%;
+
 }
 
 #root {
@@ -17,19 +19,56 @@ body {
   width: 100%;
   margin: 0px;
   padding: 0px;
-  background-color: black;
+
+  background-color: #09113d;
 }
 
 * {
-  font-family: 'Overpass', sans-serif;
+  font-family: "Overpass", sans-serif;
 
-  font-family: 'Plus Jakarta Sans', sans-serif;
-}
-.mapContainer{
- z-index:-1;
+
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 
+/*MAP COMPONENT*/
+#mapContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  padding-top: 5em;
+}
+#mapContainer img {
+  width: 500px;
+  height: auto;
+}
+
+#mapContainer form,
+.checkGroup {
+  display: flex;
+  justify-items: flex-start;
+}
+
+#mapContainer form {
+  display: flex;
+  justify-items: flex-start;
+  width: 500px;
+}
+
+#searchContainer {
+  display: flex;
+  border: 1px solid white;
+}
+
+.search {
+  border: none;
+}
+.checkGroup {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+}
 
 /*HEADER*/
 header {
@@ -37,11 +76,9 @@ header {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background-color: #0C164F;
+  background-color: #0c164f;
   height: 20vw;
-
 }
-
 .navbar {
   width: 100%;
 }
@@ -54,8 +91,8 @@ header ul {
   justify-content: center;
   align-items: center;
   align-content: space-between;
-  background-color: #34F3F4;
-  ;
+
+  background-color: #34f3f4;
   padding: 0px;
   align-content: space-between;
 
@@ -81,8 +118,6 @@ header li {
   cursor: pointer;
 }
 
-
-
 header ul a {
   height: 100%;
   padding: 0px 1em 0px 1em;
@@ -93,35 +128,25 @@ header ul {
 }
 
 
+
+
 .logo {
   display: block;
   height: 200px;
   width: auto;
   border-radius: 50%;
   padding: 1em;
-}
 
-/*HEADER*/
-
-
-
-
-
-.logo {
-  display: block;
-  height: 10em;
-  width: auto;
-  border-radius: 50%;
-  padding: 1em;
 
 }
-
 
 /*FOOTER*/
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: #0C164F;
+
+  background-color: #0c164f;
+
   width: 100%;
   height: 20vw;
   justify-content: center;
@@ -130,21 +155,7 @@ footer {
 }
 
 
-/* =======
-footer{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  background-color:#0C164F;
-  background-image:url('./assets/stars.jpg');
-  background-size:cover;
-  width:100%;
-  height:20vw;
-  justify-content:center;
-  justify-items:center;
-  display:grid;
->>>>>>> 72e0382a7a3fdb1bcbf647db33ed3af93e244e11
 
-} */
 
 footer li {
   list-style: none;
@@ -152,41 +163,25 @@ footer li {
   font-size: larger;
 }
 
-footer li:hover {
-  color: #34F3F4;
-  ;
-}
-
-footer a:hover {
-
   cursor: pointer;
   text-decoration: underline;
 }
 
-
-
-
-
-
-
-/*SUMMARY*/
+/*
+*/
 
 .summaryContainer {
+
+  background-color: #ffffff;
   display: flex;
   width: 100%;
   justify-content: center;
-  align-self: center;
-
-
-
-
-
-
-
+  /* align-self: center; */
+  /* The align-self was causing the container to overflow, not be centered on smaller screens. */
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 
 }
-
-
 
 /*TABLE*/
 
@@ -214,9 +209,7 @@ th {
   display: flex;
   width: 100%;
   justify-content: center;
-
 }
-
 td {
   border: 2px solid white;
   height: fit-content;
@@ -224,7 +217,8 @@ td {
 }
 
 .tableContainer button {
-  background-color: #0C164F;
+  background-color: #0c164f;
+
   margin: 0em 2em 0em 2em;
 }
 
@@ -241,4 +235,4 @@ td {
   color: white;
   justify-content: center;
   align-items: center;
-}
+

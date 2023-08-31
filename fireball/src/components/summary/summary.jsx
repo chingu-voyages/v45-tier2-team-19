@@ -9,9 +9,10 @@ const Summary = function () {
   const { data, loading } = useDataContext();
 
   return (
-    <div id="summary" className='summaryContainer'>
-      <div >
-        <h2>Summary Content</h2>
+    <div id="summary" className="summaryContainer">
+      <div>
+        {/* <h2>Summary Content</h2> */}
+
         {loading ? (
           <div>Loading...</div>
         ) : (
@@ -25,5 +26,5 @@ const Summary = function () {
       </div>
     </div>
   );
-}
+};
 export default Summary;

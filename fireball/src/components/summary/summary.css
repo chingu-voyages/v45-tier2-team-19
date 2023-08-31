@@ -1,21 +1,57 @@
 .summary-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr 2fr;
+  margin: 0 auto;
+}
+
+.total-strikes-container {
+  background-color: rgb(229, 231, 245);
+  border-radius: 8px;
+  padding: 1rem;
+  /* max-width: 700px; */
+  margin: 0.5rem;
+}
+
+.strikes-by-composition-container {
+  background-color: rgb(229, 231, 245);
+  margin: 0.5rem;
+  border-radius: 8px;
+
+  /* width: 700,
+        color: "white",
+        marginTop: "0.5rem",
+        background: "rgb(229,231,245)",
+        margin: "0.5rem",
+        // border: "5px solid white",
+        borderRadius: "8px", */
+}
+
+.strikes-by-year-container {
+  background-color: rgb(229, 231, 245);
+  margin: 0.5rem;
+  border-radius: 8px;
+  /*   
+        width: 700,
+        color: "white",
+        marginTop: "0.5rem",
+        background: "rgb(229,231,245)",
+        margin: "0.5rem",
+        // border: "5px solid white",
+        borderRadius: "8px", */
 }
 
 .mass-container {
   background-color: rgb(229, 231, 245);
   border-radius: 8px;
   padding: 1rem;
-  max-width: 700px;
+  /* max-width: 700px; */
   margin: 0.5rem;
 }
-.title {
+.summary-title {
   color: rgb(105, 105, 106);
-  /* color: rgb(12, 22, 79); */
-  /* background-color: rgb(38, 182, 183); */
 }
-.data-text {
+.summary-data-text {
   color: rgb(38, 182, 183);
 }
 .learn-more-container {
@@ -30,16 +66,15 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 1rem;
 }
-.grid-item {
+.learn-more-grid-item {
   padding: 1rem;
   margin: 0.5rem;
-  /* border: 1px solid black;
-  border-radius: 8px; */
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .summary-container {
     display: grid;
     grid-template-columns: 1fr;
+    max-width: 100%;
   }
 }

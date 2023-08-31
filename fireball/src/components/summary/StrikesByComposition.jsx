@@ -25,7 +25,7 @@ function StrikesByComposition() {
 
   const compositions = Object.keys(strikesByRecclass).slice(0, 10);
   const strikesCount = compositions.map(
-    (composition) => strikesByRecclass[composition]
+    (composition) => strikesByRecclass[composition],
   );
 
   function compareNumbers(a, b) {

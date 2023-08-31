@@ -1,41 +1,73 @@
-import './Navbar.css'
-import { useState, useEffect } from 'react'
-
+import "./Navbar.css";
+import { useState, useEffect, useRef } from "react";
 
 const Navbar = function ({ headerHeight }) {
-    const [sticky, setSticky] = useState(false)
+  const [sticky, setSticky] = useState(false);
+  const [collapsed, setCollapsed] = useState(false);
+  const navRef = useRef(null);
 
-
-
-
-    function handleSticky() {
-        if (window.scrollY > headerHeight) {
-            setSticky(true)
-
-        } else {
-            setSticky(false)
-        }
-
+  function handleSticky() {
+    if (window.scrollY > headerHeight) {
+      setSticky(true);
+    } else {
+      setSticky(false);
     }
+  }
 
-    useEffect(() => {
-        window.addEventListener("scroll", handleSticky, { passive: true })
-    })
+  function toggleCollapse() {
+    if (window.outerWidth < 500) {
+      setCollapsed(true);
+    } else {
+      setCollapsed(false);
+    }
+  }
 
-    return (
-        <div className='navbar'>
-            < nav style={sticky ? { width: '100%', position: 'fixed', left: '0px', top: '0px', height: '50px' } : {}}>
-                <ul >
-                    <a href="#"><li>Home</li></a>
-                    <a href="#table"><li>Table</li></a>
-                    <a href="#mapContainer"><li>Maps</li></a>
-                    <a href="#summary"><li>Summary</li></a>
-                    <a href="#"><li>Cool Facts</li></a>
+  useEffect(() => {
+    window.addEventListener("scroll", handleSticky, { passive: true });
+  });
 
-                </ul>
-            </nav >
-        </div >
-    )
-}
+  useEffect(() => {
+    window.addEventListener("resize", toggleCollapse, { passive: true });
+  });
 
-export default Navbar
+  return (
+    <div className="navbar">
+      <nav
+        ref={navRef}
+        style={
+          sticky
+            ? {
+                position: "fixed",
+                left: "0px",
+                top: "0px",
+              }
+            : {}
+        }
+      >
+        {collapsed == false ? (
+          <ul>
+            <a href="#">
+              <li>Home</li>
+            </a>
+            <a href="#table">
+              <li>Table</li>
+            </a>
+            <a href="#mapContainer">
+              <li>Maps</li>
+            </a>
+            <a href="#summary">
+              <li>Summary</li>
+            </a>
+            <a href="#">
+              <li>Cool Facts</li>
+            </a>
+          </ul>
+        ) : (
+          <p>collapsed</p>
+        )}
+      </nav>
+    </div>
+  );
+};
+
+export default Navbar;

@@ -4,12 +4,10 @@
 // import Graphs from "./Graphs"
 // import Table from "./Table"
 
-
-
 // const Body = function Body({ loading }) {
 //     return (
 //         <div id="layoutBody">
-            
+
 //             <Header />
 //             <Table />
 //             <Map />

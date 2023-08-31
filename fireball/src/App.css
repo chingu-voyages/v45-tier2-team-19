@@ -5,7 +5,9 @@ body {
   align-content: center;
   padding: 0px;
   margin: 0px;
+
   max-width: 100%;
+
 }
 
 #root {
@@ -17,14 +19,17 @@ body {
   width: 100%;
   margin: 0px;
   padding: 0px;
+
   background-color: #09113d;
 }
 
 * {
   font-family: "Overpass", sans-serif;
 
+
   font-family: "Plus Jakarta Sans", sans-serif;
 }
+
 
 /*MAP COMPONENT*/
 #mapContainer {
@@ -77,6 +82,7 @@ header {
 .navbar {
   width: 100%;
 }
+
 header nav,
 header ul {
   display: flex;
@@ -85,10 +91,13 @@ header ul {
   justify-content: center;
   align-items: center;
   align-content: space-between;
+
   background-color: #34f3f4;
   padding: 0px;
   align-content: space-between;
+
 }
+
 /* header nav{
   height:100%
 } */
@@ -103,6 +112,7 @@ header li {
   width: fit-content;
   text-align: center;
 }
+
 .navbar a:hover {
   background-color: white;
   cursor: pointer;
@@ -117,19 +127,26 @@ header ul {
   height: 100%;
 }
 
+
+
+
 .logo {
   display: block;
   height: 200px;
   width: auto;
   border-radius: 50%;
   padding: 1em;
+
+
 }
 
 /*FOOTER*/
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
+
   background-color: #0c164f;
+
   width: 100%;
   height: 20vw;
   justify-content: center;
@@ -137,23 +154,24 @@ footer {
   display: grid;
 }
 
+
+
+
 footer li {
   list-style: none;
   color: white;
   font-size: larger;
 }
-footer li:hover {
-  color: #34f3f4;
-}
 
-footer a:hover {
   cursor: pointer;
   text-decoration: underline;
 }
 
-/*SUMMARY*/
+/*
+*/
 
 .summaryContainer {
+
   background-color: #ffffff;
   display: flex;
   width: 100%;
@@ -162,6 +180,7 @@ footer a:hover {
   /* The align-self was causing the container to overflow, not be centered on smaller screens. */
   padding-top: 2rem;
   padding-bottom: 2rem;
+
 }
 
 /*TABLE*/
@@ -176,6 +195,7 @@ footer a:hover {
   height: 100vh;
   max-height: 100vh;
   margin-top: 2em 0em 2em 0em;
+
 }
 
 tr,
@@ -198,6 +218,7 @@ td {
 
 .tableContainer button {
   background-color: #0c164f;
+
   margin: 0em 2em 0em 2em;
 }
 
@@ -214,4 +235,4 @@ td {
   color: white;
   justify-content: center;
   align-items: center;
-}
+

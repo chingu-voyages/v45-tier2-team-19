@@ -1,6 +1,6 @@
 .headerContainer {
-    background-image:url('../../assets/starryMeteorHeader.png');
-    background-size:50%;
+    background-image:url('../../assets/starryMeteorHeaderWide.png');
+    background-size:cover;
     background-repeat:no-repeat;
     background-position-x:center;
     display: grid;
@@ -17,3 +17,6 @@
   .logo{
     align-self:center;
   }
+
+
+  

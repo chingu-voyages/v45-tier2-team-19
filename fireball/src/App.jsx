@@ -8,6 +8,7 @@ import Map from './components/map/Map';
 import TestComponents from "./components/layout/testComponents";
 
 import { useDataContext } from "./hooks/useDataContext";
+import DataSets from "./components/detailsDisplay/DataSets";
 
 const App = function () {
   const { data, loading } = useDataContext();
@@ -20,12 +21,16 @@ const App = function () {
 
       <Header />
       <TestComponents />
+     <DataSets />
       <Table />
       <Map />
       <Summary />
       <Footer />
     </div>
   );
+
 };
+
+}
 
 export default App;

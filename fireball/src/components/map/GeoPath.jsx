@@ -10,6 +10,10 @@ import _debounce from "lodash.debounce";
 import "./style.css";
 import { memo, useEffect, useMemo, useRef, useState, useCallback } from "react";
 import { kmeans } from "../../../utils/kmeans";
+import Clusters from "./Clusters";
+import Continents from "./Continents";
+import Graticules from "./Graticules";
+import Interiors from "./Interiors";
 
 // import { transition } from "d3-transition";
 // import { easeLinear } from "d3-ease";
@@ -47,7 +51,7 @@ const GeoPath = memo(({ map, data, clusters, onMouseOver, onMouseOut }) => {
   ];
 
   const matchedCondition = conditions.find(
-    (condition) => zoomScale >= condition.min && zoomScale < condition.max,
+    (condition) => zoomScale >= condition.min && zoomScale < condition.max
   );
 
   // Set clusterIndex based on the matched condition or a default value if none match
@@ -56,12 +60,11 @@ const GeoPath = memo(({ map, data, clusters, onMouseOver, onMouseOut }) => {
   // const clusterIndex = zoomScale < 2.5 ? 0 : 1;
   const cluster = clusters[clusterIndex];
 
-  const graticule = useMemo(() => geoGraticule(), []);
   const radiusValue = (d) => +d["mass (g)"];
   const radiusValue2 = (d) => d.points.length;
   const sizeScale = useMemo(
     () => scaleSqrt([0, max(data, radiusValue)], [1, 15]),
-    [],
+    []
   );
 
   // const sizeScale2 = useMemo(
@@ -158,7 +161,7 @@ const GeoPath = memo(({ map, data, clusters, onMouseOver, onMouseOut }) => {
 
       .on(
         "zoom",
-        debouncedHandleZoom,
+        debouncedHandleZoom
         // (event) => {
         //   // setZoomScale(event.transform.k);
         //   // zoomScaleRef.current = event.transform.k;
@@ -179,12 +182,11 @@ const GeoPath = memo(({ map, data, clusters, onMouseOver, onMouseOut }) => {
       <svg ref={svgRef} viewBox="0 0 950 470">
         <g>
           <path className="sphere" d={path({ type: "Sphere" })} />
-          <path className="graticules" d={path(graticule())} />
-          {countries.features.map((feature) => {
-            // console.log(path.centroid(feature));
-            return <path fill="#0C164F" d={path(feature)} />;
-          })}
-          <path className="interiors" d={path(interiors)} />
+
+          <Graticules path={path} />
+          <Continents countries={countries} path={path} />
+          <Interiors path={path} interiors={interiors} />
+
           {/* {dataWithCoordinates.map((d) => {
             // console.log("jkkk");
             // console.log(path.centroid(d));
@@ -212,7 +214,7 @@ const GeoPath = memo(({ map, data, clusters, onMouseOver, onMouseOut }) => {
               </>
             );
           })} */}
-          {cluster.map((c, i) => {
+          {/* {cluster.map((c, i) => {
             const [lat, long] = projection([c.centroid[1], c.centroid[0]]);
             // console.log(c.points.length);
             // console.log(sizeScale((c) => c.points.length));
@@ -240,7 +242,12 @@ const GeoPath = memo(({ map, data, clusters, onMouseOver, onMouseOut }) => {
                 </text>
               </>
             );
-          })}
+          })} */}
+          <Clusters
+            cluster={cluster}
+            projection={projection}
+            zoomScale={zoomScale}
+          />
         </g>
       </svg>
     </div>

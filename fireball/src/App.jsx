@@ -3,8 +3,7 @@ import "./App.css";
 import Summary from "./components/summary/summary";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
-import Table from "./components/layout/Table";
-import Map from './components/map/Map';
+import Map from "./components/map/Map";
 import TestComponents from "./components/layout/testComponents";
 
 import { useDataContext } from "./hooks/useDataContext";
@@ -21,16 +20,12 @@ const App = function () {
 
       <Header />
       <TestComponents />
-     <DataSets />
-      <Table />
+      <DataSets />
       <Map />
       <Summary />
       <Footer />
     </div>
   );
-
 };
-
-}
 
 export default App;

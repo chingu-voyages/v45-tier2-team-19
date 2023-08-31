@@ -7,7 +7,6 @@ body {
   margin: 0px;
 
   max-width: 100%;
-
 }
 
 #root {
@@ -26,10 +25,8 @@ body {
 * {
   font-family: "Overpass", sans-serif;
 
-
   font-family: "Plus Jakarta Sans", sans-serif;
 }
-
 
 /*MAP COMPONENT*/
 #mapContainer {
@@ -95,7 +92,6 @@ header ul {
   background-color: #34f3f4;
   padding: 0px;
   align-content: space-between;
-
 }
 
 /* header nav{
@@ -127,17 +123,12 @@ header ul {
   height: 100%;
 }
 
-
-
-
 .logo {
   display: block;
   height: 200px;
   width: auto;
   border-radius: 50%;
   padding: 1em;
-
-
 }
 
 /*FOOTER*/
@@ -154,24 +145,20 @@ footer {
   display: grid;
 }
 
-
-
-
 footer li {
   list-style: none;
   color: white;
   font-size: larger;
 }
 
-  cursor: pointer;
+/* cursor: pointer;
   text-decoration: underline;
-}
+} */
 
 /*
 */
 
 .summaryContainer {
-
   background-color: #ffffff;
   display: flex;
   width: 100%;
@@ -180,7 +167,6 @@ footer li {
   /* The align-self was causing the container to overflow, not be centered on smaller screens. */
   padding-top: 2rem;
   padding-bottom: 2rem;
-
 }
 
 /*TABLE*/
@@ -195,7 +181,6 @@ footer li {
   height: 100vh;
   max-height: 100vh;
   margin-top: 2em 0em 2em 0em;
-
 }
 
 tr,
@@ -235,4 +220,4 @@ td {
   color: white;
   justify-content: center;
   align-items: center;
-
+}

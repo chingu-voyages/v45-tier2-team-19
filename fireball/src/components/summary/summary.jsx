@@ -11,8 +11,7 @@ const Summary = function () {
   return (
     <div id="summary" className="summaryContainer">
       <div>
-
-        <h2>Summary Content</h2>
+        {/* <h2>Summary Content</h2> */}
 
         {loading ? (
           <div>Loading...</div>

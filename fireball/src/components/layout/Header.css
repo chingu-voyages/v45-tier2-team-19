@@ -1,6 +1,6 @@
 .headerContainer {
     background-image:url('../../assets/Subtract.png');
-    background-size:2%;
+    background-size:cover;
     display: grid;
     grid-template-rows: 1fr 1fr;
     justify-content: center;

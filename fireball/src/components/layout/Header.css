@@ -1,6 +1,7 @@
 .headerContainer {
     background-image:url('../../assets/starryMeteorHeaderWide.png');
     background-size:cover;
+    background-color:purple;
     background-repeat:no-repeat;
     background-position-x:center;
     display: grid;

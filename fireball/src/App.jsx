@@ -20,9 +20,7 @@ const App = function () {
       {loading == true && <div className="loading">Loading...</div>}
 
       <Header />
-      <TestComponents />
       <DataSets />
-      <Table />
       <Map />
       <Summary />
       <Footer />

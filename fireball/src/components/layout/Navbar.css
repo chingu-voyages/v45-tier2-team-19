@@ -1,9 +1,4 @@
-.headerContainer {
-  background-image: url("../../assets/meteorBg2.svg");
-  background-size: inherit;
-  width: 100vw;
-  height: 20vw;
-}
+
 .navbar,
 .navbar nav {
   display: flex;
@@ -15,12 +10,13 @@
   background-color: purple;
   padding: 0px;
   align-content: space-between;
+  
 }
 
 .navbar ul {
   display: flex;
-  padding: 0px;
-  margin: 0px;
+  padding: 1em 0px 1em 0px;
+  margin: 0px 0px 0px 5em;
   height: 100%;
   list-style: none;
 }

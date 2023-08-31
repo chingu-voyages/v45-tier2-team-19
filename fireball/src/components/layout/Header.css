@@ -1,5 +1,5 @@
 .headerContainer {
-    background-image:url('../../assets/Subtract.png');
+    background-image:url('../../assets/starryMeteorHeader.png');
     background-size:cover;
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -10,4 +10,8 @@
     
    
   
+  }
+
+  .logo{
+    align-self:center;
   }

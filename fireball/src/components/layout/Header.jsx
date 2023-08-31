@@ -14,9 +14,9 @@ const Header = function () {
   return (
     <div className="headerContainer">
       <header ref={headerRef} className="headerContainer">
-        <img className="comets" src={Comets}></img>
+        <img className="logo" src={logo} alt="header logo" />
         {/* <div id="headerLogo">
-          <img className="logo" src={logo} alt="header logo" />
+        <img className="comets" src={Comets}></img>
         </div> */}
       </header>
       <Navbar headerHeight={headerHeight} />

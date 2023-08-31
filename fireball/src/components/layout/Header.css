@@ -1,0 +1,13 @@
+.headerContainer {
+    background-image:url('../../assets/Subtract.png');
+    background-size:2%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 20vw;
+    
+   
+  
+  }

@@ -2,7 +2,11 @@ import StrikesByYear from "./StrikesByYear";
 import AverageMass from "./AverageMass";
 import TotalStrikes from "./TotalStrikes";
 import StrikesByComposition from "./StrikesByComposition";
+
 import StrikesByYearFiltered from "./StrikesByYearFiltered";
+
+import StrikesByDecade from "./StrikesByDecade";
+
 import { useDataContext } from "../../hooks/useDataContext";
 import "./summary.css";
 
@@ -20,9 +24,12 @@ const Summary = function () {
           <div className="summary-container">
             <StrikesByYear />
             <TotalStrikes />
-            <StrikesByComposition />
+            <StrikesByDecade />
             <AverageMass />
+
             <StrikesByYearFiltered />
+=======            <StrikesByComposition />
+
           </div>
         )}
       </div>

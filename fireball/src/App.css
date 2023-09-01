@@ -149,10 +149,11 @@ header ul {
 
 .logo {
   display: block;
-  height: 10em;
+  height: 100%;
   width: auto;
   border-radius: 50%;
   padding: 1em;
+  justify-self:center;
 
 }
 

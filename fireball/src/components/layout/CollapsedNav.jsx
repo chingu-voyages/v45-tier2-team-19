@@ -1,7 +1,7 @@
 import './CollapsedNav.css'
 const CollapsedNav = function () {
     return (
-        <nav>
+        <nav style={{ display: 'flex', flexDirection: 'column', }} >
             <ul>
                 <a href="#">
                     <li>Home</li>

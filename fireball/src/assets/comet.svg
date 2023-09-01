@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 436.14 436.14">
+  <defs>
+    <style>
+      .cls-1 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        fill: url(#_Áåçûìÿííûé_ãðàäèåíò_14);
+        mix-blend-mode: screen;
+      }
+    </style>
+    <linearGradient id="_Áåçûìÿííûé_ãðàäèåíò_14" data-name="Áåçûìÿííûé ãðàäèåíò 14" x1="244.51" y1="273.19" x2="813.63" y2="273.19" gradientTransform="translate(-356.61 406.41) rotate(-45)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4acda3"/>
+      <stop offset=".41" stop-color="#004473"/>
+      <stop offset=".47" stop-color="#003960"/>
+      <stop offset=".64" stop-color="#002037"/>
+      <stop offset=".78" stop-color="#000e18"/>
+      <stop offset=".91" stop-color="#000306"/>
+      <stop offset="1" stop-color="#000"/>
+    </linearGradient>
+  </defs>
+  <g class="cls-1">
+    <g id="Layer_1" data-name="Layer 1">
+      <path class="cls-2" d="m17.3,363.8c-19.53,19.53-23.05,47.69-7.85,62.89,15.2,15.2,43.36,11.69,62.89-7.85L436.14,55.04,381.09,0,17.3,363.8Z"/>
+    </g>
+  </g>
+</svg>

@@ -1,33 +1,31 @@
-.inputComponent{
-    border-radius:.5em;
-    border:2px solid black;
-    height:2em;
-    width:6em;
-display:block;
-margin-right:1em;
+.inputComponent {
+  border-radius: 0.5em;
+  border: 2px solid black;
+  height: 2em;
+  width: 6em;
+  display: block;
+  margin-right: 1em;
 }
 .inputComponentContainer label {
-    display:block;
-    padding-right:1em;
+  display: block;
+  padding-right: 1em;
 }
 
-.inputComponentContainer{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    height:fit-content;
-    width:fit-content
-
+.inputComponentContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+  width: fit-content;
 }
 
-.inputComponent:focus{
-    border:1px solid darkblue;
+.inputComponent:focus {
+  border: 1px solid darkblue;
 }
 
-.inputComponent:invalid{
-    border:1px solid red;
+.inputComponent:invalid {
+  border: 1px solid red;
 }
-.inputComponent:invalid:after{
-    content:"❗"
+.inputComponent:invalid:after {
+  content: "❗";
 }
-

@@ -24,8 +24,8 @@ export default function AverageMass() {
   return (
     <div className="mass-container">
       <span>
-        <h3 className="title">Total Average Mass</h3>
-        <div className="data-text">
+        <h3 className="summary-title">Total Average Mass</h3>
+        <div className="summary-data-text">
           <h4>{overallAvgMass} grams</h4>
           <h4>{kilograms} kilograms</h4>
           <h4>{imperialTons} Imperial Tons</h4>

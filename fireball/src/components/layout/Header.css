@@ -1,0 +1,29 @@
+.headerContainer {
+    background-image:url('../../assets/starryMeteorHeaderWide.png');
+    background-size:cover;
+    background-color:darkblue;
+    background-repeat:no-repeat;
+    background-position-x:center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 20vw;
+    
+   
+  
+  }
+
+  header{
+    background-image:url('../../assets/starryMeteorHeaderWide.png');
+    background-size:cover;
+
+  }
+
+  .logo{
+    align-self:center;
+  }
+
+
+  

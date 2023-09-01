@@ -67,61 +67,6 @@ body {
   align-items: flex-start;
 }
 
-/*HEADER*/
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  background-color: #0c164f;
-  height: 20vw;
-}
-.navbar {
-  width: 100%;
-}
-
-header nav,
-header ul {
-  display: flex;
-  list-style: none;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  align-content: space-between;
-
-  background-color: #34f3f4;
-  padding: 0px;
-  align-content: space-between;
-}
-
-/* header nav{
-  height:100%
-} */
-
-header li {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  margin: 0px;
-  color: black;
-  padding: 0px;
-  width: fit-content;
-  text-align: center;
-}
-
-.navbar a:hover {
-  background-color: white;
-  cursor: pointer;
-}
-
-header ul a {
-  height: 100%;
-  padding: 0px 1em 0px 1em;
-}
-
-header ul {
-  height: 100%;
-}
 
 .logo {
   display: block;
@@ -173,14 +118,9 @@ footer li {
 
 .tableContainer {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+ flex-direction: column;
   align-items: center;
-  overflow: hidden;
-  background-color: rgb(232, 81, 34);
-  height: 100vh;
-  max-height: 100vh;
-  margin-top: 2em 0em 2em 0em;
+margin-top: 5em;
 }
 
 tr,

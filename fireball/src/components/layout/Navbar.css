@@ -1,21 +1,7 @@
-.headerContainer {
-  background-image: url('../../assets/stars.jpg');
-  background-size: cover;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 20vw;
-  
- 
-
-}
-
-
 
 .navbar,
 .navbar nav {
+  background-image:url('../../assets/starryMeteorHeaderWide.png');
   display: flex;
   list-style: none;
   width: 100%;
@@ -25,14 +11,17 @@
   background-color: purple;
   padding: 0px;
   align-content: space-between;
+  
+  
 }
 
 .navbar ul {
   display: flex;
-  padding: 0px;
+  padding: 1em 0px 1em 0px;
   margin: 0px;
   height: 100%;
   list-style: none;
+  
 }
 
 .navbar a {
@@ -41,7 +30,7 @@
   align-items: center;
   padding: 0px 1em 0px 1em;
   font-size: larger;
-  color: black;
+  color: white;
 }
 
 .navbar a:hover {

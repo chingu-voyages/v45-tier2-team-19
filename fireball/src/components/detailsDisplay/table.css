@@ -1,10 +1,17 @@
+.tableContainer{
+align-self:center;
+}
+
 table {
   font-family: "PlusJakartaSans-Regular", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
-  width: 100%;
+  width: 70%;
   table-layout: fixed;
   background-color: rgb(16, 40, 173);
   color: white;
+  align-self:center;
+  margin-top:5em;
+  height:80vh;
 }
 
 table th {

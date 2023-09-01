@@ -64,15 +64,15 @@ const Map = () => {
   // console.log("KMEANS", result);
 
   return (
-    <div style={{ position: "relative" }}>
+    <div  >
       <GeoPath
         map={mapData}
         data={filteredData}
         clusters={clusters}
         onMouseOver={debouncedHandleMouseOver}
         onMouseOut={debouncedHandleMouseOut}
-        // zoomLevel={zoomLevel}
-        // setZoomLevel={setZoomLevel}
+      // zoomLevel={zoomLevel}
+      // setZoomLevel={setZoomLevel}
       />
 
       {tooltipData && (
@@ -94,7 +94,7 @@ const Map = () => {
           <div>Longitude: {tooltipData.reclong}</div>
         </div>
       )}
-    </div>
+    </div >
   );
 };
 

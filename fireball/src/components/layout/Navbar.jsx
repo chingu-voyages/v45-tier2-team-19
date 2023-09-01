@@ -6,7 +6,14 @@ const Navbar = function ({ headerHeight }) {
   const [sticky, setSticky] = useState(false);
   const [collapsed, setCollapsed] = useState(false);
   const [toggled, setToggled] = useState(false)
+  const [smallScreen, setSmallScreen] = useState(null)
   const navRef = useRef(null);
+
+  useEffect(() => {
+    if (collapsed) {
+      setSmallScreen(true)
+    }
+  }, [])
 
   function handleSticky() {
     if (window.scrollY > headerHeight) {
@@ -23,7 +30,7 @@ const Navbar = function ({ headerHeight }) {
     } else {
       setCollapsed(false);
     }
-    console.log(collapsed)
+
 
   }
 
@@ -33,13 +40,13 @@ const Navbar = function ({ headerHeight }) {
 
   useEffect(() => {
     window.addEventListener("resize", toggleCollapse, { passive: true });
-  });
+  }, [collapsed]);
 
-  function openMenu() {
-    return (
-      <CollapsedNav />
-    )
-  }
+  useEffect(() => {
+    toggleCollapse()
+  }, [collapsed]);
+
+
 
   return (
 
@@ -76,14 +83,14 @@ const Navbar = function ({ headerHeight }) {
           </ul>
         ) : (
           <div>
-            {!toggled ? (
+            {!toggled || smallScreen ? (
               <button onClick={() => { setToggled(!toggled) }}>menu</button>
 
             ) : (
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                 <button onClick={() => { setToggled(!toggled) }}>menu</button>
                 <nav  >
-                  <ul style={{ width: '100vw', backgroundColor: 'purple', display: 'flex', flexDirection: 'column', position: 'relative', top: '0em', left: '0px', alignItems: 'center' }} >
+                  <ul style={{ backgroundImage: `url("../../assets/starryMeteorHeaderWide.png")`, backgroundSize: 'cover', width: '100vw', backgroundColor: 'purple', display: 'flex', flexDirection: 'column', position: 'relative', top: '0em', left: '0px', alignItems: 'center' }} >
                     <a href="#">
                       <li>Home</li>
                     </a>

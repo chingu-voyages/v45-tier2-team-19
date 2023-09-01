@@ -223,7 +223,12 @@ footer a:hover {
 
 /*TABLE*/
 
-
+.tableContainer{
+  display:flex;
+  flex-direction:column;
+  align-self:center;
+  justify-content:center;
+}
 
 tr,td,th{
   height:5px;

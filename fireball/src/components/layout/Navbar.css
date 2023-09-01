@@ -39,11 +39,16 @@
   color: black;
 }
 
-/* @media screen and (max-width:500px) {
-  .navbar{
-    width:100vw;
-    height:1em;
-    font-size:small;
+@media screen and (max-width:500px) {
+  {
+  
   }
   
-} */
+}
+
+
+/*collapsed*/
+
+.collapsedUl{
+  background-image:url('../../assets/starryMeteorHeader2.png')
+}

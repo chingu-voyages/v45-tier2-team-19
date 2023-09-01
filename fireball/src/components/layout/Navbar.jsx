@@ -90,7 +90,7 @@ const Navbar = function ({ headerHeight }) {
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                 <button onClick={() => { setToggled(!toggled) }}>menu</button>
                 <nav  >
-                  <ul style={{ backgroundImage: `url("../../assets/starryMeteorHeaderWide.png")`, backgroundSize: 'cover', width: '100vw', backgroundColor: 'purple', display: 'flex', flexDirection: 'column', position: 'relative', top: '0em', left: '0px', alignItems: 'center' }} >
+                  <ul className='collapsedUl' style={{ width: '100vw', display: 'flex', flexDirection: 'column', position: 'relative', top: '0em', left: '0px', alignItems: 'center' }} >
                     <a href="#">
                       <li>Home</li>
                     </a>

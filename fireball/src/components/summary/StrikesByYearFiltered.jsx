@@ -5,6 +5,7 @@ import { Chart } from "chart.js/auto";
 import { Bar } from "react-chartjs-2";
 import Stack from "@mui/material/Stack";
 import Slider from "@mui/material/Slider";
+import Typography from "@mui/material/Typography";
 import { useDataContext } from "../../hooks/useDataContext";
 
 function StrikesByYearFiltered() {
@@ -110,11 +111,14 @@ function StrikesByYearFiltered() {
   return (
     <div className="strikes-by-year-container">
       <Stack spacing={2} direction="row" sx={{ mb: 1 }} alignItems="center">
+        <Typography>Mass Range:</Typography>
         <Slider
           aria-label="mass"
           step={0.01}
           value={sliderValue}
           onChange={handleChange}
+          valueLabelDisplay="auto"
+          valueLabelFormat={(value) => `${value} g`}
         />
       </Stack>
       <Bar data={chartData} options={chartOptions} />

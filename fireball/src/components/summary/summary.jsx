@@ -20,9 +20,9 @@ const Summary = function () {
           <div className="summary-container">
             <StrikesByYear />
             <TotalStrikes />
-            <StrikesByComposition />
-            <AverageMass />
             <StrikesByDecade />
+            <AverageMass />
+            <StrikesByComposition />
           </div>
         )}
       </div>

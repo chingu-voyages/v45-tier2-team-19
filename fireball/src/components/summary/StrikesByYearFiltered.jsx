@@ -46,7 +46,7 @@ function StrikesByYearFiltered() {
 
     strikesByYear[year]++;
   });
-
+  console.log(sliderValue);
   const years = Object.keys(strikesByYear);
   const strikesCount = years.map((year) => strikesByYear[year]);
 
@@ -108,7 +108,12 @@ function StrikesByYearFiltered() {
   return (
     <div className="strikes-by-year-container">
       <Stack spacing={2} direction="row" sx={{ mb: 1 }} alignItems="center">
-        <Slider aria-label="mass" value={sliderValue} onChange={handleChange} />
+        <Slider
+          aria-label="mass"
+          step={0.01}
+          value={sliderValue}
+          onChange={handleChange}
+        />
       </Stack>
       <Bar data={chartData} options={chartOptions} />
     </div>

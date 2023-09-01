@@ -1,7 +1,9 @@
 /*FOOTER*/
 footer{
-    background-image:url('magicpattern-mesh-gradient-1691785771850.png');
-    background-size:cover;
+  background-image:url('../../assets/starryFooterWide.png');
+  background-size:cover;
+  background-color:purple;
+  
     display:grid;
     grid-template-columns:1fr 1fr;
     background-color:#0C164F;

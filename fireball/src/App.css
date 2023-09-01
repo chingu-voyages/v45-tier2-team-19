@@ -223,18 +223,7 @@ footer a:hover {
 
 /*TABLE*/
 
-.tableContainer {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  overflow: hidden;
-  background-color: rgb(232, 81, 34);
-  height: 100vh;
-  max-height: 100vh;
-  margin-top: 2em 0em 2em 0em;
 
-}
 
 tr,td,th{
   height:5px;

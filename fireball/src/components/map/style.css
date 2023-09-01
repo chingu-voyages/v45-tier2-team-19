@@ -25,7 +25,7 @@
   fill: red;
 }
 
-.landing-circle:hover + .text {
+.landing-circle:hover+.text {
   fill: red;
   display: block;
 }
@@ -37,13 +37,15 @@
 .container {
   width: 75%;
   margin: auto;
-  border: 1px solid red;
+  background-color: #fafafa;
+  /* border: 1px solid red; */
   border-radius: 20px;
   overflow: hidden;
 }
 
 .txt {
-  font: 7px sans-serif;
+  /* font: 7px sans-serif; */
+  font-weight: 800;
 }
 
 /* tooltip styling

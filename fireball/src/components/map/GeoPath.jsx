@@ -25,8 +25,7 @@ const GeoPath = memo(({ map, data, clusters, onMouseOver, onMouseOut }) => {
   console.log("FILTERED DATA", data);
 
   const [zoomScale, setZoomScale] = useState(1);
-  const zoomScaleRef = useRef(1);
-  const [, setZoomComplete] = useState(false);
+  // const [, setZoomComplete] = useState(false);
   const { countries, interiors } = map;
   const projection = useMemo(() => geoEquirectangular(), []);
   const path = useMemo(() => geoPath(projection), [projection]);
@@ -43,22 +42,6 @@ const GeoPath = memo(({ map, data, clusters, onMouseOver, onMouseOut }) => {
   // console.log("zoomscale", zoomScale);
 
   // const { clusters } = result;
-  const conditions = [
-    { min: 1, max: 2.5, value: 0 },
-    { min: 2.5, max: 4, value: 1 },
-    { min: 4, max: 5.5, value: 2 },
-    { min: 5.5, max: Infinity, value: 3 },
-  ];
-
-  const matchedCondition = conditions.find(
-    (condition) => zoomScale >= condition.min && zoomScale < condition.max
-  );
-
-  // Set clusterIndex based on the matched condition or a default value if none match
-  const clusterIndex = matchedCondition ? matchedCondition.value : -1;
-
-  // const clusterIndex = zoomScale < 2.5 ? 0 : 1;
-  const cluster = clusters[clusterIndex];
 
   const radiusValue = (d) => +d["mass (g)"];
   const radiusValue2 = (d) => d.points.length;
@@ -128,7 +111,7 @@ const GeoPath = memo(({ map, data, clusters, onMouseOver, onMouseOut }) => {
         // if (currentZoom !== prevZoomRef.current) {
         console.log("they are equal!!!");
         // Zoom is stable, set the zoomComplete state to true
-        setZoomComplete(true);
+        // setZoomComplete(true);
         setZoomScale(e.transform.k);
         // }
       }, stabilityDelay);
@@ -244,7 +227,7 @@ const GeoPath = memo(({ map, data, clusters, onMouseOver, onMouseOut }) => {
             );
           })} */}
           <Clusters
-            cluster={cluster}
+            clusters={clusters}
             projection={projection}
             zoomScale={zoomScale}
           />

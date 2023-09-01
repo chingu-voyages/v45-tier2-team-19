@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Chart } from "chart.js/auto";
 import { Bar } from "react-chartjs-2";
@@ -9,46 +9,48 @@ import { useDataContext } from "../../hooks/useDataContext";
 
 function StrikesByYearFiltered() {
   const meteorData = useDataContext().data;
-  console.log(meteorData);
-
   const [sliderValue, setSliderValue] = useState([0, 10000]);
+  const [strikesCount, setStrikesCount] = useState([]);
+  const [years, setYears] = useState([]);
 
-  if (meteorData === 0) return;
+  useEffect(() => {
+    if (!meteorData || meteorData.length === 0) return;
 
-  const massAndYearArray = [];
+    const massAndYearArray = [];
 
-  meteorData.forEach((meteor) => {
-    const massValue = meteor["mass (g)"];
-    const mass = massValue ? parseFloat(massValue.split(",").join("")) : 0;
-    const year = new Date(meteor.year).getFullYear();
+    meteorData.forEach((meteor) => {
+      const massValue = meteor["mass (g)"];
+      const mass = massValue ? parseFloat(massValue.split(",").join("")) : 0;
+      const year = new Date(meteor.year).getFullYear();
 
-    if (!isNaN(mass) && mass > 0 && year >= 1900 && year <= 2012) {
-      massAndYearArray.push({ mass, year });
-    }
-  });
-  console.log(massAndYearArray);
+      if (!isNaN(mass) && mass > 0 && year >= 1900 && year <= 2012) {
+        massAndYearArray.push({ mass, year });
+      }
+    });
 
-  //Filter array by mass
-  massAndYearArray.sort((a, b) => a.mass - b.mass);
+    // Filter the array by mass
+    const filteredMassAndYearArray = massAndYearArray.filter(
+      (item) => item.mass >= sliderValue[0] && item.mass <= sliderValue[1]
+    );
 
-  const filteredMassAndYearArray = massAndYearArray.filter(
-    (item) => item.mass >= sliderValue
-  );
+    const strikesByYear = {};
 
-  const strikesByYear = {};
+    filteredMassAndYearArray.forEach((item) => {
+      const year = item.year;
 
-  filteredMassAndYearArray.forEach((item) => {
-    const year = item.year;
+      if (!strikesByYear[year]) {
+        strikesByYear[year] = 0;
+      }
 
-    if (!strikesByYear[year]) {
-      strikesByYear[year] = 0;
-    }
+      strikesByYear[year]++;
+    });
 
-    strikesByYear[year]++;
-  });
-  console.log(sliderValue);
-  const years = Object.keys(strikesByYear);
-  const strikesCount = years.map((year) => strikesByYear[year]);
+    const years = Object.keys(strikesByYear);
+    const strikesCount = years.map((year) => strikesByYear[year]);
+
+    setYears(years);
+    setStrikesCount(strikesCount);
+  }, [meteorData, sliderValue]);
 
   const handleChange = (event, newValue) => {
     setSliderValue(newValue);
@@ -58,8 +60,8 @@ function StrikesByYearFiltered() {
     labels: years,
     datasets: [
       {
-        label: "Number of Strikes by Year",
-        data: strikesCount,
+        label: "Number of Strikes by Mass",
+        data: strikesCount, // Use the values of the strikesCount object
         backgroundColor: "rgb(12, 22, 79)",
       },
     ],

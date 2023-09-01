@@ -37,10 +37,10 @@ const Navbar = function ({ headerHeight }) {
         style={
           sticky
             ? {
-                position: "fixed",
-                left: "0px",
-                top: "0px",
-              }
+              position: "fixed",
+              left: "0px",
+              top: "0px",
+            }
             : {}
         }
       >
@@ -53,7 +53,7 @@ const Navbar = function ({ headerHeight }) {
               <li>Table</li>
             </a>
             <a href="#mapContainer">
-              <li>Maps</li>
+              <li>Map</li>
             </a>
             <a href="#summary">
               <li>Summary</li>

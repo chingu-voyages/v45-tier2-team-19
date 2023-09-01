@@ -1,7 +1,7 @@
 .headerContainer {
     background-image:url('../../assets/starryMeteorHeaderWide.png');
     background-size:cover;
-    background-color:purple;
+    background-color:darkblue;
     background-repeat:no-repeat;
     background-position-x:center;
     display: grid;
@@ -13,6 +13,12 @@
     
    
   
+  }
+
+  header{
+    background-image:url('../../assets/starryMeteorHeaderWide.png');
+    background-size:cover;
+
   }
 
   .logo{

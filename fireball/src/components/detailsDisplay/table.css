@@ -5,6 +5,7 @@ table {
   table-layout: fixed;
   background-color: rgb(16, 40, 173);
   color: white;
+  margin-top: 100px;
 }
 
 table th {

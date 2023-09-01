@@ -9,9 +9,9 @@ body {
   max-width: 100%;
 }
 
-#root {
-  width: 100%;
-  padding: 0px;
+#root{
+  width:100%;
+  padding:0px;
 }
 
 .App {
@@ -29,9 +29,9 @@ body {
 }
 
 /*MAP COMPONENT*/
-#mapContainer {
-  display: flex;
-  flex-direction: column;
+#mapContainer{
+  display:flex;
+  flex-direction:column;
   align-items: center;
   max-width: 100%;
   padding-top: 5em;
@@ -53,18 +53,83 @@ body {
   width: 500px;
 }
 
-#searchContainer {
-  display: flex;
-  border: 1px solid white;
+#searchContainer{
+  display:flex;
+  border:1px solid white;
 }
 
-.search {
-  border: none;
+.search{
+  border:none;
 }
+
 .checkGroup {
   display: flex;
   width: 100%;
   align-items: flex-start;
+
+}
+
+
+
+/*HEADER*/
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #0C164F;
+  height: 20vw;
+
+}
+
+.navbar {
+  width: 100%;
+}
+
+header nav,
+header ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+  background-color: #34F3F4;
+  ;
+  padding: 0px;
+  align-content: space-between;
+
+}
+
+/* header nav{
+  height:100%
+} */
+
+header li {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0px;
+  color: black;
+  padding: 0px;
+  width: fit-content;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+
+
+header ul a {
+  height: 100%;
+  padding: 0px 1em 0px 1em;
+}
+
+header ul {
+  height: 100%;
 }
 
 
@@ -76,13 +141,27 @@ body {
   padding: 1em;
 }
 
+/*HEADER*/
+
+
+
+
+
+.logo {
+  display: block;
+  height: 10em;
+  width: auto;
+  border-radius: 50%;
+  padding: 1em;
+
+}
+
+
 /*FOOTER*/
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
-  background-color: #0c164f;
-
+  background-color: #0C164F;
   width: 100%;
   height: 20vw;
   justify-content: center;
@@ -90,51 +169,79 @@ footer {
   display: grid;
 }
 
+
+/* =======
+footer{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  background-color:#0C164F;
+  background-image:url('./assets/stars.jpg');
+  background-size:cover;
+  width:100%;
+  height:20vw;
+  justify-content:center;
+  justify-items:center;
+  display:grid;
+>>>>>>> 72e0382a7a3fdb1bcbf647db33ed3af93e244e11
+
+} */
+
 footer li {
   list-style: none;
   color: white;
   font-size: larger;
 }
 
-/* cursor: pointer;
+footer li:hover {
+  color: #34F3F4;
+  ;
+}
+
+footer a:hover {
+
+  cursor: pointer;
   text-decoration: underline;
-} */
+}
 
 /*
 */
 
 .summaryContainer {
-  background-color: #ffffff;
   display: flex;
   width: 100%;
   justify-content: center;
-  /* align-self: center; */
-  /* The align-self was causing the container to overflow, not be centered on smaller screens. */
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  align-self: center;
+
+
+
+
+
+
+
+
 }
 
 /*TABLE*/
 
-.tableContainer {
-  display: flex;
- flex-direction: column;
-  align-items: center;
-margin-top: 5em;
+.tableContainer{
+  display:flex;
+  flex-direction:column;
+  align-self:center;
+  justify-content:center;
 }
 
-tr,
-td,
-th {
-  height: 5px;
-  color: black;
+tr,td,th{
+  height:5px;
+  color:black;
 }
 
 .nextPrevButtons {
   display: flex;
   width: 100%;
   justify-content: center;
+
 }
+
 td {
   border: 2px solid white;
   height: fit-content;
@@ -142,22 +249,21 @@ td {
 }
 
 .tableContainer button {
-  background-color: #0c164f;
-
+  background-color: #0C164F;
   margin: 0em 2em 0em 2em;
 }
 
 /*LOADING DIV*/
 
-.loading {
-  display: flex;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  height: 100vh;
+.loading{
+  display:flex;
+  position:fixed;
+  top:0px;
+  left:0px;
+  height:100vh;
   width: 100vw;
-  background-color: black;
-  color: white;
+  background-color:black;
+  color:white;
   justify-content: center;
   align-items: center;
 }

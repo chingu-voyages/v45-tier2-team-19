@@ -64,7 +64,7 @@ const Map = () => {
   // console.log("KMEANS", result);
 
   return (
-    <div  >
+    <div id="mapContainer" >
       <GeoPath
         map={mapData}
         data={filteredData}
@@ -76,7 +76,7 @@ const Map = () => {
       />
 
       {tooltipData && (
-        <div
+        <div id="mapContainer"
           className="tooltip"
           style={{
             position: "absolute",

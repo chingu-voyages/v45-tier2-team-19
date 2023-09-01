@@ -4,37 +4,55 @@ import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Chart } from "chart.js/auto";
 import { Bar } from "react-chartjs-2";
 import Stack from "@mui/material/Stack";
+import Slider from "@mui/material/Slider";
 import { useDataContext } from "../../hooks/useDataContext";
 
 function StrikesByYearFiltered() {
   const meteorData = useDataContext().data;
   console.log(meteorData);
 
-  const [sliderValue, setSliderValue] = useState();
+  const [sliderValue, setSliderValue] = useState([0, 10000]);
 
   if (meteorData === 0) return;
 
-  const strikesByYear = {};
+  const massAndYearArray = [];
 
   meteorData.forEach((meteor) => {
+    const massValue = meteor["mass (g)"];
+    const mass = massValue ? parseFloat(massValue.split(",").join("")) : 0;
     const year = new Date(meteor.year).getFullYear();
 
-    if (year < 2013) {
-      if (year > 1899) {
-        if (!isNaN(year)) {
-          if (!strikesByYear[year]) {
-            strikesByYear[year] = 0;
-          }
-        }
-
-        strikesByYear[year]++;
-      }
+    if (!isNaN(mass) && mass > 0 && year >= 1900 && year <= 2012) {
+      massAndYearArray.push({ mass, year });
     }
+  });
+  console.log(massAndYearArray);
+
+  //Filter array by mass
+  massAndYearArray.sort((a, b) => a.mass - b.mass);
+
+  const filteredMassAndYearArray = massAndYearArray.filter(
+    (item) => item.mass >= sliderValue
+  );
+
+  const strikesByYear = {};
+
+  filteredMassAndYearArray.forEach((item) => {
+    const year = item.year;
+
+    if (!strikesByYear[year]) {
+      strikesByYear[year] = 0;
+    }
+
+    strikesByYear[year]++;
   });
 
   const years = Object.keys(strikesByYear);
-
   const strikesCount = years.map((year) => strikesByYear[year]);
+
+  const handleChange = (event, newValue) => {
+    setSliderValue(newValue);
+  };
 
   const chartData = {
     labels: years,
@@ -90,9 +108,8 @@ function StrikesByYearFiltered() {
   return (
     <div className="strikes-by-year-container">
       <Stack spacing={2} direction="row" sx={{ mb: 1 }} alignItems="center">
-        <Slider aria-label="mass" value={value} onChange={handleChange} />
+        <Slider aria-label="mass" value={sliderValue} onChange={handleChange} />
       </Stack>
-      <Slider disabled defaultValue={30} aria-label="Disabled slider" />
       <Bar data={chartData} options={chartOptions} />
     </div>
   );

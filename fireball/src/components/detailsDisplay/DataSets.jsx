@@ -65,7 +65,7 @@ function DataSets() {
   const { pageIndex } = state;
 
   return (
-    <div className='tableContainer' style={{}}>
+    <div id="Table" className='tableContainer' style={{}}>
       {isLoading ? (
         <div className="custom-loader"></div>
       ) : (

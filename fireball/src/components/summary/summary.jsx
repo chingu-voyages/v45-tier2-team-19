@@ -14,7 +14,7 @@ const Summary = function () {
   const { data, loading } = useDataContext();
 
   return (
-    <div id="summary" className="summaryContainer">
+    <div id="Summary" className="summaryContainer">
       <div>
         {/* <h2>Summary Content</h2> */}
 

@@ -45,9 +45,17 @@ const Navbar = function ({ headerHeight }) {
   useEffect(() => {
     toggleCollapse()
   }, [collapsed]);
+  let menuLinksList = ['#', 'tableContainer', 'mapContainer', 'summary', '']
+  let menuList = ['Home', 'Table', 'Map', 'Summary', 'Cool Facts']
+  let listItems = menuList.map((list, index) => {
+    return <li key={index}>{list}</li>
+  })
+
+  function handleMenuClose() {
+    setToggled(false)
 
 
-
+  }
   return (
 
     <div className="navbar">
@@ -65,21 +73,14 @@ const Navbar = function ({ headerHeight }) {
       >
         {collapsed == false ? (
           <ul>
-            <a href="#">
-              <li>Home</li>
-            </a>
-            <a href="#table">
-              <li>Table</li>
-            </a>
-            <a href="#mapContainer">
-              <li>Map</li>
-            </a>
-            <a href="#summary">
-              <li>Summary</li>
-            </a>
-            <a href="#">
-              <li>Cool Facts</li>
-            </a>
+
+            {menuList.map((item, index) => {
+              return (
+                <a href={`#${item}`} onClick={() => { handleMenuClose() }} key={index} >
+                  <li>{item}</li>
+
+                </a>)
+            })}
           </ul>
         ) : (
           <div>
@@ -91,21 +92,17 @@ const Navbar = function ({ headerHeight }) {
                 <button onClick={() => { setToggled(!toggled) }}>menu</button>
                 <nav  >
                   <ul className='collapsedUl' style={{ width: '100vw', display: 'flex', flexDirection: 'column', position: 'relative', top: '0em', left: '0px', alignItems: 'center' }} >
-                    <a href="#">
-                      <li>Home</li>
-                    </a>
-                    <a href="#table">
-                      <li>Table</li>
-                    </a>
-                    <a href="#mapContainer">
-                      <li>Maps</li>
-                    </a>
-                    <a href="#summary">
-                      <li>Summary</li>
-                    </a>
-                    <a href="#">
-                      <li>Cool Facts</li>
-                    </a>
+                    {menuList.map((item, index) => {
+                      return (
+                        <a href={`#${item}`} onClick={() => { handleMenuClose() }} key={index} >
+                          <li>{item}</li>
+
+                        </a>
+
+                      )
+
+
+                    })}
                   </ul>
 
                 </nav>

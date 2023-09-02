@@ -64,7 +64,7 @@ const Map = () => {
   // console.log("KMEANS", result);
 
   return (
-    <div id="mapContainer" >
+    <div id="Map" >
       <GeoPath
         map={mapData}
         data={filteredData}

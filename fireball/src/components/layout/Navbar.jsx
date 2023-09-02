@@ -85,11 +85,11 @@ const Navbar = function ({ headerHeight }) {
         ) : (
           <div>
             {!toggled || smallScreen ? (
-              <button onClick={() => { setToggled(!toggled) }}>menu</button>
+              <button className='collapsedBtn' onClick={() => { setToggled(!toggled) }}>menu</button>
 
             ) : (
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                <button onClick={() => { setToggled(!toggled) }}>menu</button>
+
                 <nav  >
                   <ul className='collapsedUl' style={{ width: '100vw', display: 'flex', flexDirection: 'column', position: 'relative', top: '0em', left: '0px', alignItems: 'center' }} >
                     {menuList.map((item, index) => {

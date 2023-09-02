@@ -133,12 +133,16 @@ header ul {
 }
 
 
-.logo {
+.headerLogo {
   display: block;
-  height: 200px;
+  height: 15vw;
   width: auto;
   border-radius: 50%;
   padding: 1em;
+}
+
+.footerLogo{
+  height:20vw;
 }
 
 /*HEADER*/

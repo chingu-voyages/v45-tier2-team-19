@@ -4,7 +4,7 @@ import "./Footer.css";
 const Footer = function () {
     return (
         <footer>
-            <div id="logo">
+            <div className="footerLogo">
                 <img className="logo" src={logo} alt="header logo" />
             </div>
             <div id="madeBy">

@@ -1,8 +1,9 @@
 .summary-container {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 2fr 2fr;
+  grid-template-rows: 2fr 2fr; */
   margin: 0 auto;
+  max-width: 900px;
 }
 
 .total-strikes-container {

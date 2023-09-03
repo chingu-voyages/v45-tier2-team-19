@@ -22,7 +22,7 @@ import Interiors from "./Interiors";
 const GeoPath = memo(({ map, data, clusters, onMouseOver, onMouseOut }) => {
   // const [transformGroup, setTransformGroup] = useState({})
   console.log("RERENDER!");
-  console.log("FILTERED DATA", data);
+  // console.log("FILTERED DATA", data);
 
   const [zoomScale, setZoomScale] = useState(1);
   // const [, setZoomComplete] = useState(false);
@@ -64,7 +64,7 @@ const GeoPath = memo(({ map, data, clusters, onMouseOver, onMouseOut }) => {
   //   return { ...d, lat, long };
   // });
 
-  console.log("Clusters", clusters);
+  // console.log("Clusters", clusters);
   // console.log("distance", euclideanDistance());
 
   const svgRef = useRef(null);
@@ -123,7 +123,7 @@ const GeoPath = memo(({ map, data, clusters, onMouseOver, onMouseOut }) => {
   useEffect(() => {
     const svg = select(svgRef.current);
     const zoomed = zoom()
-      .scaleExtent([1, 10])
+      .scaleExtent([1, 30])
       .translateExtent([
         [0, 0],
         [960, 470],
@@ -169,6 +169,31 @@ const GeoPath = memo(({ map, data, clusters, onMouseOver, onMouseOut }) => {
           <Graticules path={path} />
           <Continents countries={countries} path={path} />
           <Interiors path={path} interiors={interiors} />
+          {data.map((d) => {
+            const [lat, long] = projection([d.reclong, d.reclat]);
+
+            return (
+              <>
+                <circle
+                  key={d.id}
+                  onMouseOver={(e) => onMouseOver(e, d)}
+                  onMouseOut={onMouseOut}
+                  className="landing-circle"
+                  fill="#28d8da"
+                  // stroke="#26ACAD"
+                  // strokeWidth={0.1}
+                  // r={sizeScale(radiusValue(d))}
+                  r={1}
+                  cx={lat}
+                  cy={long}
+                  // style={{
+                  //   transform: `translate(${long}px, ${lat}px)`,
+                  // }}
+                  // opacity={0.5}
+                />
+              </>
+            );
+          })}
 
           {/* {dataWithCoordinates.map((d) => {
             // console.log("jkkk");
@@ -226,11 +251,11 @@ const GeoPath = memo(({ map, data, clusters, onMouseOver, onMouseOut }) => {
               </>
             );
           })} */}
-          <Clusters
+          {/* <Clusters
             clusters={clusters}
             projection={projection}
             zoomScale={zoomScale}
-          />
+          /> */}
         </g>
       </svg>
     </div>

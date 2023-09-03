@@ -2,18 +2,28 @@ import GeoPath from "./GeoPath";
 import { useCallback, useState } from "react";
 import _debounce from "lodash.debounce";
 import { useGetMapData } from "../../hooks/useGetMapData";
-import { useDataContext } from "../../hooks/useDataContext";
+// import { useDataContext } from "../../hooks/useDataContext";
 import { useGetClusters } from "../../hooks/useGetClusters";
+import useFilterData from "../../hooks/useFilterMap";
+import DataFilter from "./MapFilter";
 
 const Map = () => {
   const mapData = useGetMapData().data;
-  const data = useDataContext().data;
+  const { data } = useFilterData(); //data for the map filter component
   const { data: clusters } = useGetClusters();
 
   const [tooltipData, setTooltipData] = useState(null);
+  const [filteredData, setFilteredData] = useState([]);
   // console.log("wholeDATA", data);
 
+  console.log("tooltip", tooltipData);
+
+  const handleDataFiltered = (filteredData) => {
+    setFilteredData(filteredData);
+  };
+
   const handleMouseMoveInstant = (e, d) => {
+    console.log("hover");
     const toolTipPosition = {
       lat: d.lat,
       long: d.long,
@@ -36,10 +46,12 @@ const Map = () => {
 
   const debouncedHandleMouseOver = useCallback((e, d) => {
     _debounce(handleMouseMoveInstant(e, d), 200);
+    console.log("enter");
+    // handleMouseMoveInstant(e, d);
   }, []);
 
   const debouncedHandleMouseOut = useCallback(() => {
-    // _debounce(handleMouseOut, 300);
+    // _debounce(() => handleMouseOut, 200);
     handleMouseOut();
   }, []);
 
@@ -47,11 +59,12 @@ const Map = () => {
     return <pre>Loading...</pre>;
   }
 
-  const filteredData = data
-    .map((d) => {
-      return { ...d, lat: +d.reclat };
-    })
-    .filter((d) => d.reclat && d.lat);
+  // console.log("filtered in MAP component", filteredData);
+  // const filteredData = data
+  //   .map((d) => {
+  //     return { ...d, lat: +d.reclat };
+  //   })
+  //   .filter((d) => d.reclat && d.lat);
 
   // const dd = data
   //   .filter((d) => d.reclat)
@@ -65,21 +78,22 @@ const Map = () => {
 
   return (
     <div style={{ position: "relative" }}>
+      <DataFilter data={data} onDataFiltered={handleDataFiltered} />
       <GeoPath
         map={mapData}
         data={filteredData}
         clusters={clusters}
         onMouseOver={debouncedHandleMouseOver}
         onMouseOut={debouncedHandleMouseOut}
-        // zoomLevel={zoomLevel}
-        // setZoomLevel={setZoomLevel}
       />
 
       {tooltipData && (
         <div
-          className="tooltip"
+          // className="tooltip"
           style={{
             position: "absolute",
+            // zIndex: 50,
+            // transformOrigin: "top left",
             backgroundColor: "rgba(0, 0, 0, 0.7)",
             color: "white",
             padding: "5px",

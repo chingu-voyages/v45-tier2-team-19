@@ -55,7 +55,13 @@
 .summary-data-text {
   color: rgb(38, 182, 183);
 }
-.learn-more-container {
+
+.MuiStack-root {
+  padding: 1rem;
+  padding-bottom: 0px;
+}
+
+/* .learn-more-container {
   padding-top: 3rem;
   margin-top: 1rem;
   background-color: rgb(38, 182, 183);
@@ -70,7 +76,7 @@
 .learn-more-grid-item {
   padding: 1rem;
   margin: 0.5rem;
-}
+} */
 
 @media (max-width: 768px) {
   .summary-container {

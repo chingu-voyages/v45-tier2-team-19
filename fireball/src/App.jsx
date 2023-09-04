@@ -15,11 +15,10 @@ const App = function () {
   console.log(data);
 
   return (
-    <div className="App">
+    <div id="Home" className="App">
       {loading == true && <div className="loading">Loading...</div>}
 
       <Header />
-      <TestComponents />
       <DataSets />
       <Map />
       <Summary />

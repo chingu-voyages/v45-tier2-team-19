@@ -1,6 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 import logo from "../../assets/fireballLogo.jpg";
 import Navbar from "./Navbar";
+import './Header.css'
+
 
 const Header = function () {
   const [headerHeight, setHeaderHeight] = useState(0);
@@ -13,9 +15,8 @@ const Header = function () {
   return (
     <div className="headerContainer">
       <header ref={headerRef} className="headerContainer">
-        <div id="headerLogo">
-          <img className="logo" src={logo} alt="header logo" />
-        </div>
+        <img className="logo" src={logo} alt="header logo" />
+
       </header>
       <Navbar headerHeight={headerHeight} />
     </div>

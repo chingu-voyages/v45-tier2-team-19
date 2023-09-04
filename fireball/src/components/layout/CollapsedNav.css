@@ -1,4 +1,19 @@
-nav{
+.collapsedNav nav .collapsedNav nav{
+    display:flex;
+    flex-direction:column;
+    position:absolute;
+    top:0px;
+    left:0px;
 display:flex;
 flex-direction:column;
+z-index:99;
+}
+
+.collapsedNav ul .collapsedNav ul{
+    display:flex;
+    flex-direction:column;
+    position:absolute;
+    top:0px;
+    left:0px;
+
 }

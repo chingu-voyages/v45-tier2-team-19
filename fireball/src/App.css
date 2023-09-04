@@ -159,22 +159,19 @@ footer {
   display: grid;
 }
 
-footer{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  background-color:#0C164F;
-  background-image:url('./assets/stars.jpg');
-  background-size:cover;
-  width:100%;
-  height:20vw;
-  justify-content:center;
-  justify-items:center;
-  display:grid;
-
-
-} */
-
-footer li {
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #0c164f;
+  background-image: url("./assets/stars.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 20vw;
+  justify-content: center;
+  justify-items: center;
+  display: grid;
+}
+*/ footer li {
   list-style: none;
   color: white;
   font-size: larger;
@@ -189,11 +186,7 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/*
-*/
-
 .summaryContainer {
-  background-color: white;
   padding-top: 2rem;
   padding-bottom: 2rem;
   width: 100%;
@@ -203,13 +196,11 @@ footer a:hover {
 
 /*TABLE*/
 
-
 .tableContainer {
   display: flex;
   flex-direction: column;
   align-self: center;
   justify-content: center;
-
 }
 
 tr,
@@ -234,7 +225,8 @@ td {
 .tableContainer button {
   background-color: #0c164f;
   margin: 0em 2em 0em 2em;
-} */
+}
+*/
 
 /*LOADING DIV*/
 

@@ -1,6 +1,6 @@
 /*FOOTER*/
 
-/* #footerCurvedWrap{
+#footerCurvedWrap{
 position:relative;
 left:0px;
 bottom:0px;
@@ -12,7 +12,7 @@ bottom:0px;
   
   
 
-}*/
+}
 footer{
   display:flex;
   background-image:url('../../assets/starryCurvedFooter.png');
@@ -46,9 +46,13 @@ footer{
   
   #madeBy{
     display:flex;
-   font-size:.5em;
+   font-size:1em;
    
    
+  }
+
+  #madeByContainer h2{
+    font-size:1em;
   }
 
   #madeBy ul{

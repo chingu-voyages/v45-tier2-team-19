@@ -1,11 +1,11 @@
 #curvedWrapper{
   background-image:url('../../assets/starryCurvedHeader.png');
-  background-size:100%;
+  background-size:100vw;
   background-repeat:no-repeat;
+  margin-bottom:10em;
+  height:200px;
   
-  height:20vw;
-  padding-bottom:100px;
-  /* background-color:darkblue; */
+  
 
 
 }
@@ -16,18 +16,43 @@
     grid-template-rows: 1fr 1fr;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     height: 20vw;
     background-color:transparent;
-    margin-bottom:100px;
+    margin-bottom:2em;
+    
    
   
   }
 
+header{
+  display:flex;
+  justify-content: center;
+}
 
-  .logo{
-    align-self:center;
+.headerLogo{
+  height:100%;
+}
+
+
+
+  @media screen and (max-width:500px){
+    #curvedWrapper{
+      display:flex;
+      justify-items:center;
+      background-image:url('../../assets/starryCurvedHeader.png');
+      background-size:100vw;
+      background-repeat:no-repeat;
+      align-items:flex-start;
+    
+     
+     
+    
+    
+    }
+
+    .headerLogo{
+      height:10vw;
+    }
+
   }
-
-
-  

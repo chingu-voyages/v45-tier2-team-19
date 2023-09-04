@@ -1,4 +1,7 @@
-const Continents = ({ countries, path }) => {
+import { memo } from "react";
+
+const Continents = memo(({ countries, path }) => {
+  console.log("continent rerender");
   return (
     <>
       {countries.features.map((feature) => {
@@ -7,6 +10,8 @@ const Continents = ({ countries, path }) => {
       })}
     </>
   );
-};
+});
+
+Continents.displayName = Continents;
 
 export default Continents;

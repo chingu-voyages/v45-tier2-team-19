@@ -1,0 +1,6 @@
+.container {
+  flex-grow: 1;
+  background-color: #fafafa;
+  border-radius: 20px;
+  overflow: hidden;
+}

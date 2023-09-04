@@ -1,8 +1,9 @@
-import { geoPath, geoEquirectangular, geoGraticule } from "d3-geo";
+import { geoPath, geoEquirectangular } from "d3-geo";
 import { scaleSqrt } from "d3-scale";
 import { max } from "d3-array";
 import { select } from "d3-selection";
 import { zoom, zoomIdentity } from "d3-zoom";
+import geopath from "./GeoPath.module.css";
 
 // import clusterData from './data.json';
 
@@ -14,6 +15,7 @@ import Clusters from "./Clusters";
 import Continents from "./Continents";
 import Graticules from "./Graticules";
 import Interiors from "./Interiors";
+import TooltipDemo from "./Tooltip";
 
 // import { transition } from "d3-transition";
 // import { easeLinear } from "d3-ease";
@@ -59,23 +61,8 @@ const GeoPath = memo(({ map, data, clusters, onMouseOver, onMouseOut }) => {
   //   [clusters, zoomScale]
   // );
 
-  // const dataWithCoordinates = data.map((d) => {
-  //   const [lat, long] = projection([d.reclong, d.reclat]);
-  //   return { ...d, lat, long };
-  // });
-
-  // console.log("Clusters", clusters);
-  // console.log("distance", euclideanDistance());
-
   const svgRef = useRef(null);
 
-  // const debouncedHandleZoom = useCallback((e) => {
-  //   console.log("ZOOM STARTED");
-  //   console.log(e);
-  //   zoomScaleRef.current = e.transform.k;
-  //   const svg = select(svgRef.current);
-  //   svg.select("g").attr("transform", e.transform);
-  // }, []);
   const prevZoomRef = useRef(null);
   const zoomCompleteTimeoutRef = useRef(null);
 
@@ -160,9 +147,9 @@ const GeoPath = memo(({ map, data, clusters, onMouseOver, onMouseOut }) => {
   // console.log("countries", countries);
   // console.log("landing data", data);
   return (
-    <div className="container">
-      <button onClick={resetMapZoom}>Reset</button>
-      <svg ref={svgRef} viewBox="0 0 950 470">
+    <div className={geopath.container}>
+      {/* <button onClick={resetMapZoom}>Reset</button> */}
+      <svg ref={svgRef} viewBox="0 0 950 440">
         <g>
           <path className="sphere" d={path({ type: "Sphere" })} />
 
@@ -180,10 +167,10 @@ const GeoPath = memo(({ map, data, clusters, onMouseOver, onMouseOut }) => {
                   onMouseOut={onMouseOut}
                   className="landing-circle"
                   fill="#28d8da"
-                  // stroke="#26ACAD"
-                  // strokeWidth={0.1}
+                  stroke="#26ACAD"
+                  strokeWidth={0.05}
                   // r={sizeScale(radiusValue(d))}
-                  r={1}
+                  r={0.5}
                   cx={lat}
                   cy={long}
                   // style={{

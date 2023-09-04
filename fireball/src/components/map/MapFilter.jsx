@@ -1,23 +1,23 @@
 import { useState } from "react";
 import { createIntervals } from "../../../utils/createIntervals";
 import { continents, countries } from "./data";
+import mapfilter from "./MapFilter.module.css";
+import SelectDemo from "../shared/Select";
 
-function DataFilter({ data, onDataFiltered }) {
+function MapFilter({ data, onDataFiltered }) {
+  console.log("MAP FILTER RERENDER");
   const [selectedFilters, setSelectedFilters] = useState({
     year: "",
     region: "",
     // mass: "",
-    // continent: "",
     // Add more filter criteria here
   });
-  // const [filteredData, setFilteredData] = useState(data);
 
   // console.log("data inside the filter comonent", data);
 
   const region = countries.map((country) => country.name).concat(continents);
   const filterOptions = {
     year: createIntervals(1400, 2000, 50),
-    // country: countries.map((country) => country.name), // Example countries
     region: region, // Example countries
     // mass: createIntervals(10000000, 60000000, 5000000), // Example mass categories
     // Add more filter options for other criteria
@@ -41,9 +41,7 @@ function DataFilter({ data, onDataFiltered }) {
               ? item.continent === filterValue
               : item.country === filterValue;
           },
-          // continent: () => {
-          //   return item.continent === filterValue;
-          // },
+
           // mass: () => {
           //   const [start, end] = filterValue.split("-");
           //   const itemYear = +item.year;
@@ -55,39 +53,27 @@ function DataFilter({ data, onDataFiltered }) {
         return filterFunctions[key]();
       });
     });
-    onDataFiltered(updated);
+    onDataFiltered(updated, selectedFilters);
   };
 
-  const handleFilterChange = (event) => {
-    const { name, value } = event.target;
+  const handleFilterChange = (name, value) => {
     setSelectedFilters({ ...selectedFilters, [name]: value });
   };
 
-  // console.log("map fitler data", filteredData);
-
   return (
-    <div>
+    <div className={mapfilter.container}>
       {Object.keys(selectedFilters).map((key) => (
-        <div key={key}>
-          <label>
-            Select {key} Interval:
-            <select
-              name={key}
-              value={selectedFilters[key]}
-              onChange={handleFilterChange}
-            >
-              {filterOptions[key].map((option) => (
-                <option key={option} value={option}>
-                  {option}
-                </option>
-              ))}
-            </select>
-          </label>
-        </div>
+        <SelectDemo
+          key={key}
+          label={key}
+          options={filterOptions[key]}
+          value={selectedFilters[key]}
+          onValueChange={(value) => handleFilterChange(key, value)}
+        />
       ))}
       <button onClick={applyFilter}>apply</button>
     </div>
   );
 }
 
-export default DataFilter;
+export default MapFilter;

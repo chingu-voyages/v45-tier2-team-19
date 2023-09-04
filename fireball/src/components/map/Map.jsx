@@ -5,7 +5,11 @@ import { useGetMapData } from "../../hooks/useGetMapData";
 // import { useDataContext } from "../../hooks/useDataContext";
 import { useGetClusters } from "../../hooks/useGetClusters";
 import useFilterData from "../../hooks/useFilterMap";
-import DataFilter from "./MapFilter";
+import "./style.css";
+import map from "./Map.module.css";
+import FilterSummary from "./FilterSummary";
+import MapFilter from "./MapFilter";
+import { formatLocale } from "d3-format";
 
 const Map = () => {
   const mapData = useGetMapData().data;
@@ -14,12 +18,23 @@ const Map = () => {
 
   const [tooltipData, setTooltipData] = useState(null);
   const [filteredData, setFilteredData] = useState([]);
+  const [selectedFilters, setSelectedFilters] = useState({});
   // console.log("wholeDATA", data);
 
-  console.log("tooltip", tooltipData);
+  const locale = formatLocale({
+    decimal: ",",
+    thousands: "\u00a0",
+    grouping: [3],
+    currency: ["", " g"],
+    minus: "\u2212",
+    percent: "\u202f%",
+  });
 
-  const handleDataFiltered = (filteredData) => {
+  const fformat = locale.format("$,");
+
+  const handleDataFiltered = (filteredData, selectedFilters) => {
     setFilteredData(filteredData);
+    setSelectedFilters(selectedFilters);
   };
 
   const handleMouseMoveInstant = (e, d) => {
@@ -30,6 +45,8 @@ const Map = () => {
       reclat: d.reclat,
       reclong: d.reclong,
       name: d.name,
+      mass: d["mass (g)"],
+      state: d.state,
       x: e.clientX,
       y: e.clientY, //////////////////
     };
@@ -77,21 +94,27 @@ const Map = () => {
   // console.log("KMEANS", result);
 
   return (
-    <div style={{ position: "relative" }}>
-      <DataFilter data={data} onDataFiltered={handleDataFiltered} />
-      <GeoPath
-        map={mapData}
-        data={filteredData}
-        clusters={clusters}
-        onMouseOver={debouncedHandleMouseOver}
-        onMouseOut={debouncedHandleMouseOut}
-      />
+    <div className="container">
+      <MapFilter data={data} onDataFiltered={handleDataFiltered} />
+      <div className={map.details}>
+        <GeoPath
+          map={mapData}
+          data={filteredData}
+          clusters={clusters}
+          onMouseOver={debouncedHandleMouseOver}
+          onMouseOut={debouncedHandleMouseOut}
+        />
+        <FilterSummary
+          filteredData={filteredData}
+          selectedFilters={selectedFilters}
+        />
+      </div>
 
       {tooltipData && (
         <div
           // className="tooltip"
           style={{
-            position: "absolute",
+            position: "fixed",
             // zIndex: 50,
             // transformOrigin: "top left",
             backgroundColor: "rgba(0, 0, 0, 0.7)",
@@ -99,13 +122,18 @@ const Map = () => {
             padding: "5px",
             borderRadius: "3px",
             fontSize: "12px",
-            left: tooltipData.x,
-            top: tooltipData.y,
+            // transform: "transform: translate(50%, 18px)",
+            left: tooltipData.x + 10,
+            top: tooltipData.y + 10,
+            // left: 0,
+            // top: 0,
           }}
         >
           <div>Name: {tooltipData.name}</div>
           <div>Latitude: {tooltipData.reclat}</div>
           <div>Longitude: {tooltipData.reclong}</div>
+          <div>State: {tooltipData.state}</div>
+          <div>Mass: {fformat(tooltipData.mass)}</div>
         </div>
       )}
     </div>

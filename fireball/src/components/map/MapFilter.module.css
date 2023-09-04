@@ -1,0 +1,6 @@
+.container {
+  display: flex;
+  background-color: #0C164F;
+  padding: 20px;
+  border-radius: 20px;
+}

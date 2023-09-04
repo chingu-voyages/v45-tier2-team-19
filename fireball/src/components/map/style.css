@@ -34,12 +34,15 @@
   width: 100%;
 }
 
+
 .container {
   width: 75%;
   margin: auto;
-  background-color: #fafafa;
+  padding: 20px;
+  /* background-color: #fafafa; */
+
   /* border: 1px solid red; */
-  border-radius: 20px;
+  /* border-radius: 20px; */
   overflow: hidden;
 }
 
@@ -63,7 +66,7 @@ button {
   padding: 10px 15px;
   font-size: 15px;
   line-height: 1;
-  color: var(--violet-11);
+  color: black;
   background-color: white;
   box-shadow:
     hsl(206 22% 7% / 35%) 0px 10px 38px -10px,

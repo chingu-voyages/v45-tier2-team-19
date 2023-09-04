@@ -1,14 +1,14 @@
 
 .navbar,
 .navbar nav {
-  background-image:url('../../assets/starryMeteorHeaderWide.png');
+  /* background-image:url('../../assets/starryMeteorHeaderWide.png'); */
   display: flex;
   list-style: none;
   width: 100%;
   justify-content: center;
   align-items: center;
   align-content: space-between;
-  background-color: purple;
+  /* background-color: darkblue; */
   padding: 0px;
   align-content: space-between;
   
@@ -49,9 +49,9 @@
 
 /*collapsed*/
 
-.collapsedUl{
+/* .collapsedUl{
   background-image:url('../../assets/starryMeteorHeader2.png')
-}
+} */
 
 .collapsedBtn{
   display:flex;

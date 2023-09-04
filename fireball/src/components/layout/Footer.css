@@ -1,17 +1,23 @@
 /*FOOTER*/
-footer{
+
+#footerCurvedWrap{
   background-image:url('../../assets/starryFooterWide.png');
   background-size:cover;
-  background-color:purple;
   
-    display:grid;
+
+}
+footer{
+  
+  
+  display:grid;
     grid-template-columns:1fr 1fr;
-    background-color:#0C164F;
+  
    width:100%;
     height:fit-content;
     justify-content:center;
     justify-items:center;
     display:grid;
+    background-color:transparent;
   
    
     

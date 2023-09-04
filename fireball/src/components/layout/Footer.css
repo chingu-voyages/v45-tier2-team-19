@@ -1,127 +1,28 @@
-/*FOOTER*/
-
-#footerCurvedWrap{
-position:relative;
-left:0px;
-bottom:0px;
-  background-image:url('../../assets/starryCurvedFooter.png');
-  background-size:cover;
-  background-repeat: no-repeat; 
-
-  
-  
-  
-
-}
 footer{
   display:flex;
   background-image:url('../../assets/starryCurvedFooter.png');
-  background-size:100vw;
-  background-repeat: no-repeat;
-   width:100%;
- height:100%;
- align-items:flex-end;
-  background-color:transparent;
-    
-    
-  
-   
-    
-  }
-  
-  footer li{
-    list-style: none;
-    color:white;
-    font-size:larger;
-  }
-  footer li:hover{
-    color:#34F3F4;;
-  }
-  
-  footer a:hover{
-    
-    cursor:pointer;
-    text-decoration:underline;
-  }
-  
-  #madeBy{
-    display:flex;
-   font-size:1em;
-   
-   
-  }
+  background-size:cover;
 
-  #madeByContainer h2{
-    font-size:1em;
-  }
 
-  #madeBy ul{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:1fr 1fr;
-  
-  }
+}
 
-  #madeBy li{
-    margin:1em;
-  }
+#madeByContainer{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:flex-end;
+  padding-top:2em;
+}
 
-  #madeByContainer{
-    display:flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-  }
+#madeByContainer ul{
+  display:flex;
+}
 
-  @media screen and (max-width:580px){
+#madeByContainer li,#madeByContainer h2{
+  margin:1em;
+  font-size:100%;
+}
 
-    #madeByContainer{
-      display:flex;
-      flex-wrap:wrap;
-      padding-right:1em;
-      height:50%;
-      
-    }
-    #madeBy ul{
-      display:flex;
-      justify-content: center;
-     
-      
-      
-      
-    }
+.toggleMadeBy{
+  font-size:.5em;
+}
 
-    #madeBy li{
-      
-      font-size:1em
-  
-    }
-
-    footer h2{
-      font-size:.5em;
-      justify-self:flex-end;
-      
-    }
-
-    footer{
-      display:flex;
-      justify-content:center;
-      justify-items:center;
-      height:30vw
-    }
-
-  }
-  #footerCurvedWrap{
-    background-size:100vw;
-
-    
-  }
-
-  .footerLogoContainer{
-    display:flex;
-    align-items: center;
-    height:100%;
-  }
-
-  .footer-logo{
-    height:50%;
-  }

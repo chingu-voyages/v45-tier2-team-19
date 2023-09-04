@@ -1,9 +1,10 @@
 #curvedWrapper{
+  display:grid;
+  grid-template-rows:5fr 1fr;
   background-image:url('../../assets/starryCurvedHeader.png');
-  background-size:100vw;
+  background-size:cover;
   background-repeat:no-repeat;
-  margin-bottom:10em;
-  height:200px;
+
   
   
 

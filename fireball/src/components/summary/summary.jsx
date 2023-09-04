@@ -22,14 +22,14 @@ const Summary = function () {
           <div>Loading...</div>
         ) : (
           <div className="summary-container">
-            <StrikesByYear />
-            <TotalStrikes />
+            {/* <StrikesByYear /> */}
+
             <StrikesByDecade />
             <AverageMass />
-
             <StrikesByYearFiltered />
-=======            <StrikesByComposition />
+            <TotalStrikes />
 
+            <StrikesByComposition />
           </div>
         )}
       </div>

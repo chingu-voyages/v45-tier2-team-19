@@ -7,6 +7,7 @@ import Stack from "@mui/material/Stack";
 import Slider from "@mui/material/Slider";
 import Typography from "@mui/material/Typography";
 import { useDataContext } from "../../hooks/useDataContext";
+import "../summary/summary.css";
 
 function StrikesByYearFiltered() {
   const meteorData = useDataContext().data;

@@ -132,8 +132,17 @@ header ul {
   padding: 1em;
 }
 
+.footerLogoContainer{
+  display:flex;
+  align-items: center;
+  justify-content:flex-start;
+  height:100%;
+  width:100%;
+}
 .footerLogo {
-  height: 15vw;
+  display:flex;
+  
+  height: 10vw;
 }
 
 /*HEADER*/

@@ -1,23 +1,27 @@
 /*FOOTER*/
 
 #footerCurvedWrap{
+position:relative;
+left:0px;
+bottom:0px;
   background-image:url('../../assets/starryCurvedFooter.png');
   background-size:cover;
+  background-repeat: no-repeat;
+  
+  
   
 
 }
 footer{
-  
+ 
   
   display:grid;
     grid-template-columns:1fr 1fr;
-  
+  align-items:baseline;
    width:100%;
-    height:fit-content;
-    justify-content:center;
-    justify-items:center;
-    display:grid;
+ height:100%;
     background-color:transparent;
+    
   
    
     
@@ -38,3 +42,43 @@ footer{
     text-decoration:underline;
   }
   
+  #madeBy{
+   font-size:1em;
+   display:flex;
+  }
+
+  #madeBy ul{
+    display:flex;
+  }
+
+  #madeBy li{
+    margin:1em;
+  }
+
+  @media screen and (max-width:580px){
+    #madeBy ul{
+      display:flex;
+      justify-content: center;
+      
+      
+      
+    }
+
+    #madeBy li{
+      padding:1em 0em 1em 0em;
+      font-size:1em;
+      margin:1em;
+  
+    }
+
+    #madeBy h2{
+      font-size:1em;
+    }
+
+    footer{
+      display:flex;
+      justify-content:center;
+      justify-items:center;
+    }
+
+  }

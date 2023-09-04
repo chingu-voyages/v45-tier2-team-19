@@ -1,7 +1,8 @@
 #curvedWrapper{
   background-image:url('../../assets/starryCurvedHeader.png');
-  background-size:cover;
-  background-position-x:center;
+  background-size:100%;
+  background-repeat:no-repeat;
+  
   height:20vw;
   padding-bottom:100px;
   /* background-color:darkblue; */

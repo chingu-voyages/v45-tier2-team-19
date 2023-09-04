@@ -5,8 +5,10 @@ const Footer = function () {
     return (
         <div id="footerCurvedWrap">
             <footer>
-                <div className="footerLogo">
-                    <img className="logo" src={logo} alt="header logo" />
+                <div className="footerLogoContainer">
+                    <div className="footerLogo">
+                        <img className="logo" src={logo} alt="header logo" />
+                    </div>
                 </div>
                 <div id="madeBy">
                     <h2>App Created By:</h2>
@@ -27,6 +29,7 @@ const Footer = function () {
                             <li>Sarita</li>
                         </a>
                     </ul>
+
                 </div>
             </footer>
         </div>

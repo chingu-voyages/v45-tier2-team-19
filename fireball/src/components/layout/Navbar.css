@@ -10,7 +10,7 @@ display: flex;
   
   padding: 0px;
   align-content: space-between;
-  background-color:darkblue;
+  background-color:#09113d;
   
   
 }
@@ -37,6 +37,10 @@ display: flex;
   cursor: pointer;
   background-color: white;
   color: black;
+}
+
+.navbar li{
+  height:100%
 }
 
 @media screen and (max-width:500px) {

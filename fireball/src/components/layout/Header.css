@@ -1,15 +1,16 @@
 #curvedWrapper{
-  background-image:url('../../assets/starryMeteorHeaderWide.png');
+  background-image:url('../../assets/starryCurvedHeader.png');
   background-size:cover;
+  background-position-x:center;
+  height:20vw;
+  padding-bottom:100px;
   /* background-color:darkblue; */
 
 
 }
 
 .headerContainer {
-  
-    background-repeat:no-repeat;
-    background-position-x:center;
+
     display: grid;
     grid-template-rows: 1fr 1fr;
     justify-content: center;
@@ -17,15 +18,11 @@
     width: 100vw;
     height: 20vw;
     background-color:transparent;
+    margin-bottom:100px;
    
   
   }
 
-  /* header{
-    background-image:url('../../assets/starryMeteorHeaderWide.png');
-    background-size:cover;
-
-  } */
 
   .logo{
     align-self:center;

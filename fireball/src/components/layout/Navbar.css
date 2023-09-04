@@ -1,16 +1,16 @@
 
 .navbar,
 .navbar nav {
-  /* background-image:url('../../assets/starryMeteorHeaderWide.png'); */
-  display: flex;
+display: flex;
   list-style: none;
   width: 100%;
   justify-content: center;
   align-items: center;
   align-content: space-between;
-  /* background-color: darkblue; */
+  
   padding: 0px;
   align-content: space-between;
+  background-color:darkblue;
   
   
 }

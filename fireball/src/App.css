@@ -159,21 +159,7 @@ footer {
   display: grid;
 }
 
-/* =======
-footer{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  background-color:#0C164F;
-  background-image:url('./assets/stars.jpg');
-  background-size:cover;
-  width:100%;
-  height:20vw;
-  justify-content:center;
-  justify-items:center;
-  display:grid;
->>>>>>> 72e0382a7a3fdb1bcbf647db33ed3af93e244e11
 
-} */
 
 footer li {
   list-style: none;

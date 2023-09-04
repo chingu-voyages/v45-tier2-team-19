@@ -7,9 +7,6 @@ table {
   table-layout: fixed;
   background-color: rgb(16, 40, 173);
   color: white;
-  align-self:center;
-  margin-top:5em;
-  height:80vh;
 }
 
 table th {
@@ -60,20 +57,22 @@ table tr:hover {
   flex-direction: row;
   justify-content: center;
   margin-top: 25px;
+  margin-bottom: 100px;
   align-items: center;
 }
 
 .paginationContainer button {
   padding: 5px;
-  margin: 0 5px;
   color: white;
   background-color: rgb(16, 40, 173);
+  border-radius: 0;
+  border-color: #f2f2fb;
 }
 
 .pageNumbers {
   background-color: rgb(16, 40, 173);
   color: white;
-  padding: 5px;
+  padding: 8px;
 }
 
 .custom-loader {
@@ -107,7 +106,11 @@ table tr:hover {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 768px) {
+  .table-container {
+    width: 90%;
+    margin: 0 auto;
+  }
   table {
     max-height: none;
     width: 100%;

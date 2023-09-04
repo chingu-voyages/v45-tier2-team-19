@@ -171,7 +171,7 @@ footer {
 }
 
 
-/* =======
+/*
 footer{
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -183,7 +183,7 @@ footer{
   justify-content:center;
   justify-items:center;
   display:grid;
->>>>>>> 72e0382a7a3fdb1bcbf647db33ed3af93e244e11
+
 
 } */
 
@@ -224,7 +224,8 @@ footer a:hover {
 
 /*TABLE*/
 
-.tableContainer{
+
+/* .tableContainer{
   display:flex;
   flex-direction:column;
   align-self:center;
@@ -252,7 +253,7 @@ td {
 .tableContainer button {
   background-color: #0C164F;
   margin: 0em 2em 0em 2em;
-}
+} */
 
 /*LOADING DIV*/
 

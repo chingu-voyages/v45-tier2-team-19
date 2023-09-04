@@ -2,6 +2,8 @@ footer{
   display:flex;
   background-image:url('../../assets/starryCurvedFooter.png');
   background-size:cover;
+  
+  width:100vw;
 
 
 }
@@ -26,3 +28,9 @@ footer{
   font-size:.5em;
 }
 
+@media  screen and (max-width:500px) {
+  footer{
+    height:fit-content;
+  }
+  
+}

@@ -22,6 +22,7 @@ table td,
 table th {
   border: 1px solid black;
   padding: 8px;
+  color: white;
 }
 
 table tr:hover {
@@ -118,6 +119,7 @@ table tr:hover {
   table {
     max-height: none;
     width: 100%;
+    font-size: 12px;
   }
   .paginationContainer {
     width: 100%;
@@ -130,7 +132,11 @@ table tr:hover {
   .filterInput {
     width: 80%;
     margin-bottom: 5px;
-    height: 30px;
+    height: 20px;
     font-size: 8px;
+  }
+  .clrBtn {
+    padding: 1px;
+    font-size: 11px;
   }
 }

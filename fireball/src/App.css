@@ -128,12 +128,6 @@ header ul {
   height: 100%;
 }
 
-
-
-
-
-
-
 /*HEADER*/
 
 .logo {
@@ -157,55 +151,14 @@ footer {
   display: grid;
 }
 
-
-
-
-
 .summaryContainer {
-
-
   background-color: white;
   padding-top: 2rem;
   padding-bottom: 2rem;
   width: 100%;
-  justify-content: center;
-  align-self: center;
-
 }
 
 /*TABLE*/
-
-.tableContainer {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  justify-content: center;
-}
-
-tr,
-td,
-th {
-  height: 5px;
-  color: black;
-}
-
-.nextPrevButtons {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-
-td {
-  border: 2px solid white;
-  height: fit-content;
-  width: fit-content;
-}
-
-.tableContainer button {
-  background-color: #0c164f;
-  margin: 0em 2em 0em 2em;
-
-}
 
 /*LOADING DIV*/
 

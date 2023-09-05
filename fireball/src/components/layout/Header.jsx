@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import logo from "../../assets/logo-no-background.svg";
 import Navbar from "./Navbar";
 import './Header.css'
-
+import { MdMenu } from 'react-icons/md';
 
 
 const Header = function () {
@@ -14,9 +14,9 @@ const Header = function () {
   }, []);
 
   return (
-    <div id="curvedWrapper" ref={headerRef}>
+    <div id="curvedWrapper">
       <div className="headerContainer">
-        <header className="logoContainer">
+        <header ref={headerRef} className="logoContainer">
           <img className="headerLogo" src={logo} alt="header logo" />
         </header>
         <Navbar headerHeight={headerHeight} />

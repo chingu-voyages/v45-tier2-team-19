@@ -1,5 +1,6 @@
 import "./App.css";
 
+import Loading from "./components/loading/Loading";
 import Summary from "./components/summary/summary";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
@@ -16,7 +17,11 @@ const App = function () {
 
   return (
     <div id="Home" className="App">
-      {loading == true && <div className="loading">Loading...</div>}
+      {loading == true && (
+        <div className="loading">
+          <Loading />
+        </div>
+      )}
 
       <Header />
       <DataSets />

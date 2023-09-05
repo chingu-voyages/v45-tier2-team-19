@@ -7,6 +7,7 @@ table {
   background-color: rgb(16, 40, 173);
   color: white;
   margin-top: 100px;
+  overflow-wrap: break-word;
 }
 
 table th {

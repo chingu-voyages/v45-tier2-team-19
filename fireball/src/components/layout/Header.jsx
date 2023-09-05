@@ -1,7 +1,8 @@
 import { useState, useEffect, useRef } from "react";
-import logo from "../../assets/fireballLogo.jpg";
+import logo from "../../assets/logo-no-background.png";
 import Navbar from "./Navbar";
 import './Header.css'
+import { MdMenu } from 'react-icons/md';
 
 
 const Header = function () {
@@ -13,12 +14,13 @@ const Header = function () {
   }, []);
 
   return (
-    <div className="headerContainer">
-      <header ref={headerRef} className="headerContainer">
-        <img className="headerLogo" src={logo} alt="header logo" />
-
-      </header>
-      <Navbar headerHeight={headerHeight} />
+    <div id="curvedWrapper">
+      <div className="headerContainer">
+        <header ref={headerRef} className="logoContainer">
+          <img className="headerLogo" src={logo} alt="header logo" />
+        </header>
+        <Navbar headerHeight={headerHeight} />
+      </div>
     </div>
   );
 };

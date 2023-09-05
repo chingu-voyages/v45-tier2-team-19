@@ -23,12 +23,21 @@ const Summary = function () {
         ) : (
           <div className="summary-container">
             {/* <StrikesByYear /> */}
+
             <StrikesByDecade />
             <div className="small-boxes">
               <AverageMass />
               <TotalStrikes />
             </div>
             <StrikesByYearFiltered />
+
+
+            <StrikesByDecade />
+       
+           
+          
+
+
             <StrikesByComposition />
           </div>
         )}

@@ -1,34 +1,36 @@
-/*FOOTER*/
-footer{
-  background-image:url('../../assets/starryFooterWide.png');
+.footerContainer {
+  height:25vw;
+
+
+}
+
+.curvedBottom{
+  display:flex;
+  background-image:url('../../assets/starryCurvedFooter.png');
   background-size:cover;
-  background-color:purple;
-  
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    background-color:#0C164F;
-   width:100%;
-    height:fit-content;
-    justify-content:center;
-    justify-items:center;
-    display:grid;
-  
-   
-    
+  width:100vw;
+  height: 20vw;
+}
+.madeBy{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  background-color:transparent;
+flex-wrap:wrap;
+}
+
+.footerLogo{
+  align-self:center;
+}
+
+footer{
+  background-color:transparent;
+  height:fit-content;
+  padding-top:2em;
+}
+
+@media screen and (max-width:400px){
+  .madeBy,footer h2{
+    font-size:.8em;
   }
-  
-  footer li{
-    list-style: none;
-    color:white;
-    font-size:larger;
-  }
-  footer li:hover{
-    color:#34F3F4;;
-  }
-  
-  footer a:hover{
-    
-    cursor:pointer;
-    text-decoration:underline;
-  }
-  
+}

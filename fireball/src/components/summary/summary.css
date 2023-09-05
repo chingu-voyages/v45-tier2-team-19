@@ -1,6 +1,11 @@
+
 :root {
   --radius: 8px;
   --margin: 0.5rem;
+
+#Summary{
+  background-color:#09113d;
+
 }
 
 .summary-container {
@@ -9,6 +14,17 @@
   grid-template-rows: 2fr 2fr; */
   margin: 0 auto;
   max-width: 900px;
+
+ 
+}
+
+.total-strikes-container {
+  background-color: rgb(229, 231, 245);
+  border-radius: 8px;
+  padding: 1rem;
+  /* max-width: 700px; */
+  margin: 0.5rem;
+
 }
 
 .strikes-by-composition-container {

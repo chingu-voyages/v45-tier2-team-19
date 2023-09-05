@@ -116,4 +116,17 @@
     grid-template-columns: 1fr;
     max-width: 100%;
   }
+  .strikes-by-year-container,
+  .strikes-by-composition-container {
+    width: 350px;
+    height: auto;
+  }
+  .small-boxes {
+    flex-direction: column;
+    width: 350px;
+    /* justify-content: center; */
+  }
+  .num-data-container {
+    width: 90%;
+  }
 }

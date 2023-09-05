@@ -1,5 +1,5 @@
 
-import logo from "../../assets/fireballLogo.jpg";
+import logo from "../../assets/logo-no-background.png";
 import "./Footer.css";
 import MadeBy from './MadeBy';
 const Footer = function () {

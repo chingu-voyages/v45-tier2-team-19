@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import logo from "../../assets/fireballLogo.jpg";
+import logo from "../../assets/logo-no-background.png";
 import Navbar from "./Navbar";
 import './Header.css'
 
@@ -15,7 +15,7 @@ const Header = function () {
   return (
     <div id="curvedWrapper">
       <div className="headerContainer">
-        <header ref={headerRef} className="headerContainer">
+        <header ref={headerRef} className="logoContainer">
           <img className="headerLogo" src={logo} alt="header logo" />
         </header>
         <Navbar headerHeight={headerHeight} />

@@ -20,9 +20,7 @@ flex-wrap:wrap;
 }
 
 .footerLogo{
-  height:10em;
-  width:10em;
-  border-radius:50%;
+  align-self:center;
 }
 
 footer{

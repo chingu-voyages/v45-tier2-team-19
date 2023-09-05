@@ -9,7 +9,6 @@ body {
   padding: 0px;
   margin: 0px;
   scroll-behavior: smooth;
-  overflow:hidden;
 
   max-width: 100%;
 }

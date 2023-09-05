@@ -28,7 +28,7 @@ flex-wrap:wrap;
 footer{
   background-color:transparent;
   height:fit-content;
-  padding-top:10em;
+  padding-top:2em;
 }
 
 @media screen and (max-width:400px){

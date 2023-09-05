@@ -90,7 +90,7 @@ const Navbar = function ({ headerHeight }) {
         ) : (
           <div>
             {!toggled || smallScreen ? (
-              <button className='collapsedBtn' onClick={() => { setToggled(!toggled) }} style={sticky ? { fontSize: '1em', backgroundColor: 'purple' } : { padding: '0px', fontSize: '5em', alignSelf: 'center' }}><MdMenu /></button>
+              <button className='collapsedBtn' onClick={() => { setToggled(!toggled) }} style={sticky ? { fontSize: '1em', backgroundColor: 'transparent' } : { padding: '0px', fontSize: '5em', alignSelf: 'center' }}><MdMenu /></button>
 
             ) : (
               <div style={{

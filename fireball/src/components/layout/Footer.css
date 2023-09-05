@@ -1,5 +1,5 @@
 .footerContainer {
-  height:25vw;
+  
 
 
 }
@@ -21,6 +21,7 @@ flex-wrap:wrap;
 
 .footerLogo{
   align-self:center;
+  height:25%;
 }
 
 footer{

@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import logo from "../../assets/logo-no-background.png";
 import Navbar from "./Navbar";
 import './Header.css'
+import { MdMenu } from 'react-icons/md';
 
 
 const Header = function () {

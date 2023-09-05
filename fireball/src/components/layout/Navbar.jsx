@@ -1,6 +1,7 @@
 import "./Navbar.css";
 import { useState, useEffect, useRef } from "react";
 import CollapsedNav from "./CollapsedNav";
+import { MdMenu } from 'react-icons/md';
 
 const Navbar = function ({ headerHeight }) {
   const [sticky, setSticky] = useState(false);
@@ -67,6 +68,7 @@ const Navbar = function ({ headerHeight }) {
               position: "fixed",
               left: "0px",
               top: "0px",
+              backgroundColor: 'purple'
             }
             : {}
         }
@@ -85,7 +87,7 @@ const Navbar = function ({ headerHeight }) {
         ) : (
           <div>
             {!toggled || smallScreen ? (
-              <button className='collapsedBtn' onClick={() => { setToggled(!toggled) }} style={sticky ? { backgroundColor: 'purple' } : {}}>menu</button>
+              <button className='collapsedBtn' onClick={() => { setToggled(!toggled) }} style={sticky ? { backgroundColor: 'purple' } : {}}><MdMenu /></button>
 
             ) : (
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>

@@ -1,5 +1,5 @@
 
-import logo from "../../assets/logo-no-background.png";
+import logo from "../../assets/logo-no-background.svg";
 import "./Footer.css";
 import MadeBy from './MadeBy';
 const Footer = function () {

@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import logo from "../../assets/logo-no-background.png";
+import logo from "../../assets/logo-no-background.svg";
 import Navbar from "./Navbar";
 import './Header.css'
 import { MdMenu } from 'react-icons/md';

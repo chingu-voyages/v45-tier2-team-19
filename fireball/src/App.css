@@ -1,5 +1,5 @@
 /*BODY*/
-html {
+html{
   scroll-behavior: smooth;
 }
 body {
@@ -130,9 +130,18 @@ header ul {
 
 
 
-
-
-
+.footerLogoContainer{
+  display:flex;
+  align-items: center;
+  justify-content:flex-start;
+  height:100%;
+  width:100%;
+}
+.footerLogo {
+  display:flex;
+  
+  height: 10vw;
+}
 
 /*HEADER*/
 
@@ -159,18 +168,31 @@ footer {
 
 
 
+footer li {
+  list-style: none;
+  color: white;
+  font-size: larger;
+}
 
+footer li:hover {
+  color: #34f3f4;
+}
+
+footer a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/*
+*/
 
 .summaryContainer {
-
-
   background-color: white;
   padding-top: 2rem;
   padding-bottom: 2rem;
   width: 100%;
   justify-content: center;
   align-self: center;
-
 }
 
 /*TABLE*/
@@ -204,7 +226,6 @@ td {
 .tableContainer button {
   background-color: #0c164f;
   margin: 0em 2em 0em 2em;
-
 }
 
 /*LOADING DIV*/

@@ -1,9 +1,9 @@
 import "./App.css";
 
-import Loading from "./components/loading/Loading";
 import Summary from "./components/summary/summary";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
+import Table from "./components/layout/Table";
 import Map from "./components/map/Map";
 import TestComponents from "./components/layout/testComponents";
 
@@ -17,11 +17,7 @@ const App = function () {
 
   return (
     <div id="Home" className="App">
-      {loading == true && (
-        <div className="loading">
-          <Loading />
-        </div>
-      )}
+      {loading == true && <div className="loading">Loading...</div>}
 
       <Header />
       <DataSets />

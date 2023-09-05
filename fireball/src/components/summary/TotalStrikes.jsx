@@ -1,3 +1,4 @@
+import React from "react";
 import { useDataContext } from "../../hooks/useDataContext";
 import "./summary.css";
 
@@ -9,11 +10,13 @@ export default function TotalStrikes() {
   //   console.log(meteorData.data); // Returns array of data points
 
   return (
-    <div className="num-data-container">
-      <div className="num-data-container-strike">
+    <div className="total-strikes-container">
+      <span>
         <h3 className="title">Total Number of Strikes: </h3>
-        <p className="summary-data-text">{strikesCount}</p>
-      </div>
+        <div className="summary-data-text">
+          <h4>{strikesCount}</h4>
+        </div>
+      </span>
     </div>
   );
 }

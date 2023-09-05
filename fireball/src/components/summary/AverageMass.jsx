@@ -1,3 +1,4 @@
+import React from "react";
 import { useDataContext } from "../../hooks/useDataContext";
 import "./summary.css";
 
@@ -21,15 +22,16 @@ export default function AverageMass() {
   const kilograms = (overallAvgMass / 10).toFixed(2);
 
   return (
-    <div className="num-data-container">
-      <div className="num-data-container-mass">
+    <div className="mass-container">
+      <span>
         <h3 className="summary-title">Total Average Mass</h3>
-
-        <p>{overallAvgMass} grams</p>
-        <p>{kilograms} kilograms</p>
-        <p>{imperialTons} Imperial Tons</p>
-        <p>{usTons} US Tons</p>
-      </div>
+        <div className="summary-data-text">
+          <h4>{overallAvgMass} grams</h4>
+          <h4>{kilograms} kilograms</h4>
+          <h4>{imperialTons} Imperial Tons</h4>
+          <h4>{usTons} US Tons</h4>
+        </div>
+      </span>
     </div>
   );
 }

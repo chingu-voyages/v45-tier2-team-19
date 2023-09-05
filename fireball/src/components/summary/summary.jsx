@@ -25,18 +25,9 @@ const Summary = function () {
             {/* <StrikesByYear /> */}
 
             <StrikesByDecade />
-            <div className="small-boxes">
-              <AverageMass />
-              <TotalStrikes />
-            </div>
+            <AverageMass />
             <StrikesByYearFiltered />
-
-
-            <StrikesByDecade />
-       
-           
-          
-
+            <TotalStrikes />
 
             <StrikesByComposition />
           </div>

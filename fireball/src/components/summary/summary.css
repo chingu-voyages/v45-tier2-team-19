@@ -2,8 +2,16 @@
   --radius: 8px;
   --margin: 0.5rem;
 }
+
 #Summary {
   background-color: #09113d;
+}
+
+.summaryContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .summary-container {
@@ -123,9 +131,9 @@
 
 @media (max-width: 768px) {
   .summary-container {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr;
-    max-width: 100%;
+    max-width: 100%; */
   }
   .strikes-by-year-container,
   .strikes-by-composition-container {
@@ -135,9 +143,16 @@
   .small-boxes {
     flex-direction: column;
     width: 350px;
-    /* justify-content: center; */
   }
   .num-data-container {
     width: 90%;
   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* .summary-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  } */
 }

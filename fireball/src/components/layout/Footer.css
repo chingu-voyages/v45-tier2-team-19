@@ -1,36 +1,38 @@
-footer{
+.footerContainer {
+  height:25vw;
+
+
+}
+
+.curvedBottom{
   display:flex;
   background-image:url('../../assets/starryCurvedFooter.png');
   background-size:cover;
-  
   width:100vw;
-
-
+  height: 20vw;
 }
-
-#madeByContainer{
+.madeBy{
   display:flex;
-  flex-wrap:wrap;
-  align-items:flex-end;
-  padding-top:2em;
+  flex-direction:column;
+  justify-content:center;
+  background-color:transparent;
+flex-wrap:wrap;
 }
 
-#madeByContainer ul{
-  display:flex;
+.footerLogo{
+  height:10em;
+  width:10em;
+  border-radius:50%;
 }
 
-#madeByContainer li,#madeByContainer h2{
-  margin:1em;
-  font-size:100%;
+footer{
+  background-color:transparent;
+  height:fit-content;
+  padding-top:10em;
 }
 
-.toggleMadeBy{
-  font-size:.5em;
-}
-
-@media  screen and (max-width:500px) {
-  footer{
-    height:fit-content;
+@media screen and (max-width:400px){
+  .madeBy,footer h2{
+    font-size:.8em;
   }
-  
 }

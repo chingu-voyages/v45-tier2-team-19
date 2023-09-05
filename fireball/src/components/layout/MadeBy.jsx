@@ -1,3 +1,5 @@
+import './MadeBy.css'
+
 const MadeBy = function () {
     return (
         <div id="madeBy">

@@ -3,11 +3,10 @@
 .navbar nav {
 display: flex;
   list-style: none;
-  width: 100%;
+  width: 100vw;
   justify-content: center;
   align-items: center;
   align-content: space-between;
-  
   padding: 0px;
   align-content: space-between;
   background-color:transparent;
@@ -21,6 +20,8 @@ display: flex;
   margin: 0px;
   height: 100%;
   list-style: none;
+  justify-content: center;
+  width:100vw;
   
 }
 

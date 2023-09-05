@@ -1,15 +1,13 @@
-
-
 table {
   font-family: "PlusJakartaSans-Regular", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
-  width: 70%;
+  border-color: orange;
+  width: 100%;
   table-layout: fixed;
   background-color: rgb(16, 40, 173);
   color: white;
-  align-self:center;
-  margin-top:5em;
-  height:80vh;
+  margin-top: 100px;
+  overflow-wrap: break-word;
 }
 
 table th {
@@ -49,6 +47,7 @@ table tr:hover {
   color: white;
   margin-left: 20px;
   display: flex;
+  /* width: 60px; */
 }
 
 .goto input {
@@ -61,19 +60,23 @@ table tr:hover {
   justify-content: center;
   margin-top: 25px;
   align-items: center;
+  margin-bottom: 100px;
 }
 
 .paginationContainer button {
   padding: 5px;
-  margin: 0 5px;
+  /* margin: 0 5px; */
   color: white;
   background-color: rgb(16, 40, 173);
+  border-radius: 0;
+  border-color: #f2f2fb;
 }
 
 .pageNumbers {
   background-color: rgb(16, 40, 173);
   color: white;
-  padding: 5px;
+  padding: 8px;
+  border-top-color: orange;
 }
 
 .custom-loader {
@@ -107,7 +110,11 @@ table tr:hover {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 768px) {
+  .table-container {
+    width: 90%;
+    margin: 0 auto;
+  }
   table {
     max-height: none;
     width: 100%;

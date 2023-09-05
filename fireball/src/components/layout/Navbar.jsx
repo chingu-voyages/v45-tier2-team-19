@@ -85,13 +85,13 @@ const Navbar = function ({ headerHeight }) {
         ) : (
           <div>
             {!toggled || smallScreen ? (
-              <button className='collapsedBtn' onClick={() => { setToggled(!toggled) }}>menu</button>
+              <button className='collapsedBtn' onClick={() => { setToggled(!toggled) }} style={sticky ? { backgroundColor: 'purple' } : {}}>menu</button>
 
             ) : (
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
 
                 <nav  >
-                  <ul className='collapsedUl' style={{ width: '100vw', display: 'flex', flexDirection: 'column', position: 'relative', top: '0em', left: '0px', alignItems: 'center' }} >
+                  <ul className='collapsedUl' style={{ width: '100vw', display: 'flex', flexDirection: 'column', position: 'relative', top: '0em', left: '0px', alignItems: 'center', backgroundColor: 'purple' }} >
                     {menuList.map((item, index) => {
                       return (
                         <a href={`#${item}`} onClick={() => { handleMenuClose() }} key={index} >

@@ -13,12 +13,13 @@ const Header = function () {
   }, []);
 
   return (
-    <div className="headerContainer">
-      <header ref={headerRef} className="headerContainer">
-        <img className="headerLogo" src={logo} alt="header logo" />
-
-      </header>
-      <Navbar headerHeight={headerHeight} />
+    <div id="curvedWrapper">
+      <div className="headerContainer">
+        <header ref={headerRef} className="headerContainer">
+          <img className="headerLogo" src={logo} alt="header logo" />
+        </header>
+        <Navbar headerHeight={headerHeight} />
+      </div>
     </div>
   );
 };

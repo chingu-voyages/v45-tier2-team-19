@@ -1,16 +1,15 @@
 
 .navbar,
 .navbar nav {
-  background-image:url('../../assets/starryMeteorHeaderWide.png');
-  display: flex;
+display: flex;
   list-style: none;
-  width: 100%;
+  width: 100vw;
   justify-content: center;
   align-items: center;
   align-content: space-between;
-  background-color: purple;
   padding: 0px;
   align-content: space-between;
+  background-color:transparent;
   
   
 }
@@ -21,6 +20,8 @@
   margin: 0px;
   height: 100%;
   list-style: none;
+  justify-content: center;
+  width:100vw;
   
 }
 
@@ -39,19 +40,16 @@
   color: black;
 }
 
-@media screen and (max-width:500px) {
-  {
-  
-  }
-  
+.navbar li{
+  height:100%
 }
 
 
 /*collapsed*/
 
-.collapsedUl{
+/* .collapsedUl{
   background-image:url('../../assets/starryMeteorHeader2.png')
-}
+} */
 
 .collapsedBtn{
   display:flex;

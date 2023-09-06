@@ -1,3 +1,18 @@
+.section {
+  padding: 50px 0;
+  /* background-color: #202C39; */
+  background-color: var(--primary);
+}
+
+.section::after {
+  background-image: url('../../assets/curved-section-bottom.svg');
+}
+
+.container {
+  max-width: 1276px;
+  margin: 0 auto;
+}
+
 .details {
   display: flex;
   gap: 20px;

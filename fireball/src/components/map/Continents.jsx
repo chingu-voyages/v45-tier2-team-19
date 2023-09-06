@@ -6,7 +6,7 @@ const Continents = memo(({ countries, path }) => {
     <>
       {countries.features.map((feature) => {
         // console.log(path.centroid(feature));
-        return <path fill="#0C164F" d={path(feature)} />;
+        return <path fill="#202C39" d={path(feature)} />;
       })}
     </>
   );

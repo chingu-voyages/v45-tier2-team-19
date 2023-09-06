@@ -3,13 +3,14 @@ import { createIntervals } from "../../../utils/createIntervals";
 import { continents, countries } from "./data";
 import mapfilter from "./MapFilter.module.css";
 import SelectDemo from "../shared/Select";
+import Button from "../shared/Button";
 
 function MapFilter({ data, onDataFiltered }) {
   console.log("MAP FILTER RERENDER");
   const [selectedFilters, setSelectedFilters] = useState({
-    year: "",
-    region: "",
-    // mass: "",
+    Year: "",
+    Region: "",
+    Mass: "",
     // Add more filter criteria here
   });
 
@@ -17,9 +18,9 @@ function MapFilter({ data, onDataFiltered }) {
 
   const region = countries.map((country) => country.name).concat(continents);
   const filterOptions = {
-    year: createIntervals(1400, 2000, 50),
-    region: region, // Example countries
-    // mass: createIntervals(10000000, 60000000, 5000000), // Example mass categories
+    Year: createIntervals(1400, 2000, 50),
+    Region: region, // Example countries
+    Mass: createIntervals(10000000, 60000000, 5000000).concat("All"), // Example mass categories
     // Add more filter options for other criteria
   };
 
@@ -31,22 +32,23 @@ function MapFilter({ data, onDataFiltered }) {
 
         // Define filter functions for each criterion
         const filterFunctions = {
-          year: () => {
+          Year: () => {
             const [startYear, endYear] = filterValue.split(" ");
             const itemYear = +item.year;
             return itemYear >= +startYear && itemYear <= +endYear;
           },
-          region: () => {
+          Region: () => {
             return continents.some((continent) => continent === filterValue)
               ? item.continent === filterValue
               : item.country === filterValue;
           },
 
-          // mass: () => {
-          //   const [start, end] = filterValue.split("-");
-          //   const itemYear = +item.year;
-          //   return itemYear >= +start && itemYear <= +end;
-          // },
+          Mass: () => {
+            if (filterValue === "All") return true;
+            const [start, end] = filterValue.split(" ");
+            const itemMass = +item["mass (g)"];
+            return itemMass >= +start && itemMass <= +end;
+          },
           // Add more filter functions for other criteria
         };
 
@@ -60,8 +62,19 @@ function MapFilter({ data, onDataFiltered }) {
     setSelectedFilters({ ...selectedFilters, [name]: value });
   };
 
+  const clearFilter = () => {
+    console.log("clear");
+    // setSelectedFilters({
+    //   Year: "",
+    //   Region: "",
+    //   Mass: "",
+    //   // Add more filter criteria here
+    // });
+    onDataFiltered([], selectedFilters);
+  };
+
   return (
-    <div className={mapfilter.container}>
+    <div data-testid="map-filter" className={mapfilter.container}>
       {Object.keys(selectedFilters).map((key) => (
         <SelectDemo
           key={key}
@@ -71,7 +84,12 @@ function MapFilter({ data, onDataFiltered }) {
           onValueChange={(value) => handleFilterChange(key, value)}
         />
       ))}
-      <button onClick={applyFilter}>apply</button>
+      <Button onClick={applyFilter} className={mapfilter.button}>
+        Apply
+      </Button>
+      <Button onClick={clearFilter} className={mapfilter.clearButton}>
+        Clear
+      </Button>
     </div>
   );
 }

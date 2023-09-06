@@ -1,4 +1,10 @@
 /*BODY*/
+:root {
+  --primary: #202C39;
+  --primary2: #283845;
+  --secondary: #F2D492
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -18,8 +24,6 @@ body {
   width: 100%;
   margin: 0px;
   padding: 0px;
-
-  background-color: #09113d;
 }
 
 * {
@@ -36,6 +40,7 @@ body {
   max-width: 100%;
   padding-top: 5em;
 }
+
 #mapContainer img {
   width: 500px;
   height: auto;
@@ -61,6 +66,7 @@ body {
 .search {
   border: none;
 }
+
 .checkGroup {
   display: flex;
   width: 100%;
@@ -76,6 +82,7 @@ header {
   background-color: #0c164f;
   height: 20vw;
 }
+
 .navbar {
   width: 100%;
 }
@@ -195,6 +202,7 @@ th {
   width: 100%;
   justify-content: center;
 }
+
 td {
   border: 2px solid white;
   height: fit-content;

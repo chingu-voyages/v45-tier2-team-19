@@ -1,5 +1,5 @@
 .sphere {
-  fill: #fafafa;
+  fill: var(--primary2);
 }
 
 .graticules {
@@ -8,7 +8,7 @@
 
 .interiors {
   fill: none;
-  stroke: #3a3a69;
+  stroke: var(--primary2);
   stroke-width: 0.5;
 }
 
@@ -35,16 +35,7 @@
 }
 
 
-.container {
-  width: 75%;
-  margin: auto;
-  padding: 20px;
-  /* background-color: #fafafa; */
 
-  /* border: 1px solid red; */
-  /* border-radius: 20px; */
-  overflow: hidden;
-}
 
 .txt {
   /* font: 7px sans-serif; */

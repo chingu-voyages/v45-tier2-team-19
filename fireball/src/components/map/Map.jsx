@@ -93,49 +93,53 @@ const Map = () => {
   // const result = kmeans(dd, 15, 100);
   // console.log("KMEANS", result);
 
-  return (
-    <div className="container">
-      <MapFilter data={data} onDataFiltered={handleDataFiltered} />
-      <div className={map.details}>
-        <GeoPath
-          map={mapData}
-          data={filteredData}
-          clusters={clusters}
-          onMouseOver={debouncedHandleMouseOver}
-          onMouseOut={debouncedHandleMouseOut}
-        />
-        <FilterSummary
-          filteredData={filteredData}
-          selectedFilters={selectedFilters}
-        />
-      </div>
+  console.log(data);
 
-      {tooltipData && (
-        <div
-          // className="tooltip"
-          style={{
-            position: "fixed",
-            // zIndex: 50,
-            // transformOrigin: "top left",
-            backgroundColor: "rgba(0, 0, 0, 0.7)",
-            color: "white",
-            padding: "5px",
-            borderRadius: "3px",
-            fontSize: "12px",
-            // transform: "transform: translate(50%, 18px)",
-            left: tooltipData.x + 10,
-            top: tooltipData.y + 10,
-            // left: 0,
-            // top: 0,
-          }}
-        >
-          <div>Name: {tooltipData.name}</div>
-          <div>Latitude: {tooltipData.reclat}</div>
-          <div>Longitude: {tooltipData.reclong}</div>
-          <div>State: {tooltipData.state}</div>
-          <div>Mass: {fformat(tooltipData.mass)}</div>
+  return (
+    <div className={map.section}>
+      <div className={map.container}>
+        <MapFilter data={data} onDataFiltered={handleDataFiltered} />
+        <div className={map.details}>
+          <GeoPath
+            map={mapData}
+            data={filteredData}
+            clusters={clusters}
+            onMouseOver={debouncedHandleMouseOver}
+            onMouseOut={debouncedHandleMouseOut}
+          />
+          <FilterSummary
+            filteredData={filteredData}
+            selectedFilters={selectedFilters}
+          />
         </div>
-      )}
+
+        {tooltipData && (
+          <div
+            // className="tooltip"
+            style={{
+              position: "fixed",
+              // zIndex: 50,
+              // transformOrigin: "top left",
+              backgroundColor: "rgba(0, 0, 0, 0.7)",
+              color: "white",
+              padding: "5px",
+              borderRadius: "3px",
+              fontSize: "12px",
+              // transform: "transform: translate(50%, 18px)",
+              left: tooltipData.x + 10,
+              top: tooltipData.y + 10,
+              // left: 0,
+              // top: 0,
+            }}
+          >
+            <div>Name: {tooltipData.name}</div>
+            <div>Latitude: {tooltipData.reclat}</div>
+            <div>Longitude: {tooltipData.reclong}</div>
+            <div>State: {tooltipData.state}</div>
+            <div>Mass: {fformat(tooltipData.mass)}</div>
+          </div>
+        )}
+      </div>
     </div>
   );
 };

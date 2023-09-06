@@ -2,6 +2,7 @@ import React from "react";
 import * as Select from "@radix-ui/react-select";
 import select from "./Select.module.css";
 // import classnames from "classnames";
+import { PiCaretUpDownFill } from "react-icons/pi";
 import {
   CheckIcon,
   ChevronDownIcon,
@@ -13,7 +14,7 @@ const SelectDemo = ({ label, options, value, onValueChange, additional }) => (
     <Select.Trigger className={select.SelectTrigger} aria-label={label}>
       <Select.Value placeholder={label} />
       <Select.Icon className={select.SelectIcon}>
-        <ChevronDownIcon />
+        <PiCaretUpDownFill size={16} />
       </Select.Icon>
     </Select.Trigger>
     <Select.Portal>
@@ -24,6 +25,7 @@ const SelectDemo = ({ label, options, value, onValueChange, additional }) => (
         <Select.Viewport className={select.SelectViewport}>
           <Select.Group>
             <Select.Label className={select.SelectLabel}>{label}</Select.Label>
+            <Select.Separator className={select.SelectSeperator} />
             {options.map((option) => {
               return (
                 <SelectItem
@@ -36,7 +38,6 @@ const SelectDemo = ({ label, options, value, onValueChange, additional }) => (
               );
             })}
           </Select.Group>
-
           <Select.Separator className={select.SelectSeperator} />
         </Select.Viewport>
         <Select.ScrollDownButton className={select.SelectScrollButton}>

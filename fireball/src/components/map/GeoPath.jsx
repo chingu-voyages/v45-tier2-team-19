@@ -149,7 +149,7 @@ const GeoPath = memo(({ map, data, clusters, onMouseOver, onMouseOut }) => {
   return (
     <div className={geopath.container}>
       {/* <button onClick={resetMapZoom}>Reset</button> */}
-      <svg ref={svgRef} viewBox="0 0 950 440">
+      <svg ref={svgRef} viewBox="0 0 950 440" overflow={"visible"}>
         <g>
           <path className="sphere" d={path({ type: "Sphere" })} />
 
@@ -166,8 +166,8 @@ const GeoPath = memo(({ map, data, clusters, onMouseOver, onMouseOut }) => {
                   onMouseOver={(e) => onMouseOver(e, d)}
                   onMouseOut={onMouseOut}
                   className="landing-circle"
-                  fill="#28d8da"
-                  stroke="#26ACAD"
+                  fill="#F2D492"
+                  // stroke="#26ACAD"
                   strokeWidth={0.05}
                   // r={sizeScale(radiusValue(d))}
                   r={0.5}
@@ -176,7 +176,7 @@ const GeoPath = memo(({ map, data, clusters, onMouseOver, onMouseOut }) => {
                   // style={{
                   //   transform: `translate(${long}px, ${lat}px)`,
                   // }}
-                  // opacity={0.5}
+                  opacity={0.5}
                 />
               </>
             );

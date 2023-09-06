@@ -1,5 +1,5 @@
 .container {
-  background-color: #0C164F;
+  background-color: var(--primary2);
   width: 20%;
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 30px;
@@ -9,6 +9,8 @@
   border-radius: 20px;
   justify-content: space-evenly;
 }
+
+
 
 .country {
   /* background-color: blueviolet; */
@@ -28,5 +30,5 @@
 
 .flag {
   border-radius: 5px;
-  border: solid 2px black;
+  border: solid 2px var(--primary);
 }

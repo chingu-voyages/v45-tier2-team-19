@@ -1,31 +1,33 @@
 .container {
-  background-color: var(--primary2);
+  /* background-color: var(--primary2); */
   width: 20%;
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 30px;
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  border-radius: 20px;
-  justify-content: space-evenly;
+  gap: 20px;
 }
 
 
 
 .country {
-  /* background-color: blueviolet; */
+  background-color: var(--primary2);
   font-weight: 700;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex: 1;
+  border-radius: 4px;
 }
 
 .data {
-  /* background-color: burlywood; */
+  background-color: var(--primary2);
   text-align: center;
   font-size: 16px;
   color: #E0E0E0;
+  flex: 1;
+  border-radius: 4px;
 }
 
 .flag {

@@ -1,28 +1,51 @@
-// import * as Tooltip from "@radix-ui/react-tooltip";
 import PropTypes from "prop-types";
-// import { PlusIcon } from '@radix-ui/react-icons';
-// import "./styles.css";
+import { formatLocale } from "d3-format";
 
-const TooltipDemo = ({ children }) => {
+const locale = formatLocale({
+  decimal: ",",
+  thousands: "\u00a0",
+  grouping: [3],
+  currency: ["", " g"],
+  minus: "\u2212",
+  percent: "\u202f%",
+});
+
+const fformat = locale.format("$,");
+
+const TooltipDemo = ({ tooltipData }) => {
   return (
-    <Tooltip.Provider>
-      <Tooltip.Root>
-        <Tooltip.Trigger asChild>
-          <button className="IconButton">{children}</button>
-        </Tooltip.Trigger>
-        <Tooltip.Portal>
-          <Tooltip.Content className="TooltipContent" sideOffset={5}>
-            Add to library
-            <Tooltip.Arrow className="TooltipArrow" />
-          </Tooltip.Content>
-        </Tooltip.Portal>
-      </Tooltip.Root>
-    </Tooltip.Provider>
+    <div
+      // className="tooltip"
+      style={{
+        position: "fixed",
+        backgroundColor: "rgba(0, 0, 0, 0.7)",
+        color: "white",
+        padding: "5px",
+        borderRadius: "3px",
+        fontSize: "12px",
+        left: tooltipData.x + 10,
+        top: tooltipData.y + 10,
+      }}
+    >
+      <div>Name: {tooltipData.name}</div>
+      <div>Latitude: {tooltipData.reclat}</div>
+      <div>Longitude: {tooltipData.reclong}</div>
+      <div>State: {tooltipData.state}</div>
+      <div>Mass: {fformat(tooltipData.mass)}</div>
+    </div>
   );
 };
 
 TooltipDemo.propTypes = {
-  children: PropTypes.node.isRequired,
+  tooltipData: PropTypes.shape({
+    name: PropTypes.string,
+    reclat: PropTypes.string,
+    reclong: PropTypes.string,
+    state: PropTypes.string,
+    mass: PropTypes.string,
+    x: PropTypes.number,
+    y: PropTypes.number,
+  }),
 };
 
 export default TooltipDemo;

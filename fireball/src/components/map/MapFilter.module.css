@@ -5,6 +5,10 @@
   /* border-radius: 20px; */
 }
 
+.batchFilter {
+  flex-grow: 1;
+}
+
 .button {
   background-color: var(--secondary);
   color: var(--primary2);
@@ -12,9 +16,14 @@
   border-radius: 4px;
 }
 
+.button:last-child {
+  margin: 0;
+}
+
 .clearButton {
   color: var(--secondary);
   background-color: transparent;
   border: 1px solid var(--secondary);
   border-radius: 4px;
+  margin-right: 15px;
 }

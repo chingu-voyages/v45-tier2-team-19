@@ -14,6 +14,8 @@ function MapFilter({ data, onDataFiltered }) {
     // Add more filter criteria here
   });
 
+  const [all, setAll] = useState(false);
+
   // console.log("data inside the filter comonent", data);
 
   const region = countries.map((country) => country.name).concat(continents);
@@ -23,6 +25,19 @@ function MapFilter({ data, onDataFiltered }) {
     Mass: createIntervals(10000000, 60000000, 5000000).concat("All"), // Example mass categories
     // Add more filter options for other criteria
   };
+
+  const getTop100 = () => {
+    const updated = data
+      .sort((a, b) => +b["mass (g)"] - +a["mass (g)"])
+      .slice(0, 100);
+    onDataFiltered(updated, {});
+  };
+
+  const getAll = () => {
+    onDataFiltered([], {}, true);
+  };
+
+  // console.log("top 100", getTop100());
 
   // debugger;
   const applyFilter = () => {
@@ -49,7 +64,6 @@ function MapFilter({ data, onDataFiltered }) {
             const itemMass = +item["mass (g)"];
             return itemMass >= +start && itemMass <= +end;
           },
-          // Add more filter functions for other criteria
         };
 
         return filterFunctions[key]();
@@ -63,32 +77,33 @@ function MapFilter({ data, onDataFiltered }) {
   };
 
   const clearFilter = () => {
-    console.log("clear");
-    // setSelectedFilters({
-    //   Year: "",
-    //   Region: "",
-    //   Mass: "",
-    //   // Add more filter criteria here
-    // });
     onDataFiltered([], selectedFilters);
   };
 
   return (
     <div data-testid="map-filter" className={mapfilter.container}>
-      {Object.keys(selectedFilters).map((key) => (
-        <SelectDemo
-          key={key}
-          label={key}
-          options={filterOptions[key]}
-          value={selectedFilters[key]}
-          onValueChange={(value) => handleFilterChange(key, value)}
-        />
-      ))}
-      <Button onClick={applyFilter} className={mapfilter.button}>
-        Apply
+      <div className={mapfilter.batchFilter}>
+        {Object.keys(selectedFilters).map((key) => (
+          <SelectDemo
+            key={key}
+            label={key}
+            options={filterOptions[key]}
+            value={selectedFilters[key]}
+            onValueChange={(value) => handleFilterChange(key, value)}
+          />
+        ))}
+        <Button onClick={applyFilter} className={mapfilter.button}>
+          Apply
+        </Button>
+        <Button onClick={clearFilter} className={mapfilter.clearButton}>
+          Clear
+        </Button>
+      </div>
+      <Button onClick={getAll} className={mapfilter.button}>
+        All
       </Button>
-      <Button onClick={clearFilter} className={mapfilter.clearButton}>
-        Clear
+      <Button onClick={getTop100} className={mapfilter.button}>
+        Top 100
       </Button>
     </div>
   );

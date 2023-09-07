@@ -14,6 +14,11 @@ The goals for this project included:
   - Search fields allowing users to customize a detail data display
   - A summary metrics component showing the data graphically
 
+In addition to the goals related to the application functionality, our team also had goals related to building experience working with an international, remote team of developers and product owner:
+
+- To try using new tools to build the application.
+- To manage workflow with an international, remote team of developers and product owner.
+
 ## ✨ Features
 
 - Detailed display of meteorite data with search filters

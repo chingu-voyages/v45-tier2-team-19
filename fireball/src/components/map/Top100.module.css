@@ -1,0 +1,29 @@
+.row {
+  display: flex;
+  /* justify-content: space-between; */
+  background-color: var(--primary);
+  margin-bottom: 15px;
+  border-radius: 15px;
+  padding: 10px 20px;
+  font-size: 12px;
+}
+
+.row:last-child {
+  margin-bottom: 0;
+}
+
+.year,
+.mass {
+  width: 25px;
+  margin-right: 5px;
+}
+
+.rank {
+  width: 7.5px;
+  margin-right: 5px;
+}
+
+.name {
+  /* width: 96px; */
+  flex-grow: 1;
+}

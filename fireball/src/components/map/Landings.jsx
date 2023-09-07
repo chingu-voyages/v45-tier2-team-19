@@ -1,4 +1,11 @@
+import { max } from "d3-array";
+import { scaleSqrt } from "d3-scale";
+
 const Landings = ({ data, projection, onMouseOver, onMouseOut }) => {
+  const radiusValue = (d) => +d["mass (g)"];
+  const sizeScale = scaleSqrt([0, max(data, radiusValue)], [1, 15]);
+  const radius = (d) => (data.length === 100 ? sizeScale(radiusValue(d)) : 0.5);
+
   return (
     <>
       {data.map((d) => {
@@ -12,15 +19,10 @@ const Landings = ({ data, projection, onMouseOver, onMouseOut }) => {
               onMouseOut={onMouseOut}
               className="landing-circle"
               fill="#F2D492"
-              // stroke="#26ACAD"
               strokeWidth={0.05}
-              // r={sizeScale(radiusValue(d))}
-              r={0.5}
+              r={radius(d)}
               cx={lat}
               cy={long}
-              // style={{
-              //   transform: `translate(${long}px, ${lat}px)`,
-              // }}
               opacity={0.5}
             />
           </>

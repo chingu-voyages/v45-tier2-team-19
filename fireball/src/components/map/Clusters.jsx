@@ -1,5 +1,9 @@
+import { useGetClusters } from "../../hooks/useGetClusters";
 import "./style.css";
-const Clusters = ({ clusters, projection, zoomScale }) => {
+
+const Clusters = ({ projection, zoomScale }) => {
+  const { data: clusters } = useGetClusters();
+
   const conditions = [
     { min: 1, max: 2.5, value: 0 },
     { min: 2.5, max: 4, value: 1 },
@@ -13,6 +17,9 @@ const Clusters = ({ clusters, projection, zoomScale }) => {
 
   // Set clusterIndex based on the matched condition or a default value if none match
   const clusterIndex = matchedCondition ? matchedCondition.value : -1;
+  if (!clusters) {
+    return <div>Loading Clusters</div>;
+  }
 
   // const clusterIndex = zoomScale < 2.5 ? 0 : 1;
   const cluster = clusters[clusterIndex];
@@ -27,7 +34,7 @@ const Clusters = ({ clusters, projection, zoomScale }) => {
             <circle
               key={i}
               className="landing-circle"
-              fill="orange"
+              fill="#F2D492"
               // r={sizeScale2(radiusValue2(c))}
               r={12 / zoomScale}
               cx={lat}

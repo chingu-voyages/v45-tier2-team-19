@@ -1,36 +1,16 @@
 .container {
   /* background-color: var(--primary2); */
+
   width: 20%;
   font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 30px;
+  /* font-size: 30px; */
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   gap: 20px;
+  width: 292px;
 }
 
 
 
-.country {
-  background-color: var(--primary2);
-  font-weight: 700;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
-  border-radius: 4px;
-}
 
-.data {
-  background-color: var(--primary2);
-  text-align: center;
-  font-size: 16px;
-  color: #E0E0E0;
-  flex: 1;
-  border-radius: 4px;
-}
-
-.flag {
-  border-radius: 5px;
-  border: solid 2px var(--primary);
-}

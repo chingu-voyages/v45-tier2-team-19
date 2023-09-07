@@ -31,6 +31,7 @@ const TooltipDemo = ({ tooltipData }) => {
       <div>Latitude: {tooltipData.reclat}</div>
       <div>Longitude: {tooltipData.reclong}</div>
       <div>State: {tooltipData.state}</div>
+      <div>Country: {tooltipData.country}</div>
       <div>Mass: {fformat(tooltipData.mass)}</div>
     </div>
   );
@@ -43,6 +44,7 @@ TooltipDemo.propTypes = {
     reclong: PropTypes.string,
     state: PropTypes.string,
     mass: PropTypes.string,
+    country: PropTypes.string,
     x: PropTypes.number,
     y: PropTypes.number,
   }),

@@ -1,0 +1,6 @@
+.container {
+  flex-grow: 1;
+  background-color: var(--primary2);
+  border-radius: 15px;
+  padding: 50px 30px;
+}

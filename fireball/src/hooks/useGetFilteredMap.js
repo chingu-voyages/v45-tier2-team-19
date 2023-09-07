@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { json } from "d3-fetch";
 
-const useFilterData = (
-  url = "https://gist.githubusercontent.com/uKiJo/8a6c70d684a55841a2c04340c5325f15/raw/bae59e2d726b9ce5bc14650c69ec07e2e5c8c3e3/mpd.json"
+export const useGetFilteredMap = (
+  url = "https://gist.githubusercontent.com/uKiJo/c59e4590bf8b53d40073f437802da368/raw/c252c6508a9df27023ba7ce947b03616e66a7819/mpd2.json"
 ) => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -26,5 +26,3 @@ const useFilterData = (
 
   return { data, loading, error };
 };
-
-export default useFilterData;

@@ -22,13 +22,9 @@
 }
 
 .landing-circle:hover {
-  fill: red;
+  fill: var(--secondary2);
 }
 
-.landing-circle:hover+.text {
-  fill: red;
-  display: block;
-}
 
 .map {
   width: 100%;

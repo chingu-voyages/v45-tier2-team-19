@@ -150,3 +150,5 @@ function calculateMean(points) {
 
   return mean;
 }
+
+// const result = kmeans(dd, 15, 100);

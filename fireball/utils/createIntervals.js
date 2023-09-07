@@ -11,7 +11,7 @@ export function createIntervals(startYear, endYear, interval) {
     intervals.push(`${currentYear - interval + 1} ${currentYear}`);
   }
 
-  intervals.push(`${endYear - interval + 1} Infinity`);
+  intervals.push(`${endYear - interval + 1} 2023`);
 
   return intervals;
 }

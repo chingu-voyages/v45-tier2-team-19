@@ -10,11 +10,10 @@ function MapFilter({ data, onDataFiltered }) {
   const [selectedFilters, setSelectedFilters] = useState({
     Year: "",
     Region: "",
-    Mass: "",
+    Mass: "All",
     // Add more filter criteria here
   });
-
-  const [all, setAll] = useState(false);
+  const [filter, SetFilter] = useState("All");
 
   // console.log("data inside the filter comonent", data);
 
@@ -30,14 +29,12 @@ function MapFilter({ data, onDataFiltered }) {
     const updated = data
       .sort((a, b) => +b["mass (g)"] - +a["mass (g)"])
       .slice(0, 100);
-    onDataFiltered(updated, {});
+    onDataFiltered(updated, {}, "Top 100");
   };
 
   const getAll = () => {
-    onDataFiltered([], {}, true);
+    onDataFiltered([], {}, "All");
   };
-
-  // console.log("top 100", getTop100());
 
   // debugger;
   const applyFilter = () => {
@@ -69,7 +66,7 @@ function MapFilter({ data, onDataFiltered }) {
         return filterFunctions[key]();
       });
     });
-    onDataFiltered(updated, selectedFilters);
+    onDataFiltered(updated, selectedFilters, "Batch");
   };
 
   const handleFilterChange = (name, value) => {
@@ -77,7 +74,7 @@ function MapFilter({ data, onDataFiltered }) {
   };
 
   const clearFilter = () => {
-    onDataFiltered([], selectedFilters);
+    onDataFiltered([], selectedFilters, "All");
   };
 
   return (

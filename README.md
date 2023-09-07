@@ -20,8 +20,22 @@ The goals for this project included:
 - Interactive map of meteorite data with search filters
 - Interactive graphical summaries of meteorite data
 
-## Running the App
+## 🛠️ Technologies & Dependencies
 
-## Dependencies
+- React
+- Vite
+- [Material UI](https://mui.com/material-ui/getting-started/)
+- [Chart.js](https://www.chartjs.org/)
+- [d3js](https://d3js.org/what-is-d3)
+  - d3-geo
+  - d3-scale
+  - d3-selection
+  - d3-zoom
+  - d3-fetch
+- [Emotion](https://emotion.sh/docs/introduction)
+-
+-
 
-## Future Directions
+## 👩‍💻 Running the App
+
+## 🤩 Future Directions

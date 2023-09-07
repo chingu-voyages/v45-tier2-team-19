@@ -59,4 +59,10 @@ cd v45-tier2-team-19
 cd fireball
 ```
 
+4. Install the dependencies.
+
+```
+npm install
+```
+
 ## 🤩 Future Directions

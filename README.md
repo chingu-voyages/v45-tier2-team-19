@@ -19,6 +19,14 @@ In addition to the goals related to the application functionality, our team also
 - To try using new tools to build the application.
 - To manage workflow with an international, remote team of developers and product owner.
 
+## 🧑‍🤝‍🧑 Voyage Team
+
+-
+-
+-
+-
+- [Crystal Rose-Wainstock](https://github.com/crwainstock) 👋
+
 ## ✨ Features
 
 - Detailed display of meteorite data with search filters

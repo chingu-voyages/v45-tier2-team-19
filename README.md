@@ -24,17 +24,12 @@ The goals for this project included:
 
 - React
 - Vite
-- [Material UI](https://mui.com/material-ui/getting-started/)
 - [d3js](https://d3js.org/what-is-d3)
-  - d3-geo
-  - d3-scale
-  - d3-selection
-  - d3-zoom
-  - d3-fetch
-- [Emotion](https://emotion.sh/docs/introduction)
 - [Maps Geocode](https://geocode.maps.co/)
 - [Chart.js](https://www.chartjs.org/)
 - [TanStack Table](https://tanstack.com/table/v8/)
+- [Emotion](https://emotion.sh/docs/introduction)
+- [Material UI](https://mui.com/material-ui/getting-started/)
 
 ## 👩‍💻 Running the App
 

@@ -1,10 +1,9 @@
-import { json } from "d3-fetch";
 import { useEffect, useState } from "react";
+import { json } from "d3-fetch";
 
-const clusterDataUrl =
-  "https://gist.githubusercontent.com/uKiJo/3b4239075885e9f2162c27dfc779521f/raw/27d4809b56ce32089766a35f280debcaef4a2f52/clust.json";
-
-export const useGetClusters = () => {
+const useFilterData = (
+  url = "https://gist.githubusercontent.com/uKiJo/8a6c70d684a55841a2c04340c5325f15/raw/bae59e2d726b9ce5bc14650c69ec07e2e5c8c3e3/mpd.json"
+) => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -12,9 +11,9 @@ export const useGetClusters = () => {
   useEffect(() => {
     async function fetchData() {
       try {
-        const data = await json(clusterDataUrl);
+        const fetchedData = await json(url);
 
-        setData(data);
+        setData(fetchedData);
         setLoading(false);
       } catch (error) {
         setError(error);
@@ -27,3 +26,5 @@ export const useGetClusters = () => {
 
   return { data, loading, error };
 };
+
+export default useFilterData;

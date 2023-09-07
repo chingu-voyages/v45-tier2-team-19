@@ -1,7 +1,4 @@
 /*BODY*/
-html {
-  scroll-behavior: smooth;
-}
 body {
   display: flex;
   flex-direction: column;
@@ -22,8 +19,6 @@ body {
   width: 100%;
   margin: 0px;
   padding: 0px;
-
-  background-color: #09113d;
 }
 
 * {
@@ -40,6 +35,7 @@ body {
   max-width: 100%;
   padding-top: 5em;
 }
+
 #mapContainer img {
   width: 500px;
   height: auto;

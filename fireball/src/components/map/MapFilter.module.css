@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  /* background-color: #0C164F; */
+  /* padding: 20px; */
+  /* border-radius: 20px; */
+}
+
+.button {
+  background-color: var(--secondary);
+  color: var(--primary2);
+  margin-right: 15px;
+  border-radius: 4px;
+}
+
+.clearButton {
+  color: var(--secondary);
+  background-color: transparent;
+  border: 1px solid var(--secondary);
+  border-radius: 4px;
+}

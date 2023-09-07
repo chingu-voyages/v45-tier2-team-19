@@ -1,5 +1,5 @@
 .sphere {
-  fill: #fafafa;
+  fill: var(--primary2);
 }
 
 .graticules {
@@ -8,7 +8,7 @@
 
 .interiors {
   fill: none;
-  stroke: #3a3a69;
+  stroke: var(--primary2);
   stroke-width: 0.5;
 }
 
@@ -25,7 +25,7 @@
   fill: red;
 }
 
-.landing-circle:hover + .text {
+.landing-circle:hover+.text {
   fill: red;
   display: block;
 }
@@ -34,16 +34,12 @@
   width: 100%;
 }
 
-.container {
-  width: 75%;
-  margin: auto;
-  border: 1px solid red;
-  border-radius: 20px;
-  overflow: hidden;
-}
+
+
 
 .txt {
-  font: 7px sans-serif;
+  /* font: 7px sans-serif; */
+  font-weight: 800;
 }
 
 /* tooltip styling
@@ -61,7 +57,7 @@ button {
   padding: 10px 15px;
   font-size: 15px;
   line-height: 1;
-  color: var(--violet-11);
+  color: black;
   background-color: white;
   box-shadow:
     hsl(206 22% 7% / 35%) 0px 10px 38px -10px,

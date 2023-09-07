@@ -1,6 +1,6 @@
 # Fireball ☄️
 
-## Overview
+## 🌍 Overview
 
 This app was developed as a part of the 6-week [Chingu](https://www.chingu.io/) Voyage 45 in August and September 2023. The app uses data from [NASA's Open Data Portal Meteorite Landings dataset](https://data.nasa.gov/Space-Science/Meteorite-Landings/gh4g-9sfh). According to the NASA Open Data Portal, "This comprehensive data set from The Meteoritical Society contains information on all of the known meteorite landings."
 
@@ -14,7 +14,11 @@ The goals for this project included:
   - Search fields allowing users to customize a detail data display
   - A summary metrics component showing the data graphically
 
-## Features
+## ✨ Features
+
+- Detailed display of meteorite data with search filters
+- Interactive map of meteorite data with search filters
+- Interactive graphical summaries of meteorite data
 
 ## Running the App
 

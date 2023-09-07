@@ -41,4 +41,12 @@ To build the application, we used:
 
 ## 👩‍💻 Running the App
 
+1. Clone this repo.
+
+```git clone https://github.com/chingu-voyages/v45-tier2-team-19.git
+
+```
+
+2.
+
 ## 🤩 Future Directions

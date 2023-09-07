@@ -22,6 +22,14 @@ The goals for this project included:
 
 ## 🛠️ Technologies & Dependencies
 
+To plan and manage our workflow, we used:
+
+- Figma
+- Jira
+- Discord channel
+
+To build the application, we used:
+
 - React
 - Vite
 - [d3js](https://d3js.org/what-is-d3)

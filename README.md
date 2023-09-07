@@ -47,6 +47,16 @@ To build the application, we used:
 git clone https://github.com/chingu-voyages/v45-tier2-team-19.git
 ```
 
-2.
+2. Navigate to the project directory.
+
+```
+cd v45-tier2-team-19
+```
+
+3. Then navigate to the app within the project.
+
+```
+cd fireball
+```
 
 ## 🤩 Future Directions

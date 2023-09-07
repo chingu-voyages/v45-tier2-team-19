@@ -21,7 +21,7 @@ In addition to the goals related to the application functionality, our team also
 
 ## 🧑‍🤝‍🧑 Voyage Team
 
--
+- [Aleksandar Vukasovic](https://github.com/vukas86)
 -
 -
 -

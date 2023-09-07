@@ -1,28 +1,23 @@
-# voyage-tasks
+# Fireball ☄️
 
-Your project's `readme` is as important to success as your code. For 
-this reason you should put as much care into its creation and maintenance
-as you would any other component of the application.
+## Overview
 
-If you are unsure of what should go into the `readme` let this article,
-written by an experienced Chingu, be your starting point - 
-[Keys to a well written README](https://tinyurl.com/yk3wubft).
+This app was developed as a part of the 6-week [Chingu](https://www.chingu.io/) Voyage 45 in August and September 2023. The app uses data from [NASA's Open Data Portal Meteorite Landings dataset](https://data.nasa.gov/Space-Science/Meteorite-Landings/gh4g-9sfh). According to the NASA Open Data Portal, "This comprehensive data set from The Meteoritical Society contains information on all of the known meteorite landings."
 
-And before we go there's "one more thing"! Once you decide what to include
-in your `readme` feel free to replace the text we've provided here.
+The goals for this project included:
 
-> Own it & Make it your Own!
+- To create a purely frontend application using the NASA data.
+- To use any language, tool, or library to plan, design, and build the app.
+- To build the app without the use of AI-base solution generators like GitHub CoPilot.
+- To build a minimally viable product (MVP) that includes a landing page with:
+  - A scrollable detail data display showing the meteorite strike history
+  - Search fields allowing users to customize a detail data display
+  - A summary metrics component showing the data graphically
 
-## Team Documents
+## Features
 
-You may find these helpful as you work together to organize your project.
+## Running the App
 
-- [Team Project Ideas](./docs/team_project_ideas.md)
-- [Team Decision Log](./docs/team_decision_log.md)
+## Dependencies
 
-Meeting Agenda templates (located in the `/docs` directory in this repo):
-
-- Meeting - Voyage Kickoff --> ./docs/meeting-voyage_kickoff.docx
-- Meeting - App Vision & Feature Planning --> ./docs/meeting-vision_and_feature_planning.docx
-- Meeting - Sprint Retrospective, Review, and Planning --> ./docs/meeting-sprint_retrospective_review_and_planning.docx
-- Meeting - Sprint Open Topic Session --> ./docs/meeting-sprint_open_topic_session.docx
+## Future Directions

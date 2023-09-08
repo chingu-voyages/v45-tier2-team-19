@@ -7,7 +7,7 @@ export default function AverageMass() {
   let totalMass = 0;
   let totalCount = 0;
 
-  meteorData.forEach((meteor) => {
+  meteorData?.forEach((meteor) => {
     const massValue = meteor["mass (g)"];
     const mass = massValue ? parseFloat(massValue.split(",").join("")) : 0;
 

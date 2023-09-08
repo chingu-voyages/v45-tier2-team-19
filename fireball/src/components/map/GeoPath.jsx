@@ -1,248 +1,59 @@
-import { geoPath, geoEquirectangular, geoGraticule } from "d3-geo";
-import { scaleSqrt } from "d3-scale";
-import { max } from "d3-array";
-import { select } from "d3-selection";
-import { zoom, zoomIdentity } from "d3-zoom";
+import { memo, useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { geoPath, geoEquirectangular } from "d3-geo";
+import geopath from "./GeoPath.module.css";
+// import "./style.css";
+import Clusters from "./Clusters";
+import Continents from "./Continents";
+import Graticules from "./Graticules";
+import Interiors from "./Interiors";
+import Landings from "./Landings";
+import TooltipDemo from "./Tooltip";
+import Button from "../shared/Button";
+import { useMapZoom } from "./hooks/useMapZoom";
+import { useTooltip } from "./hooks/useTooltip";
 
-// import clusterData from './data.json';
-
-import _debounce from "lodash.debounce";
-import "./style.css";
-import { memo, useEffect, useMemo, useRef, useState, useCallback } from "react";
-import { kmeans } from "../../../utils/kmeans";
-
-// import { transition } from "d3-transition";
-// import { easeLinear } from "d3-ease";
-// import { kmeans } from "../utils/kmeans";
-
-const GeoPath = memo(({ map, data, clusters, onMouseOver, onMouseOut }) => {
-  // const [transformGroup, setTransformGroup] = useState({})
+const GeoPath = memo(({ map, data, filter }) => {
   console.log("RERENDER!");
-  console.log("FILTERED DATA", data);
-
-  const [zoomScale, setZoomScale] = useState(1);
-  const zoomScaleRef = useRef(1);
-  const [, setZoomComplete] = useState(false);
+  // const { data: mapData } = useGetMapData();
   const { countries, interiors } = map;
+
+  // const [zoomScale, setZoomScale] = useState(1);
+
   const projection = useMemo(() => geoEquirectangular(), []);
   const path = useMemo(() => geoPath(projection), [projection]);
 
-  // const { data: clusters, loading } = useGetClusters();
-
-  // const dd = data
-  //   .filter((d) => d.reclat)
-  //   .map((d) => {
-  //     return [+d.reclat, +d.reclong];
-  //   });
-
-  // const kmeanscl = kmeans(dd, 130, 50).clusters;
-  // console.log("zoomscale", zoomScale);
-
-  // const { clusters } = result;
-  const conditions = [
-    { min: 1, max: 2.5, value: 0 },
-    { min: 2.5, max: 4, value: 1 },
-    { min: 4, max: 5.5, value: 2 },
-    { min: 5.5, max: Infinity, value: 3 },
-  ];
-
-  const matchedCondition = conditions.find(
-    (condition) => zoomScale >= condition.min && zoomScale < condition.max,
-  );
-
-  // Set clusterIndex based on the matched condition or a default value if none match
-  const clusterIndex = matchedCondition ? matchedCondition.value : -1;
-
-  // const clusterIndex = zoomScale < 2.5 ? 0 : 1;
-  const cluster = clusters[clusterIndex];
-
-  const graticule = useMemo(() => geoGraticule(), []);
-  const radiusValue = (d) => +d["mass (g)"];
-  const radiusValue2 = (d) => d.points.length;
-  const sizeScale = useMemo(
-    () => scaleSqrt([0, max(data, radiusValue)], [1, 15]),
-    [],
-  );
-
-  // const sizeScale2 = useMemo(
-  //   () =>
-  //     scaleSqrt(
-  //       [0, max(clusters, radiusValue2)],
-  //       [1, 15 / (Math.floor(zoomScale) - 1 || 1) + 3]
-  //     ),
-  //   [clusters, zoomScale]
-  // );
-
-  // const dataWithCoordinates = data.map((d) => {
-  //   const [lat, long] = projection([d.reclong, d.reclat]);
-  //   return { ...d, lat, long };
-  // });
-
-  console.log("Clusters", clusters);
-  // console.log("distance", euclideanDistance());
+  const { tooltipData, debouncedHandleMouseOver, handleMouseOut } =
+    useTooltip();
 
   const svgRef = useRef(null);
 
-  // const debouncedHandleZoom = useCallback((e) => {
-  //   console.log("ZOOM STARTED");
-  //   console.log(e);
-  //   zoomScaleRef.current = e.transform.k;
-  //   const svg = select(svgRef.current);
-  //   svg.select("g").attr("transform", e.transform);
-  // }, []);
-  const prevZoomRef = useRef(null);
-  const zoomCompleteTimeoutRef = useRef(null);
+  const { resetMapZoom, zoomScale } = useMapZoom(svgRef);
 
-  const debouncedHandleZoom = useCallback((e) => {
-    console.log("ZOOM STARTED!!!!");
-    // Your zoom handling logic...
-    const svg = select(svgRef.current);
-    svg.select("g").attr("transform", e.transform);
-    // Define a delay in milliseconds to wait for stability
-    const stabilityDelay = 1000; // Adjust as needed
-    if (zoomCompleteTimeoutRef.current) {
-      clearTimeout(zoomCompleteTimeoutRef.current);
-    }
-    // Get the current zoom level
-    const currentZoom = e.transform.k;
+  // if (!mapData) return <div>Loading</div>;
 
-    // Store the previous zoom level in a ref
-
-    // If the previous zoom level is not set, set it and return
-    if (prevZoomRef.current === null) {
-      prevZoomRef.current = currentZoom;
-      return;
-    }
-
-    console.log(prevZoomRef.current);
-    console.log(currentZoom);
-    // Check if the current zoom level is the same as the previous zoom level
-    if (currentZoom !== prevZoomRef.current) {
-      // Wait for stabilityDelay milliseconds to consider the zoom complete
-
-      prevZoomRef.current = currentZoom;
-      zoomCompleteTimeoutRef.current = setTimeout(() => {
-        // if (currentZoom !== prevZoomRef.current) {
-        console.log("they are equal!!!");
-        // Zoom is stable, set the zoomComplete state to true
-        setZoomComplete(true);
-        setZoomScale(e.transform.k);
-        // }
-      }, stabilityDelay);
-    } else {
-      // Zoom level changed, update the previous zoom level
-    }
-  }, []);
-
-  useEffect(() => {
-    const svg = select(svgRef.current);
-    const zoomed = zoom()
-      .scaleExtent([1, 10])
-      .translateExtent([
-        [0, 0],
-        [960, 470],
-      ])
-      .on("zoom", debouncedHandleZoom);
-    svg.call(zoomed);
-  }, [debouncedHandleZoom]);
-
-  const resetMapZoom = () => {
-    const svg = select(svgRef.current);
-
-    const zoomed = zoom()
-      .scaleExtent([1, 40])
-      // .translateExtent([
-      //   [marginLeft, -Infinity],
-      //   [width - marginRight, Infinity],
-      // ])
-
-      .on(
-        "zoom",
-        debouncedHandleZoom,
-        // (event) => {
-        //   // setZoomScale(event.transform.k);
-        //   // zoomScaleRef.current = event.transform.k;
-        //   console.log(event.transform);
-        //   svg.select("g").attr("transform", event.transform);
-        // }
-      );
-    svg.call(zoomed.transform, zoomIdentity);
-  };
-
-  // console.log("ONLINE clusterrs", kmeanscl);
-
-  // console.log("countries", countries);
-  // console.log("landing data", data);
   return (
-    <div className="container">
-      <button onClick={resetMapZoom}>Reset</button>
-      <svg ref={svgRef} viewBox="0 0 950 470">
+    <div className={geopath.container}>
+      <Button onClick={resetMapZoom} className={geopath.button}>
+        Reset
+      </Button>
+      <svg ref={svgRef} viewBox="0 0 950 470" overflow={"visible"}>
         <g>
           <path className="sphere" d={path({ type: "Sphere" })} />
-          <path className="graticules" d={path(graticule())} />
-          {countries.features.map((feature) => {
-            // console.log(path.centroid(feature));
-            return <path fill="#0C164F" d={path(feature)} />;
-          })}
-          <path className="interiors" d={path(interiors)} />
-          {/* {dataWithCoordinates.map((d) => {
-            // console.log("jkkk");
-            // console.log(path.centroid(d));
-
-            return (
-              <>
-                {d.GeoLocation && (
-                  <circle
-                    key={d.id}
-                    onMouseOver={(e) => onMouseOver(e, d)}
-                    onMouseOut={onMouseOut}
-                    className="landing-circle"
-                    fill="#28d8da"
-                    stroke="#26ACAD"
-                    strokeWidth={0.2}
-                    r={sizeScale(radiusValue(d))}
-                    // cx={lat}
-                    // cy={long}
-                    style={{
-                      transform: `translate(${d.lat}px, ${d.long}px)`,
-                    }}
-                    // opacity={0.5}
-                  />
-                )}
-              </>
-            );
-          })} */}
-          {cluster.map((c, i) => {
-            const [lat, long] = projection([c.centroid[1], c.centroid[0]]);
-            // console.log(c.points.length);
-            // console.log(sizeScale((c) => c.points.length));
-            return (
-              <>
-                <circle
-                  key={i}
-                  className="landing-circle"
-                  fill="orange"
-                  // r={sizeScale2(radiusValue2(c))}
-                  r={12 / zoomScale}
-                  cx={lat}
-                  cy={long}
-                  opacity={0.5}
-                />
-                <text
-                  x={lat}
-                  y={long}
-                  // className="txt"
-                  alignmentBaseline="middle"
-                  textAnchor="middle"
-                  fontSize={10 / zoomScale}
-                >
-                  {c.points.length}
-                </text>
-              </>
-            );
-          })}
+          <Graticules path={path} />
+          <Continents countries={countries} path={path} />
+          <Interiors path={path} interiors={interiors} />
+          <Landings
+            data={data}
+            projection={projection}
+            onMouseOver={debouncedHandleMouseOver}
+            onMouseOut={handleMouseOut}
+          />
+          {filter === "All" && (
+            <Clusters projection={projection} zoomScale={zoomScale} />
+          )}
         </g>
       </svg>
+      {tooltipData && <TooltipDemo tooltipData={tooltipData} />}
     </div>
   );
 });

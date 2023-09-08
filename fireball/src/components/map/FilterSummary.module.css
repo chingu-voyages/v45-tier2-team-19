@@ -1,0 +1,16 @@
+.container {
+  /* background-color: var(--primary2); */
+
+  width: 20%;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  /* font-size: 30px; */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 20px;
+  width: 292px;
+}
+
+
+
+

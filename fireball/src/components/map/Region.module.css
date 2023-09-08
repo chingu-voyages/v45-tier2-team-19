@@ -1,0 +1,48 @@
+.region {
+  background-color: var(--primary2);
+  align-items: center;
+  flex: 1;
+  border-radius: 15px;
+  padding: 50px 30px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.regionDetails {
+  position: relative;
+
+
+  margin-bottom: 20px;
+}
+
+
+.regionName {
+  font-size: 30px;
+  line-height: normal;
+}
+
+h2 {
+  margin: 0;
+  /* display: inline-block; */
+  font-size: 30px;
+  font-weight: 200;
+
+  color: var(--secondary);
+  margin-bottom: 20px;
+}
+
+.countryTitle {
+  font-weight: 400;
+  font-size: 25px;
+}
+
+
+.flag {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 5px;
+  border: solid 2px var(--primary);
+}

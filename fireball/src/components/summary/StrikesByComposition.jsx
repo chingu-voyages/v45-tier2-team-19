@@ -10,7 +10,7 @@ function StrikesByComposition() {
 
   const strikesByRecclass = {};
 
-  meteorData.forEach((meteor) => {
+  meteorData?.forEach((meteor) => {
     const composition = meteor.recclass;
 
     if (composition !== "Unknown") {
@@ -25,7 +25,7 @@ function StrikesByComposition() {
 
   const compositions = Object.keys(strikesByRecclass).slice(0, 10);
   const strikesCount = compositions.map(
-    (composition) => strikesByRecclass[composition],
+    (composition) => strikesByRecclass[composition]
   );
 
   function compareNumbers(a, b) {

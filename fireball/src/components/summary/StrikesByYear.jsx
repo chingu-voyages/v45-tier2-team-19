@@ -9,6 +9,10 @@ function StrikesByYear() {
   const meteorData = useDataContext().data;
   console.log(meteorData);
 
+  if (!meteorData) {
+    return <pre>loading</pre>;
+  }
+
   if (meteorData === 0) return;
 
   const strikesByYear = {};

@@ -63,6 +63,8 @@ const SelectItem = React.forwardRef(
   }
 );
 
+SelectItem.displayName = SelectItem;
+
 SelectDemo.propTypes = {
   // Define PropTypes for each prop here
   onValueChange: PropTypes.func, // Expect someFunctionProp to be a function

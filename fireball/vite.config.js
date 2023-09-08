@@ -24,6 +24,6 @@ export default defineConfig({
     include: [...configDefaults.include, "src/__tests__/*"],
     setupFiles: "./tests/setup.js",
   },
-  base: './fireball',
+  base: './',
 
 });

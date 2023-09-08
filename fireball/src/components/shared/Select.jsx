@@ -3,6 +3,7 @@ import * as Select from "@radix-ui/react-select";
 import select from "./Select.module.css";
 // import classnames from "classnames";
 import { PiCaretUpDownFill } from "react-icons/pi";
+import PropTypes from "prop-types";
 import {
   CheckIcon,
   ChevronDownIcon,
@@ -27,13 +28,14 @@ const SelectDemo = ({ label, options, value, onValueChange, additional }) => (
             <Select.Label className={select.SelectLabel}>{label}</Select.Label>
             <Select.Separator className={select.SelectSeperator} />
             {options.map((option) => {
+              console.log(label);
               return (
                 <SelectItem
                   className={select.SelectItem}
                   key={option}
                   value={option}
                 >
-                  {option}
+                  {/Year|Mass/.test(label) ? option.replace(" ", "-") : option}
                 </SelectItem>
               );
             })}
@@ -60,5 +62,10 @@ const SelectItem = React.forwardRef(
     );
   }
 );
+
+SelectDemo.propTypes = {
+  // Define PropTypes for each prop here
+  onValueChange: PropTypes.func, // Expect someFunctionProp to be a function
+};
 
 export default SelectDemo;

@@ -21,6 +21,7 @@ In addition to the goals related to the application functionality, our team also
 
 ## 🧑‍🤝‍🧑 Voyage Team
 
+- [ABDAT Mohamed Younes](https://github.com/uKiJo)
 - [Aleksandar Vukasovic](https://github.com/vukas86)
 -
 -

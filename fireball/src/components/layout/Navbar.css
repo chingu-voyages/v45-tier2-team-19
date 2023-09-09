@@ -1,12 +1,5 @@
 .headerContainer {
-  background-image: url('../../assets/stars.jpg');
-  background-size: cover;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 20vw;
+ height:100vh;
 
 
 
@@ -15,7 +8,9 @@
 
 .navbar,
 .navbar nav {
-
+  position: absolute;
+  bottom:0px;
+  left:0px;
   display: flex;
   list-style: none;
   width: 100%;
@@ -24,6 +19,7 @@
   align-content: space-between;
   /* background-color: purple; */
   /* background-image: url('../../assets/bg.svg'); */
+  background-color:transparent;
   background-color: var(--primary);
   background-repeat: no-repeat;
   background-size: cover;
@@ -34,7 +30,7 @@
 
 nav {
   /* flex-direction: column; */
-  position: relative;
+  
 }
 
 
@@ -45,6 +41,7 @@ nav {
   margin: 0px;
   height: 100%;
   list-style: none;
+  background-color:transparent;
 }
 
 .navbar a {

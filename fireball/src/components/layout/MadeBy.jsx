@@ -35,7 +35,7 @@ const MadeBy = function () {
                     <li>{creator.name}</li>
                 </a>
                 <a href=""><GrLinkedin /></a>
-                <a href=""><GrGithub /></a>
+                <a href={creator.github}><GrGithub /></a>
 
             </div>
         )

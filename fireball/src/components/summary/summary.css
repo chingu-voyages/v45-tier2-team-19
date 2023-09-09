@@ -3,17 +3,26 @@
   --margin: 0.5rem;
 }
 
-#Summary {
+
+
+#Summary{
+  display:flex;
   background-color:var(--primary);
+  display:flex;
+
+  width:100%;
+  justify-content: center;
+  padding:1em;
 }
 
-
-
 .summary-container {
-  display:flex;
-  align-items:center;
-  justify-content: center;
+ display:grid;
+ grid-template-columns:1fr 1fr 1fr;
+justify-content: center;
+  padding:1em;
   flex-wrap:wrap;
+  background-color:var(--primary);
+  
   
 
 }
@@ -112,8 +121,7 @@
   }
   .strikes-by-year-container,
   .strikes-by-composition-container {
-    width: 350px;
-    height: auto;
+    
   }
   .small-boxes {
     flex-direction: column;

@@ -13,29 +13,35 @@ import "./summary.css";
 const Summary = function () {
   const { data, loading } = useDataContext();
 
+
+
   return (
-    <div id="Summary" className="summaryContainer">
-      <div>
-        {/* <h2>Summary Content</h2> */}
+    <div >
+      <div className="summaryContainer">
+        <h1 id='Summary'>Summary Contents</h1>
 
         {loading ? (
           <div>Loading...</div>
         ) : (
           <div className="summary-container">
-            {/* <StrikesByYear /> */}
 
-            <StrikesByDecade />
+
             <div className="small-boxes">
-              <AverageMass />
               <TotalStrikes />
+              <AverageMass />
+
+
             </div>
             <StrikesByYearFiltered />
+            <StrikesByDecade />
+
+
 
 
             <StrikesByDecade />
-       
-           
-          
+
+
+
 
 
             <StrikesByComposition />

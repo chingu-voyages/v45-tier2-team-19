@@ -1,33 +1,37 @@
-.footerContainer {
-  
-
-
-}
-
-.curvedBottom{
+footer{
   display:flex;
-  background-image:url('../../assets/starryCurvedFooter.png');
-  background-size:cover;
-  width:100vw;
-  height: 20vw;
+  justify-content:space-around;
+  align-items:center;
 }
+
 .madeBy{
   display:flex;
   flex-direction:column;
   justify-content:center;
-  background-color:transparent;
+  background-color:var(--primary2);
 flex-wrap:wrap;
+height:50%;
+padding:2em;
+}
+
+.madeBy a {
+  font-size:x-large;
+  color:var(--secondary2)
+ 
 }
 
 .footerLogo{
   align-self:center;
-  height:25%;
+  height:10%;
 }
 
 footer{
-  background-color:transparent;
-  height:fit-content;
-  padding-top:2em;
+  background-image: url('../../assets/comets.svg'), url('../../assets/background.svg');
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, cover;
+  background-position: center, left top;
+  height: 100vh;
+  position: relative;
 }
 
 @media screen and (max-width:400px){

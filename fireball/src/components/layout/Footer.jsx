@@ -2,6 +2,7 @@
 import logo from "../../assets/logo-no-background.svg";
 import "./Footer.css";
 import MadeBy from './MadeBy';
+import { GrLinkedin } from 'react-icons/gr'
 const Footer = function () {
     return (
         <div>
@@ -16,7 +17,7 @@ const Footer = function () {
                 </div>
             </footer>
 
-            <div className="curvedBottom"></div>
+
         </div>
 
     )

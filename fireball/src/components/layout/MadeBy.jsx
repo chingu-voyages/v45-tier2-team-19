@@ -1,4 +1,5 @@
 import './MadeBy.css'
+import { GrLinkedin, GrGithub } from 'react-icons/gr'
 
 const MadeBy = function () {
 
@@ -29,13 +30,18 @@ const MadeBy = function () {
     const creatorList = creators.map((creator, index) => {
         return (
 
-            <a href={creator.github} key={index} >
-                <li>{creator.name}</li>
-            </a>
+            <div className="creator" key={index}>
+                <a href={creator.github}  >
+                    <li>{creator.name}</li>
+                </a>
+                <a href=""><GrLinkedin /></a>
+                <a href=""><GrGithub /></a>
+
+            </div>
         )
     })
     return (
-        <div id="madeBy">
+        <div className="madeBy">
             <ul>
                 {creatorList}
 

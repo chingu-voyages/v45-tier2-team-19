@@ -1,7 +1,33 @@
-#madeBy ul {
+.madeBy{
+    background-color:var(--primary2);
+    height:100%;
+}
+.madeBy ul {
     list-style:none;
+    margin:0px;
+   
+    
 }
 
-#madeBy{
-    background-color:transparent;
+.madeBy li{
+    color:var(--secondary)
+}
+
+
+
+.creator{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    height:100%;
+    
+   
+}
+
+.creator:hover{
+    background-color:var(--primary)
+}
+
+.madeBy a:hover{
+    cursor:pointer;
+    color:white;
 }

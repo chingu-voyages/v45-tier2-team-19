@@ -2,40 +2,41 @@ footer{
   display:flex;
   justify-content:space-around;
   align-items:center;
-}
-
-.madeBy{
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  background-color:var(--primary2);
-flex-wrap:wrap;
-height:50%;
-padding:2em;
-}
-
-.madeBy a {
-  font-size:x-large;
-  color:var(--secondary2)
- 
-}
-
-.footerLogo{
-  align-self:center;
-  height:10%;
-}
-
-footer{
   background-image: url('../../assets/comets.svg'), url('../../assets/background.svg');
   background-repeat: no-repeat, no-repeat;
   background-size: contain, cover;
   background-position: center, left top;
-  height: 100vh;
+  height:fit-content;
   position: relative;
 }
 
-@media screen and (max-width:400px){
-  .madeBy,footer h2{
-    font-size:.8em;
-  }
+.madeByContainer{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  background-color:var(--primary2);
+  padding:2em;
+  border-radius:15px;
+
 }
+
+.madeByContainer a {
+  font-size:x-large;
+  color:var(--secondary2)
+ 
+}
+.madeByContainer a:hover{
+cursor:pointer;
+
+}
+
+
+
+
+.footerLogo{
+  
+  height:5em;
+}
+
+
+

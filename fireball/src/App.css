@@ -51,104 +51,12 @@ body {
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 
-/*MAP COMPONENT*/
-#mapContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 100%;
-  padding-top: 5em;
-}
 
-#mapContainer img {
-  width: 500px;
-  height: auto;
-}
-
-#mapContainer form,
-.checkGroup {
-  display: flex;
-  justify-items: flex-start;
-}
-
-#mapContainer form {
-  display: flex;
-  justify-items: flex-start;
-  width: 500px;
-}
-
-#searchContainer {
-  display: flex;
-  border: 1px solid white;
-}
-
-.search {
-  border: none;
-}
-
-.checkGroup {
-  display: flex;
-  width: 100%;
-  align-items: flex-start;
-}
-
-/*HEADER*/
-/* header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  background-color: #0c164f;
-  height: 20vw;
-} */
 
 .navbar {
   width: 100%;
 }
 
-header nav,
-header ul {
-  display: flex;
-  list-style: none;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  align-content: space-between;
-  background-color: #34f3f4;
-  padding: 0px;
-  align-content: space-between;
-}
-
-/* header nav{
-  height:100%
-} */
-
-header li {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  margin: 0px;
-  color: black;
-  padding: 0px;
-  width: fit-content;
-  text-align: center;
-}
-
-.navbar a:hover {
-  background-color: white;
-  cursor: pointer;
-}
-
-header ul a {
-  height: 100%;
-  padding: 0px 1em 0px 1em;
-}
-
-header ul {
-  height: 100%;
-}
-
-/*HEADER*/
 
 .logo {
   display: block;

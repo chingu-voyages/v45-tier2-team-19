@@ -3,7 +3,7 @@
   background-repeat: no-repeat, no-repeat;
   background-size: contain, cover;
   background-position: center, left top;
-  height: 600px;
+  height:100vh;
 }
 
 .logo {

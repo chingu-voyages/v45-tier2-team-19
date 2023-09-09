@@ -3,6 +3,11 @@
   --second-bg-color: #202c39;
 }
 
+.table-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
 table {
   font-family: "PlusJakartaSans-Regular", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
@@ -13,6 +18,9 @@ table {
   color: var(--main-font-color);
   margin-top: 100px;
   overflow-wrap: break-word;
+  border-collapse: collapse;
+  border-radius: 15px;
+  overflow: hidden;
 }
 
 table th {

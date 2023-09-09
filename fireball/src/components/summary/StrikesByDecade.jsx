@@ -37,7 +37,7 @@ function StrikesByDecade() {
       {
         label: "Number of Strikes by Decade",
         data: strikesCount,
-        backgroundColor: "rgb(12, 22, 79)",
+        backgroundColor: "#F2D492",
       },
     ],
   };
@@ -85,15 +85,15 @@ function StrikesByDecade() {
   return (
     <div
       className="strikes-by-year-container"
-      // style={{
-      //   width: 700,
-      //   color: "white",
-      //   marginTop: "0.5rem",
-      //   background: "rgb(229,231,245)",
-      //   margin: "0.5rem",
-      //   // border: "5px solid white",
-      //   borderRadius: "8px",
-      // }}
+    // style={{
+    //   width: 700,
+    //   color: "white",
+    //   marginTop: "0.5rem",
+    //   background: "rgb(229,231,245)",
+    //   margin: "0.5rem",
+    //   // border: "5px solid white",
+    //   borderRadius: "8px",
+    // }}
     >
       <Bar data={chartData} options={chartOptions} />
     </div>

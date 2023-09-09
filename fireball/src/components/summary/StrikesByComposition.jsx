@@ -42,12 +42,12 @@ function StrikesByComposition() {
         label: "Number of Strikes",
         data: topTenCompositions,
         fill: false,
-        backgroundColor: "rgb(12, 22, 79)",
-        borderColor: "rgb(12, 22, 79)",
-        pointBackgroundColor: "rgb(12, 22, 79)",
-        pointBorderColor: "rgb(38,182,183)",
-        pointHoverBackgroundColor: "rgb(38,182,183)",
-        pointHoverBorderColor: "rgb(38,182,183)",
+        backgroundColor: "#F2D492",
+        borderColor: "#F2D492",
+        pointBackgroundColor: "#202C39",
+        pointBorderColor: "black",
+        pointHoverBackgroundColor: "#E6AF37",
+        pointHoverBorderColor: "black",
       },
     ],
   };
@@ -89,15 +89,15 @@ function StrikesByComposition() {
   return (
     <div
       className="strikes-by-composition-container"
-      // style={{
-      //   width: 700,
-      //   color: "white",
-      //   marginTop: "0.5rem",
-      //   background: "rgb(229,231,245)",
-      //   margin: "0.5rem",
-      //   // border: "5px solid white",
-      //   borderRadius: "8px",
-      // }}
+    // style={{
+    //   width: 700,
+    //   color: "white",
+    //   marginTop: "0.5rem",
+    //   background: "rgb(229,231,245)",
+    //   margin: "0.5rem",
+    //   // border: "5px solid white",
+    //   borderRadius: "8px",
+    // }}
     >
       <Line data={chartData} options={chartOptions} />
       {/* <div className="learn-more-container">

@@ -64,7 +64,7 @@ function StrikesByYearFiltered() {
       {
         label: "Number of Strikes by Mass",
         data: strikesCount, // Use the values of the strikesCount object
-        backgroundColor: "rgb(12, 22, 79)",
+        backgroundColor: "#F2D492",
       },
     ],
   };

@@ -4,26 +4,21 @@
 }
 
 #Summary {
-  background-color: #09113d;
+  background-color:var(--primary);
 }
 
-.summaryContainer {
-  display: flex;
-  justify-content: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
+
 
 .summary-container {
-  /* display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 2fr 2fr; */
-  margin: 0 auto;
-  max-width: 900px;
+  display:flex;
+  flex-wrap:wrap;
+  width:100%;
+  justify-content: center;;
+
 }
 
 .total-strikes-container {
-  background-color: rgb(229, 231, 245);
+  background-color: var(--primary2);
   border-radius: 8px;
   padding: 1rem;
   /* max-width: 700px; */
@@ -31,7 +26,7 @@
 }
 
 .strikes-by-composition-container {
-  background-color: rgb(229, 231, 245);
+  background-color: var(--primary2);
   margin: var(--margin);
   border-radius: var(--radius);
 
@@ -45,17 +40,10 @@
 }
 
 .strikes-by-year-container {
-  background-color: rgb(229, 231, 245);
+  background-color: var(--primary2);
   margin: var(--margin);
   border-radius: var(--radius);
-  /*   
-        width: 700,
-        color: "white",
-        marginTop: "0.5rem",
-        background: "rgb(229,231,245)",
-        margin: "0.5rem",
-        // border: "5px solid white",
-        borderRadius: "8px", */
+
 }
 
 .small-boxes {
@@ -64,7 +52,7 @@
 }
 
 .num-data-container {
-  background-color: rgb(229, 231, 245);
+  background-color: var(--primary2);
   border-radius: var(--radius);
   padding: 1rem;
   /* max-width: 700px; */
@@ -73,7 +61,7 @@
   height: 350px;
 }
 .summary-title {
-  color: rgb(105, 105, 106);
+  color: var(--secondary);
 }
 
 .num-data-container-mass {
@@ -93,7 +81,7 @@
 }
 
 .num-data-container-mass p {
-  color: rgb(38, 182, 183);
+  color:var(--primary);
   font-size: 18px;
 }
 
@@ -102,7 +90,7 @@
 }
 
 .summary-data-text {
-  color: rgb(38, 182, 183);
+  color: var(--secondary2);
   font-size: 32px;
   font-weight: bold;
 }
@@ -112,22 +100,7 @@
   padding-bottom: 0px;
 }
 
-/* .learn-more-container {
-  padding-top: 3rem;
-  margin-top: 1rem;
-  background-color: rgb(38, 182, 183);
-  border-radius: 8px;
-}
 
-.types-of-meteorites-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  gap: 1rem;
-}
-.learn-more-grid-item {
-  padding: 1rem;
-  margin: 0.5rem;
-} */
 
 @media (max-width: 768px) {
   .summary-container {

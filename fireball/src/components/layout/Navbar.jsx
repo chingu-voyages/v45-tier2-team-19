@@ -1,6 +1,5 @@
 import "./Navbar.css";
 import { useState, useEffect, useRef } from "react";
-import CollapsedNav from "./CollapsedNav";
 import { MdMenu } from 'react-icons/md';
 import starryBg from '../../assets/starryMeteorHeader.png'
 

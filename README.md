@@ -25,7 +25,7 @@ In addition to the goals related to the application functionality, our team also
 - [Aleksandar Vukasovic](https://github.com/vukas86)
 -
 - [Crystal Rose-Wainstock](https://github.com/crwainstock) 👋
--
+- Sarita Jha
 
 ## ✨ Features
 

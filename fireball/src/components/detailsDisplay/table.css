@@ -1,11 +1,16 @@
+:root {
+  --main-font-color: #f2d492;
+  --second-bg-color: #202c39;
+}
+
 table {
   font-family: "PlusJakartaSans-Regular", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   border-color: orange;
   width: 100%;
   table-layout: fixed;
-  background-color: rgb(16, 40, 173);
-  color: white;
+  background-color: #283845;
+  color: var(--main-font-color);
   margin-top: 100px;
   overflow-wrap: break-word;
 }
@@ -14,15 +19,15 @@ table th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: center;
-  background-color: rgb(12, 22, 79);
-  color: white;
+  background-color: var(--second-bg-color);
+  color: var(--main-font-color);
 }
 
 table td,
 table th {
   border: 1px solid black;
   padding: 8px;
-  color: white;
+  color: var(--main-font-color);
 }
 
 table tr:hover {
@@ -31,21 +36,21 @@ table tr:hover {
 }
 
 .clrBtn {
-  background-color: red;
+  background-color: var(--main-font-color);
   margin-left: 10px;
   padding: 3px;
-  color: white;
+  color: black;
   cursor: pointer;
 }
 .clrBtn:hover {
-  background-color: rgb(228, 113, 113);
+  background-color: #e6af37;
 }
 .clrBtn:active {
   padding: 2px;
 }
 
 .goto {
-  color: white;
+  color: #f2d492;
   margin-left: 20px;
   display: flex;
   /* width: 60px; */
@@ -67,17 +72,16 @@ table tr:hover {
 .paginationContainer button {
   padding: 5px;
   /* margin: 0 5px; */
-  color: white;
-  background-color: rgb(16, 40, 173);
+  color: var(--main-font-color);
+  background-color: var(--second-bg-color);
   border-radius: 0;
-  border-color: #f2f2fb;
+  /* border-color: #f2f2fb; */
 }
 
 .pageNumbers {
-  background-color: rgb(16, 40, 173);
-  color: white;
+  background-color: var(--second-bg-color);
+  color: var(--main-font-color);
   padding: 8px;
-  border-top-color: orange;
 }
 
 .custom-loader {

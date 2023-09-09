@@ -1,51 +1,70 @@
+:root {
+  --main-font-color: #e6e681;
+  --second-bg-color: #202c39;
+}
+
+.table-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
 table {
   font-family: "PlusJakartaSans-Regular", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   border-color: orange;
   width: 100%;
   table-layout: fixed;
-  background-color: rgb(16, 40, 173);
-  color: white;
+  background-color: #283845;
+  color: var(--main-font-color);
   margin-top: 100px;
   overflow-wrap: break-word;
+  border-collapse: collapse;
+  border-radius: 15px;
+  overflow: hidden;
+  font-size: 18px;
 }
 
 table th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: center;
-  background-color: rgb(12, 22, 79);
-  color: white;
+  background-color: var(--second-bg-color);
+  color: var(--main-font-color);
 }
 
 table td,
 table th {
   border: 1px solid black;
   padding: 8px;
-  color: white;
+  color: var(--main-font-color);
 }
 
-table tr:hover {
+tbody tr:hover {
   background-color: #ddd;
   color: black;
 }
 
+table input {
+  line-height: 30px;
+}
+
 .clrBtn {
-  background-color: red;
+  background-color: #ff6633;
   margin-left: 10px;
   padding: 3px;
   color: white;
   cursor: pointer;
+  border-radius: 4px;
 }
 .clrBtn:hover {
-  background-color: rgb(228, 113, 113);
+  background-color: #f49e82;
 }
 .clrBtn:active {
   padding: 2px;
 }
 
 .goto {
-  color: white;
+  color: #e6e681;
   margin-left: 20px;
   display: flex;
   /* width: 60px; */
@@ -67,20 +86,19 @@ table tr:hover {
 .paginationContainer button {
   padding: 5px;
   /* margin: 0 5px; */
-  color: white;
-  background-color: rgb(16, 40, 173);
+  color: var(--main-font-color);
+  background-color: var(--second-bg-color);
   border-radius: 0;
-  border-color: #f2f2fb;
+  /* border-color: #f2f2fb; */
 }
 
 .pageNumbers {
-  background-color: rgb(16, 40, 173);
-  color: white;
+  background-color: var(--second-bg-color);
+  color: var(--main-font-color);
   padding: 8px;
-  border-top-color: orange;
 }
 
-.custom-loader {
+/* .custom-loader {
   width: 120px;
   height: 22px;
   border-radius: 40px;
@@ -103,7 +121,7 @@ table tr:hover {
   box-shadow: -10px 0 12px 3px #f40606;
   clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%, -30px 50%);
   animation: ct4 2s infinite linear;
-}
+} */
 
 @keyframes ct4 {
   100% {

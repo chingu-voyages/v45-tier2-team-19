@@ -8,7 +8,7 @@
 
 .navbar,
 .navbar nav {
-  position: absolute;
+  position:absolute;
   bottom:0px;
   left:0px;
   display: flex;

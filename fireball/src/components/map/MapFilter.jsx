@@ -13,7 +13,6 @@ function MapFilter({ data, onDataFiltered }) {
     Mass: "All",
     // Add more filter criteria here
   });
-  const [filter, SetFilter] = useState("All");
 
   // console.log("data inside the filter comonent", data);
 

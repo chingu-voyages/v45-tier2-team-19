@@ -1,0 +1,12 @@
+.container {
+  background-image: url('../../assets/comets.svg'), url('../../assets/background.svg');
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, cover;
+  background-position: center, left top;
+  height: 100vh;
+  position: relative;
+}
+
+.logo {
+  padding: 60px;
+}

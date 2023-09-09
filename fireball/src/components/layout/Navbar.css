@@ -1,19 +1,39 @@
+.headerContainer {
+
+
+
+
+}
+
 
 .navbar,
 .navbar nav {
+  position:absolute;
+  bottom:0px;
+  left:0px;
 display: flex;
   list-style: none;
   width: 100vw;
   justify-content: center;
   align-items: center;
   align-content: space-between;
+  /* background-color: purple; */
+  /* background-image: url('../../assets/bg.svg'); */
+  background-color:transparent;
+  background-color: var(--primary);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50px;
   padding: 0px;
   align-content: space-between;
-  background-color:transparent;
-  z-index:999;
-  
+}
+
+nav {
+  /* flex-direction: column; */
   
 }
+
+
 
 .navbar ul {
   display: flex;
@@ -21,6 +41,7 @@ display: flex;
   margin: 0px;
   height: 100%;
   list-style: none;
+  background-color:transparent;
   justify-content: center;
   width:100vw;
   

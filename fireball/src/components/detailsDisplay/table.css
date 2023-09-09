@@ -82,6 +82,9 @@ table input {
   align-items: center;
   margin-bottom: 100px;
 }
+.paginationBtns{
+  display:flex;
+}
 
 .paginationContainer button {
   padding: 5px;

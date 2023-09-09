@@ -7,25 +7,37 @@
   align-items: center;
   width: 100vw;
   height: 20vw;
-  
- 
+
+
 
 }
 
 
-
 .navbar,
 .navbar nav {
+
   display: flex;
   list-style: none;
   width: 100%;
   justify-content: center;
   align-items: center;
   align-content: space-between;
-  background-color: purple;
+  /* background-color: purple; */
+  /* background-image: url('../../assets/bg.svg'); */
+  background-color: var(--primary);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50px;
   padding: 0px;
   align-content: space-between;
 }
+
+nav {
+  /* flex-direction: column; */
+  position: relative;
+}
+
+
 
 .navbar ul {
   display: flex;

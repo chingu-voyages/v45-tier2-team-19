@@ -9,6 +9,7 @@ import TestComponents from "./components/layout/testComponents";
 
 import { useDataContext } from "./hooks/useDataContext";
 import DataSets from "./components/detailsDisplay/DataSets";
+import Header2 from "./components/layout/Header2";
 
 const App = function () {
   const { data, loading } = useDataContext();
@@ -19,7 +20,8 @@ const App = function () {
     <div className="App">
       {loading == true && <div className="loading">Loading...</div>}
 
-      <Header />
+      {/* <Header /> */}
+      <Header2 />
       <TestComponents />
       <DataSets />
       <Table />

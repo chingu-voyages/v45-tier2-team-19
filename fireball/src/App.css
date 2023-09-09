@@ -75,14 +75,14 @@ body {
 }
 
 /*HEADER*/
-header {
+/* header {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   background-color: #0c164f;
   height: 20vw;
-}
+} */
 
 .navbar {
   width: 100%;

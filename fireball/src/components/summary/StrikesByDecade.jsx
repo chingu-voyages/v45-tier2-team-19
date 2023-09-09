@@ -49,12 +49,12 @@ function StrikesByDecade() {
     scales: {
       x: {
         ticks: {
-          color: "rgb(38,182,183)",
+          color: "#E6AF37",
         },
       },
       y: {
         ticks: {
-          color: "rgb(38,182,183)",
+          color: "#E6AF37",
         },
         title: {
           display: true,

@@ -76,17 +76,17 @@ function StrikesByYearFiltered() {
     scales: {
       x: {
         ticks: {
-          color: "rgb(38,182,183)",
+          color: "#E6AF37",
         },
       },
       y: {
         ticks: {
-          color: "rgb(38,182,183)",
+          color: "#F2D492",
         },
         title: {
           display: true,
           text: "Number of Strikes",
-          color: "rgb(12, 22, 79)",
+          color: "#F2D492",
         },
         beginAtZero: true,
       },
@@ -114,12 +114,15 @@ function StrikesByYearFiltered() {
       <Stack spacing={2} direction="row" sx={{ mb: 1 }} alignItems="center">
         <Typography>Mass Range:</Typography>
         <Slider
+
           aria-label="mass"
           step={0.01}
           value={sliderValue}
           onChange={handleChange}
           valueLabelDisplay="auto"
           valueLabelFormat={(value) => `${value} g`}
+
+
         />
       </Stack>
       <Bar data={chartData} options={chartOptions} />

@@ -51,6 +51,8 @@ To build the application, we used:
 - [TanStack Table](https://tanstack.com/table/v8/)
 - [Emotion](https://emotion.sh/docs/introduction)
 - [Material UI](https://mui.com/material-ui/getting-started/)
+- [React-icons](https://www.npmjs.com/package/react-icons)
+- [Radix-ui](https://www.radix-ui.com/)
 
 ## 👩‍💻 Running the App
 

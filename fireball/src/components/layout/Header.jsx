@@ -1,9 +1,7 @@
 import { useState, useEffect, useRef } from "react";
-import logo from "../../assets/logo-no-background.svg";
+import logo from "../../assets/Logo.svg";
+import header from "./Header.module.css";
 import Navbar from "./Navbar";
-import './Header.css'
-import { MdMenu } from 'react-icons/md';
-
 
 const Header = function () {
   const [headerHeight, setHeaderHeight] = useState(0);
@@ -12,16 +10,23 @@ const Header = function () {
   useEffect(() => {
     setHeaderHeight(headerRef.current.clientHeight);
   }, []);
-
   return (
-    <div id="curvedWrapper">
-      <div className="headerContainer">
-        <header ref={headerRef} className="logoContainer">
-          <img className="headerLogo" src={logo} alt="header logo" />
-        </header>
+    <>
+
+      <header ref={headerRef} className={header.container}>
+        <div className={header.logo}>
+          <img src={logo} alt="logo" />
+        </div>
+        <div>
+          <h1>Title</h1>
+          <p>Description</p>
+        </div>
+        <div className={header.cometContainer}></div>
         <Navbar headerHeight={headerHeight} />
-      </div>
-    </div>
+      </header>
+
+
+    </>
   );
 };
 export default Header;

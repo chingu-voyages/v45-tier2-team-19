@@ -5,7 +5,7 @@ import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import Table from "./components/layout/Table";
 import Map from "./components/map/Map";
-import TestComponents from "./components/layout/testComponents";
+
 
 import { useDataContext } from "./hooks/useDataContext";
 import DataSets from "./components/detailsDisplay/DataSets";
@@ -22,7 +22,7 @@ const App = function () {
 
       {/* <Header /> */}
       <Header2 />
-      <TestComponents />
+
       <DataSets />
       <Table />
       <Map />

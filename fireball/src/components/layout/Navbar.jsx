@@ -68,9 +68,7 @@ const Navbar = function ({ headerHeight }) {
               position: "fixed",
               left: "0px",
               top: "0px",
-              backgroundColor: 'purple',
-              backgroundImage: `url(${starryBg})`,
-              backgroundSize: 'cover',
+
             }
             : {}
         }

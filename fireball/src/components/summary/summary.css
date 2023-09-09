@@ -11,9 +11,10 @@
 
 .summary-container {
   display:flex;
+  align-items:center;
+  justify-content: center;
   flex-wrap:wrap;
-  width:100%;
-  justify-content: center;;
+  
 
 }
 
@@ -58,8 +59,7 @@
   padding: 1rem;
   /* max-width: 700px; */
   margin: var(--margin);
-  width: fit-content;
-  height: fit-content;
+ 
 }
 .summary-title {
   color: var(--secondary);
@@ -70,6 +70,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  height:fit-content;
+  padding:1em;
 }
 
 .num-data-container-strike {

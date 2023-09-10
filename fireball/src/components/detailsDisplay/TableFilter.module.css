@@ -1,0 +1,23 @@
+.container {
+  display: inline-flex;
+  height: 38px;
+  /* padding: 0 10px; */
+  background-color: var(--primary2);
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  /* align-items: center; */
+}
+
+.input {
+  border: 0;
+  background-color: transparent;
+  outline: 0;
+  width: 200px;
+  padding-left: 10px;
+  /* margin-left: 5px; */
+}
+
+.input::placeholder {
+  color: var(--text);
+}

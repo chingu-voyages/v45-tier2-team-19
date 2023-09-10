@@ -6,6 +6,7 @@ import { COLUMNS } from "./columns";
 import { ColumnFilter } from "./ColumnFilter";
 
 import ds from "./DataSets.module.css";
+import TableFilter from "./TableFilter";
 
 // import "./table.css";
 
@@ -14,6 +15,7 @@ function DataSets() {
 
   // const [isLoading, setIsLoading] = useState(true);
   const [formattedData, setFormattedData] = useState([]);
+  const [tableFilter, setTableFilter] = useState("name");
 
   useEffect(() => {
     if (originalData) {
@@ -62,13 +64,17 @@ function DataSets() {
     pageCount,
     state,
     prepareRow,
+    setFilter,
   } = tableInstance;
 
   const { pageIndex } = state;
+  const columnsNames = headerGroups[0].headers.map((h) => h.id);
+  console.log(columnsNames);
 
   return (
     <div className={ds.section} id="Table">
       <div className={ds.tableContainer}>
+        <TableFilter options={columnsNames} setFilter={setFilter} />
         <table className={ds.table} {...getTableProps()}>
           <thead>
             {headerGroups.map((headerGroup) => (
@@ -90,14 +96,13 @@ function DataSets() {
             ))}
           </thead>
           <tbody {...getTableBodyProps()}>
-            {page.map((row) => {
-              // console.log("ROW", row);
+            {page.map((row, i) => {
               prepareRow(row);
               return (
                 <tr
                   key={row.id}
                   {...row.getRowProps()}
-                  className={row.id % 2 === 1 ? ds.coloredRows : ""}
+                  className={i % 2 === 1 ? ds.coloredRows : ""}
                 >
                   {row.cells.map((cell) => {
                     return (

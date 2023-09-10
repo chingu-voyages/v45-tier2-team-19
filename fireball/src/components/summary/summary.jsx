@@ -2,6 +2,7 @@ import StrikesByYear from "./StrikesByYear";
 import AverageMass from "./AverageMass";
 import TotalStrikes from "./TotalStrikes";
 import StrikesByComposition from "./StrikesByComposition";
+import StrikesByMass from "./StrikesByMass";
 
 import StrikesByYearFiltered from "./StrikesByYearFiltered";
 
@@ -35,7 +36,8 @@ const Summary = function () {
             <StrikesByYearFiltered />
             <StrikesByDecade />
 
-
+            <StrikesByYear />
+            <StrikesByMass />
 
 
             <StrikesByDecade />
@@ -45,6 +47,7 @@ const Summary = function () {
 
 
             <StrikesByComposition />
+
           </div>
         )}
       </div>

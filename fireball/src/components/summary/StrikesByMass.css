@@ -2,5 +2,25 @@
     display:grid;
     grid-template-columns:1fr 1fr;
     text-align:left;
+    background-color:var(--primary2);
+    border-radius:15px;
+    padding:2em;
 }
 
+.dataBox{
+    color:var(--secondary2);
+    font-size:small;
+}
+
+.dataBox h1{
+    color:var(--secondary)
+}
+
+
+.meteorContainer{
+    display:grid;
+    grid-template-columns:5fr 1fr 5fr;
+}
+.meteorName,.meteorMass{
+    display:block;
+}

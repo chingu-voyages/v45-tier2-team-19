@@ -2,6 +2,8 @@ footer{
   display:flex;
   justify-content:space-around;
   align-items:center;
+  align-content:space-around;
+  flex-wrap:wrap;
   background-image: url('../../assets/comets.svg'), url('../../assets/background.svg');
   background-repeat: no-repeat, no-repeat;
   background-size: contain, cover;
@@ -17,6 +19,8 @@ footer{
   background-color:var(--primary2);
   padding:2em;
   border-radius:15px;
+  margin-bottom:2em;
+  margin-top:2em;
 
 }
 
@@ -35,7 +39,8 @@ cursor:pointer;
 
 .footerLogo{
   
-  height:5em;
+  width:50%;
+  margin:5%;
 }
 
 

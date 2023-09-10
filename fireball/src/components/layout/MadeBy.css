@@ -27,6 +27,10 @@
     background-color:var(--primary)
 }
 
+.creator a li:hover{
+    color:white;
+}
+
 .madeBy a:hover{
     cursor:pointer;
     color:white;

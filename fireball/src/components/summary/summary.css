@@ -3,25 +3,21 @@
   --margin: 0.5rem;
 }
 
-
-
-#Summary{
+.summaryContainerWrap{
   display:flex;
-  background-color:var(--primary);
-  display:flex;
-
-  width:100%;
   justify-content: center;
-  padding:1em;
+  width:100vw;
 }
 
+
 .summary-container {
- display:grid;
+ display:flex;
  grid-template-columns:1fr 1fr 1fr;
-justify-content: center;
+justify-content: flex-start;
   padding:1em;
   flex-wrap:wrap;
   background-color:var(--primary);
+  width:fit-content
   
   
 

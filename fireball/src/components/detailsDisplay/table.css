@@ -10,8 +10,6 @@
 
 table {
   font-family: "PlusJakartaSans-Regular", Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  border-color: orange;
   width: 100%;
   table-layout: fixed;
   background-color: #283845;
@@ -25,6 +23,9 @@ table {
 }
 
 table th {
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: center;
@@ -42,6 +43,10 @@ table th {
 tbody tr:hover {
   background-color: #ddd;
   color: black;
+}
+
+.tableFilter {
+  margin: 10px 0;
 }
 
 table input {

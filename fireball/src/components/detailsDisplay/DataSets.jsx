@@ -77,7 +77,7 @@ function DataSets() {
                     {...column.getHeaderProps(column.getSortByToggleProps())}
                   >
                     {column.render("Header")}
-                    <div>
+                    <div className="tableFilter">
                       {column.canFilter ? column.render("Filter") : null}
                     </div>
                   </th>

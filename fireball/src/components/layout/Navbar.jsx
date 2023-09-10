@@ -54,19 +54,19 @@ const Navbar = function ({ headerHeight }) {
     },
     {
       name: 'Table',
-      link: ""
+      link: 'Table'
     },
     {
       name: 'Map',
-      link: ""
+      link: "Map"
     },
     {
       name: 'Summary',
-      link: ""
+      link: "Summary"
     },
     {
       name: 'Credits',
-      link: ""
+      link: "Credits"
     }
   ]
   let listItems = menuList.map((list, index) => {

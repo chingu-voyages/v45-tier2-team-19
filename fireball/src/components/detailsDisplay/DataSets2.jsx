@@ -102,12 +102,12 @@ function DataSets() {
   }, [originalData]);
 
   return (
-    <div>
+    <div div  >
       {isLoading ? (
         <div className="custom-loader"></div>
       ) : (
         <>
-          <table {...getTableProps()}>
+          <table id="Table" {...getTableProps()}>
             <thead>
               {headerGroups.map((headerGroup) => (
                 <>
@@ -190,7 +190,7 @@ function DataSets() {
               />
             </span>
           </div>
-        </>
+        </div>
       )}
     </div>
   );

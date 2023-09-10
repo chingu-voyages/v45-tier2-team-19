@@ -23,7 +23,7 @@ const Summary = function () {
         {loading ? (
           <div>Loading...</div>
         ) : (
-          <div className="summary-container">
+          <div id="Summary" className="summary-container">
 
 
             <div className="small-boxes">

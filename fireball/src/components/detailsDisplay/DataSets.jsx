@@ -65,7 +65,7 @@ function DataSets() {
   const { pageIndex } = state;
 
   return (
-    <div className="table-container" id="#Table">
+    <div className="table-container" id="Table">
       <table {...getTableProps()}>
         <thead>
           {headerGroups.map((headerGroup) => (

@@ -30,7 +30,7 @@ const MadeBy = function () {
     const creatorList = creators.map((creator, index) => {
         return (
 
-            <div className="creator" key={index}>
+            <div id="Credits" className="creator" key={index}>
                 <a href={creator.github}  >
                     <li>{creator.name}</li>
                 </a>

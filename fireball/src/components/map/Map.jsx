@@ -34,7 +34,7 @@ const Map = () => {
   }
 
   return (
-    <div className={map.section}>
+    <div id="Map" className={map.section}>
       <div className={map.container}>
         <MapFilter data={data} onDataFiltered={handleDataFiltered} />
         <div className={map.details}>

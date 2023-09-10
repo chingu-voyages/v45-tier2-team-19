@@ -9,7 +9,7 @@ import Map from "./components/map/Map";
 
 import { useDataContext } from "./hooks/useDataContext";
 import DataSets from "./components/detailsDisplay/DataSets";
-import Header2 from "./components/layout/Header2";
+
 
 const App = function () {
   const { data, loading } = useDataContext();
@@ -25,7 +25,7 @@ const App = function () {
       )}
 
       {/* <Header /> */}
-      <Header2 />
+      <Header />
 
       <DataSets />
       <Map />

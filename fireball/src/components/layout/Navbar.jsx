@@ -46,10 +46,31 @@ const Navbar = function ({ headerHeight }) {
   useEffect(() => {
     toggleCollapse()
   }, [collapsed]);
-  let menuLinksList = ['#', 'tableContainer', 'mapContainer', 'summary', '']
-  let menuList = ['Home', 'Table', 'Map', 'Summary', 'Cool Facts']
+
+  let menuList = [
+    {
+      name: 'Home',
+      link: ""
+    },
+    {
+      name: 'Table',
+      link: ""
+    },
+    {
+      name: 'Map',
+      link: ""
+    },
+    {
+      name: 'Summary',
+      link: ""
+    },
+    {
+      name: 'Credits',
+      link: ""
+    }
+  ]
   let listItems = menuList.map((list, index) => {
-    return <li key={index}>{list}</li>
+    return <li key={index}>{list.name}</li>
   })
 
   function handleMenuClose() {
@@ -78,8 +99,8 @@ const Navbar = function ({ headerHeight }) {
 
             {menuList.map((item, index) => {
               return (
-                <a href={`#${item}`} onClick={() => { handleMenuClose() }} key={index} >
-                  <li>{item}</li>
+                <a href={`#${item.link}`} onClick={() => { handleMenuClose() }} key={index} >
+                  <li>{item.name}</li>
 
                 </a>)
             })}

@@ -5,7 +5,9 @@
   --secondary: #F2D492;
   --secondary2: #E6AF37
 }
-
+html{
+  scroll-behavior: smooth;
+}
 body {
   
 
@@ -14,7 +16,7 @@ body {
   align-content: center;
   padding: 0px;
   margin: 0px;
-  scroll-behavior: smooth;
+ 
 
   max-width: 100%;
 }
@@ -30,7 +32,7 @@ body {
 }
 
 .App {
- 
+
   width: 100%;
   margin: 0px;
   padding: 0px;

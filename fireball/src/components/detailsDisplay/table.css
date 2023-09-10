@@ -10,12 +10,10 @@
 
 table {
   font-family: "PlusJakartaSans-Regular", Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  border-color: orange;
   width: 100%;
   table-layout: fixed;
   background-color: #283845;
-  color: var(--main-font-color);
+  color: black;
   margin-top: 100px;
   overflow-wrap: break-word;
   border-collapse: collapse;
@@ -25,6 +23,9 @@ table {
 }
 
 table th {
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: center;
@@ -42,6 +43,13 @@ table th {
 tbody tr:hover {
   background-color: #ddd;
   color: black;
+}
+tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.tableFilter {
+  margin: 10px 0;
 }
 
 table input {
@@ -81,9 +89,6 @@ table input {
   margin-top: 25px;
   align-items: center;
   margin-bottom: 100px;
-}
-.paginationBtns{
-  display:flex;
 }
 
 .paginationContainer button {

@@ -102,7 +102,7 @@
 }
 
 .pageNumbers {
-  color: var(--secondary);
+  color: var(--text);
   background-color: var(--primary);
   padding: 5px 10px;
   display: flex;
@@ -117,7 +117,7 @@
 .goToPage {
   display: flex;
   align-items: center;
-  font-weight: 600;
+  /* font-weight: 600; */
 }
 
 .goToPage .goToPageTitle {

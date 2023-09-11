@@ -127,6 +127,23 @@ function DataSets() {
           </table>
         </div>
         <div className={ds.paginationContainer}>
+          <div className={ds.goToPage}>
+            <div className={ds.goToPageTitle}>
+              <span>Go to page</span>
+            </div>
+            <div className={ds.input}>
+              <input
+                type="number"
+                defaultValue={pageIndex + 1}
+                onChange={(e) => {
+                  const pageNumber = e.target.value
+                    ? Number(e.target.value) - 1
+                    : 0;
+                  gotoPage(pageNumber);
+                }}
+              />
+            </div>
+          </div>
           <div className={ds.paginationButtons}>
             <Button
               className={ds.gotoStartButton}
@@ -155,25 +172,6 @@ function DataSets() {
             >
               <PiCaretDoubleRightBold size={20} />
             </Button>
-          </div>
-
-          <div className={ds.goToPage}>
-            <div className={ds.goToPageTitle}>
-              <span>Go to page</span>
-            </div>
-            <div className={ds.input}>
-              <input
-                type="number"
-                defaultValue={pageIndex + 1}
-                onChange={(e) => {
-                  const pageNumber = e.target.value
-                    ? Number(e.target.value) - 1
-                    : 0;
-                  gotoPage(pageNumber);
-                }}
-                // style={{ width: "40px" }}
-              />
-            </div>
           </div>
         </div>
       </div>

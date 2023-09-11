@@ -7,21 +7,24 @@
 }
 html{
   scroll-behavior: smooth;
+  
 }
 body {
   
-
+  
   display: flex;
   flex-direction: column;
   align-content: center;
   padding: 0px;
   margin: 0px;
+
  
 
   max-width: 100%;
 }
 
 #root {
+ 
   width: 100%;
   padding: 0px;
   scroll-behavior:smooth;
@@ -32,12 +35,12 @@ body {
 }
 
 .App {
-
+ 
   width: 100%;
   margin: 0px;
   padding: 0px;
-  overflow-x: scroll;
   overflow-y:scroll;
+  overflow-x:hidden;
  
 
 

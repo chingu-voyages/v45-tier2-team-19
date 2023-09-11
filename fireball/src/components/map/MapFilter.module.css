@@ -38,9 +38,11 @@
 @media screen and (max-width:800px){
   .container {
     display:flex;
-    top:0px;
-    left:0px;
-    height:fit-content;
+    flex-wrap:wrap-reverse;
+    justify-content: center;
+    align-content: space-around;
+    
+   
    
 
   
@@ -49,24 +51,30 @@
     
   }
 .batchFilter{
-margin-right:5em;
-margin-bottom:2em;
+  display:flex;
+  justify-content: center;;
+  flex-wrap:wrap;
+  width:100vw;
+  height:fit-content;
+
+ overflow:scroll;
+
   
 }
   
 
 .batchFilter button{
-  padding:1em;
-  height:10%;
-  width:100%;
+padding:.5em;
+
+  
+  
 
 
 }
 .yellowButtons{
-  display:flex;
-  flex-wrap:wrap;
-  width:50%;
-  height:50%;
+ display:block;
+
+  
 
   height:fit-content;
   width:fit-content;
@@ -74,8 +82,12 @@ margin-bottom:2em;
 
 .yellowButtons button{
   line-height:normal;
+  margin-bottom:2em;
 }
   
- 
+ .button{
+  font-size:smaller;
+  
+ }
     
   }

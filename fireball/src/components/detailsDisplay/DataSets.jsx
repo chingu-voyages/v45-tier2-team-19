@@ -157,20 +157,24 @@ function DataSets() {
             </Button>
           </div>
 
-          {/* <span className="goto">
-            | Go to page
-            <input
-              type="number"
-              defaultValue={pageIndex + 1}
-              onChange={(e) => {
-                const pageNumber = e.target.value
-                  ? Number(e.target.value) - 1
-                  : 0;
-                gotoPage(pageNumber);
-              }}
-              style={{ width: "40px" }}
-            />
-          </span> */}
+          <div className={ds.goToPage}>
+            <div className={ds.goToPageTitle}>
+              <span>Go to page</span>
+            </div>
+            <div className={ds.input}>
+              <input
+                type="number"
+                defaultValue={pageIndex + 1}
+                onChange={(e) => {
+                  const pageNumber = e.target.value
+                    ? Number(e.target.value) - 1
+                    : 0;
+                  gotoPage(pageNumber);
+                }}
+                // style={{ width: "40px" }}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>

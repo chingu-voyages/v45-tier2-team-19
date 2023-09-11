@@ -96,12 +96,14 @@ function MapFilter({ data, onDataFiltered }) {
         </Button>
       </div>
 
-      <Button onClick={getAll} className={mapfilter.button}>
-        All
-      </Button>
-      <Button onClick={getTop100} className={mapfilter.button}>
-        Top 100
-      </Button>
+      <div className={mapfilter.yellowButtons}>
+        <Button onClick={getAll} className={mapfilter.button}>
+          All
+        </Button>
+        <Button onClick={getTop100} className={mapfilter.button}>
+          Top 100
+        </Button>
+      </div>
     </div>
   );
 }

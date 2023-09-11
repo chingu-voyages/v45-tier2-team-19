@@ -37,22 +37,45 @@
 
 @media screen and (max-width:800px){
   .container {
+    display:flex;
+    top:0px;
+    left:0px;
+    height:fit-content;
+   
 
-  display:block;
+  
 
 
     
   }
-.allButtons{
-  display:block;
-  flex-direction: column;
+.batchFilter{
+
+
+
+  
 }
   
 
 .batchFilter button{
   padding:1em;
+  height:10%;
+
+
+}
+.yellowButtons{
+  display:flex;
+  flex-wrap:wrap;
+  width:50%;
+  height:50%;
+  
+  height:fit-content;
+  width:fit-content;
+}
+
+.yellowButtons button{
+
 }
   
-  
+ 
     
   }

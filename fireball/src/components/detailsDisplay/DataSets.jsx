@@ -5,6 +5,8 @@ import { useDataContext } from "../../hooks/useDataContext";
 import { COLUMNS } from "./columns";
 import { ColumnFilter } from "./ColumnFilter";
 
+import Location from "./Location.jsx";
+
 import ds from "./DataSets.module.css";
 import TableFilter from "./TableFilter";
 
@@ -25,10 +27,14 @@ function DataSets() {
         year: item.year || "n/a",
         mass: `${item.mass} (g)` || "n/a",
         recclass: item.recclass || "n/a",
-        // location: item.location || "n/a",
+        location:
+          item.reclat && item.reclong ? (
+            <Location reclat={item.reclat} reclong={item.reclong} />
+          ) : (
+            "n/a"
+          ),
       }));
       setFormattedData(formatted);
-      // setIsLoading(false);
     }
   }, [originalData]);
 

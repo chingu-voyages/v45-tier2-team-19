@@ -4,11 +4,9 @@ footer{
   align-items:center;
   align-content:space-around;
   flex-wrap:wrap;
-  background-image: url('../../assets/comets.svg'), url('../../assets/background.svg');
-  background-repeat: no-repeat, no-repeat;
-  background-size: contain, cover;
+  background-color:var(--primary2);
   background-position: center, left top;
-  height:fit-content;
+  height:100vh;
   position: relative;
 }
 
@@ -22,6 +20,7 @@ footer{
   border-radius:15px;
   margin-bottom:2em;
   margin-top:2em;
+  
 
 }
 
@@ -43,7 +42,7 @@ cursor:pointer;
 
 .footerLogo{
   
-  width:50%;
+  width:25%;
   margin:5%;
 }
 

@@ -22,9 +22,9 @@ const Header = function () {
           <p>Description</p>
         </div>
         <div className={header.cometContainer}></div>
-
+        <Navbar headerHeight={headerHeight} />
       </header>
-      <Navbar headerHeight={headerHeight} />
+
 
     </>
   );

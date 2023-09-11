@@ -92,6 +92,17 @@ function DataSets() {
                       {...column.getHeaderProps(column.getSortByToggleProps())}
                     >
                       {column.render("Header")}
+                      <span>
+                        {column.isSorted ? (
+                          column.isSortedDesc ? (
+                            <img src={iconUp} alt="Sort Ascending" />
+                          ) : (
+                            <img src={iconDown} alt="Sort Ascending" />
+                          )
+                        ) : (
+                          ""
+                        )}
+                      </span>
                       {/* <div className="tableFilter">
                         {column.canFilter ? column.render("Filter") : null}
                       </div> */}

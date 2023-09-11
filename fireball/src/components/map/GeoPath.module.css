@@ -26,10 +26,10 @@
 }
 
 
-@media screen and (max-width:800px) {
-  .container{
-    display:flex;
-    flex-direction:column;
-  }
+@media screen and (max-width:800px){
+  .container {
+ width:100vw;
+ flex-grow:1;
   
+  }
 }

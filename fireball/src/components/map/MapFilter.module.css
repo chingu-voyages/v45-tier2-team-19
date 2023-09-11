@@ -37,17 +37,22 @@
 
 @media screen and (max-width:800px){
   .container {
-  display:flex;
-  flex-direction:column;
+
+  display:block;
+
+
     
   }
-
-  .batchFiler{
-    flex-grow:0;
-  }
+.allButtons{
+  display:block;
+  flex-direction: column;
+}
   
-  .button{
-    max-width:8vw;
-  }
+
+.batchFilter button{
+  padding:1em;
+}
+  
+  
     
   }

@@ -11,6 +11,14 @@
   width: 292px;
 }
 
+@media  screen and (max-width:800px) {
+  .container{
+    width:80vw;
+    padding:2em;
+  }
+  
+}
+
 
 
 

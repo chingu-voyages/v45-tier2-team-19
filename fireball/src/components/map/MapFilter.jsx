@@ -95,6 +95,7 @@ function MapFilter({ data, onDataFiltered }) {
           Clear
         </Button>
       </div>
+
       <Button onClick={getAll} className={mapfilter.button}>
         All
       </Button>

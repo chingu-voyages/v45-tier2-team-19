@@ -4,6 +4,8 @@ import { useDataContext } from "../../hooks/useDataContext";
 
 import { COLUMNS } from "./columns";
 import { ColumnFilter } from "./ColumnFilter";
+
+import Location from "./Location.jsx";
 import ds from "./DataSets.module.css";
 import TableFilter from "./TableFilter";
 import Button from "../shared/Button";
@@ -12,6 +14,8 @@ import {
   PiCaretRightBold,
   PiCaretDoubleRightBold,
   PiCaretDoubleLeftBold,
+  PiCaretUpFill,
+  PiCaretDownFill,
 } from "react-icons/pi";
 
 // import "./table.css";
@@ -29,12 +33,16 @@ function DataSets() {
         ...item,
         name: item.name || "n/a",
         year: item.year || "n/a",
-        mass: `${item.mass} (g)` || "n/a",
+        mass: item["mass (g)"] || "n/a",
         recclass: item.recclass || "n/a",
-        // location: item.location || "n/a",
+        location:
+          item.reclat && item.reclong ? (
+            <Location reclat={item.reclat} reclong={item.reclong} />
+          ) : (
+            "n/a"
+          ),
       }));
       setFormattedData(formatted);
-      // setIsLoading(false);
     }
   }, [originalData]);
 
@@ -94,7 +102,20 @@ function DataSets() {
                           column.getSortByToggleProps()
                         )}
                       >
-                        {column.render("Header")}
+                        <div className={ds.headerColumn}>
+                          {column.render("Header")}
+                          <span>
+                            {column.isSorted ? (
+                              column.isSortedDesc ? (
+                                <PiCaretUpFill />
+                              ) : (
+                                <PiCaretDownFill />
+                              )
+                            ) : (
+                              ""
+                            )}
+                          </span>
+                        </div>
                         {/* <div className="tableFilter">
                         {column.canFilter ? column.render("Filter") : null}
                       </div> */}

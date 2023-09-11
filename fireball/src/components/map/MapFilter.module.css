@@ -49,10 +49,8 @@
     
   }
 .batchFilter{
-display:flex;
-flex-direction:column;
-
-
+margin-right:5em;
+margin-bottom:2em;
   
 }
   
@@ -60,6 +58,7 @@ flex-direction:column;
 .batchFilter button{
   padding:1em;
   height:10%;
+  width:100%;
 
 
 }
@@ -68,13 +67,13 @@ flex-direction:column;
   flex-wrap:wrap;
   width:50%;
   height:50%;
-  
+
   height:fit-content;
   width:fit-content;
 }
 
 .yellowButtons button{
-
+  line-height:normal;
 }
   
  

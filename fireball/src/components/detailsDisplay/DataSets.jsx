@@ -25,7 +25,7 @@ function DataSets() {
         ...item,
         name: item.name || "n/a",
         year: item.year || "n/a",
-        mass: `${item.mass} (g)` || "n/a",
+        mass: item["mass (g)"] || "n/a",
         recclass: item.recclass || "n/a",
         location:
           item.reclat && item.reclong ? (

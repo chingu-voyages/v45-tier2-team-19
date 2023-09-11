@@ -109,3 +109,21 @@ button {
   color: var(--secondary);
   cursor: default;
 }
+
+@media screen and (max-width:800px) {
+  .SelectTrigger span{
+    font-size:.6em;
+    
+    width:fit-content;
+    line-height:0px;
+    
+    
+  }
+  .SelectTrigger{
+    padding:0px 0px 0px 0px;
+    height:1em;
+    margin-right:0px;
+
+  } 
+  
+}

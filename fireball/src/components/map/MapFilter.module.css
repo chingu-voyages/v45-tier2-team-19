@@ -39,8 +39,11 @@
   .container {
     display:flex;
     flex-wrap:wrap-reverse;
-    justify-content: center;
+    justify-content: flex-start;
     align-content: space-around;
+   width:100vw;
+    justify-content: space-evenly;
+    margin-left:-2em;
     
    
    
@@ -52,13 +55,13 @@
   }
 .batchFilter{
   display:flex;
-  justify-content: center;;
-  align-content:space-evenly;
-  flex-wrap:wrap;
-  width:100vw;
-  height:fit-content;
+;height:fit-content;
+ width:100vw;
+ flex-grow:1;
+ justify-content:space-around;
+ justify-items:flex-start;
+ 
 
- overflow:scroll;
 
   
 }
@@ -67,6 +70,8 @@
 .batchFilter button{
 padding:1em;
 font-size:x-small;
+padding:.5em;
+border-radius:10px;
 
   
   
@@ -88,10 +93,10 @@ font-size:x-small;
   font-size:x-small;
 }
   
- .buttonm, .clearButton{
+ .button, .clearButton{
   font-size:x-small;
   padding:.5em;
-  min-width:3em;
+  min-width:5em;
   text-align: center;
   
  }

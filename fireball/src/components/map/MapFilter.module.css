@@ -53,6 +53,7 @@
 .batchFilter{
   display:flex;
   justify-content: center;;
+  align-content:space-evenly;
   flex-wrap:wrap;
   width:100vw;
   height:fit-content;
@@ -64,7 +65,8 @@
   
 
 .batchFilter button{
-padding:.5em;
+padding:1em;
+font-size:x-small;
 
   
   
@@ -83,11 +85,15 @@ padding:.5em;
 .yellowButtons button{
   line-height:normal;
   margin-bottom:2em;
+  font-size:x-small;
 }
   
- .button{
-  font-size:smaller;
+ .buttonm, .clearButton{
+  font-size:x-small;
+  padding:.5em;
+  min-width:3em;
+  text-align: center;
   
  }
-    
+
   }

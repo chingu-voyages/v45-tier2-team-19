@@ -33,3 +33,9 @@ span {
   font-size: 50px;
   font-weight: bold;
 }
+
+@media screen and (max-width:800px){
+  .data{
+    width:100vw;
+  }
+}

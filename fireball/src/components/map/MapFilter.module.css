@@ -1,5 +1,6 @@
 .container {
-  display: flex;
+  display:flex;
+  
 }
 
 .batchFilter {
@@ -11,6 +12,7 @@
   color: var(--primary2);
   margin-right: 15px;
   border-radius: 15px;
+  
 }
 
 .button:last-child {
@@ -32,3 +34,20 @@
 .clearButton:hover {
   background-color: rgba(242, 212, 146, 0.1);
 }
+
+@media screen and (max-width:800px){
+  .container {
+  display:flex;
+  flex-direction:column;
+    
+  }
+
+  .batchFiler{
+    flex-grow:0;
+  }
+  
+  .button{
+    max-width:8vw;
+  }
+    
+  }

@@ -24,3 +24,12 @@
   border-bottom-left-radius: 0;
   transition: all 0.2s;
 }
+
+
+@media screen and (max-width:800px) {
+  .container{
+    display:flex;
+    flex-direction:column;
+  }
+  
+}

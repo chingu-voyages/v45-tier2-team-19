@@ -1,4 +1,5 @@
 .section {
+  
   padding: 50px 0;
   /* background-color: #202C39; */
   background-color: var(--primary);
@@ -9,12 +10,24 @@
 }
 
 .container {
-  max-width: 1276px;
+ 
+  max-width: 100vw;
   margin: 0 auto;
+  padding:2em;
 }
 
 .details {
+  
   display: flex;
   gap: 20px;
   margin-top: 20px;
+ 
+}
+
+@media screen and (max-width:800px) {
+  .details{
+    display:flex;
+    flex-direction:column;
+  }
+  
 }

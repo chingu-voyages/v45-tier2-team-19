@@ -5,13 +5,17 @@ import { useDataContext } from "../../hooks/useDataContext";
 import { COLUMNS } from "./columns";
 import { ColumnFilter } from "./ColumnFilter";
 
-import "./table.css";
+import ds from "./DataSets.module.css";
+import TableFilter from "./TableFilter";
+
+// import "./table.css";
 
 function DataSets() {
   const originalData = useDataContext().data;
 
   // const [isLoading, setIsLoading] = useState(true);
   const [formattedData, setFormattedData] = useState([]);
+  const [tableFilter, setTableFilter] = useState("name");
 
   useEffect(() => {
     if (originalData) {
@@ -60,49 +64,59 @@ function DataSets() {
     pageCount,
     state,
     prepareRow,
+    setFilter,
   } = tableInstance;
 
   const { pageIndex } = state;
+  const columnsNames = headerGroups[0].headers.map((h) => h.id);
+  console.log(columnsNames);
 
   return (
-    <div className="table-container" id="Table">
-      <table {...getTableProps()}>
-        <thead>
-          {headerGroups.map((headerGroup) => (
-            <>
-              <tr {...headerGroup.getHeaderGroupProps()}>
-                {headerGroup.headers.map((column) => (
-                  <th
-                    key={column.id}
-                    {...column.getHeaderProps(column.getSortByToggleProps())}
-                  >
-                    {column.render("Header")}
-                    <div className="tableFilter">
-                      {column.canFilter ? column.render("Filter") : null}
-                    </div>
-                  </th>
-                ))}
-              </tr>
-            </>
-          ))}
-        </thead>
-        <tbody {...getTableBodyProps()}>
-          {page.map((row) => {
-            prepareRow(row);
-            return (
-              <tr key={row.id} {...row.getRowProps()}>
-                {row.cells.map((cell) => {
-                  return (
-                    <td key={cell.column.id} {...cell.getCellProps()}>
-                      {cell.render("Cell")}
-                    </td>
-                  );
-                })}
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
+    <div className={ds.section} id="Table">
+      <div className={ds.tableContainer}>
+        <TableFilter options={columnsNames} setFilter={setFilter} />
+        <table className={ds.table} {...getTableProps()}>
+          <thead>
+            {headerGroups.map((headerGroup) => (
+              <>
+                <tr {...headerGroup.getHeaderGroupProps()}>
+                  {headerGroup.headers.map((column) => (
+                    <th
+                      key={column.id}
+                      {...column.getHeaderProps(column.getSortByToggleProps())}
+                    >
+                      {column.render("Header")}
+                      {/* <div className="tableFilter">
+                        {column.canFilter ? column.render("Filter") : null}
+                      </div> */}
+                    </th>
+                  ))}
+                </tr>
+              </>
+            ))}
+          </thead>
+          <tbody {...getTableBodyProps()}>
+            {page.map((row, i) => {
+              prepareRow(row);
+              return (
+                <tr
+                  key={row.id}
+                  {...row.getRowProps()}
+                  className={i % 2 === 1 ? ds.coloredRows : ""}
+                >
+                  {row.cells.map((cell) => {
+                    return (
+                      <td key={cell.column.id} {...cell.getCellProps()}>
+                        {cell.render("Cell")}
+                      </td>
+                    );
+                  })}
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
       <div className="paginationContainer">
         <div className="paginationBtns">
           <button onClick={() => gotoPage(0)} disabled={!canPreviousPage}>

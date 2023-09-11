@@ -3,12 +3,12 @@
   --second-bg-color: #202c39;
 }
 
-.table-container {
+/* .table-container {
   width: 90%;
   margin: 0 auto;
-}
+} */
 
-table {
+/* table {
   font-family: "PlusJakartaSans-Regular", Arial, Helvetica, sans-serif;
   width: 100%;
   table-layout: fixed;
@@ -20,8 +20,8 @@ table {
   border-radius: 15px;
   overflow: hidden;
   font-size: 18px;
-}
-
+} */
+/* 
 table th {
   font-weight: bold;
   font-size: 15px;
@@ -31,12 +31,12 @@ table th {
   text-align: center;
   background-color: var(--second-bg-color);
   color: var(--main-font-color);
-}
+} */
 
 table td,
 table th {
-  border: 1px solid black;
-  padding: 8px;
+  /* border: 1px solid black; */
+  /* padding: 8px; */
   color: var(--main-font-color);
 }
 
@@ -47,6 +47,7 @@ tbody tr:hover {
 .tableFilter {
   margin: 10px 0;
 }
+
 tbody tr:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
@@ -67,9 +68,11 @@ table input {
   cursor: pointer;
   border-radius: 4px;
 }
+
 .clrBtn:hover {
   background-color: #f49e82;
 }
+
 .clrBtn:active {
   padding: 2px;
 }
@@ -145,25 +148,30 @@ table input {
     width: 90%;
     margin: 0 auto;
   }
+
   table {
     max-height: none;
     width: 100%;
     font-size: 12px;
   }
+
   .paginationContainer {
     width: 100%;
     display: flex;
     flex-direction: column;
   }
+
   .goto {
     margin-top: 15px;
   }
+
   .filterInput {
     width: 80%;
     margin-bottom: 5px;
     height: 20px;
     font-size: 8px;
   }
+
   .clrBtn {
     padding: 1px;
     font-size: 11px;

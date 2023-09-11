@@ -4,9 +4,15 @@ import { useDataContext } from "../../hooks/useDataContext";
 
 import { COLUMNS } from "./columns";
 import { ColumnFilter } from "./ColumnFilter";
-
 import ds from "./DataSets.module.css";
 import TableFilter from "./TableFilter";
+import Button from "../shared/Button";
+import {
+  PiCaretLeftBold,
+  PiCaretRightBold,
+  PiCaretDoubleRightBold,
+  PiCaretDoubleLeftBold,
+} from "react-icons/pi";
 
 // import "./table.css";
 
@@ -72,93 +78,106 @@ function DataSets() {
   console.log(columnsNames);
 
   return (
-    <div className={ds.section} id="Table">
-      <div className={ds.tableContainer}>
-        <TableFilter options={columnsNames} setFilter={setFilter} />
-        <table className={ds.table} {...getTableProps()}>
-          <thead>
-            {headerGroups.map((headerGroup) => (
-              <>
-                <tr {...headerGroup.getHeaderGroupProps()}>
-                  {headerGroup.headers.map((column) => (
-                    <th
-                      key={column.id}
-                      {...column.getHeaderProps(column.getSortByToggleProps())}
-                    >
-                      {column.render("Header")}
-                      {/* <div className="tableFilter">
+    <section className={ds.section} id="Table">
+      <div className={ds.sectionContainer}>
+        <div className={ds.tableContainer}>
+          <TableFilter options={columnsNames} setFilter={setFilter} />
+          <table className={ds.table} {...getTableProps()}>
+            <thead>
+              {headerGroups.map((headerGroup) => (
+                <>
+                  <tr {...headerGroup.getHeaderGroupProps()}>
+                    {headerGroup.headers.map((column) => (
+                      <th
+                        key={column.id}
+                        {...column.getHeaderProps(
+                          column.getSortByToggleProps()
+                        )}
+                      >
+                        {column.render("Header")}
+                        {/* <div className="tableFilter">
                         {column.canFilter ? column.render("Filter") : null}
                       </div> */}
-                    </th>
-                  ))}
-                </tr>
-              </>
-            ))}
-          </thead>
-          <tbody {...getTableBodyProps()}>
-            {page.map((row, i) => {
-              prepareRow(row);
-              return (
-                <tr
-                  key={row.id}
-                  {...row.getRowProps()}
-                  className={i % 2 === 1 ? ds.coloredRows : ""}
-                >
-                  {row.cells.map((cell) => {
-                    return (
-                      <td key={cell.column.id} {...cell.getCellProps()}>
-                        {cell.render("Cell")}
-                      </td>
-                    );
-                  })}
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
-      </div>
-      <div className="paginationContainer">
-        <div className="paginationBtns">
-          <button onClick={() => gotoPage(0)} disabled={!canPreviousPage}>
-            {"<<"}
-          </button>
-          <button onClick={() => previousPage()} disabled={!canPreviousPage}>
-            Previous
-          </button>
-          <span className="pageNumbers">
-            Page{" "}
-            <strong>
-              {pageIndex + 1} of {pageOptions.length}
-            </strong>{" "}
-          </span>
-
-          <button onClick={() => nextPage()} disabled={!canNextPage}>
-            Next
-          </button>
-          <button
-            onClick={() => gotoPage(pageCount - 1)}
-            disabled={!canNextPage}
-          >
-            {">>"}
-          </button>
+                      </th>
+                    ))}
+                  </tr>
+                </>
+              ))}
+            </thead>
+            <tbody {...getTableBodyProps()}>
+              {page.map((row, i) => {
+                prepareRow(row);
+                return (
+                  <tr
+                    key={row.id}
+                    {...row.getRowProps()}
+                    className={i % 2 === 1 ? ds.coloredRows : ""}
+                  >
+                    {row.cells.map((cell) => {
+                      return (
+                        <td key={cell.column.id} {...cell.getCellProps()}>
+                          {cell.render("Cell")}
+                        </td>
+                      );
+                    })}
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
         </div>
+        <div className={ds.paginationContainer}>
+          <div className={ds.paginationButtons}>
+            <Button
+              className={ds.gotoStartButton}
+              onClick={() => gotoPage(0)}
+              disabled={!canPreviousPage}
+            >
+              <PiCaretDoubleLeftBold size={20} />
+            </Button>
+            <Button onClick={() => previousPage()} disabled={!canPreviousPage}>
+              <PiCaretLeftBold size={20} />
+            </Button>
+            <span className={ds.pageNumbers}>
+              Page{" "}
+              <strong>
+                {pageIndex + 1} of {pageOptions.length}
+              </strong>{" "}
+            </span>
 
-        <span className="goto">
-          | Go to page
-          <input
-            type="number"
-            defaultValue={pageIndex + 1}
-            onChange={(e) => {
-              const pageNumber = e.target.value
-                ? Number(e.target.value) - 1
-                : 0;
-              gotoPage(pageNumber);
-            }}
-            style={{ width: "40px" }}
-          />
-        </span>
+            <Button onClick={() => nextPage()} disabled={!canNextPage}>
+              <PiCaretRightBold size={20} />
+            </Button>
+            <Button
+              className={ds.gotoEndButton}
+              onClick={() => gotoPage(pageCount - 1)}
+              disabled={!canNextPage}
+            >
+              <PiCaretDoubleRightBold size={20} />
+            </Button>
+          </div>
+
+          <div className={ds.goToPage}>
+            <div className={ds.goToPageTitle}>
+              <span>Go to page</span>
+            </div>
+            <div className={ds.input}>
+              <input
+                type="number"
+                defaultValue={pageIndex + 1}
+                onChange={(e) => {
+                  const pageNumber = e.target.value
+                    ? Number(e.target.value) - 1
+                    : 0;
+                  gotoPage(pageNumber);
+                }}
+                // style={{ width: "40px" }}
+              />
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -7,12 +7,14 @@
 .section {
   background-color: var(--primary2);
   padding: 50px 0;
+}
 
+.sectionContainer {
+  max-width: 1276px;
+  margin: 0 auto;
 }
 
 .tableContainer {
-  margin: 0 auto;
-  max-width: 1276px;
   padding: 20px;
   height: 692px;
   box-sizing: border-box;
@@ -58,4 +60,102 @@
 
 .table .coloredRows {
   background-color: var(--primary3);
+}
+
+/*Pagination*/
+
+.paginationContainer {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.paginationButtons {
+  display: flex;
+  gap: 3px;
+}
+
+.paginationButtons button {
+  background-color: var(--primary);
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paginationButtons button:disabled {
+  background-color: var(--primary3);
+}
+
+.paginationButtons button:hover {
+  background-color: var(--primary3);
+}
+
+
+
+.gotoStartButton {
+  border-radius: 15px 0 0 15px;
+}
+
+.gotoEndButton {
+  border-radius: 0 15px 15px 0;
+}
+
+.pageNumbers {
+  color: var(--secondary);
+  background-color: var(--primary);
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pageNumbers strong {
+  margin-left: 5px;
+}
+
+.goToPage {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.goToPage .goToPageTitle {
+  background-color: var(--primary);
+  margin-right: 3px;
+  color: var(--text);
+  padding: 0.6em 1.2em;
+  border-radius: 15px 0 0 15px;
+}
+
+.goToPage .input {
+  padding: 0.6em 1.2em;
+  background-color: var(--primary);
+  border-radius: 0 15px 15px 0;
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+
+}
+
+.input input {
+  width: 40px;
+  outline: 0;
+  background-color: var(--primary);
+  border: 0;
+  box-sizing: border-box;
+  text-align: center;
+  color: var(--text);
+  font-weight: 600;
+}
+
+input[type=number] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

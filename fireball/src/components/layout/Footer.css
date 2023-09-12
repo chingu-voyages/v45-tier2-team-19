@@ -6,7 +6,7 @@ footer{
   flex-wrap:wrap;
   background-color:var(--primary2);
   background-position: center, left top;
-  height:100vh;
+  height:fit-content;
   position: relative;
 }
 

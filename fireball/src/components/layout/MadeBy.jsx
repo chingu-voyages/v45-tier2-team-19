@@ -14,12 +14,13 @@ const MadeBy = function () {
             name: 'Crystal',
             github: "https://github.com/crwainstock",
             linkedIn: "https://www.linkedin.com/in/crwainstock/",
+            homePage: ""
         },
         {
             name: 'Chris',
             github: "https://github.com/crisxh",
             linkedIn: "https://www.linkedin.com/in/chris-hndx/",
-            homePage: "https://crisxh.github.io/"
+            homePage: "https://crysalistech.wordpress.com/"
         },
         {
             name: 'Younes',

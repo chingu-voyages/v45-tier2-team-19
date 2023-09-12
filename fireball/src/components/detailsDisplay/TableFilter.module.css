@@ -1,12 +1,10 @@
 .container {
   display: inline-flex;
   height: 38px;
-  /* padding: 0 10px; */
   background-color: var(--primary2);
   box-sizing: border-box;
   margin-bottom: 20px;
   border-radius: 15px;
-  /* align-items: center; */
 }
 
 .input {
@@ -14,8 +12,7 @@
   background-color: transparent;
   outline: 0;
   width: 200px;
-  padding-left: 10px;
-  /* margin-left: 5px; */
+  padding-left: 20px;
 }
 
 .input::placeholder {

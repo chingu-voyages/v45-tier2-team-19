@@ -1,8 +1,11 @@
 .container {
-  background-image: url('../../assets/comets.svg'), url('../../assets/background.svg');
+  background-image: url("../../assets/comets.svg"),
+    url("../../assets/background.svg");
   background-repeat: no-repeat, no-repeat;
   background-size: contain, cover;
-  background-position: center, left top;
+  background-position:
+    center,
+    left top;
   height: 100vh;
   position: relative;
 }
@@ -10,3 +13,19 @@
 .logo {
   padding: 60px;
 }
+.description h2 {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color: #f7f7f7;
+  font-weight: bold;
+}
+.description p {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color: #f7f7f7;
+}
+/* .description h2 {
+  color: #f7f7f7;
+} */

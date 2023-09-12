@@ -7,7 +7,7 @@ const MadeBy = function () {
         {
             name: 'Alex',
             github: "https://github.com/vukas86",
-            linkedIn: "https://www.linkedin.com/404/",
+            linkedIn: "https://www.linkedin.com/in/aleksandar-vukasovic",
             homePage: "https://game-guess-the-number.vercel.app/",
         },
         {

@@ -72,7 +72,7 @@ const Navbar = function ({ headerHeight }) {
 
 
   function handleMenuClose() {
-    setToggled(!toggled)
+    setToggled(false)
 
 
   }
@@ -111,15 +111,17 @@ const Navbar = function ({ headerHeight }) {
                 onClick={() => { setToggled(!toggled) }}
                 style={sticky ? {
                   position: 'absolute',
-                  top: '10px',
+                  top: '0px',
                   left: '0px',
-                  fontSize: '1em',
+                  fontSize: '2em',
                   backgroundColor: 'var(--primary)',
-                  paddingTop: '5em'
+                  width: '100vw'
+
                 } : {
 
                   fontSize: '5em',
-                  alignSelf: 'center'
+                  alignSelf: 'center',
+                  justifySelf: 'center',
                 }}><MdMenu /></button>
 
             ) : (
@@ -127,6 +129,7 @@ const Navbar = function ({ headerHeight }) {
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
+                outline: '2px solid purple'
 
               }}>
 
@@ -136,7 +139,7 @@ const Navbar = function ({ headerHeight }) {
                     height: 'fit-content',
                     display: 'flex',
                     flexDirection: 'column',
-                    position: 'fixed',
+                    position: 'absolute',
                     top: '0em',
                     left: '0px',
                     alignItems: 'center',

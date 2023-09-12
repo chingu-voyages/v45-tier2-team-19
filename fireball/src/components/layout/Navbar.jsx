@@ -69,12 +69,10 @@ const Navbar = function ({ headerHeight }) {
       link: "Credits"
     }
   ]
-  let listItems = menuList.map((list, index) => {
-    return <li key={index}>{list.name}</li>
-  })
+
 
   function handleMenuClose() {
-    setToggled(false)
+    setToggled(!toggled)
 
 
   }
@@ -120,13 +118,21 @@ const Navbar = function ({ headerHeight }) {
 
                 <nav  >
                   <ul className='collapsedUl' style={{
-                    width: '100vw', display: 'flex', flexDirection: 'column', position: 'relative', top: '0em', left: '0px', alignItems: 'center', backgroundColor: 'purple', backgroundImage: `url(${starryBg})`,
-                    backgroundSize: 'cover',
+                    width: '100vw',
+                    height: 'fit-content',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    position: 'relative',
+                    top: '0em',
+                    left: '0px',
+                    alignItems: 'center',
+                    backgroundColor: 'var(--primary)',
+
                   }} >
                     {menuList.map((item, index) => {
                       return (
-                        <a href={`#${item}`} onClick={() => { handleMenuClose() }} key={index} >
-                          <li>{item}</li>
+                        <a href={`#${item.link}`} onClick={() => { handleMenuClose() }} key={index} >
+                          <li>{item.name}</li>
 
                         </a>
 

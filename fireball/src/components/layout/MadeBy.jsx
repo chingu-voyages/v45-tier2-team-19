@@ -10,7 +10,8 @@ const MadeBy = function () {
         },
         {
             name: 'Crystal',
-            github: "https://github.com/crwainstock"
+            github: "https://github.com/crwainstock",
+            linkedIn: "https://www.linkedin.com/in/crwainstock/",
         },
         {
             name: 'Chris',
@@ -34,7 +35,7 @@ const MadeBy = function () {
                 <a href={creator.github}  >
                     <li>{creator.name}</li>
                 </a>
-                <a href=""><GrLinkedin /></a>
+                <a href={creator.linkedIn}><GrLinkedin /></a>
                 <a href={creator.github}><GrGithub /></a>
 
             </div>

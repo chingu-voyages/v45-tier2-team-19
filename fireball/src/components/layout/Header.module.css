@@ -57,3 +57,16 @@
     font-size:2em;
   }
   }
+
+  @media screen and (max-height: 500px){
+    .description h2 {
+    
+      font-size:8vh;
+    }
+    
+    
+    .description .p{
+     
+      font-size:6vh;
+    }
+    }

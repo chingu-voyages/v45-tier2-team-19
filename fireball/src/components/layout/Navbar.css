@@ -81,12 +81,13 @@ nav {
   display:flex;
     height: 100%;
  
-  padding:'0px';
+ 
   margin:0px;
   background-color:transparent;
   outline:none;
   border:none;
   justify-content:center;
+  cursor:pointer;
 }
 
 .closeMenu:hover{

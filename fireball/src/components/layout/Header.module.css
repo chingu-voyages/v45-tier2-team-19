@@ -19,12 +19,14 @@
   text-align: center;
   color: #f7f7f7;
   font-weight: bold;
+  font-size: 10vh;
 }
 .description p {
   display: block;
   margin: 0 auto;
   text-align: center;
   color: #f7f7f7;
+  font-size: 6vh;
 }
 /* .description h2 {
   color: #f7f7f7;

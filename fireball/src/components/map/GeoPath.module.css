@@ -32,4 +32,11 @@
  flex-grow:1;
   
   }
+
+ .container .button {
+  display: block;
+  position: relative;
+  z-index: 100;
+   
+  }
 }

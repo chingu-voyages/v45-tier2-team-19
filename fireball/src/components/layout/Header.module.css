@@ -46,9 +46,14 @@
 }
 
 @media screen and (max-width: 500px){
-   h1{font-size:1px;}
-   .p{
-    font-size:1px;
-    color:blue;
+  .description h2 {
+  
+    font-size:3em;
+  }
+  
+  
+  .description .p{
+   
+    font-size:2em;
   }
   }

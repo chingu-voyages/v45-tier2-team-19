@@ -14,6 +14,7 @@ const MadeBy = function () {
             name: 'Crystal',
             github: "https://github.com/crwainstock",
             linkedIn: "https://www.linkedin.com/in/crwainstock/",
+            homePage: ""
         },
         {
             name: 'Chris',

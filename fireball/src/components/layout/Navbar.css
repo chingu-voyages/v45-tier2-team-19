@@ -88,3 +88,7 @@ nav {
   border:none;
   justify-content:center;
 }
+
+.closeMenu:hover{
+  background-color:white;
+}

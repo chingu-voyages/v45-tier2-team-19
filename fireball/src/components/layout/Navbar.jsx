@@ -120,7 +120,8 @@ const Navbar = function ({ headerHeight }) {
                     left: '0px',
                     fontSize: '2em',
                     backgroundColor: 'var(--primary)',
-                    width: '100vw'
+                    width: '100vw',
+                    cursor: 'pointer',
                   } : {
                     fontSize: '5em',
                     alignSelf: 'center',

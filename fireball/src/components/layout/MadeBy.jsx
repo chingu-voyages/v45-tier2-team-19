@@ -7,7 +7,7 @@ const MadeBy = function () {
         {
             name: 'Alex',
             github: "https://github.com/vukas86",
-            linkedIn: "",
+            linkedIn: "https://www.linkedin.com/404/",
             homePage: "https://game-guess-the-number.vercel.app/",
         },
         {
@@ -24,7 +24,7 @@ const MadeBy = function () {
         {
             name: 'Younes',
             github: "https://github.com/uKiJo",
-            linkedIn: "",
+            linkedIn: "https://www.linkedin.com/in/mohamed-younes-abdat-506603132/",
             homePage: "https://www.amyounes.dev/"
         },
         {

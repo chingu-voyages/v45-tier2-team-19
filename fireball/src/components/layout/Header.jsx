@@ -12,20 +12,19 @@ const Header = function () {
   }, []);
   return (
     <>
-
       <header ref={headerRef} className={header.container}>
         <div className={header.logo}>
           <img src={logo} alt="logo" />
         </div>
-        <div>
-          <h1>Title</h1>
-          <p>Description</p>
+        <div className={header.description}>
+          <h2>Your guide on a meteorite journey</h2>
+          <p className={header.p}>
+            Discover meteorite impacts around the world
+          </p>
         </div>
         <div className={header.cometContainer}></div>
         <Navbar headerHeight={headerHeight} />
       </header>
-
-
     </>
   );
 };

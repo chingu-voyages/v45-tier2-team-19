@@ -31,3 +31,24 @@
 /* .description h2 {
   color: #f7f7f7;
 } */
+
+@media screen and (max-width: 700px){
+.description h2 {
+  
+  font-size:4em;
+}
+
+
+}
+.description .p{
+ 
+  font-size:3em;
+}
+
+@media screen and (max-width: 500px){
+   h1{font-size:1px;}
+   .p{
+    font-size:1px;
+    color:blue;
+  }
+  }

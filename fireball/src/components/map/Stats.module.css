@@ -2,7 +2,7 @@
   background-color: var(--primary2);
   text-align: center;
   font-size: 16px;
-  color: #E0E0E0;
+  color: #e0e0e0;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -25,7 +25,7 @@ p {
 }
 
 span {
-  display: flex;
+  /* display: flex; */
   align-items: end;
 }
 
@@ -34,8 +34,8 @@ span {
   font-weight: bold;
 }
 
-@media screen and (max-width:800px){
-  .data{
-    width:100vw;
+@media screen and (max-width: 800px) {
+  .data {
+    width: 100vw;
   }
 }

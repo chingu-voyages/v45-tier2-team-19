@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 const Header = function () {
   const [headerHeight, setHeaderHeight] = useState(0);
   const headerRef = useRef(null);
+  const [componIsReady, setComponIsReady] = useState(false);
 
   useEffect(() => {
     setHeaderHeight(headerRef.current.clientHeight);

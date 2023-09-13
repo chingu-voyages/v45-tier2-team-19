@@ -114,24 +114,32 @@ function DataSets() {
               ))}
             </thead>
             <tbody {...getTableBodyProps()}>
-              {page.map((row, i) => {
-                prepareRow(row);
-                return (
-                  <tr
-                    key={row.id}
-                    {...row.getRowProps()}
-                    className={i % 2 === 1 ? ds.coloredRows : ""}
-                  >
-                    {row.cells.map((cell) => {
-                      return (
-                        <td key={cell.column.id} {...cell.getCellProps()}>
-                          {cell.render("Cell")}
-                        </td>
-                      );
-                    })}
-                  </tr>
-                );
-              })}
+              {page.length === 0 ? (
+                <tr>
+                  <td colSpan={columns.length} className={ds.msg}>
+                    Your search didn't match any meteors in our database
+                  </td>
+                </tr>
+              ) : (
+                page.map((row, i) => {
+                  prepareRow(row);
+                  return (
+                    <tr
+                      key={row.id}
+                      {...row.getRowProps()}
+                      className={i % 2 === 1 ? ds.coloredRows : ""}
+                    >
+                      {row.cells.map((cell) => {
+                        return (
+                          <td key={cell.column.id} {...cell.getCellProps()}>
+                            {cell.render("Cell")}
+                          </td>
+                        );
+                      })}
+                    </tr>
+                  );
+                })
+              )}
             </tbody>
           </table>
         </motion.div>

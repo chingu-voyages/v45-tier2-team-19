@@ -1,19 +1,25 @@
-import { useDataContext } from "../../hooks/useDataContext";
-import "./summary.css";
+// import "./summary.css";
+import summary from "./Summary.module.css";
+import { formatLocale } from "d3-format";
 
-export default function TotalStrikes() {
-  const meteorData = useDataContext();
-  //   console.log(meteorData); // Returns array with data in another array
+const locale = formatLocale({
+  decimal: ",",
+  thousands: "\u00a0",
+  grouping: [3],
+  currency: ["", ""],
+  minus: "\u2212",
+  percent: "\u202f%",
+});
 
-  const strikesCount = meteorData.data?.length;
-  //   console.log(meteorData.data); // Returns array of data points
+const fformat = locale.format("$,");
+
+export default function TotalStrikes({ data }) {
+  const strikesCount = data?.length;
 
   return (
-    <div className="num-data-container">
-      <div className="num-data-container-strike">
-        <h3 className="title">Total Number of Strikes: </h3>
-        <p className="summary-data-text">{strikesCount}</p>
-      </div>
+    <div className={summary.totalStrikesContainer}>
+      <h3>Total Number of Strikes: </h3>
+      <span>{fformat(strikesCount)}</span>
     </div>
   );
 }

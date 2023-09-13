@@ -1,0 +1,158 @@
+.section {
+  background-color: var(--primary2);
+  padding: 50px 0;
+}
+
+.sectionContainer {
+  width: 1276px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 200px 230px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.gridItem1 {
+  background-color: var(--primary);
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 3;
+  grid-column-end: 4;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.gridItem2 {
+  background-color: var(--primary);
+  grid-row-start: 1;
+  grid-column-start: 4;
+  grid-row-end: 2;
+  grid-column-end: 6;
+  padding: 10px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.gridItem3 {
+  background-color: var(--primary);
+  grid-row-start: 3;
+  grid-column-start: 3;
+  grid-row-end: 5;
+  grid-column-end: 6;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gridItem4 {
+  background-color: var(--primary);
+  grid-row-start: 3;
+  grid-column-start: 1;
+  grid-row-end: 5;
+  grid-column-end: 3;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.gridItem5 {
+  background-color: var(--primary);
+  grid-row-start: 2;
+  grid-column-start: 4;
+  grid-row-end: 3;
+  grid-column-end: 6;
+  padding: 10px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gridItem6 {
+  background-color: var(--primary);
+  grid-row-start: 5;
+  grid-column-start: 1;
+  grid-row-end: 7;
+  grid-column-end: 6;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.totalStrikesContainer {
+  background-color: var(--primary2);
+  padding: 20px 30px;
+  border-radius: 15px;
+}
+
+.totalStrikesContainer h3 {
+  margin: 0;
+  margin-bottom: 20px;
+  color: var(--text);
+}
+
+.totalStrikesContainer span {
+  display: block;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--secondary);
+}
+
+.sliderContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.slider {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primary2);
+  width: 50%;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+
+.slider span {
+  color: var(--text);
+}
+
+.sliderValue {
+  background-color: var(--primary2);
+  border-radius: 15px;
+  padding: 10px 20px;
+}
+
+.sliderValue span {
+  color: var(--text);
+}
+
+.averageMass {
+  background-color: var(--primary2);
+  padding: 20px 30px;
+  border-radius: 15px;
+}
+
+.averageMass h3 {
+  margin: 0;
+  margin-bottom: 20px;
+  color: var(--text);
+}
+
+.averageMass span {
+  color: var(--secondary);
+  font-size: 30px;
+  font-weight: semibold;
+}

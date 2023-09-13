@@ -3,24 +3,22 @@
   --margin: 0.5rem;
 }
 
+/* 
 .summaryContainerWrap{
   display:flex;
   justify-content: center;
   width:100vw;
-}
+} */
 
 
 .summary-container {
- display:flex;
- grid-template-columns:1fr 1fr 1fr;
-justify-content: flex-start;
-  padding:1em;
-  flex-wrap:wrap;
-  background-color:var(--primary);
-  width:fit-content
-  
-  
-
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: flex-start;
+  /* padding: 1em; */
+  flex-wrap: wrap;
+  /* background-color: var(--primary); */
+  width: fit-content
 }
 
 .total-strikes-container {
@@ -28,12 +26,12 @@ justify-content: flex-start;
   border-radius: 8px;
   padding: 1rem;
   /* max-width: 700px; */
-  margin: 0.5rem;
+  /* margin: 0.5rem; */
 }
 
 .strikes-by-composition-container {
   background-color: var(--primary2);
-  margin: var(--margin);
+  /* margin: var(--margin); */
   border-radius: var(--radius);
 
   /* width: 700,
@@ -45,28 +43,30 @@ justify-content: flex-start;
         borderRadius: "8px", */
 }
 
-.strikes-by-year-container {
-  background-color: var(--primary2);
+/* .strikes-by-year-container {
+  background-color: var(--primary);
+  padding: 20px;
+  margin-bottom: 20px;
   margin: var(--margin);
   border-radius: var(--radius);
-  height:fit-content;
-
-}
+  height: fit-content;
+} */
 
 .small-boxes {
   display: flex;
   justify-content: space-evenly;
 }
 
-.num-data-container {
+/* .num-data-container {
   background-color: var(--primary2);
   border-radius: var(--radius);
   padding: 1rem;
   /* max-width: 700px; */
-  margin: var(--margin);
- 
+/* margin: var(--margin); */
+
 }
-.summary-title {
+
+*/ .summary-title {
   color: var(--secondary);
 }
 
@@ -75,8 +75,8 @@ justify-content: flex-start;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height:fit-content;
-  padding:1em;
+  height: fit-content;
+  padding: 1em;
 }
 
 .num-data-container-strike {
@@ -88,7 +88,7 @@ justify-content: flex-start;
 }
 
 .num-data-container-mass p {
-  color:var(--secondary2);
+  color: var(--secondary2);
   font-size: 18px;
 }
 
@@ -115,14 +115,15 @@ justify-content: flex-start;
     grid-template-columns: 1fr;
     max-width: 100%; */
   }
+
   .strikes-by-year-container,
-  .strikes-by-composition-container {
-    
-  }
+  .strikes-by-composition-container {}
+
   .small-boxes {
     flex-direction: column;
     width: 350px;
   }
+
   .num-data-container {
     width: 90%;
   }

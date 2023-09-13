@@ -8,47 +8,40 @@ import StrikesByYearFiltered from "./StrikesByYearFiltered";
 import StrikesByDecade from "./StrikesByDecade";
 
 import { useDataContext } from "../../hooks/useDataContext";
-import "./summary.css";
+// import "./summary.css";
+import summary from "./Summary.module.css";
+import MostStrikesByCountry from "./MostStrikesByCountry";
 
 const Summary = function () {
   const { data, loading } = useDataContext();
 
-
-
   return (
-    <div id="Summary" >
-      <div className="summaryContainerWrap">
-
-
+    <section className={summary.section} id="Summary">
+      <div className={summary.sectionContainer}>
         {loading ? (
           <div>Loading...</div>
         ) : (
-          <div id="Summary" className="summary-container">
-
-
-            <div className="small-boxes">
-              <TotalStrikes />
-              <AverageMass />
-
-
-            </div>
+          <div id="Summary" className={summary.grid}>
             <StrikesByYearFiltered />
+
+            <div className={summary.gridItem2}>
+              <TotalStrikes data={data} />
+            </div>
+
             <StrikesByDecade />
 
+            <div className={summary.gridItem4}>
+              <MostStrikesByCountry />
+            </div>
+            <div className={summary.gridItem5}>
+              <AverageMass />
+            </div>
 
-
-
-            <StrikesByDecade />
-
-
-
-
-
-            <StrikesByComposition />
+            {/* <StrikesByComposition /> */}
           </div>
         )}
       </div>
-    </div>
+    </section>
   );
 };
 export default Summary;

@@ -12,6 +12,7 @@
 @media screen and (max-width: 1250px) {
   .sectionContainer {
     padding: 0 30px;
+    box-sizing: border-box;
   }
 }
 

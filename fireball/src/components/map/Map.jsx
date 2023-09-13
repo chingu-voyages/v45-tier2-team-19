@@ -1,6 +1,9 @@
 import GeoPath from "./GeoPath";
 import { useState } from "react";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import "./style.css";
 import map from "./Map.module.css";
 import FilterSummary from "./FilterSummary";
@@ -10,6 +13,7 @@ import { useGetFilteredMap } from "../../hooks/useGetFilteredMap";
 import { useFilterData } from "./hooks/useFilterData";
 
 const Map = () => {
+  AOS.init();
   console.log("MAP RERENDERS");
   const { data } = useGetFilteredMap(); //data for the map filter component
   // const mapl = useGetMapData().data;
@@ -35,7 +39,11 @@ const Map = () => {
 
   return (
     <div id="Map" className={map.section}>
-      <div className={map.container}>
+      <div
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        className={map.container}
+      >
         <MapFilter data={data} onDataFiltered={handleDataFiltered} />
         <div className={map.details}>
           {/* <GeoPath map={mapData} data={filteredData} isAll={isAll} /> */}
@@ -43,9 +51,9 @@ const Map = () => {
             map={mapData}
             data={filteredData}
             filter={filter}
-          // clusters={clusters}
-          // onMouseOver={debouncedHandleMouseOver}
-          // onMouseOut={debouncedHandleMouseOut}
+            // clusters={clusters}
+            // onMouseOver={debouncedHandleMouseOver}
+            // onMouseOut={debouncedHandleMouseOut}
           />
           {
             <FilterSummary

@@ -1,7 +1,7 @@
 import StrikesByYear from "./StrikesByYear";
 import AverageMass from "./AverageMass";
 import TotalStrikes from "./TotalStrikes";
-import StrikesByComposition from "./StrikesByComposition";
+// import StrikesByComposition from "./StrikesByComposition";
 
 import StrikesByYearFiltered from "./StrikesByYearFiltered";
 

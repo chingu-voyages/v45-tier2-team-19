@@ -1,7 +1,9 @@
-import { useEffect, useMemo, useState, useRef } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useTable, useSortBy, useFilters, usePagination } from "react-table";
 import { useDataContext } from "../../hooks/useDataContext";
-import { motion, useInView } from "framer-motion";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import { COLUMNS } from "./columns";
 import { ColumnFilter } from "./ColumnFilter";
@@ -18,9 +20,8 @@ import {
 // import "./table.css";
 
 function DataSets() {
+  AOS.init();
   const originalData = useDataContext().data;
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
 
   // const [isLoading, setIsLoading] = useState(true);
   const [formattedData, setFormattedData] = useState([]);
@@ -82,14 +83,12 @@ function DataSets() {
 
   return (
     <section className={ds.section} id="Table">
-      <div className={ds.sectionContainer}>
-        <motion.div
-          className={ds.tableContainer}
-          initial={{ y: 300 }}
-          animate={isInView ? { y: -30 } : { y: 300 }}
-          ref={ref} // Attach the ref here
-          transition={{ duration: 0.8 }}
-        >
+      <div
+        className={ds.sectionContainer}
+        data-aos="fade-up"
+        data-aos-duration="3000"
+      >
+        <div className={ds.tableContainer}>
           <TableFilter options={columnsNames} setFilter={setFilter} />
           <table className={ds.table} {...getTableProps()}>
             <thead>
@@ -142,7 +141,7 @@ function DataSets() {
               )}
             </tbody>
           </table>
-        </motion.div>
+        </div>
         <div className={ds.paginationContainer}>
           <div className={ds.goToPage}>
             <div className={ds.goToPageTitle}>

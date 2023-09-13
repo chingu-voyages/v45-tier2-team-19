@@ -208,12 +208,6 @@
   }
 }
 
-/* .totalStrikesContainer {
-  /* background-color: var(--primary2); */
-/* padding: 20px 30px; */
-/* border-radius: 15px;
-  box-sizing: border-box;
-} */
 .totalStrikesContainer h3 {
   margin: 0;
   margin-bottom: 20px;
@@ -266,7 +260,6 @@
 @media screen and (max-width: 750px) {
 
   .slider {
-    /* display: flex; */
     align-items: center;
     padding: 5px 10px;
     width: 100%;
@@ -276,12 +269,6 @@
     font-size: 12px;
   }
 }
-
-/* .averageMass {
-  background-color: var(--primary2);
-  padding: 20px 30px;
-  border-radius: 15px;
-} */
 
 .averageMass h3 {
   margin: 0;
@@ -296,11 +283,6 @@
 }
 
 @media screen and (max-width: 560px) {
-
-  /* .sectionContainer {
-    padding: 0 10px;
-    box-sizing: border-box;
-  } */
 
   .gridItem1 {
     padding: 0;
@@ -320,16 +302,8 @@
     box-sizing: border-box;
   }
 
-  .averageMass {
-    padding: 0;
-    background-color: transparent;
-  }
-
   .averageMass span {
     font-size: 20px;
   }
 
-  .totalStrikesContainer {
-    /* padding: 10px; */
-  }
 }

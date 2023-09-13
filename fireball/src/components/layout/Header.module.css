@@ -1,8 +1,11 @@
 .container {
-  background-image: url('../../assets/comets.svg'), url('../../assets/background.svg');
+  background-image: url("../../assets/comets.svg"),
+    url("../../assets/background.svg");
   background-repeat: no-repeat, no-repeat;
   background-size: contain, cover;
-  background-position: center, left top;
+  background-position:
+    center,
+    left top;
   height: 100vh;
   position: relative;
 }
@@ -10,3 +13,60 @@
 .logo {
   padding: 60px;
 }
+.description h2 {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color: #f7f7f7;
+  font-weight: bold;
+  font-size: 10vh;
+}
+.description p {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color: #f7f7f7;
+  font-size: 6vh;
+}
+/* .description h2 {
+  color: #f7f7f7;
+} */
+
+@media screen and (max-width: 700px){
+.description h2 {
+  
+  font-size:4em;
+}
+
+
+}
+.description .p{
+ 
+  font-size:3em;
+}
+
+@media screen and (max-width: 500px){
+  .description h2 {
+  
+    font-size:3em;
+  }
+  
+  
+  .description .p{
+   
+    font-size:2em;
+  }
+  }
+
+  @media screen and (max-height: 500px){
+    .description h2 {
+    
+      font-size:8vh;
+    }
+    
+    
+    .description .p{
+     
+      font-size:6vh;
+    }
+    }

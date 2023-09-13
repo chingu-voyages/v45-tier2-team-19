@@ -1,6 +1,7 @@
 import "./Navbar.css";
 import { useState, useEffect, useRef } from "react";
 import { MdMenu } from 'react-icons/md';
+import { GrClose } from 'react-icons/gr'
 import starryBg from '../../assets/starryMeteorHeader.png'
 
 const Navbar = function ({ headerHeight }) {
@@ -67,11 +68,11 @@ const Navbar = function ({ headerHeight }) {
     {
       name: 'Credits',
       link: "Credits"
-    }
+    },
+
+
   ]
-  let listItems = menuList.map((list, index) => {
-    return <li key={index}>{list.name}</li>
-  })
+
 
   function handleMenuClose() {
     setToggled(false)
@@ -108,7 +109,25 @@ const Navbar = function ({ headerHeight }) {
         ) : (
           <div>
             {!toggled || smallScreen ? (
-              <button className='collapsedBtn' onClick={() => { setToggled(!toggled) }} style={sticky ? { fontSize: '1em', backgroundColor: 'transparent' } : { padding: '0px', fontSize: '5em', alignSelf: 'center' }}><MdMenu /></button>
+              <div>
+
+                <button
+                  className='collapsedBtn'
+                  onClick={() => { setToggled(!toggled) }}
+                  style={sticky ? {
+                    position: 'absolute',
+                    top: '0px',
+                    left: '0px',
+                    fontSize: '2em',
+                    backgroundColor: 'var(--primary)',
+                    width: '100vw',
+                    cursor: 'pointer',
+                  } : {
+                    fontSize: '5em',
+                    alignSelf: 'center',
+                    justifySelf: 'center',
+                  }}><MdMenu /></button>
+              </div>
 
             ) : (
               <div style={{
@@ -116,17 +135,35 @@ const Navbar = function ({ headerHeight }) {
                 flexDirection: 'column',
                 alignItems: 'center',
 
+
               }}>
 
                 <nav  >
+
                   <ul className='collapsedUl' style={{
-                    width: '100vw', display: 'flex', flexDirection: 'column', position: 'relative', top: '0em', left: '0px', alignItems: 'center', backgroundColor: 'purple', backgroundImage: `url(${starryBg})`,
-                    backgroundSize: 'cover',
+                    width: '100vw',
+                    height: 'fit-content',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    position: 'absolute',
+                    top: '0em',
+                    left: '0px',
+                    alignItems: 'center',
+                    backgroundColor: 'var(--primary)',
+
                   }} >
+                    <button onClick={(() => {
+                      handleMenuClose()
+                    })} className='closeMenu'
+                      style={{
+                        alignSelf: 'flex-end',
+                        fontSize: '2em',
+                        cursor: 'pointer',
+                      }}><GrClose /></button>
                     {menuList.map((item, index) => {
                       return (
-                        <a href={`#${item}`} onClick={() => { handleMenuClose() }} key={index} >
-                          <li>{item}</li>
+                        <a href={`#${item.link}`} onClick={() => { handleMenuClose() }} key={index} >
+                          <li>{item.name}</li>
 
                         </a>
 

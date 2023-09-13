@@ -1,5 +1,6 @@
 import { useDataContext } from "../../hooks/useDataContext";
-import "./summary.css";
+// import "./summary.css";
+import summary from "./Summary.module.css";
 
 export default function AverageMass() {
   const meteorData = useDataContext().data;
@@ -21,15 +22,12 @@ export default function AverageMass() {
   const kilograms = (overallAvgMass / 10).toFixed(2);
 
   return (
-    <div className="num-data-container">
-      <div className="num-data-container-mass">
-        <h3 className="summary-title">Total Average Mass</h3>
-
-        <p>{overallAvgMass} grams</p>
-        <p>{kilograms} kilograms</p>
-        <p>{imperialTons} Imperial Tons</p>
-        <p>{usTons} US Tons</p>
-      </div>
+    <div className={summary.averageMass}>
+      <h3 className="summary-title">Total Average Mass</h3>
+      {/* <p>{overallAvgMass} grams</p> */}
+      <span>{kilograms} kilograms</span>
+      {/* <p>{imperialTons} Imperial Tons</p> */}
+      {/* <p>{usTons} US Tons</p> */}
     </div>
   );
 }

@@ -39,50 +39,26 @@ function StrikesByYear() {
 
   const strikesCount = years.map((year) => strikesByYear[year]);
 
-  //Group years into 10 year periods -- NOT COMPLETE
-  // function groupYearsIntoTenYearGroups(years) {
-  //   //Sort years
-  //   const sortedYears = years.sort((a, b) => a - b);
-
-  //   const groups = [];
-  //   let currentGroup = [];
-  //   let startYear = sortedYears[0];
-
-  //   for (const year of sortedYears) {
-  //     if (year - startYear <= 9) {
-  //       currentGroup.push(year);
-  //     } else {
-  //       groups.push(currentGroup);
-  //       currentGroup = [year];
-  //       startYear = year;
-  //     }
-  //   }
-
-  //   // Push the last group if it's not empty
-  //   if (currentGroup.length > 0) {
-  //     groups.push(currentGroup);
-  //   }
-
-  //   setGroups(groups);
-  // }
-
-  // const strikesCount = groups.map((group) => strikesByDecade[group]);
-
   const chartData = {
     labels: years,
     datasets: [
       {
         label: "Number of Strikes by Year",
         data: strikesCount,
-        backgroundColor: "rgb(12, 22, 79)",
+        backgroundColor: "blue",
+        // borderColor: 'red',
+        // borderWidth: 1,
+        barPercentage: 1,
+        categoryPercentage: 1,
+        borderRadius: 15,
       },
     ],
   };
 
   const chartOptions = {
-    layout: {
-      padding: 20,
-    },
+    // layout: {
+    //   padding: 20,
+    // },
     scales: {
       x: {
         ticks: {

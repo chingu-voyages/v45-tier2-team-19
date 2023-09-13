@@ -87,6 +87,7 @@ function DataSets() {
         className={ds.sectionContainer}
         data-aos="fade-up"
         data-aos-duration="3000"
+        data-aos-once="true"
       >
         <div className={ds.tableContainer}>
           <TableFilter options={columnsNames} setFilter={setFilter} />

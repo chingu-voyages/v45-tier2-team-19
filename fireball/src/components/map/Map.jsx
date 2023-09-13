@@ -40,9 +40,10 @@ const Map = () => {
   return (
     <div id="Map" className={map.section}>
       <div
+        className={map.container}
         data-aos="fade-up"
         data-aos-duration="2000"
-        className={map.container}
+        data-aos-once="true"
       >
         <MapFilter data={data} onDataFiltered={handleDataFiltered} />
         <div className={map.details}>

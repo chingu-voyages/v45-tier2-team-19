@@ -78,6 +78,7 @@ function StrikesByYearFiltered() {
     layout: {
       padding: 20,
     },
+    maintainAspectRatio: false,
     scales: {
       x: {
         ticks: {
@@ -164,7 +165,9 @@ function StrikesByYearFiltered() {
           <span>{sliderValue.join("-")} kg</span>
         </div>
       </div>
-      <Bar data={chartData} options={chartOptions} />
+      <div className={summary.chartContainer}>
+        <Bar data={chartData} options={chartOptions} />
+      </div>
     </div>
   );
 }

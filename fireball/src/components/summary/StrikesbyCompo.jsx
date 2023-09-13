@@ -62,6 +62,7 @@ const StrikesByCompo = () => {
   const topTenCompositions = strikesCount.slice(0, 10);
   const options = {
     responsive: true,
+    maintainAspectRatio: false,
     plugins: {
       legend: {
         position: "top",

@@ -52,6 +52,7 @@ function StrikesByDecade() {
     layout: {
       padding: 20,
     },
+    maintainAspectRatio: false,
     scales: {
       x: {
         ticks: {

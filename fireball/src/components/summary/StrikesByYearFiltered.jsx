@@ -81,12 +81,11 @@ function StrikesByYearFiltered() {
     scales: {
       x: {
         ticks: {
-          color: "#F2D492",
+          color: "#7BA1BF",
           font: {
             family: "Plus Jakarta Sans",
           },
           callback: function (value, index) {
-            console.log(years[index]);
             if (index % 2 === 0) {
               return years[index];
             }
@@ -95,8 +94,8 @@ function StrikesByYearFiltered() {
         },
         title: {
           display: true,
-          text: "Number of Strikes",
-          color: "#F2D492",
+          text: "Year",
+          color: "#7BA1BF",
           font: {
             size: 18,
             family: "Plus Jakarta Sans",
@@ -106,7 +105,7 @@ function StrikesByYearFiltered() {
       y: {
         type: "logarithmic",
         ticks: {
-          color: "#F2D492",
+          color: "#7BA1BF",
           font: {
             family: "Plus Jakarta Sans",
           },
@@ -114,7 +113,7 @@ function StrikesByYearFiltered() {
         title: {
           display: true,
           text: "Number of Strikes",
-          color: "#F2D492",
+          color: "#7BA1BF",
           font: {
             size: 18,
             family: "Plus Jakarta Sans",
@@ -134,7 +133,7 @@ function StrikesByYearFiltered() {
       title: {
         display: true,
         text: "Meteorite Strikes by Year from 1900-2012",
-        color: "#F2D492",
+        color: "#7BA1BF",
         font: {
           size: 18,
           family: "Plus Jakarta Sans",

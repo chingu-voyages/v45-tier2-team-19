@@ -31,6 +31,21 @@ const Header = function () {
     visible: { opacity: 1, x: 350, transition: { delay: 1.2 } },
   };
 
+  const paragraphText = "Discover meteorite impacts around the world";
+
+  const textVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { delay: 0.5, staggerChildren: 0.05 },
+    },
+  };
+
+  const charVariants = {
+    hidden: { opacity: 0, y: 10 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
     <>
       <header ref={headerRef} className={header.container}>
@@ -49,13 +64,21 @@ const Header = function () {
           )}
           <p className={header.p}>
             {componIsReady && (
-              <motion.span
-                variants={childVariants}
+              <motion.div
+                variants={textVariants}
                 initial="hidden"
                 animate="visible"
               >
-                Discover meteorite impacts around the world
-              </motion.span>
+                {paragraphText.split("").map((char, index) => (
+                  <motion.span
+                    key={index}
+                    variants={charVariants}
+                    // className={header.p}
+                  >
+                    {char}
+                  </motion.span>
+                ))}
+              </motion.div>
             )}
           </p>
         </div>

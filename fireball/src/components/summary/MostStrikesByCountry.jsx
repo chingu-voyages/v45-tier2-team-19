@@ -56,7 +56,7 @@ const MostStrikesByCountry = () => {
         display: true,
         padding: { top: 0, bottom: 60 },
         text: "Top 6 Regions with the most meteorite landings",
-        color: "#F2D492",
+        color: "#7BA1BF",
         font: {
           size: 18,
           family: "Plus Jakarta Sans",

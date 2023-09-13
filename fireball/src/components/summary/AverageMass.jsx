@@ -25,7 +25,7 @@ export default function AverageMass() {
     <div className={summary.averageMass}>
       <h3 className="summary-title">Total Average Mass</h3>
       {/* <p>{overallAvgMass} grams</p> */}
-      <span>{kilograms} kilograms</span>
+      <span>{kilograms} kg</span>
       {/* <p>{imperialTons} Imperial Tons</p> */}
       {/* <p>{usTons} US Tons</p> */}
     </div>

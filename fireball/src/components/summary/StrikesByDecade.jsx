@@ -55,7 +55,7 @@ function StrikesByDecade() {
     scales: {
       x: {
         ticks: {
-          color: "#F2D492",
+          color: "#7BA1BF",
           font: {
             family: "Plus Jakarta Sans",
           },
@@ -63,7 +63,7 @@ function StrikesByDecade() {
         title: {
           display: true,
           text: "Decade",
-          color: "#F2D492",
+          color: "#7BA1BF",
           font: {
             size: 16,
             family: "Plus Jakarta Sans",
@@ -73,7 +73,7 @@ function StrikesByDecade() {
       y: {
         type: "logarithmic",
         ticks: {
-          color: "#F2D492",
+          color: "#7BA1BF",
           font: {
             family: "Plus Jakarta Sans",
           },
@@ -81,7 +81,7 @@ function StrikesByDecade() {
         title: {
           display: true,
           text: "Number of Strikes",
-          color: "#F2D492",
+          color: "#7BA1BF",
           font: {
             size: 16,
             family: "Plus Jakarta Sans",
@@ -100,7 +100,7 @@ function StrikesByDecade() {
       title: {
         display: true,
         text: "Meteorite Strikes by Decade",
-        color: "#F2D492",
+        color: "#7BA1BF",
         font: {
           size: 18,
           family: "Plus Jakarta Sans",

@@ -11,6 +11,7 @@ import { useDataContext } from "../../hooks/useDataContext";
 // import "./summary.css";
 import summary from "./Summary.module.css";
 import MostStrikesByCountry from "./MostStrikesByCountry";
+import StrikesByCompo from "./StrikesbyCompo";
 
 const Summary = function () {
   const { data, loading } = useDataContext();
@@ -36,8 +37,9 @@ const Summary = function () {
             <div className={summary.gridItem5}>
               <AverageMass />
             </div>
-
-            {/* <StrikesByComposition /> */}
+            <div className={summary.gridItem6}>
+              <StrikesByCompo />
+            </div>
           </div>
         )}
       </div>

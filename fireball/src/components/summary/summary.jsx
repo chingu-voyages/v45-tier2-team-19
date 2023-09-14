@@ -1,10 +1,5 @@
 import AverageMass from "./AverageMass";
 import TotalStrikes from "./TotalStrikes";
-<<<<<<< HEAD
-// import StrikesByComposition from "./StrikesByComposition";
-
-=======
->>>>>>> summaryv2
 import StrikesByYearFiltered from "./StrikesByYearFiltered";
 import StrikesByDecade from "./StrikesByDecade";
 import StrikesByCompo from "./StrikesbyCompo";

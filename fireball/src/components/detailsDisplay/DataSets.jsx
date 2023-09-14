@@ -2,6 +2,9 @@ import { useEffect, useMemo, useState } from "react";
 import { useTable, useSortBy, useFilters, usePagination } from "react-table";
 import { useDataContext } from "../../hooks/useDataContext";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import { COLUMNS } from "./columns";
 import { ColumnFilter } from "./ColumnFilter";
 import ds from "./DataSets.module.css";
@@ -17,6 +20,7 @@ import {
 // import "./table.css";
 
 function DataSets() {
+  AOS.init();
   const originalData = useDataContext().data;
 
   // const [isLoading, setIsLoading] = useState(true);
@@ -79,7 +83,12 @@ function DataSets() {
 
   return (
     <section className={ds.section} id="Table">
-      <div className={ds.sectionContainer}>
+      <div
+        className={ds.sectionContainer}
+        data-aos="fade-up"
+        data-aos-duration="3000"
+        data-aos-once="true"
+      >
         <div className={ds.tableContainer}>
           <TableFilter options={columnsNames} setFilter={setFilter} />
           <table className={ds.table} {...getTableProps()}>
@@ -105,24 +114,32 @@ function DataSets() {
               ))}
             </thead>
             <tbody {...getTableBodyProps()}>
-              {page.map((row, i) => {
-                prepareRow(row);
-                return (
-                  <tr
-                    key={row.id}
-                    {...row.getRowProps()}
-                    className={i % 2 === 1 ? ds.coloredRows : ""}
-                  >
-                    {row.cells.map((cell) => {
-                      return (
-                        <td key={cell.column.id} {...cell.getCellProps()}>
-                          {cell.render("Cell")}
-                        </td>
-                      );
-                    })}
-                  </tr>
-                );
-              })}
+              {page.length === 0 ? (
+                <tr>
+                  <td colSpan={columns.length} className={ds.msg}>
+                    Your search didn't match any meteors in our database
+                  </td>
+                </tr>
+              ) : (
+                page.map((row, i) => {
+                  prepareRow(row);
+                  return (
+                    <tr
+                      key={row.id}
+                      {...row.getRowProps()}
+                      className={i % 2 === 1 ? ds.coloredRows : ""}
+                    >
+                      {row.cells.map((cell) => {
+                        return (
+                          <td key={cell.column.id} {...cell.getCellProps()}>
+                            {cell.render("Cell")}
+                          </td>
+                        );
+                      })}
+                    </tr>
+                  );
+                })
+              )}
             </tbody>
           </table>
         </div>

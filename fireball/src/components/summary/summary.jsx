@@ -6,9 +6,13 @@ import StrikesByCompo from "./StrikesbyCompo";
 import MostStrikesByCountry from "./MostStrikesByCountry";
 
 import { useDataContext } from "../../hooks/useDataContext";
-import summary from "./Summary.module.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+import "./summary.css";
 
 const Summary = function () {
+  AOS.init();
   const { data, loading } = useDataContext();
 
   return (

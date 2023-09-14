@@ -31,8 +31,8 @@ const MadeBy = function () {
         {
             name: 'Sarita',
             github: "https://github.com/Sarita1517",
-            linkedIn: "",
-            homePage: "https://www.linkedin.com/in/sjhabsc/",
+            linkedIn: "https://www.linkedin.com/in/sjhabsc/",
+            homePage: "",
         }
 
     ]

@@ -96,7 +96,7 @@ function MapFilter({ data, onDataFiltered }) {
         </Button>
       </div>
 
-      <div className={mapfilter.yellowButtons}>
+      <div className={mapfilter.classicFilter}>
         <Button onClick={getAll} className={mapfilter.button}>
           All
         </Button>

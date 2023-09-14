@@ -1,4 +1,4 @@
-.container {
+.allContainer {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -9,10 +9,9 @@
   font-size: 30px;
   font-weight: 300;
   color: var(--secondary);
-  /* margin-bottom: 40px; */
 }
 
-p {
+.details p {
   margin: 0;
 }
 
@@ -20,8 +19,6 @@ p {
   background-color: var(--primary);
   padding: 30px 20px;
   border-radius: 15px;
-  /* margin-bottom: 40px; */
-  /* flex-grow: 1; */
 }
 
 .numberWrapper {
@@ -41,5 +38,40 @@ p {
 .illustration {
   display: flex;
   justify-content: center;
-  /* flex-grow: 1; */
+}
+
+@media screen and (max-width: 1300px) {
+  .heading {
+    margin-bottom: 20px;
+  }
+
+  .details {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .heading {
+    margin-bottom: 10px;
+  }
+
+  .details {
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+
+  .number {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 548px) {
+  .details {
+    padding: 10px 15px;
+  }
+
+  .details p {
+    margin-bottom: 5px;
+  }
+
 }

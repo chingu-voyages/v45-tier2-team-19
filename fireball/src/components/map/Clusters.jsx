@@ -15,31 +15,26 @@ const Clusters = ({ projection, zoomScale }) => {
     (condition) => zoomScale >= condition.min && zoomScale < condition.max
   );
 
-  // Set clusterIndex based on the matched condition or a default value if none match
   const clusterIndex = matchedCondition ? matchedCondition.value : -1;
+
   if (!clusters) {
     return <div>Loading Clusters</div>;
   }
 
-  // const clusterIndex = zoomScale < 2.5 ? 0 : 1;
   const cluster = clusters[clusterIndex];
   return (
     <>
       {cluster.map((c, i) => {
         const [lat, long] = projection([c.centroid[1], c.centroid[0]]);
-        // console.log(c.points.length);
-        // console.log(sizeScale((c) => c.points.length));
         return (
           <>
             <circle
               key={i}
               className="landing-circle"
               fill="#F2D492"
-              // r={sizeScale2(radiusValue2(c))}
               r={12 / zoomScale}
               cx={lat}
               cy={long}
-              // opacity={0.5}
             />
             <text
               x={lat}

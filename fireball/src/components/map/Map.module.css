@@ -1,18 +1,15 @@
 .section {
-
   padding: 50px 0;
-  /* background-color: #202C39; */
   background-color: var(--primary);
 }
 
-.section::after {
+/* .section::after {
   background-image: url('../../assets/curved-section-bottom.svg');
-}
+} */
 
 .container {
   max-width: 1276px;
   margin: 0 auto;
-  padding: 2em;
 }
 
 .details {
@@ -20,17 +17,23 @@
   display: flex;
   gap: 20px;
   margin-top: 20px;
-
 }
 
-@media screen and (max-width:800px) {
-  .details {
-    display: flex;
-    flex-direction: column;
-
-    align-items: center;
-
-
+@media screen and (max-width: 1300px) {
+  .container {
+    padding: 0 30px;
   }
+}
 
+@media screen and (max-width:1250px) {
+
+  .details {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1011px) {
+  .details {
+    flex-direction: column;
+  }
 }

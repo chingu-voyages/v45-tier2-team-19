@@ -1,5 +1,5 @@
 import { memo, useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { geoPath, geoEquirectangular } from "d3-geo";
+import { geoPath, geoEquirectangular, geoGraticule } from "d3-geo";
 import geopath from "./GeoPath.module.css";
 // import "./style.css";
 import Clusters from "./Clusters";
@@ -13,14 +13,11 @@ import { useMapZoom } from "./hooks/useMapZoom";
 import { useTooltip } from "./hooks/useTooltip";
 
 const GeoPath = memo(({ map, data, filter }) => {
-  console.log("RERENDER!");
-  // const { data: mapData } = useGetMapData();
   const { countries, interiors } = map;
-
-  // const [zoomScale, setZoomScale] = useState(1);
 
   const projection = useMemo(() => geoEquirectangular(), []);
   const path = useMemo(() => geoPath(projection), [projection]);
+  // const graticule = useMemo(() => geoGraticule(), []);
 
   const { tooltipData, debouncedHandleMouseOver, handleMouseOut } =
     useTooltip();
@@ -28,8 +25,6 @@ const GeoPath = memo(({ map, data, filter }) => {
   const svgRef = useRef(null);
 
   const { resetMapZoom, zoomScale } = useMapZoom(svgRef);
-
-  // if (!mapData) return <div>Loading</div>;
 
   return (
     <div className={geopath.container}>

@@ -2,8 +2,8 @@ import allstats from "./Allstats.module.css";
 import chart from "../../assets/Chart.svg";
 const AllStats = () => {
   return (
-    <div className={allstats.container}>
-      <h1 className={allstats.heading}>Statitics</h1>
+    <div className={allstats.allContainer}>
+      <h1 className={allstats.heading}>Statistics</h1>
       <div className={allstats.details}>
         <p>Total landings</p>
         <div className={allstats.numberWrapper}>

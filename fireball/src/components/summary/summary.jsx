@@ -8,7 +8,7 @@ import MostStrikesByCountry from "./MostStrikesByCountry";
 import { useDataContext } from "../../hooks/useDataContext";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+import summary from './Summary.module.css'
 import "./summary.css";
 
 const Summary = function () {

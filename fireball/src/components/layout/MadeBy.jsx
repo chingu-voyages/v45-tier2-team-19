@@ -31,7 +31,7 @@ const MadeBy = function () {
         {
             name: 'Sarita',
             github: "https://github.com/Sarita1517",
-            linkedIn: "https://www.linkedin.com/in/iqra-qadeer",
+            linkedIn: "",
             homePage: "",
         }
 

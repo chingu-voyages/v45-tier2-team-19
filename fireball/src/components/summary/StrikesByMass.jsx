@@ -11,7 +11,7 @@ const StrikesByMass = function () {
   }, [meteorData])
 
 
-  let descendingMeteorData = meteorData.sort(function sort(a, b) {
+  let descendingMeteorData = meteorState.sort(function sort(a, b) {
     return b['mass (g)'] - a['mass (g)']
 
   }

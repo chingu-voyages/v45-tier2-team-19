@@ -1,17 +1,17 @@
-import StrikesByYear from "./StrikesByYear";
 import AverageMass from "./AverageMass";
 import TotalStrikes from "./TotalStrikes";
+<<<<<<< HEAD
 // import StrikesByComposition from "./StrikesByComposition";
 
+=======
+>>>>>>> summaryv2
 import StrikesByYearFiltered from "./StrikesByYearFiltered";
-
 import StrikesByDecade from "./StrikesByDecade";
+import StrikesByCompo from "./StrikesbyCompo";
+import MostStrikesByCountry from "./MostStrikesByCountry";
 
 import { useDataContext } from "../../hooks/useDataContext";
-// import "./summary.css";
 import summary from "./Summary.module.css";
-import MostStrikesByCountry from "./MostStrikesByCountry";
-import StrikesByCompo from "./StrikesbyCompo";
 
 const Summary = function () {
   const { data, loading } = useDataContext();

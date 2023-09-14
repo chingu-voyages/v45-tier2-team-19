@@ -45,23 +45,24 @@ const MostStrikesByCountry = () => {
   };
 
   const options = {
-    layout: {
-      padding: 40,
-    },
+    // layout: {
+    //   padding: 40,
+    // },
+    maintainAspectRatio: false,
     plugins: {
       legend: {
         display: false,
       },
-      title: {
-        display: true,
-        padding: { top: 0, bottom: 60 },
-        text: "Top 6 Regions with the most meteorite landings",
-        color: "#7BA1BF",
-        font: {
-          size: 18,
-          family: "Plus Jakarta Sans",
-        },
-      },
+      // title: {
+      //   display: true,
+      //   padding: { top: 0, bottom: 60 },
+      //   text: "Top 6 Regions with the most meteorite landings",
+      //   color: "#7BA1BF",
+      //   font: {
+      //     size: 18,
+      //     family: "Plus Jakarta Sans",
+      //   },
+      // },
     },
   };
 

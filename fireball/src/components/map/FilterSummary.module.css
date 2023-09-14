@@ -1,9 +1,6 @@
 .container {
-  /* background-color: var(--primary2); */
-
   width: 20%;
   font-family: 'Plus Jakarta Sans', sans-serif;
-  /* font-size: 30px; */
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -11,14 +8,25 @@
   width: 292px;
 }
 
-@media  screen and (max-width:800px) {
-  .container{
-    width:80vw;
-    padding:2em;
+@media screen and (max-width:1011px) {
+  .container {
+    width: 100%;
+    flex-direction: row;
   }
-  
+
 }
 
+@media screen and (max-width:1250px) {
+  .container {
+    width: 100%;
+    flex-direction: row;
+  }
+}
 
+@media screen and (max-width:549px) {
+  .container {
+    width: 100%;
+    flex-direction: column;
+  }
 
-
+}

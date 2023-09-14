@@ -1,10 +1,17 @@
 .container {
-  display:flex;
-  
+  display: flex;
+
 }
 
 .batchFilter {
   flex-grow: 1;
+  display: flex;
+  /* flex-wrap: wrap; */
+  height: 40px;
+}
+
+.classicFilter {
+  display: flex;
 }
 
 .button {
@@ -12,7 +19,7 @@
   color: var(--primary2);
   margin-right: 15px;
   border-radius: 15px;
-  
+
 }
 
 .button:last-child {
@@ -28,77 +35,126 @@
   background-color: transparent;
   border: 1px solid var(--secondary);
   border-radius: 15px;
-  margin-right: 15px;
 }
 
 .clearButton:hover {
   background-color: rgba(242, 212, 146, 0.1);
 }
 
-@media screen and (max-width:800px){
+@media screen and (max-width: 800px) {
+  .batchFilter {
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
   .container {
-    display:flex;
-    flex-wrap:wrap-reverse;
+    flex-direction: column;
+  }
+
+  .batchFilter {
+    margin-bottom: 20px;
+    /* justify-content: space-between; */
+  }
+
+  .classicFilter {
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 548px) {
+  .batchFilter {
+    flex-direction: column;
+    height: fit-content;
+    gap: 15px;
+  }
+
+  .classicFilter {
+    gap: 15px;
+    height: 40px;
+  }
+
+  .button {
+    padding: 10px 0;
+    text-align: center;
+    margin-right: 0;
+    flex-grow: 1;
+  }
+
+  .clearButton {
+    padding: 10px 0;
+    text-align: center;
+  }
+}
+
+/* @media screen and (max-width:800px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap-reverse;
     justify-content: flex-start;
     align-content: space-around;
-   width:100vw;
+    width: 100vw;
     justify-content: space-evenly;
-    margin-left:-2em;
-    
-   
-   
-
-  
+    margin-left: -2em;
 
 
-    
-  }
-.batchFilter{
-  display:flex;
-;height:fit-content;
- width:100vw;
- flex-grow:1;
- justify-content:space-around;
- justify-items:flex-start;
- 
 
 
-  
-}
-  
-
-.batchFilter button{
-padding:1em;
-font-size:x-small;
-padding:.5em;
-border-radius:10px;
-
-  
-  
 
 
-}
-.yellowButtons{
- display:block;
 
-  
-
-  height:fit-content;
-  width:fit-content;
-}
-
-.yellowButtons button{
-  line-height:normal;
-  margin-bottom:2em;
-  font-size:x-small;
-}
-  
- .button, .clearButton{
-  font-size:x-small;
-  padding:.5em;
-  min-width:5em;
-  text-align: center;
-  
- }
 
   }
+
+  .batchFilter {
+    display: flex;
+    ;
+    height: fit-content;
+    width: 100vw;
+    flex-grow: 1;
+    justify-content: space-around;
+    justify-items: flex-start;
+
+
+
+
+  }
+
+
+  .batchFilter button {
+    padding: 1em;
+    font-size: x-small;
+    padding: .5em;
+    border-radius: 10px;
+
+
+
+
+
+  }
+
+  .yellowButtons {
+    display: block;
+
+
+
+    height: fit-content;
+    width: fit-content;
+  }
+
+  .yellowButtons button {
+    line-height: normal;
+    margin-bottom: 2em;
+    font-size: x-small;
+  }
+
+  .button,
+  .clearButton {
+    font-size: x-small;
+    padding: .5em;
+    min-width: 5em;
+    text-align: center;
+
+  }
+
+} */

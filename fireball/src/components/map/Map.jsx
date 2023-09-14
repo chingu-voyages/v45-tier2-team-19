@@ -1,8 +1,4 @@
 import GeoPath from "./GeoPath";
-import { useState } from "react";
-
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 import "./style.css";
 import map from "./Map.module.css";
@@ -13,8 +9,6 @@ import { useGetFilteredMap } from "../../hooks/useGetFilteredMap";
 import { useFilterData } from "./hooks/useFilterData";
 
 const Map = () => {
-  AOS.init();
-  console.log("MAP RERENDERS");
   const { data } = useGetFilteredMap(); //data for the map filter component
   // const mapl = useGetMapData().data;
   const mapData = useGetMapData().data;
@@ -47,15 +41,7 @@ const Map = () => {
       >
         <MapFilter data={data} onDataFiltered={handleDataFiltered} />
         <div className={map.details}>
-          {/* <GeoPath map={mapData} data={filteredData} isAll={isAll} /> */}
-          <GeoPath
-            map={mapData}
-            data={filteredData}
-            filter={filter}
-            // clusters={clusters}
-            // onMouseOver={debouncedHandleMouseOver}
-            // onMouseOut={debouncedHandleMouseOut}
-          />
+          <GeoPath map={mapData} data={filteredData} filter={filter} />
           {
             <FilterSummary
               filteredData={filteredData}

@@ -4,3 +4,15 @@
   border-radius: 15px;
   padding: 50px 30px;
 }
+
+@media screen and (max-width: 800px) {
+  .container {
+    padding: 25px;
+  }
+}
+
+@media screen and (max-width: 548px) {
+  .container {
+    padding: 20px 15px;
+  }
+}

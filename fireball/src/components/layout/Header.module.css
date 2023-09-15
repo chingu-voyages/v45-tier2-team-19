@@ -9,6 +9,8 @@
     left top;
   height: 100vh;
   position: relative;
+  padding-top:3em;
+
 }
 
 /* .logo {
@@ -21,6 +23,7 @@
   color: #f7f7f7;
   font-weight: bold;
   font-size: 10vh;
+  padding-top:2em;
 }
 .description p {
   display: block;

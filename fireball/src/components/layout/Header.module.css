@@ -9,11 +9,25 @@
     left top;
   height: 100vh;
   position: relative;
+  padding-left:5em;
+  padding-right:5em;
+ 
+
 }
 
 /* .logo {
   padding: 60px;
 } */
+
+.description{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  justify-items:center;
+  height:50%;
+ 
+}
 .description h2 {
   display: block;
   margin: 0 auto;
@@ -21,6 +35,8 @@
   color: #f7f7f7;
   font-weight: bold;
   font-size: 10vh;
+
+
 }
 .description p {
   display: block;
@@ -29,6 +45,8 @@
   color: #f7f7f7;
   font-size: 6vh;
 }
+
+.logo{padding-top:2em;}
 /* .description h2 {
   color: #f7f7f7;
 } */

@@ -9,6 +9,8 @@
     left top;
   height: 100vh;
   position: relative;
+  padding-left:5em;
+  padding-right:5em;
  
 
 }
@@ -24,6 +26,7 @@
   align-items:center;
   justify-items:center;
   height:50%;
+ 
 }
 .description h2 {
   display: block;

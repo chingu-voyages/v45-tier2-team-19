@@ -53,6 +53,8 @@ To build the application, we used:
 - [Material UI](https://mui.com/material-ui/getting-started/)
 - [React-icons](https://www.npmjs.com/package/react-icons)
 - [Radix-ui](https://www.radix-ui.com/)
+- [AOS](https://michalsnik.github.io/aos/)
+- [Framer-Motion](https://www.framer.com/motion/)
 
 ## 👩‍💻 Running the App
 

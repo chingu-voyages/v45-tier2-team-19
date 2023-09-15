@@ -2,13 +2,13 @@
   background-color: var(--primary2);
   text-align: center;
   font-size: 16px;
-  color: #E0E0E0;
+  color: var(--text);
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   border-radius: 15px;
-  padding: 30px 50px;
+  padding: 50px 30px;
 }
 
 .numberWrapper {
@@ -25,17 +25,11 @@ p {
 }
 
 span {
-  display: flex;
+  /* display: flex; */
   align-items: end;
 }
 
 .number {
   font-size: 50px;
   font-weight: bold;
-}
-
-@media screen and (max-width:800px){
-  .data{
-    width:100vw;
-  }
 }

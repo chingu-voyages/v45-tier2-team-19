@@ -5,8 +5,6 @@ import Region from "./Region";
 import Stats from "./Stats";
 import Top100 from "./Top100";
 const FilterSummary = ({ filteredData, selectedFilters, filter }) => {
-  console.log(filteredData);
-
   const flags = filteredData.map((d) => d.flag);
   const flag = [...new Set(flags)];
 

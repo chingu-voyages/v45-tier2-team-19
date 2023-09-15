@@ -2,6 +2,7 @@ import "./MadeBy.css";
 import { GrLinkedin, GrGithub } from "react-icons/gr";
 
 const MadeBy = function () {
+
   let creators = [
     {
       name: "Alex",
@@ -36,6 +37,23 @@ const MadeBy = function () {
   ];
 
   const creatorList = creators.map((creator, index) => {
+=======
+
+
+    const creatorList = creators.map((creator, index) => {
+        return (
+
+            <div id="Credits" className="creator" key={index}>
+                <a href={creator.homePage ? creator.homePage : creator.github}  >
+                    <li>{creator.name}</li>
+                </a>
+                <a href={creator.linkedIn}><GrLinkedin /></a>
+                <a href={creator.github}><GrGithub /></a>
+
+            </div>
+        )
+    })
+
     return (
       <div id="Credits" className="creator" key={index}>
         <a href={creator.homePage ? creator.homePage : creator.github}>

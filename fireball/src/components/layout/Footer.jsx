@@ -1,30 +1,20 @@
-
 import logo from "../../assets/logo-no-background.svg";
 import "./Footer.css";
-import MadeBy from './MadeBy';
+import MadeBy from "./MadeBy";
 
 const Footer = function () {
-    return (
-        <div>
+  return (
+    <div>
+      <footer>
+        <img className="footerLogo" src={logo}></img>
 
-
-            <footer>
-                <img className='footerLogo' src={logo}></img>
-
-
-                <div className="madeByContainer">
-                    <h2>App Created By:</h2>
-                    <MadeBy />
-                </div>
-
-            </footer>
-
-
+        <div className="madeByContainer">
+          <h2>App Created By:</h2>
+          <MadeBy />
         </div>
-
-    )
-
-
+      </footer>
+    </div>
+  );
 };
 
 export default Footer;

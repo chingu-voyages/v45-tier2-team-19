@@ -19,7 +19,7 @@ const Navbar = function ({ headerHeight }) {
   }, []);
 
   function handleSticky() {
-    if (window.scrollY > headerHeight) {
+    if (window.scrollY > headerHeight - 10) {
       setSticky(true);
     } else {
       setSticky(false);
@@ -91,10 +91,10 @@ const Navbar = function ({ headerHeight }) {
         style={
           sticky
             ? {
-                position: "fixed",
-                left: "0px",
-                top: "0px",
-              }
+              position: "fixed",
+              left: "0px",
+              top: "0px",
+            }
             : {}
         }
       >
@@ -126,19 +126,19 @@ const Navbar = function ({ headerHeight }) {
                   style={
                     sticky
                       ? {
-                          position: "absolute",
-                          top: "0px",
-                          left: "0px",
-                          fontSize: "2em",
-                          backgroundColor: "var(--primary)",
-                          width: "100vw",
-                          cursor: "pointer",
-                        }
+                        position: "absolute",
+                        top: "0px",
+                        left: "0px",
+                        fontSize: "2em",
+                        backgroundColor: "var(--primary)",
+                        width: "100vw",
+                        cursor: "pointer",
+                      }
                       : {
-                          fontSize: "5em",
-                          alignSelf: "center",
-                          justifySelf: "center",
-                        }
+                        fontSize: "5em",
+                        alignSelf: "center",
+                        justifySelf: "center",
+                      }
                   }
                 >
                   <MdMenu />

@@ -62,6 +62,16 @@
   background-color: var(--primary3);
 }
 
+.headerColumn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerColumn span {
+  margin-left: 5px;
+}
+
 /*Pagination*/
 
 .paginationContainer {

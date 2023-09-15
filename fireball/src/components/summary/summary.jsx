@@ -8,7 +8,7 @@ import MostStrikesByCountry from "./MostStrikesByCountry";
 import { useDataContext } from "../../hooks/useDataContext";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import summary from './Summary.module.css'
+import summary from "./Summary.module.css";
 import "./summary.css";
 
 const Summary = function () {
@@ -17,7 +17,12 @@ const Summary = function () {
 
   return (
     <section className={summary.section} id="Summary">
-      <div className={summary.sectionContainer}>
+      <div
+        className={summary.sectionContainer}
+        data-aos="fade-up"
+        data-aos-duration="3500"
+        data-aos-once="true"
+      >
         {loading ? (
           <div>Loading...</div>
         ) : (

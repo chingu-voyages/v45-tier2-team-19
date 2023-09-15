@@ -1,3 +1,4 @@
+import { useEffect, useState, useRef } from "react";
 import AverageMass from "./AverageMass";
 import TotalStrikes from "./TotalStrikes";
 import StrikesByYearFiltered from "./StrikesByYearFiltered";
@@ -12,8 +13,31 @@ import summary from "./Summary.module.css";
 import "./summary.css";
 
 const Summary = function () {
-  AOS.init();
   const { data, loading } = useDataContext();
+  const [showComponent, setShowComponent] = useState(false);
+  const targetRef = useRef(null);
+  AOS.init();
+
+  const { IntersectionObserver } = window;
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setShowComponent(true);
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+
+    if (targetRef.current) {
+      observer.observe(targetRef.current);
+    }
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
 
   return (
     <section className={summary.section} id="Summary">
@@ -22,10 +46,11 @@ const Summary = function () {
         data-aos="fade-up"
         data-aos-duration="3500"
         data-aos-once="true"
+        ref={targetRef}
       >
         {loading ? (
           <div>Loading...</div>
-        ) : (
+        ) : showComponent ? (
           <div id="Summary" className={summary.grid}>
             <StrikesByYearFiltered />
 
@@ -45,7 +70,7 @@ const Summary = function () {
               <StrikesByCompo />
             </div>
           </div>
-        )}
+        ) : null}
       </div>
     </section>
   );

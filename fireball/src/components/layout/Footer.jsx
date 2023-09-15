@@ -1,4 +1,4 @@
-import logo from "../../assets/logo-no-background.svg";
+import logo from "../../assets/Logo.svg";
 import "./Footer.css";
 import MadeBy from "./MadeBy";
 

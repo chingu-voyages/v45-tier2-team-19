@@ -18,3 +18,14 @@
 .input::placeholder {
   color: var(--text);
 }
+
+@media screen and (max-width: 549px) {
+  .container {
+    width: 100%;
+  }
+
+  .input {
+    flex-grow: 1;
+    width: 100%;
+  }
+}

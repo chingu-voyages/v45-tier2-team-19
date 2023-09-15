@@ -36,7 +36,7 @@ const Map = () => {
       <div
         className={map.container}
         data-aos="fade-up"
-        data-aos-duration="2000"
+        data-aos-duration="3500"
         data-aos-once="true"
       >
         <MapFilter data={data} onDataFiltered={handleDataFiltered} />

@@ -14,9 +14,14 @@
 }
 
 .madeBy ul li{
-    color:var(--secondary2);
+    color:var(--secondary);
     font-weight:bolder;
 }
+.madeBy ul a{
+    color:var(--secondary);
+    font-weight:bolder;
+}
+
 
 
 
@@ -33,13 +38,15 @@
 }
 
 .creator a{
+    
     padding:.5em;
 }
 .creator a li:hover{
-    color:white;
+    color:var(--secondary2);
 }
+
 
 .madeBy a:hover{
     cursor:pointer;
-    color:white;
+    color:var(--secondary2);
 }

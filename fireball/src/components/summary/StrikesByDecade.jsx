@@ -3,6 +3,7 @@ import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Chart } from "chart.js/auto";
 import { Bar } from "react-chartjs-2";
 import { useDataContext } from "../../hooks/useDataContext";
+import useObserver from "../../hooks/useObserver";
 import summary from "./Summary.module.css";
 
 function StrikesByDecade() {
@@ -12,6 +13,10 @@ function StrikesByDecade() {
   if (meteorData === 0) return;
 
   const strikesByDecade = {};
+
+  const [ref, isIntersecting] = useObserver({
+    rootMargin: "-2px",
+  });
 
   meteorData.forEach((meteor) => {
     const year = new Date(meteor.year).getFullYear();
@@ -111,8 +116,8 @@ function StrikesByDecade() {
   };
 
   return (
-    <div className={summary.gridItem3}>
-      <Bar data={chartData} options={chartOptions} />
+    <div className={summary.gridItem3} ref={ref}>
+      {isIntersecting && <Bar data={chartData} options={chartOptions} />}
     </div>
   );
 }

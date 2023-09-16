@@ -49,14 +49,12 @@ color:var(--secondary2)
 
 @media screen and (max-width:624px){ 
 
-.footerLogo{
-  height:50%;
-}
+
 
 .madeBy{
   padding-left:0em;
   border-left:none;
-  margin-left:5em;
+ 
 }
 
 }

@@ -51,6 +51,7 @@ const MadeBy = function () {
 
   return (
     <div className="madeBy">
+      <h2>App Created By:</h2>
       <ul>{creatorList}</ul>
     </div>
   );

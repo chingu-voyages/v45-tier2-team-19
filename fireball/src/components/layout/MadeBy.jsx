@@ -1,5 +1,6 @@
 import "./MadeBy.css";
 import { GrLinkedin, GrGithub } from "react-icons/gr";
+import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
 
 const MadeBy = function () {
   let creators = [
@@ -36,15 +37,15 @@ const MadeBy = function () {
   ];
 
   const creatorList = creators.map((creator, index) => (
-    <div id="Credits" className="creator" key={index}>
+    <div className="creator" key={index}>
       <a href={creator.homePage ? creator.homePage : creator.github}>
         <li>{creator.name}</li>
       </a>
       <a href={creator.linkedIn}>
-        <GrLinkedin />
+        <FaLinkedin size={25} />
       </a>
       <a href={creator.github}>
-        <GrGithub />
+        <FaGithubSquare size={25} />
       </a>
     </div>
   ));

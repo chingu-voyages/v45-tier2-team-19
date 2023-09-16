@@ -1,28 +1,27 @@
-
-
 .madeBy{
     
     background-color: transparent;
     /* background-color:var(--primary2); */
     height:100%;
-    border-left:2px solid var(--primary);
-    padding-left: 5em;
 }
 .madeBy ul {
     list-style:none;
     margin:0px;
     padding-left:0px;
     margin-left:0px;
-    
    
     
 }
 
 .madeBy ul li{
     color:var(--secondary);
-    font-weight:bold;
-   
+    font-weight:bolder;
 }
+.madeBy ul a{
+    color:var(--secondary);
+    font-weight:bolder;
+}
+
 
 
 
@@ -39,7 +38,7 @@
 }
 
 .creator a{
-    color:var(--secondary);
+    
     padding:.5em;
 }
 .creator a li:hover{
@@ -47,26 +46,7 @@
 }
 
 
-
-.madeBy a{
-    color:var(--secondary)
-}
 .madeBy a:hover{
     cursor:pointer;
     color:var(--secondary2);
 }
-
-@media screen and (max-width:800px){ 
-
-    .footerLogo{
-      width:50%;
-    }
-    
-    .madeBy{
-      padding-left:0em;
-      border-left:none;
-
-     
-    }
-    
-    }

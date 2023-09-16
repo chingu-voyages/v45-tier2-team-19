@@ -15,7 +15,8 @@
   box-sizing: border-box;
   background-color: var(--primary);
   border-radius: 15px;
-  box-sizing: border-box;
+  width: 100%;
+  overflow-x: auto;
 }
 
 .table {
@@ -195,6 +196,11 @@ input::-webkit-inner-spin-button {
 
 @media screen and (max-width: 549px) {
 
+  .tableContainer {
+    padding: 10px;
+    position: relative;
+  }
+
   .paginationContainer {
     flex-direction: column;
     height: fit-content;
@@ -249,4 +255,10 @@ input::-webkit-inner-spin-button {
     width: 15px;
   }
 
+}
+
+@media screen and (max-width: 350px) {
+  .table {
+    font-size: 10px;
+  }
 }

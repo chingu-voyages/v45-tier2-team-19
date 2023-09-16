@@ -1,3 +1,5 @@
+
+
 .madeBy{
     
     background-color: transparent;
@@ -44,10 +46,27 @@
     color:var(--secondary2);
 }
 
+
+
 .madeBy a{
     color:var(--secondary)
 }
 .madeBy a:hover{
     cursor:pointer;
-    color:var(--secondary);
+    color:var(--secondary2);
 }
+
+@media screen and (max-width:800px){ 
+
+    .footerLogo{
+      width:50%;
+    }
+    
+    .madeBy{
+      padding-left:0em;
+      border-left:none;
+
+     
+    }
+    
+    }

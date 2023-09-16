@@ -29,9 +29,9 @@ footer{
   color:var(--secondary)
  
 }
-.madeByContainer a:hover{
+.madeByContainer > a:hover{
 cursor:pointer;
-color:var(--secondary2)
+color:var(--secondary2);
 
 }
 
@@ -52,15 +52,10 @@ color:var(--secondary2)
 
 @media screen and (max-width:900px){ 
 
-.footerLogo{
-  width:50%;
-}
+  .footerLogo{
+    width:50%;
+  }
+  
 
-.madeBy{
-  padding-left:0em;
-  border-left:none;
-  width:100%;
- 
-}
-
-}
+  
+  }

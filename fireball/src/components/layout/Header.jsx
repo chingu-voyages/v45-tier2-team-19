@@ -49,40 +49,42 @@ const Header = function () {
   return (
     <>
       <header ref={headerRef} className={header.container}>
-        <div className={header.logo}>
-          <img src={logo} alt="logo" />
-        </div>
-        <div className={header.description}>
-          {componIsReady && (
-            <motion.h2
-              variants={titleVarients}
-              initial="hidden"
-              animate="visible"
-            >
-              Your guide on a meteorite journey
-            </motion.h2>
-          )}
-          <p className={header.p}>
+        <div className={header.headerContainer}>
+          <div className={header.logo}>
+            <img src={logo} alt="logo" />
+          </div>
+          <div className={header.description}>
             {componIsReady && (
-              <motion.div
-                variants={textVariants}
+              <motion.h2
+                variants={titleVarients}
                 initial="hidden"
                 animate="visible"
               >
-                {paragraphText.split("").map((char, index) => (
-                  <motion.span
-                    key={index}
-                    variants={charVariants}
-                    // className={header.p}
-                  >
-                    {char}
-                  </motion.span>
-                ))}
-              </motion.div>
+                Your guide on a meteorite journey
+              </motion.h2>
             )}
-          </p>
+            <p className={header.p}>
+              {componIsReady && (
+                <motion.Fragment
+                  variants={textVariants}
+                  initial="hidden"
+                  animate="visible"
+                >
+                  {paragraphText.split("").map((char, index) => (
+                    <motion.span
+                      key={index}
+                      variants={charVariants}
+                      // className={header.p}
+                    >
+                      {char}
+                    </motion.span>
+                  ))}
+                </motion.Fragment>
+              )}
+            </p>
+          </div>
+          <div className={header.cometContainer}></div>
         </div>
-        <div className={header.cometContainer}></div>
         <Navbar headerHeight={headerHeight} />
       </header>
     </>

@@ -1,5 +1,4 @@
 .container {
-  
   background-image: url("../../assets/comets.svg"),
     url("../../assets/background.svg");
   background-repeat: no-repeat, no-repeat;
@@ -9,90 +8,108 @@
     left top;
   height: 100vh;
   position: relative;
-  padding-left:5em;
-  padding-right:5em;
- 
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+.headerContainer {
+  height: 100%;
+  max-width: 1276px;
+  margin: 0 auto;
+}
+
+.logo {
+  padding-top: 80px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+  justify-content: center;
+  justify-items: center;
+  height: 50%;
 
 }
 
-/* .logo {
-  padding: 60px;
-} */
-
-.description{
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  justify-items:center;
-  height:50%;
- 
-}
 .description h2 {
   display: block;
-  margin: 0 auto;
-  text-align: center;
   color: #f7f7f7;
   font-weight: bold;
-  font-size: 10vh;
-
-
+  font-size: 94px;
+  line-height: 100%;
+  text-shadow:
+    3px 3px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
+
 .description p {
   display: block;
-  margin: 0 auto;
-  text-align: center;
   color: #f7f7f7;
-  font-size: 6vh;
-}
-
-.logo{padding-top:2em;}
-/* .description h2 {
-  color: #f7f7f7;
-} */
-
-@media screen and (max-width: 700px){
-.description h2 {
-  
-  font-size:4em;
+  font-size: 40px;
 }
 
 
-}
-.description .p{
- 
-  font-size:3em;
-}
+@media screen and (max-width: 1250px) {
+  .container {
+    padding: 0 3em;
+  }
 
-@media screen and (max-width: 500px){
-  .container{
-    display:flex;
-  flex-direction:column;
-align-items:center;}
   .description h2 {
-  
-    font-size:3em;
+    font-size: 80px;
+    margin-top: 20px;
   }
-  
-  
-  .description .p{
-   
-    font-size:2em;
-  }
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    background-size: 200%, cover;
   }
 
-  @media screen and (max-height: 500px){
-    .logo{
-      justify-self:center;
-    }
-    .description h2 {
-    
-      font-size:8vh;
-    }
-    
-    
-    .description .p{
-     
-      font-size:6vh;
-    }
-    }
+  .description h2 {
+    font-size: 60px;
+    line-height: 80px;
+  }
+
+  .description p {
+    font-size: 25px;
+  }
+
+  .logo img {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .description h2 {
+    font-size: 45px;
+    line-height: 60px;
+  }
+
+  .description p {
+    font-size: 20px;
+  }
+
+  .logo img {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 368px) {
+  .container {
+    background-size: 300%, cover;
+    background-position: left 40% top, center;
+  }
+
+  .description h2 {
+    line-height: 50px;
+  }
+}

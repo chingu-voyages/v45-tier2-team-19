@@ -50,7 +50,6 @@ To build the application, we used:
 - [Chart.js](https://www.chartjs.org/)
 - [TanStack Table](https://tanstack.com/table/v8/)
 - [Emotion](https://emotion.sh/docs/introduction)
-- [Material UI](https://mui.com/material-ui/getting-started/)
 - [React-icons](https://www.npmjs.com/package/react-icons)
 - [Radix-ui](https://www.radix-ui.com/)
 - [AOS](https://michalsnik.github.io/aos/)
@@ -92,3 +91,11 @@ This project was built from scratch over 6 weeks, and with such a time constrain
 - Along the lines of the previous point, it could be useful to include something like a news aggregate component that allows users to see current news media related to meteorites and related topics.
 
 ## 👀 App Demo
+
+You can see [our deployed Fireball app here](https://main--fireball-app-voyage-45-tier2-team-19.netlify.app/).
+
+And check out [this demo video](https://drive.google.com/file/d/136zw2Aa3NH1MZWYHly3IzL8x53mMD3Kz/view?usp=drive_link) to learn more about our project and development process.
+
+## 🙏 Thanks!
+
+Finally, want to share special thanks to [the Chingu team](https://www.chingu.io/donate) for being supportive throughout the development process. We appreciate you!

@@ -21,7 +21,7 @@ footer {
 }
 
 .creators h2 {
-  color: var(--text);
+  color: var(--secondary);
 }
 
 @media screen and (max-width: 1300px) {

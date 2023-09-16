@@ -1,0 +1,3564 @@
+commit 78038e75ef0e8514f386d96824f35f0c96644c48
+Merge: b0fec72 1a21a41
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Sep 16 18:01:34 2023 +0200
+
+    Merge branch 'footerv2' into staging
+
+commit b0fec72b65484d616e7101a234c1585c273dcd9d
+Merge: 8e540e2 101ba3f
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Sep 16 17:39:51 2023 +0200
+
+    Merge branch 'footer2.2' into staging
+
+commit 101ba3f2e79b6cd8d1c9c9af465034ee3892b1b2
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Sep 16 17:31:33 2023 +0200
+
+    fixes
+
+commit 8e540e2382a9ebd5f30835488de0d56881003964
+Merge: dfb69aa 3237529
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Sep 16 17:14:28 2023 +0200
+
+    Merge branch 'footer2.2' into staging
+
+commit 32375290d0c57ac50d07ce96d8f546ee271e6266
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Sep 16 17:13:52 2023 +0200
+
+    fixed links color
+
+commit dfb69aa3591ed7e458c2e02e7759a6865d5f010e
+Merge: 09f455c 65c40db
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Sep 16 17:12:10 2023 +0200
+
+    Merge branch 'footer2.2' into staging
+
+commit 09f455c7a486f4372ed14e64eb977e848a3b94aa
+Merge: b60ffd9 de448f7
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Sep 16 17:11:09 2023 +0200
+
+    Merge branch 'staging-animation' into staging
+
+commit de448f7e16255f2497f8ae624aefe1933ba74efa
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Sat Sep 16 16:59:43 2023 +0200
+
+    removing extra ref
+
+commit bf7912a52331a5d0c33819d55491b46653fd0a8c
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Sat Sep 16 16:47:17 2023 +0200
+
+    aplying observer hook
+
+commit 65c40dbd419388b64c9f41ae4cd4ecd70d1eecab
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Sep 16 16:43:59 2023 +0200
+
+    commit
+
+commit 9e578089e013ea442473ac64ee54dd473c21dd1c
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Sep 16 16:36:47 2023 +0200
+
+    fixed responsive seperator issue
+
+commit 3115959a3f1f81470ed2448db8186afa4d729b25
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Sat Sep 16 16:35:35 2023 +0200
+
+    creating observer hook
+
+commit a098dfb0c3747f6b7284ab82809360454dce19cf
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Sep 16 16:08:03 2023 +0200
+
+    breakpoint for seperator needs work
+
+commit b9f52fe8334e7284a4a26080789743258288d34d
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Sep 16 16:04:08 2023 +0200
+
+    some changes
+
+commit d2f54ccfa3d621c3961b7767693eb4af4ca1ad62
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Sep 16 15:49:49 2023 +0200
+
+    commit
+
+commit 1a21a41559b0f0e8e8d90c8a775bbbf3a8e5a1e6
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Sat Sep 16 14:15:34 2023 +0100
+
+    change made by section color to secondary
+
+commit b82a8d2eefd23c4a2350d4c614a9db7b54dab398
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Sat Sep 16 13:30:09 2023 +0100
+
+    restyle the footer and make it responsive
+
+commit b60ffd99f59720fe45b28eddc4c9ffd8a940c7b1
+Merge: 0e7a164 dc5e525
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Sat Sep 16 13:29:11 2023 +0200
+
+    Merge pull request #70 from chingu-voyages/staging-animation
+    
+    changing tag in header component
+
+commit dc5e525d0375d62d3ab24cad678424c398ffe763
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Sat Sep 16 13:27:19 2023 +0200
+
+    changing tag in header component
+
+commit 33c9101d2e443153efce1d2bfd243edfb0964df0
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Sat Sep 16 12:09:01 2023 +0100
+
+    making the header responsive
+
+commit 0e7a1640f9ce635242dbda4c805f6752282e3e55
+Merge: 8001111 93d1615
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Sep 16 12:38:30 2023 +0200
+
+    Merge branch 'tablev2' into staging
+
+commit 93d1615e06c2ee022236c89dec6b933d691ded70
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Sat Sep 16 10:54:22 2023 +0100
+
+    fix: the table responisveness below 400px
+
+commit 8001111051dffbb5ca1cc36ca0dad4b597020fe9
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Sep 16 00:38:03 2023 +0200
+
+    fixed small bug where navbar didn't show over
+    table
+
+commit e0619805cbb99a1346ae5ca5cd01f32f2a69b360
+Merge: 1fcfb73 10f9cf0
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Sep 16 00:18:36 2023 +0200
+
+    Merge branch 'tablev2' into staging
+
+commit 10f9cf09b53fa1e2889155dbf6c83ef053df9e13
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Fri Sep 15 23:06:42 2023 +0100
+
+    addthe location column to the table
+
+commit 1fcfb73561a0e0e9a93c65e41c926e8e25749bdb
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 15 21:47:05 2023 +0200
+
+    uncommented code changed padding
+
+commit 80d59592afb703bd06fd115879b9192409e46db6
+Merge: 8020940 cfaa4a8
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 15 19:25:06 2023 +0200
+
+    Merge branch 'staging-animation-final' of https://github.com/chingu-voyages/v45-tier2-team-19 into staging-animation-final
+
+commit cfaa4a83984caca88a443405ad0f730c4e51df4b
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Fri Sep 15 19:06:13 2023 +0200
+
+    adding intersection api
+
+commit 8020940b3ae9d2527cb82ad1b119d127060ad2a4
+Merge: 32fb3ce 09b2389
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Fri Sep 15 16:37:31 2023 +0200
+
+    Merge pull request #68 from chingu-voyages/staging-animation-final
+    
+    adding more animations in app
+
+commit 09b2389413d81b121d0aeabca8685cf5ad0e08b0
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Fri Sep 15 16:35:42 2023 +0200
+
+    adding more animations in app
+
+commit 32fb3ce024cbd7aba3d7942fc1f8fff1e16c9bb3
+Merge: 8d66847 c22b6bf
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 15 16:34:22 2023 +0200
+
+    Merge branch 'fix-layout' into staging
+
+commit c22b6bf1386240b19fd7899ed11b9987ba7ddfc1
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 15 16:20:49 2023 +0200
+
+    fix responsiveness of header
+
+commit 1894e57ec885686a60e0abfafde129c8403c7c32
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 15 15:50:24 2023 +0200
+
+    horizontal scroll
+
+commit 8d66847e0c73d5c1aaa328e982c61b82a9291762
+Merge: 6e9995d 5325556
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 15 15:43:43 2023 +0200
+
+    Merge branch 'tablev2' into staging
+
+commit 532555672bff854c046c6c28cdeecd642304e28f
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Fri Sep 15 14:31:07 2023 +0100
+
+    fix: svg dimensions
+
+commit 2f3492060d7a6fe4712dbecaa0c6a4aa894bdf3b
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Fri Sep 15 14:19:05 2023 +0100
+
+    make the data display component responsive
+
+commit 285730bcebb9f1291eaec4b6ab48b3793b7d7b7b
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 15 15:01:14 2023 +0200
+
+    changed logo footer color to gold
+
+commit 6e9995d643495753c83cfbf21e1633e00548ad15
+Merge: 0bf88e5 d22ea3b
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 15 11:41:33 2023 +0200
+
+    Merge branch 'staging'
+
+commit d22ea3b33e017c55db00b86ba39684d49885552c
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 15 11:40:48 2023 +0200
+
+    changed footer back to 30%
+
+commit 0bf88e50a90ac665509d1c7085388fb84fe4b05c
+Merge: f5b4825 afee428
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 15 09:40:18 2023 +0200
+
+    Merge branch 'staging'
+
+commit afee428ed4f20cc2af492a53d20770b16c6b5784
+Merge: be74085 500c67d
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 15 09:40:00 2023 +0200
+
+    Merge branch 'staging' of https://github.com/chingu-voyages/v45-tier2-team-19 into staging
+
+commit be74085e94614210459ccff2c653b5ba959d87bc
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 15 09:34:49 2023 +0200
+
+    padding left right, see nav
+
+commit ef64b4d9c19e6769b6e761cbe6078cc18c84d205
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 15 09:31:57 2023 +0200
+
+    vertical center-ish
+
+commit 500c67d5905b29e7bb115ff75c6f3347c5a41889
+Author: Crystal <crwainstock@gmail.com>
+Date:   Fri Sep 15 09:23:07 2023 +0200
+
+    cleared up error created in merging MadeBy.jsx file
+
+commit 336822e264469f866dd747da1e3111dd275c19a4
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 15 09:19:38 2023 +0200
+
+    padding top
+
+commit 645c84bfafbf432b523503853c3f47bd703a52d6
+Merge: e3b07f2 f1c2dc6
+Author: Crystal Rose-Wainstock <112810064+crwainstock@users.noreply.github.com>
+Date:   Fri Sep 15 09:12:16 2023 +0200
+
+    Merge pull request #67 from chingu-voyages/readme-update
+    
+    Readme update -- includes updated dependencies list and updated footer links
+
+commit f1c2dc6bc5a7083cc2ff4828d4201ed7768a21a9
+Merge: 0fdd71b e3b07f2
+Author: Crystal Rose-Wainstock <112810064+crwainstock@users.noreply.github.com>
+Date:   Fri Sep 15 09:11:51 2023 +0200
+
+    Merge branch 'staging' into readme-update
+
+commit 0fdd71bc028943308b89a497b0235aa567121d65
+Author: Crystal <crwainstock@gmail.com>
+Date:   Fri Sep 15 09:07:12 2023 +0200
+
+    added Sarita's linked in and crystal's homepage to footer
+
+commit f5b48251ab29ca4d00e25c613e410db3a1f9a10d
+Merge: f723279 e3b07f2
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Sep 14 22:40:12 2023 +0200
+
+    Merge branch 'staging'
+
+commit e3b07f2183c338eaf1dd36375f78e28d5137b754
+Merge: fd9a560 4f89802
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Sep 14 22:39:35 2023 +0200
+
+    Merge branch 'mapv2' into staging
+
+commit 4f8980221439f29a3d737be8db97938f448f692c
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Thu Sep 14 19:33:52 2023 +0100
+
+    make the map component responsive
+
+commit f723279ab6ac4a517cd3280647bdbcdad1f97d43
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Sep 14 17:47:47 2023 +0200
+
+    commit
+
+commit fd9a5604a67319507c37d899e0d26e55cfc9406d
+Merge: ab6f435 1e80ebf
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Sep 14 17:46:02 2023 +0200
+
+    Merge branch 'staging'
+
+commit 1e80ebf4d4ec162b8480b7ced16e0a2e960aa90c
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Sep 14 17:29:07 2023 +0200
+
+    sarit linkedin
+
+commit ab6f435e0802070fdcbecb16485c0af9e858eb0a
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Sep 14 17:26:52 2023 +0200
+
+    sarita linkedin
+
+commit 323ae923ad6e23323a62e58390ac398bd903369f
+Merge: 30da19a 1177e72
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Sep 14 17:17:47 2023 +0200
+
+    Merge branch 'staging'
+
+commit 1177e72339d2aabc2b4849e6ef2704bdb10475dc
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Sep 14 17:17:08 2023 +0200
+
+    added saritas correct linkedin
+
+commit 30da19ab3261603f7e38616bacb14a2d2f29a012
+Merge: d4366e6 f7ccacb
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Sep 14 17:05:33 2023 +0200
+
+    Merge branch 'staging'
+
+commit f7ccacb205c3791e5cb43cfb29cac1601cdc59f6
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Sep 14 17:04:35 2023 +0200
+
+    removed linkedin
+
+commit 4c6f5faade36a9bdbfe44447416090711aaba3e3
+Merge: 17d1951 de40ef8
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Sep 14 15:30:58 2023 +0200
+
+    Merge branch 'staging' of https://github.com/chingu-voyages/v45-tier2-team-19 into staging
+
+commit 8d4464a30de7636a979cf289401a58dcece27e0b
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Thu Sep 14 15:26:56 2023 +0200
+
+    Update README.md
+    
+    added framer motion
+
+commit 17d1951be4320d74840c01199437f04e5f90173e
+Merge: ea15d08 3635758
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Sep 14 14:51:53 2023 +0200
+
+    Merge branch 'staging---animation' of https://github.com/chingu-voyages/v45-tier2-team-19 into staging
+
+commit 36357587d755555cb3d67ebfad0a299ed4441df4
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Thu Sep 14 14:27:57 2023 +0200
+
+    removing animation from footer
+
+commit 267d4eed38952d82b4c70671951ca4016370537d
+Author: Crystal <crwainstock@gmail.com>
+Date:   Thu Sep 14 14:23:02 2023 +0200
+
+    added aos to readme
+
+commit ea15d08f83d897a79af6abf81abedb1f197809d4
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Sep 14 08:28:37 2023 +0200
+
+    made logo larger on mobile devices
+
+commit 6972764d272c81035ab98fbe20d2f69b3ad6fc0e
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Sep 14 08:27:25 2023 +0200
+
+    centered logo in header on mobile devices
+
+commit d4366e655129ed89b8675d3900ef2fd021beafea
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Sep 14 04:54:31 2023 +0200
+
+    added slider to package.json
+
+commit fa016931ccf84508d0525fe887ac69255602f5f3
+Merge: aa4dcb9 de40ef8
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Sep 14 03:47:06 2023 +0200
+
+    Merge branch 'staging' of https://github.com/chingu-voyages/v45-tier2-team-19
+
+commit aa4dcb90878a768474ac719eb0f93e91ac3547f6
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Sep 14 03:45:27 2023 +0200
+
+    merged
+
+commit 22a2dd3e1db30fb3bf815e59150dde50965dfab1
+Merge: 1e6c43d f5afc1c
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Sep 14 03:42:21 2023 +0200
+
+    Merge branch 'staging---animation' into merge-staging-animation
+
+commit 1e6c43d8a86790c327ed774094c79690a0465d54
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Sep 14 03:02:16 2023 +0200
+
+    merged summrary with staging
+
+commit 146d0d0eb6617595d51189f7de3d77150219a315
+Merge: eed1513 c98b630
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Sep 14 03:01:33 2023 +0200
+
+    Merge branch 'summaryv2' into staging
+
+commit 527be582d49da1ea8de9ddbdd7ffe81e96899675
+Merge: de40ef8 c98b630
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Wed Sep 13 22:47:35 2023 +0100
+
+    Merge branch 'summaryv2' into staging
+
+commit c98b6308966321924719f69e0c526ce903f3cde1
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Wed Sep 13 22:46:53 2023 +0100
+
+    fix chart height
+
+commit de40ef83202c0fd465eb8da9c6389d8fb6f19ba2
+Merge: b72275d eed1513
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Wed Sep 13 22:41:39 2023 +0100
+
+    resolve conflicts
+
+commit b72275dd8eecc63b61613a7d43a21fc58eef5c61
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Wed Sep 13 22:37:51 2023 +0100
+
+    fix strikesByYear chart height
+
+commit 855266da73f65b82a3c5dc38acd5406461643b67
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Wed Sep 13 22:29:05 2023 +0100
+
+    remove commented style from summary css file
+
+commit efbd6c4dd45888757e5a6c6bace9645baa739c56
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Wed Sep 13 22:27:03 2023 +0100
+
+    making the summary component responsive
+
+commit f5afc1c82d082c92fe6f34826749a734d1203c28
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Wed Sep 13 22:29:39 2023 +0200
+
+    continuing with the animations
+
+commit 07177d6ade1aaa5efabda6b2fbe247031bb4f29e
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Wed Sep 13 22:09:05 2023 +0200
+
+    adjusting animation of the table
+
+commit 2cd4e9d6fd7749c851f81730b7eab6ee064eb445
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Wed Sep 13 21:56:38 2023 +0200
+
+    adding aos libraryfor animation
+
+commit 2271a89b15d53113ce2d5d8167c2dd8592300da6
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Wed Sep 13 20:31:20 2023 +0200
+
+    adding no search result message to the table
+
+commit f5c08dc07161a2ce2880dccbc6dddc30a8a6967d
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Wed Sep 13 19:51:48 2023 +0200
+
+    adding bg color for body for animation purpose
+
+commit 6ee0b321ef4c4e467d9eb58dae5c3564924c8c13
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Wed Sep 13 18:12:07 2023 +0200
+
+    animating table
+
+commit e411803bbd6e56f9c2981376193bb952a5f568f7
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Wed Sep 13 16:51:48 2023 +0200
+
+    animating logo in footer
+
+commit f7bfe0d79b84fe8086a9a2133fa065fae6a51d55
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Wed Sep 13 16:01:15 2023 +0200
+
+    animating header paragraph
+
+commit eed151363406c71228443500171b6b77abbd6d80
+Merge: 5f157c6 6659fae
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Wed Sep 13 14:51:16 2023 +0200
+
+    Merge branch 'staging' of https://github.com/chingu-voyages/v45-tier2-team-19 into staging
+
+commit 5f157c62650077860f557415b57e5ebd8e6b5d83
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Wed Sep 13 14:50:42 2023 +0200
+
+    merge
+
+commit 657e2aba4aa1fe22938ee47f273f2a253ec15c16
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Wed Sep 13 11:39:01 2023 +0100
+
+    add line chart for most strikes by country
+
+commit 76006dd3b6da5f7ef59aef447f77c796bee8d7b6
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Wed Sep 13 10:44:38 2023 +0100
+
+    restyle the summary component
+
+commit 8344715022ffdb8c6687e5bce14a513e19ee0d72
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Sep 12 16:19:49 2023 +0200
+
+    added new homepage chris
+
+commit 71215dd2e66629b3aaa83ff14c086fbc2ba6ea5e
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Sep 12 12:58:08 2023 +0200
+
+    commit
+
+commit 6659fae76ab98fdb96287ec9ea27bac4dfa9b9b6
+Merge: e234fa9 eafc415
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Wed Sep 13 14:41:55 2023 +0200
+
+    Merge branch 'summaryv2' into staging
+
+commit 929bcbac0fa4b7f092cf4bce1c3b1914ba551168
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Wed Sep 13 14:33:25 2023 +0200
+
+    adjustments with header animations
+
+commit eafc415d86e751eae4549e12d4ac8ab83d495e1e
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Wed Sep 13 11:39:01 2023 +0100
+
+    add line chart for most strikes by country
+
+commit d2d9145f73b3e635c40ad7ec36d2773e352d2229
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Wed Sep 13 12:29:18 2023 +0200
+
+    Animating header title
+
+commit 897cdbc2699e9955c5c00687f8e045c8d00c6357
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Wed Sep 13 12:26:19 2023 +0200
+
+    adding framer motion library
+
+commit 0f9ea7cedc708f9fecdbfae271ba1b43495dfb09
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Wed Sep 13 10:44:38 2023 +0100
+
+    restyle the summary component
+
+commit e234fa910303a36031daf64e4fcbc0f4eef2d3f0
+Merge: 9714f4b d94a462
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Sep 12 16:22:03 2023 +0200
+
+    Merge branch 'socials-header' into staging
+
+commit d94a462d6025e14744a33275fb8eb24949842bbd
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Sep 12 16:19:49 2023 +0200
+
+    added new homepage chris
+
+commit 6460ae5e294b42a358d3081be35ee83fb76c6014
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Sep 12 12:58:08 2023 +0200
+
+    commit
+
+commit 9714f4bd7ec7f0d2fb080779425f5c71510ae33f
+Merge: e206ed8 6bf43e5
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Sep 12 12:56:08 2023 +0200
+
+    Merge branch 'socials-header' into staging
+
+commit 6bf43e593afbce8f9059b4b9bf90ab6a820324b4
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Sep 12 12:55:44 2023 +0200
+
+    added linkedin alex
+
+commit e206ed80ea93723259ff2169ed0550f9bf442edb
+Merge: 592f6e6 b143047
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Sep 12 12:51:12 2023 +0200
+
+    Merge branch 'staging' of https://github.com/chingu-voyages/v45-tier2-team-19 into staging
+
+commit 592f6e63b3b750a15555ed2ba1cf0f002861b4bb
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Sep 12 12:50:21 2023 +0200
+
+    commit
+
+commit 221e835461fdd01904ef5551e46c90d1313d4382
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Sep 12 12:10:26 2023 +0200
+
+    added some homepages
+
+commit bec49ccb189ff745f1fcde96111082aace7d8879
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Sep 12 11:23:34 2023 +0200
+
+    fixed for horizontal phone
+
+commit c72caa24abb82bcbc2934d6c6e1bcda8c2a05fd6
+Merge: cebe0f9 55d9f6a
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Sep 12 11:10:44 2023 +0200
+
+    Merge branch 'nav-fix' into staging
+
+commit 55d9f6a90c3d89a9092643c5c8bce5e50ba71a7d
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Sep 12 10:48:29 2023 +0200
+
+    cursor pointer on menu button
+
+commit cebe0f946504ad228cc86cc78464901e822764d3
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Sep 12 10:43:15 2023 +0200
+
+    smaller text for mobile
+
+commit 2305548c284a21c78056a27c44f34e63f9fdc5ef
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Sep 12 10:40:00 2023 +0200
+
+    smaller text
+
+commit 48341214e2edd886ab9413ca63c50225bce092b8
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Sep 12 10:26:51 2023 +0200
+
+    added close button to menu
+
+commit 9fc9422444b38098ed8810882098941136c2f8e6
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Sep 12 10:11:26 2023 +0200
+
+    navbar
+
+commit a34983c0257b55d172f4f1223caa9b1c03f086b2
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Sep 12 10:05:15 2023 +0200
+
+    navbar
+
+commit 382caac4991c2980efa792c268bd2575b573c2e6
+Merge: 3c7418a 2b5223d
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Sep 12 09:47:30 2023 +0200
+
+    Merge branch 'main' into staging
+
+commit 2b5223d6f312c174f05d5c1879269b17c9530a8c
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Sep 12 09:43:17 2023 +0200
+
+    fixed navbar
+
+commit 77c176927428cfcb650cdaaacce2796258dbf61e
+Merge: 2ae3ef2 5c8967c
+Author: Chris H <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Sep 12 09:24:59 2023 +0200
+
+    Merge pull request #65 from chingu-voyages/content
+    
+    Content
+
+commit 5c8967c052f10fc52c1eef5acd0de193dc7d5d2b
+Author: Crystal <crwainstock@gmail.com>
+Date:   Tue Sep 12 09:00:12 2023 +0200
+
+    adjusted header text size
+
+commit 8779d515b8c7663f06c65c5db3fbeb5e97f0ccf9
+Author: Crystal <crwainstock@gmail.com>
+Date:   Tue Sep 12 08:56:52 2023 +0200
+
+    added draft of content to header, adjusted styling for h2 and p
+
+commit 184a32ccdbb56370cb56e01c276b7240143d675e
+Author: Crystal <crwainstock@gmail.com>
+Date:   Tue Sep 12 08:40:46 2023 +0200
+
+    added note about styling in future directions
+
+commit 3c7418a11f45236ab3552c2110fa251ba500f277
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Sep 12 06:20:54 2023 +0200
+
+    smaller footer
+
+commit b1430474f6dc9cd9a2d947ee0edc157956fe8dac
+Merge: 467a475 040c57e
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Mon Sep 11 19:46:38 2023 +0100
+
+    Merge branch 'table2.0' into staging
+
+commit 040c57e0ab33e4618ff1368b6c70081be9b234c6
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Mon Sep 11 19:46:10 2023 +0100
+
+    fix some design issues relatd to consistency
+
+commit 2ae3ef21aeed417c9117f1e48d09151ffa24599f
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Mon Sep 11 20:24:17 2023 +0200
+
+    footer style changes
+
+commit 467a4754feb30584f3e0980f4394b4ed4c91b33b
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Mon Sep 11 18:54:13 2023 +0100
+
+    fix: fix the container width for the map
+
+commit 70fa693fe3ff9b0251131581ae63f42101bf2403
+Merge: 01ea9ed 3cf03c9
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Mon Sep 11 18:42:16 2023 +0100
+
+    fix; conflicts between staging & table2.0
+
+commit 3cf03c933a3629ac25d0b876fd4d4720aae031f8
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Mon Sep 11 18:35:04 2023 +0100
+
+    style the go to page component
+
+commit 01ea9ed0391e0d75c713d96df85da7e96d83aa40
+Merge: 0d8cd68 31e9b73
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Mon Sep 11 18:39:03 2023 +0200
+
+    Merge branch 'staging' of https://github.com/chingu-voyages/v45-tier2-team-19 into staging
+
+commit 0d8cd680b98a12f3213532c02cdcb21af22e0d6a
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Mon Sep 11 18:38:28 2023 +0200
+
+    merged with table2.0
+
+commit 8450afa2dae06c37e51a4f242330c3fc5b3fbd5d
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Mon Sep 11 17:37:58 2023 +0100
+
+    style pagination buttons
+
+commit 1e3bae66c7fefd2a7c9912b818466aa57f9b803c
+Merge: 5f0a774 4eb80af
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Mon Sep 11 18:35:55 2023 +0200
+
+    Merge branch 'table2.0' into staging
+
+commit 5f0a774293664ef4f4a1682cbd22b23bff8bc059
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Mon Sep 11 16:55:30 2023 +0200
+
+    buttons look better on mobile phones but bad on tablets
+
+commit 8edede6ae991da8159684e7941d2e513c5c9c912
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Mon Sep 11 16:03:11 2023 +0200
+
+    style not affecting all buttons
+
+commit 24f3df19cdb4eedf18166ebac38958cacf1024bc
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Mon Sep 11 15:28:13 2023 +0200
+
+    buttons wrap reverse
+
+commit f7ae6354777e6876388398d1afc4d86646d543d5
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Mon Sep 11 14:36:10 2023 +0200
+
+    buttons
+
+commit d42045ab990dd32bcde98dc6c04e506cb984b473
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Mon Sep 11 14:31:24 2023 +0200
+
+    buttons column
+
+commit 4c1f2cdb119a747afb568d78186c6be7f33e9238
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Mon Sep 11 14:28:20 2023 +0200
+
+    more work on buttons
+
+commit 762085416f5a92b834f786a5a393dcaec42868ac
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Mon Sep 11 14:06:46 2023 +0200
+
+    aligned items center without map dissapearing
+
+commit 94cc213f78dfa40c31de6c3ff3a217ef16634e4b
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Mon Sep 11 13:54:37 2023 +0200
+
+    working on filter buttons
+
+commit 5a49422bcb424b5e160ccd48f003b2d7e2c8a93f
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Mon Sep 11 13:36:20 2023 +0200
+
+    map and stats in column on small screen
+
+commit 33b6d64e8cd779c10995b2e86905f756ac90966d
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Mon Sep 11 12:05:56 2023 +0200
+
+    overflow x hidden
+
+commit 31e9b73bba598fc0e752eb0805ec3a5a2ced2663
+Author: Crystal <crwainstock@gmail.com>
+Date:   Mon Sep 11 10:21:38 2023 +0200
+
+    added Sarita's github link to readme file
+
+commit 13b0a212aa7fd607986a0e365fad55ae9a85defd
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Mon Sep 11 03:04:16 2023 +0200
+
+    removed gap under header
+
+commit 4eb80af214837f1342902c797dc9ed0d72fb2d79
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Mon Sep 11 00:27:11 2023 +0100
+
+    improve the design of the table component to match the design system
+
+commit 4cfbe98bf1de06590fbdc449f0089efd84a9994b
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Sun Sep 10 20:13:57 2023 +0100
+
+    redesign the table component
+
+commit 3c81a9b69b7716f7c1bb3f7c745d4fa4af600519
+Merge: 4ab170e 5c47a13
+Author: Chris H <76125739+crisxh@users.noreply.github.com>
+Date:   Sun Sep 10 18:59:49 2023 +0200
+
+    Merge pull request #62 from chingu-voyages/deployment
+    
+    Deployment
+
+commit 5c47a134636ac0a1ce7a9fbf5db4adf20f9b77fe
+Merge: acf87f4 b4d8ee7
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sun Sep 10 14:38:52 2023 +0200
+
+    Merge branch 'staging' into deployment
+
+commit b4d8ee77be944d38727f5b54cb3fad7521f4ad92
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sun Sep 10 14:37:44 2023 +0200
+
+    fixed smooth scrolling
+
+commit 8c0004a8540fa2a18170cc3fa49b2d7820b584c0
+Merge: ab6fbf7 1d16201
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sun Sep 10 14:34:51 2023 +0200
+
+    Merge branch 'staging' of https://github.com/chingu-voyages/v45-tier2-team-19 into staging
+
+commit 1d1620188416408c0fbf00494716dacaf91f6856
+Merge: d192b77 130d1a9
+Author: Crystal Rose-Wainstock <112810064+crwainstock@users.noreply.github.com>
+Date:   Sun Sep 10 13:14:17 2023 +0200
+
+    Merge pull request #61 from chingu-voyages/readme
+    
+    Readme without demo
+
+commit 130d1a9f955b1c2c0035b5265abce9efeb5efdab
+Author: Crystal <crwainstock@gmail.com>
+Date:   Sun Sep 10 13:09:42 2023 +0200
+
+    added team member
+
+commit d192b775181dd101ee7a9f829b9831d76c5abbf6
+Merge: 3558063 5453224
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Sun Sep 10 13:07:57 2023 +0200
+
+    Merge pull request #60 from chingu-voyages/staging-datasets
+    
+    Staging datasets
+
+commit 5453224cbeb7200e9fc74b0b7bcd4f41869e3f97
+Merge: 6bddd8e f03537a
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Sun Sep 10 13:06:02 2023 +0200
+
+    Merge pull request #59 from chingu-voyages/display-datasets2
+    
+    Display datasets2
+
+commit 6bddd8ef4cb403dc174cd1d20b18cbd1c5537757
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Sun Sep 10 13:05:11 2023 +0200
+
+    adding changes from datasets branch
+
+commit f03537a06b576370def2475203c6c2fd91469a62
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Sun Sep 10 12:54:43 2023 +0200
+
+    adjusting tr
+
+commit 7c098ab3422858572236d21aedae6366825485a7
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Sun Sep 10 12:36:58 2023 +0200
+
+    adjusting styling
+
+commit dc1d8317abd8b07cb99e4c3881ae63b3d5f7add0
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Sun Sep 10 12:25:32 2023 +0200
+
+    deleting files that I dont need
+
+commit acf87f493a226f17f9c724ed9d25135166ffa707
+Merge: 4ab170e ab6fbf7
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sun Sep 10 09:53:20 2023 +0200
+
+    Merge branch 'staging' into deployment
+
+commit ab6fbf71272edf65130c976293d37d7a4be7bbf8
+Merge: 3558063 fc628af
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sun Sep 10 09:51:47 2023 +0200
+
+    Merge branch 'footer-2.0' into staging
+
+commit fc628affea6112df74315b858f64ba3524cd986e
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sun Sep 10 09:51:15 2023 +0200
+
+    restyled credits
+
+commit 4ab170e14b7888ec920df4de381498438c52cf69
+Merge: 6cbb86a 3558063
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sun Sep 10 09:39:43 2023 +0200
+
+    Merge branch 'staging'
+
+commit 3558063f877469432ed53c9133b7fcc922d80489
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sun Sep 10 09:39:18 2023 +0200
+
+    changed favicon background to primary
+
+commit 8b0a91579559129145c5eeac1d22994d8c589c73
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sun Sep 10 09:32:03 2023 +0200
+
+    fixed header links
+
+commit b9f34ce58e791d909ecb33e6f483980427253b24
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sun Sep 10 09:11:45 2023 +0200
+
+    updated header
+
+commit 6cbb86ac37048734e012b175b61f08a67e023e3e
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sun Sep 10 08:36:51 2023 +0200
+
+    erged header 2.0 again
+
+commit 120df32e7f382490e231fb5a15faf92d4713c363
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sun Sep 10 08:28:25 2023 +0200
+
+    made more responsive
+
+commit 05eff65d8a7069e6bbaae0aa903a6f2c268e23d9
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sun Sep 10 08:19:08 2023 +0200
+
+    commit
+
+commit 2045bac7231f7ca98af84312fbd3d4956479e3b7
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sun Sep 10 08:03:07 2023 +0200
+
+    fixed header 2 failed merge
+
+commit ddf5d98487c0760067c85d22627f946efe9dd1d0
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sun Sep 10 01:41:29 2023 +0200
+
+    replaced header2 as the main header
+
+commit 184f0375e72dbd8041e7609cff7c39159174cf31
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sun Sep 10 01:37:23 2023 +0200
+
+    added github link to github icon
+
+commit 99c1d7dd063dee3a3859580c9b9690b2f6ce563f
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sun Sep 10 00:47:21 2023 +0200
+
+    -madeby styling
+
+commit 355f6d51a98e5fb5d659c77edf727448681f5dee
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sun Sep 10 00:19:55 2023 +0200
+
+    style and refactor list of creators to mapped array
+
+commit b5b7d011fa26b694ffe5c8fc485bd9e1b60179d7
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sun Sep 10 00:00:56 2023 +0200
+
+    merged staging with main
+
+commit 6c3ca21cddc90b8268627dbe0084b8fcf90ded66
+Merge: 46a0e10 5288ad2
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Sep 9 23:59:43 2023 +0200
+
+    Merge branch 'main' of https://github.com/chingu-voyages/v45-tier2-team-19
+
+commit 46a0e1079a21c03acbbe4deb28eb53dea481cc29
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Sep 9 23:54:31 2023 +0200
+
+    -added flex to paginationBtn because they weren't flex in the merge
+
+commit 4da1043999d66d31ad0d773c81d6199f23e8f725
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Sep 9 23:46:53 2023 +0200
+
+    deployment test
+
+commit b04c5dc2d68f9180e4bde464d2a66a4fa8b0669b
+Merge: 788c5fe c6eb1fc
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Sep 9 23:41:51 2023 +0200
+
+    Merge branch 'display-datasets2' into deployment
+
+commit c6eb1fc8130c4a7a71d09c1a30af5e91ffddb130
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Sat Sep 9 20:14:07 2023 +0200
+
+    styling the table
+
+commit 5288ad28bbfe1946ea2719139bcbbbea46d600ee
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Sat Sep 9 18:00:55 2023 +0100
+
+    fix package-lock
+
+commit 6f37d867969bdc32398289b70218cb24e284d96e
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Sat Sep 9 18:57:26 2023 +0200
+
+    adjusting layout of the table
+
+commit e4be4807a1c65f6a9df230c64871f90adb3e8660
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Sat Sep 9 18:45:16 2023 +0200
+
+    adding Table Id for navBar purpose
+
+commit db178df0d2ddcb38d5d4eb7ef48d0aecbf13b533
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Sat Sep 9 18:09:41 2023 +0200
+
+    styling table
+
+commit 788c5fe7039e6dfd114c0289a2ee55be1c5d287f
+Merge: 994dccb 0e6aa22
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Sep 9 17:44:09 2023 +0200
+
+    merged staging test
+
+commit 994dccb616218b65b5657c66c2c9991f5b04e8b6
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Sep 9 17:36:08 2023 +0200
+
+    display grid
+
+commit c10c1d20451191aecaa1d6a0a9e855781dc912e5
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Sep 9 17:17:36 2023 +0200
+
+    worked on responsivenes a bit
+
+commit 6f78eb10de58bf55efff0f6f3a1d107c3f872502
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Sep 9 17:11:55 2023 +0200
+
+    color and style changes
+
+commit 24ef40127a059ea09cab90b0fd37200a6222d809
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Sep 9 16:44:28 2023 +0200
+
+    changed some colors
+
+commit 2d0b5e2e29d9cf5e97fb1de197fedf88c2aaeda8
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Sep 9 15:44:03 2023 +0200
+
+    fixed header background
+
+commit 67f1618f9a25aeb0087d23877553d08415c5d138
+Merge: 27f7768 bcceb9c
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Sep 9 15:37:34 2023 +0200
+
+    Merge branch 'header2.0' into staging-header-merge
+
+commit 27f7768acdf368e1173784088e3b24255ac88f84
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Sep 9 15:29:01 2023 +0200
+
+    initial commit
+
+commit bcceb9c9e25acff623ae17e128647d06efa34f9f
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Sep 9 15:21:15 2023 +0200
+
+    removed useless components again
+
+commit 5aa8e78bb5f6f4b579401754bb82dd35199228fc
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Sep 9 15:13:32 2023 +0200
+
+    removed test components again, removed bottom scrollbar
+
+commit b65c382e84fd49c41799490c65ee6dd2bd03046c
+Merge: d7743ee 0d3bfea
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Sat Sep 9 13:44:00 2023 +0100
+
+    Merge branch 'header2.1' of https://github.com/chingu-voyages/v45-tier2-team-19 into header2.1
+
+commit d7743ee7696078a15ddbd397c20be7b237959572
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Sat Sep 9 13:35:10 2023 +0100
+
+    fix: navbar issue not being at the bottom of the header
+
+commit 0d3bfea0eadb92f86e20ddb804ac77b98129135a
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Sep 9 14:24:33 2023 +0200
+
+    fixed double menu
+
+commit 51477f3ffca115ca803a57e4c541a49002d2e19a
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Sep 9 13:35:33 2023 +0200
+
+    styling header
+
+commit 80765f15698d44804d365c2d1241a1407334b192
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Sep 9 13:32:28 2023 +0200
+
+    style
+
+commit a6ed61caedc9f49a59f76d3591f169d33b798ccc
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Sep 9 13:09:35 2023 +0200
+
+    changed fav to svg
+
+commit 33391940bde18e6ed85c0b9c99c41b466a6efcf9
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Sep 9 13:06:35 2023 +0200
+
+    temporary favicon
+
+commit 48ed74670381efc974ade81e921f8602c3214a71
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Sep 9 13:05:21 2023 +0200
+
+    temp favicon w ugly colors
+
+commit 642349eff77938cee99f76030de2b3ded739eb95
+Merge: 068f066 b278fdd
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Sep 9 12:33:50 2023 +0200
+
+    Merge branch 'staging' of https://github.com/chingu-voyages/v45-tier2-team-19 into deployment
+
+commit 068f066d6c9dd9082fe2606644db1c6db821edb7
+Merge: eda39bc c3c0e03
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Sep 9 12:33:45 2023 +0200
+
+    Merge branch 'main' of https://github.com/chingu-voyages/v45-tier2-team-19 into deployment
+
+commit b278fddba5391416ba6384f29f36e7d8455979f6
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Sep 9 12:31:31 2023 +0200
+
+    deleted reference to collapsed nav
+
+commit 30994af1b06c139a48e45433a12412d0d1a25896
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Sat Sep 9 11:10:36 2023 +0100
+
+    add a header
+
+commit db4842c570bffc5f041329f3b2971e9f9e9236ca
+Author: Crystal <crwainstock@gmail.com>
+Date:   Sat Sep 9 09:54:11 2023 +0200
+
+    added dependencies
+
+commit 183d952348cf86987ee657695016a8eb371bcd28
+Author: Crystal <crwainstock@gmail.com>
+Date:   Sat Sep 9 09:43:24 2023 +0200
+
+    added team member
+
+commit eda39bc833834746a1cb22758641090c55be2423
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 8 17:29:37 2023 +0200
+
+    favicon netlify
+
+commit 5394d6014c5b8c29545361d241311d8a68275ad9
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 8 17:20:54 2023 +0200
+
+    deleted old icon again
+
+commit c3c0e03aca722386166b2307f4abe3e463e866bb
+Merge: 5d294b4 27c4510
+Author: Chris H <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 8 17:18:24 2023 +0200
+
+    Merge pull request #58 from chingu-voyages/staging
+    
+    deleted button files
+
+commit 27c4510222846914a84bd050434070e079255779
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 8 17:17:37 2023 +0200
+
+    deleted button files
+
+commit 5d294b4b96deac7c77d2ddf76314087eb8d2cc6f
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 8 17:15:46 2023 +0200
+
+    favicon netlify
+
+commit 3c2193814f0b19557afa0b23fc9d248d9fa1effc
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 8 17:00:10 2023 +0200
+
+    favicon netlify
+
+commit 672a4225af9207f0cc4286c4ce57366033770139
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 8 16:55:46 2023 +0200
+
+    favicon netlify
+
+commit 437868ebf0cce1b23bf8dbdd3bdc8985c86844d7
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 8 16:40:28 2023 +0200
+
+    removed old favicon
+
+commit cf2145fa213499583bd931e6fd661e67ade74bcd
+Merge: 5205627 1bc7aae
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 8 16:33:45 2023 +0200
+
+    Merge branch 'staging' into deployment
+
+commit 1bc7aae6c457f06412fd6d84939ef585157d4777
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 8 16:31:54 2023 +0200
+
+    added favicon
+
+commit f696559958d1a8e95b7779c7df26e7b69348f9ad
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 8 16:29:21 2023 +0200
+
+    added favicon
+
+commit 520562773e5e9ba260754961fe53cbb04d3403dc
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 8 14:04:24 2023 +0200
+
+    vite build fix
+
+commit b62352f01bfd5a5bbc659d6b660f984e45c6d284
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 8 13:58:55 2023 +0200
+
+    vite base
+
+commit 4cde1e1b48aa7d4918097c3bcf86ed8d5fbb6006
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 8 13:29:13 2023 +0200
+
+    fixed z-index of loading again
+
+commit 8bc30682c75781cf9ac94d4c0b561efcdecde54c
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 8 13:27:48 2023 +0200
+
+    removed button references
+
+commit 9c4da9da2d01c6bae691071a23214e9d5189ed3a
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Fri Sep 8 11:54:45 2023 +0100
+
+    add displayName to SelectItem component
+
+commit 2a91b22245773e0f93c306ea53eb3d3e384c14a6
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Fri Sep 8 11:53:29 2023 +0100
+
+    add dashes between intervals in select component
+
+commit 6deeec72f0e98ab26b5ab9f803bac636434fc339
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 8 12:28:25 2023 +0200
+
+    fixed z-index of loading
+
+commit 85e33a75460a92c57cf71c2d1086274f55e5b95e
+Merge: 059a81a 15fad0d
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 8 12:26:14 2023 +0200
+
+    Merge branch 'map2' into staging-map2
+
+commit 999c60e619c102b1f1edd7d397ffc34baa50449d
+Author: Crystal <crwainstock@gmail.com>
+Date:   Fri Sep 8 11:33:36 2023 +0200
+
+    rearranged team members a bit
+
+commit fed4c17f169deef04cbd16f98746a56676b981c4
+Author: Crystal <crwainstock@gmail.com>
+Date:   Fri Sep 8 11:31:18 2023 +0200
+
+    add team member
+
+commit 15fad0d674f17b994d0de29f7e6177a658c50160
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Fri Sep 8 00:18:12 2023 +0100
+
+    refactor the map component into smaller components
+
+commit 290ba8b8dbe76b570d6b8b20ce424d316f24d5b1
+Author: Crystal <crwainstock@gmail.com>
+Date:   Thu Sep 7 15:51:06 2023 +0200
+
+    added author
+
+commit 226022f6bef1f6b3d7bd41a28bbc8ab94dfced2a
+Author: Crystal <crwainstock@gmail.com>
+Date:   Thu Sep 7 15:46:19 2023 +0200
+
+    added author section
+
+commit cefea2ac27990018a29e76d09cef6ba215efaef5
+Author: Crystal <crwainstock@gmail.com>
+Date:   Thu Sep 7 15:41:58 2023 +0200
+
+    added future directions items
+
+commit fe277d553a6a43c8344fbda2e35ff754ca38258f
+Author: Crystal <crwainstock@gmail.com>
+Date:   Thu Sep 7 15:36:26 2023 +0200
+
+    added additional project goals not related to functionality of the app
+
+commit 8a427c5eb17cecdeb5e6786185fb0a9f9e6db994
+Author: Crystal <crwainstock@gmail.com>
+Date:   Thu Sep 7 15:28:52 2023 +0200
+
+    add app demo header
+
+commit 3c67e13058aa66bb6bc0df3ce0049136d41374d8
+Author: Crystal <crwainstock@gmail.com>
+Date:   Thu Sep 7 15:27:10 2023 +0200
+
+    added step 4
+
+commit d1a64c752a1bdcc44caa24f4f979ed9ee78e8825
+Author: Crystal <crwainstock@gmail.com>
+Date:   Thu Sep 7 15:26:04 2023 +0200
+
+    adding directions for running app in readme
+
+commit a73e81ae6fbfd6525c97689bdd562cc120fedec4
+Author: Crystal <crwainstock@gmail.com>
+Date:   Thu Sep 7 15:23:50 2023 +0200
+
+    reformatting code in instructions readme
+
+commit b6ba7d4114e2fb7d3b0fae4fbfa9593126d9bbbe
+Author: Crystal <crwainstock@gmail.com>
+Date:   Thu Sep 7 15:22:47 2023 +0200
+
+    adding steps to running the app
+
+commit 583768ecc0d084aa651b4427985988d396255dd9
+Author: Crystal <crwainstock@gmail.com>
+Date:   Thu Sep 7 15:20:19 2023 +0200
+
+    added tools for managing workflow and planning in tech readme
+
+commit 5e4d7d7cf7ae2fdc6ecc83de1cf7f43b20bace86
+Author: Crystal <crwainstock@gmail.com>
+Date:   Thu Sep 7 15:18:03 2023 +0200
+
+    reorganized tech in readme
+
+commit edb89e847b722bc23c1aec3e7861dd35bc339286
+Author: Crystal <crwainstock@gmail.com>
+Date:   Thu Sep 7 15:17:17 2023 +0200
+
+    update tech list in readme
+
+commit 63edb10e896cd24f968a90c05a971264ef07bd50
+Author: Crystal <crwainstock@gmail.com>
+Date:   Thu Sep 7 12:46:50 2023 +0200
+
+    added dependencies & tech
+
+commit 84afa14f66da93baba1a9f632d66bdc52f7fca40
+Author: Crystal <crwainstock@gmail.com>
+Date:   Thu Sep 7 12:38:56 2023 +0200
+
+    added features to readme
+
+commit a46d9ab1852ea845ac41bf2ee4cfc1521eaacc5a
+Author: Crystal <crwainstock@gmail.com>
+Date:   Thu Sep 7 12:34:17 2023 +0200
+
+    overview draft in readme
+
+commit 059a81a96bba5fa39da1e1d5f5024f8d645ff0c4
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Sep 7 03:59:43 2023 +0200
+
+    fixed z-index of loading in app.css
+
+commit cb327131ca07c4ce60a20baae42b1e4986c3faae
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Sep 7 03:56:32 2023 +0200
+
+    changed back main.jsx back to module type
+
+commit a7b54d75d8b07ff3bdf0fd03c9dcab793e013afc
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Wed Sep 6 14:57:27 2023 +0100
+
+    add Landing component
+
+commit d6be17e76214eaab70d67be3db4e0fb31c10f8fe
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Wed Sep 6 13:02:47 2023 +0200
+
+    netlify
+
+commit e390bf2dfd55d426d82b5fe2c49f9b1172505b9f
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Wed Sep 6 12:54:26 2023 +0200
+
+    nomodule
+
+commit 2c419ea3e8bc12a9d39d68f9bcce638f49d28a6f
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Wed Sep 6 12:52:20 2023 +0200
+
+    fallback nomodule
+
+commit 025a420125f837e10027d7d2a06ceedebcc45997
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Wed Sep 6 12:46:52 2023 +0200
+
+    fixed meta tags
+
+commit 0fada0cb39782d9ff7d5fed9a30a1aac9bea7254
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Wed Sep 6 12:46:30 2023 +0200
+
+    fixed meta tags
+
+commit 07a8fb152ad8c99160874b551843bcb99c1f4bc3
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Wed Sep 6 10:29:22 2023 +0100
+
+    feat: update design system & color palette
+
+commit 54da2d87953552ff391f3482060a09de128152c5
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Wed Sep 6 09:28:51 2023 +0200
+
+    commit
+
+commit e6b6c11c34a52e34b30ffa3a4049f797ae594455
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Wed Sep 6 03:58:17 2023 +0200
+
+    fixed typo
+
+commit 7009cac26dd87faae8e07f28f5290b91b7437330
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Wed Sep 6 02:56:39 2023 +0200
+
+    vite build
+
+commit 4508a25e91fa58190713b4b5f9a8375496d32f73
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Wed Sep 6 02:46:42 2023 +0200
+
+    fixed zindex
+
+commit 24299a8e062bf21d48b06c730da861573cbcca15
+Merge: 3956728 650a470
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Tue Sep 5 21:39:25 2023 +0200
+
+    Merge pull request #55 from chingu-voyages/display-datasets2
+    
+    Display datasets2
+
+commit 650a470ff1879f427999ca9879e57f5ee81e2c65
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Tue Sep 5 21:31:04 2023 +0200
+
+    adjusting summary classes
+
+commit bedaa1513256e25b14c2c4f88e146e0157fbdff1
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Tue Sep 5 21:30:16 2023 +0200
+
+    adjusting summary styling
+
+commit 36ce6decfee0f26a19c75c8d593901d83ecf2049
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Tue Sep 5 20:48:03 2023 +0200
+
+    adjusting table responsive design
+
+commit 4e1ebb2e0e384710970d0d376828d0473e2dce93
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Tue Sep 5 20:14:23 2023 +0200
+
+    adding curly bracket where was missing
+
+commit 954ce59425edbbb158e27c84718945cf68f7f7e6
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Tue Sep 5 20:12:14 2023 +0200
+
+    changing color of the table cells
+
+commit d06cd085be917c0e20ce56f3c8cc769052564edf
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Tue Sep 5 20:10:05 2023 +0200
+
+    deleting extra table styling
+
+commit 3956728eb23905f737753d9528a32f1a2275bae8
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Sep 5 18:35:15 2023 +0200
+
+    commit
+
+commit 487f95f44eb902de3b2e4f2b439d66e9c5021d73
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Sep 5 18:33:01 2023 +0200
+
+    commit
+
+commit 145aa9db43f6c414e4bc81ee9a0a0007daf9b023
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Sep 5 18:26:51 2023 +0200
+
+    Revert "nevermind fix was bad"
+    
+    This reverts commit cedd86fcdcb5bea1bd3062c703f6ea6a972fc310.
+
+commit 84974de1f92bf6f2748c7ff63055566e67d0a9cd
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Sep 5 18:25:38 2023 +0200
+
+    Revert "fixed when header turns fixed on scroll"
+    
+    This reverts commit 11f34dad27042b1f9ca78496943d996a2c021ba2.
+
+commit 49be24580222f1569fdb60d1db55dab32be8f914
+Merge: cedd86f 82d51a4
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Sep 5 18:22:19 2023 +0200
+
+    Merge branch 'header-styling' into staging
+
+commit 82d51a48de55848fd1ac30e8928ebac388effadb
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Sep 5 18:21:50 2023 +0200
+
+    added bgimg to fixed header
+
+commit 11f34dad27042b1f9ca78496943d996a2c021ba2
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Sep 5 18:20:07 2023 +0200
+
+    fixed when header turns fixed on scroll
+
+commit cedd86fcdcb5bea1bd3062c703f6ea6a972fc310
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Sep 5 18:16:55 2023 +0200
+
+    nevermind fix was bad
+
+commit 5398392f185bc4d851e3626edd977b1cf76b09ef
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Sep 5 18:12:28 2023 +0200
+
+    Revert "added starry bg for now to menu"
+    
+    This reverts commit 2ce23d26d73c0d1a7dd74debb707eb55f664a458.
+
+commit c1e21011d0eaaf506b6a6baf9272c6cb2a431f34
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Sep 5 18:09:28 2023 +0200
+
+    fix for overflow was getting on chrome mobile
+
+commit 2ce23d26d73c0d1a7dd74debb707eb55f664a458
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Sep 5 18:07:02 2023 +0200
+
+    added starry bg for now to menu
+
+commit ce5c44500e1a0996b33b54b68bde17db0e36e833
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Sep 5 17:50:39 2023 +0200
+
+    made menu button bigger before scrolling
+
+commit 83eab9a6df22efcbe8767f9bc0b7fcac460a30d4
+Merge: 98718fb f17afcc
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Sep 5 16:50:50 2023 +0200
+
+    Merge branch 'staging' of https://github.com/chingu-voyages/v45-tier2-team-19 into staging
+
+commit 98718fb11ba402736d3c2c40dc3059838bc731f8
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Sep 5 16:50:17 2023 +0200
+
+    changed logo to svg
+
+commit 1b18484670b39e52225e93c93d713d6c1f73aded
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Sep 5 16:46:45 2023 +0200
+
+    smaller logo
+
+commit f17afccd59437771f319696766a46a2754caa8ca
+Merge: 1772eb7 1b7a71c
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Tue Sep 5 16:45:54 2023 +0200
+
+    Merge pull request #53 from chingu-voyages/loading
+    
+    Loading
+
+commit 1b7a71c3c2a0e958db4bc54aa5a53a854c1d99d8
+Merge: 9159c1f 1772eb7
+Author: Chris H <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Sep 5 16:43:48 2023 +0200
+
+    Merge branch 'staging' into loading
+
+commit eb396e22d7c94677337e666bbfb54713796f3334
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Sep 5 16:29:11 2023 +0200
+
+    commit
+
+commit 1772eb732a5bff97289bc1ce69d902a7b8dcef38
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Sep 5 16:18:55 2023 +0200
+
+    fixed header and menu
+
+commit 9159c1f5e859fa35dbaad2db96ec6b94a75c6739
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Tue Sep 5 15:52:30 2023 +0200
+
+    adding owerflow-wrap to table
+
+commit 6ecf0198a410b142c10d6ecca5ba2bacbadeea9d
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Tue Sep 5 15:48:06 2023 +0200
+
+    woring on summary component for  response design
+
+commit f031e0033f837437ac72edd07bbc0ccf32271f96
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Sep 5 15:25:32 2023 +0200
+
+    changed logo to new logo
+
+commit cdb27b83ae3cc7fe3fa120048a4107a2a52e9a7a
+Merge: a02ce4f 8fdb030
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Sep 5 14:04:11 2023 +0200
+
+    Merge branch 'curved-header' into staging
+
+commit 8fdb03009b28ec0c098deb37e8e246d253fe0e22
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Sep 5 14:03:19 2023 +0200
+
+    less padding on footer
+
+commit a02ce4fbd8fba1681253359f48d25b9016b83938
+Merge: ec80cbc ed2cc97
+Author: Chris H <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Sep 5 13:49:33 2023 +0200
+
+    Merge pull request #52 from chingu-voyages/curved-header
+    
+    Curved header
+
+commit ed2cc973cbc04949a331bbe3c3473b824562701f
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Sep 5 13:32:06 2023 +0200
+
+    moved header under curved and made transparent unless scrolled
+
+commit 5be5c1a9ceea6ce71adbdeb8f6bf66151b0fb642
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Tue Sep 5 11:37:08 2023 +0200
+
+    removing additional background image
+
+commit 7871c21af374ba89ae73c9daa5aa4438cfad2fe5
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Tue Sep 5 09:54:55 2023 +0200
+
+    Minor changes
+
+commit 598dfbb1d59bc88583f29d2aee911eee58e9ad2d
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Tue Sep 5 09:30:18 2023 +0200
+
+    creating loading component
+
+commit 0480a47a7578a5fe9858a7b361162d53e074a70b
+Merge: ec80cbc 97b4378
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Tue Sep 5 09:28:18 2023 +0200
+
+    Merge pull request #51 from chingu-voyages/summary-styling-alex
+    
+    Summary styling alex
+
+commit 97b4378f4f4f31045aa59b9cca30e8d5bc283948
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Mon Sep 4 23:40:30 2023 +0200
+
+    minor changes
+
+commit 636b4759148fe2983df6fe4b5c6c4ebaa34fb88f
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Mon Sep 4 23:05:07 2023 +0200
+
+    styling summary component
+
+commit d3985027e82de5630f0a21550d1231c8775cfc97
+Merge: d6025b4 6707437
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Mon Sep 4 20:49:14 2023 +0200
+
+    Merge pull request #50 from chingu-voyages/display-datasets2
+    
+    Display datasets2
+
+commit 670743787a7d05027f4260d59173922deb657d16
+Merge: f603def d6025b4
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Mon Sep 4 20:48:21 2023 +0200
+
+    Merge branch 'summary-styling-alex' into display-datasets2
+
+commit d204a129839aea39ee3f6e885168ebce7b47f3f4
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Mon Sep 4 16:26:50 2023 +0100
+
+    add a filtersummary component
+
+commit 451cd53489e25c8a1191656f290175727f7ae47a
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Mon Sep 4 17:20:37 2023 +0200
+
+    creating collapsable credits
+
+commit c7572d42d7e63ff5eaadef5f9ea60a5307303f94
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Mon Sep 4 17:17:21 2023 +0200
+
+    creating collapsable credits
+
+commit f603def7efb7279fdf9ec6f2474d682c3a6281bf
+Merge: 48476e7 de875e1
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Mon Sep 4 16:28:54 2023 +0200
+
+    Merge pull request #49 from chingu-voyages/display-datasets
+    
+    Display datasets
+
+commit de875e1f2227d176750a084b30b4adf112d437c5
+Merge: f83aad3 48476e7
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Mon Sep 4 16:10:47 2023 +0200
+
+    Merge branch 'display-datasets2' into display-datasets
+
+commit 56d76edb40b8976679c518676192e1ce4f885c0e
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Mon Sep 4 16:09:42 2023 +0200
+
+    commit
+
+commit 39ca15eb8b918dea4f0e897fa8c6b05a8f9ed70b
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Mon Sep 4 15:55:01 2023 +0200
+
+    footer content fits down to 450px of width
+
+commit f83aad38bef4791978e0f4afd3a2f2b152d7d240
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Mon Sep 4 15:53:15 2023 +0200
+
+    Working on responsive design
+
+commit ec80cbc702eaaecf58c5076893c3766744888814
+Merge: 9511f56 730fa29
+Author: Chris H <76125739+crisxh@users.noreply.github.com>
+Date:   Mon Sep 4 13:45:02 2023 +0200
+
+    Merge pull request #48 from chingu-voyages/smooth-scrolling
+    
+    added smooth scrolling
+
+commit 730fa2930718ea5ac448eb6794321183abdf6f6a
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Mon Sep 4 13:43:22 2023 +0200
+
+    added smooth scrolling
+
+commit 7ba32e6a52a41dd253fa5ed1fc95cae9c2899c2f
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Mon Sep 4 13:38:31 2023 +0200
+
+    trying to get footer responsive with items fitting in it
+
+commit f7fc3ba9d76f5c52596fdf7f8a6d98a669ff575b
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Mon Sep 4 12:58:35 2023 +0200
+
+    edited headers to be curved
+
+commit 45605a5b64123990baed13630dd617a98f676743
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Mon Sep 4 12:02:16 2023 +0200
+
+    changed background of summary to match app so footer curve is more visible
+
+commit d9979656b3534694ce0804cfbac6885e6285c8e7
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Mon Sep 4 11:59:19 2023 +0200
+
+    header top curved
+
+commit 9511f56b5e0a244ab5c87d9c10a0dc5d46146c49
+Merge: b5da574 2f306b5
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Mon Sep 4 10:40:48 2023 +0200
+
+    commit
+
+commit b5da5745c2b8fb92492c9228eb9a5efc6c3fc4ae
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Mon Sep 4 10:38:36 2023 +0200
+
+    removed vite build docs
+
+commit 2f306b5780474c26210b8d51df31567bdf5e599e
+Merge: 6414628 fbffbec
+Author: Chris H <76125739+crisxh@users.noreply.github.com>
+Date:   Mon Sep 4 10:34:07 2023 +0200
+
+    Merge pull request #46 from chingu-voyages/vite-outdir-build
+    
+    changed vite output to docs instead of dist
+
+commit fbffbec9dd68baf85dee18f26da3f0107de05762
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Mon Sep 4 10:32:48 2023 +0200
+
+    changed vite output to docs instead of dist
+
+commit d6025b4531832be2a5c1d948b21d79dc9afeae7b
+Author: Crystal <crwainstock@gmail.com>
+Date:   Sun Sep 3 19:49:58 2023 +0200
+
+    udpate muistack-root padding for slider
+
+commit 2bb6278090bad707863a7c39c8e7051c414bdb11
+Author: Crystal <crwainstock@gmail.com>
+Date:   Sun Sep 3 19:44:57 2023 +0200
+
+    idk. summary section resizing for smaller screens is still strange. I'm not sure what the best way to deal with it is.
+
+commit 6414628fd7bb6b8a5325268137acb6573b672537
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sun Sep 3 03:04:45 2023 +0200
+
+    added title to index.html
+
+commit 85278064e2a774180a61a2137a2bdc47dc7a554b
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Sun Sep 3 01:10:20 2023 +0100
+
+    add filter functionality to the map
+
+commit 120e6d349cfb1fed2c621aee849346391037e0ef
+Merge: 0958800 4b42078
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Sep 2 16:33:47 2023 +0200
+
+    Merge branch 'fix-header' into staging
+
+commit 4b42078bac83240285692651b871483cd2570a7a
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Sep 2 16:33:25 2023 +0200
+
+    made footer logo slightly smaller
+
+commit 0958800378229952faf52c01e87f75140100aeb3
+Merge: 2390ea3 22bf486
+Author: Chris H <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Sep 2 16:31:57 2023 +0200
+
+    Merge pull request #45 from chingu-voyages/fix-header
+    
+    removed useless files and fixed logos
+
+commit 22bf48625d980c4f1daea81cfefcb358bd0f62c4
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Sep 2 16:29:39 2023 +0200
+
+    removed useless files and fixed logos
+
+commit 48476e7cdbfa36b40d38a1755c730a3b4144187b
+Merge: 496492c 2390ea3
+Author: Chris H <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Sep 2 12:57:48 2023 +0200
+
+    Merge pull request #43 from chingu-voyages/staging
+    
+    Staging
+
+commit 2390ea34a3dd85ff23c67188a800733b319eaac5
+Merge: b6997bb 0f497f3
+Author: Chris H <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Sep 2 12:55:31 2023 +0200
+
+    Merge pull request #42 from chingu-voyages/layout3
+    
+    Layout3
+
+commit 0f497f3374f59ef35280b3d717b5dd5f6f069326
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Sep 2 12:50:30 2023 +0200
+
+    button style changes
+
+commit 603db70274c04f1d8ca250aa627d94926e5580fb
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Fri Sep 1 22:09:48 2023 +0200
+
+    work on location cell
+
+commit a2f176d5f9cb6115c5c77116e6c7ada35da1bc06
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 1 18:33:42 2023 +0200
+
+    added IDs to container divs to link to right section
+
+commit 32c7f29a3fff5264e66fd9ef07d9b1245567cdd6
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 1 17:24:14 2023 +0200
+
+    added background image to nav
+
+commit a42d9c62df81aca4ebb0d50a166fcfe9a319d445
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 1 17:15:47 2023 +0200
+
+    collapsed nav triggers onload on small devices without resize
+
+commit 32dde0b45c7391228ba779770778a5efc833c537
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 1 16:55:56 2023 +0200
+
+    basic collapsable header button on small screens
+
+commit 16a89e42ad4cb6f997abe937f339f57a311bb897
+Merge: a00d751 496492c
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 1 14:33:08 2023 +0200
+
+    Merge branch 'main' of https://github.com/chingu-voyages/v45-tier2-team-19 into layout3
+
+commit 496492cb24dac7e543f1c3d68507a8e719d405f9
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 1 13:41:26 2023 +0200
+
+    fixed link to map
+
+commit d78bbf85e24c633d0000f2bb1bd7d32963679d53
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 1 13:29:33 2023 +0200
+
+    centered table
+
+commit 1903f0a8bd2f4605a5c15b134ce5213d14ab1ce0
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 1 13:24:48 2023 +0200
+
+    merge fixes
+
+commit df0b59fc0d3fab19e424624fc59c67f88de31a36
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 1 13:21:52 2023 +0200
+
+    merge to main
+
+commit 149b79dffa0ff8060f2ac99cafb6f2f526090b3c
+Merge: 7a65157 b6997bb
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 1 13:20:10 2023 +0200
+
+    Merge branch 'staging'
+
+commit b6997bb07d5f0401512da8ae12c18ec16a8a41fb
+Merge: 5ee5c6c d814771
+Author: Chris H <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 1 13:16:54 2023 +0200
+
+    Merge pull request #41 from chingu-voyages/layout3
+    
+    Layout3
+
+commit a00d751967c93f497996841b737aebe051e266cb
+Merge: d814771 5ee5c6c
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 1 12:06:49 2023 +0200
+
+    Merge branch 'staging' of https://github.com/chingu-voyages/v45-tier2-team-19 into layout3
+
+commit 5ee5c6c581c059ad7826ca5aa31abbef4d983936
+Merge: c6565d2 4cae4e9
+Author: Chris H <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 1 12:04:25 2023 +0200
+
+    Merge pull request #40 from chingu-voyages/by-year-filter
+    
+    Filter by year and mass
+
+commit 4cae4e99af503152900a3bd6ead46d95b6a04f9b
+Merge: 4156455 c6565d2
+Author: Chris H <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 1 12:00:07 2023 +0200
+
+    Merge branch 'staging' into by-year-filter
+
+commit c6565d2c512c4ab12575ae3c720f7b1db9b3cbd6
+Merge: 5f7fab8 24d9d5e
+Author: Chris H <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 1 11:58:42 2023 +0200
+
+    Merge pull request #39 from chingu-voyages/strikes-by-year
+    
+    Strikes by Decade
+
+commit aa33962860eaff22b2c53b77929bc280422d265d
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Fri Sep 1 10:31:09 2023 +0100
+
+    add the details of clusters to the Cluster component
+
+commit 4156455ef9ea5944ae98906e70ed4c0906578b89
+Author: Crystal <crwainstock@gmail.com>
+Date:   Fri Sep 1 11:29:26 2023 +0200
+
+    added labels to slider
+
+commit edd879ccfbd77abdac66e6f37f778aca3853ec05
+Author: Crystal <crwainstock@gmail.com>
+Date:   Fri Sep 1 11:24:38 2023 +0200
+
+    graph and slider seem to be functioning as expected
+
+commit d814771a2e6e1320ee1adba27386970584dff557
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 1 11:07:20 2023 +0200
+
+    style changes header
+
+commit d7e58456a72ecca89a3aa2f3d008db4a5b77d8b0
+Author: Crystal <crwainstock@gmail.com>
+Date:   Fri Sep 1 11:06:22 2023 +0200
+
+    updated scale of slider to 0.01
+
+commit 81ce3c0514d3ce1d76d511be65d49e949f17bbe1
+Author: Crystal <crwainstock@gmail.com>
+Date:   Fri Sep 1 11:03:05 2023 +0200
+
+    working on filter with slider, mass/year data is being filteredand sorted, but display isn't quite right yet
+
+commit f69fc4d218c45db3f70c2989a590848e29d73002
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 1 11:01:43 2023 +0200
+
+    style changes in details component
+
+commit 089e06b936af5b6507e34a24c81c4d5d78b1fc31
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 1 10:59:32 2023 +0200
+
+    style changes in details component
+
+commit 0c7adbb8ebbdcc11101050eb8f809747af4647dc
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 1 10:39:00 2023 +0200
+
+    changed position relative on map
+
+commit a92e9021d1a73adcee96848b3d902c1c873e4ea9
+Author: Crystal <crwainstock@gmail.com>
+Date:   Fri Sep 1 10:29:02 2023 +0200
+
+    create STrikesByYearFiltered file, starting to build slider to filter by year data
+
+commit e01cfd8bc860086070ab4153ecd6afd4b888cbe5
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Sep 1 10:24:37 2023 +0200
+
+    header footer meteors
+
+commit 24d9d5eb5ecc3c86e0ad075294b8c5d6022dab58
+Author: Crystal <crwainstock@gmail.com>
+Date:   Fri Sep 1 10:09:38 2023 +0200
+
+    reorganize summary graphs within component
+
+commit e837cbd5bd4cf90d7bf0c43362e747f99d5b19f8
+Author: Crystal <crwainstock@gmail.com>
+Date:   Fri Sep 1 10:08:06 2023 +0200
+
+    created strikesByDecade graph
+
+commit 822089ecb958fc6e7097f9f28febda994734ed20
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Aug 31 19:31:20 2023 +0200
+
+    header style
+
+commit 9bfb68120e0f900bf2707ec8f4614f053850874b
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Aug 31 19:23:22 2023 +0200
+
+    made background wider
+
+commit 6e5ebcd964c1fbf171f0e5c9346ac3d45883af04
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Thu Aug 31 18:20:19 2023 +0100
+
+    refactor: the Geopath component code to have child components
+
+commit 0506387614ee7e88a3d218352a80f0fc6e984145
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Aug 31 19:14:50 2023 +0200
+
+    header stars
+
+commit ce16659f8b4f0ecb1d81a1b08ffbe22c86431553
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Aug 31 19:11:00 2023 +0200
+
+    header stars
+
+commit e773ef195b7106439f205ce1fbf5d42d362a22c4
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Aug 31 19:01:16 2023 +0200
+
+    header background stars
+
+commit 6434f52e30ef834c87730da818b1e0173536c4a6
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Thu Aug 31 18:15:20 2023 +0200
+
+    adjusting logo
+
+commit 234c9eda3376bed1d8a3ff7362c2c33fcbdc1653
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Thu Aug 31 18:05:21 2023 +0200
+
+    cahnging background of the header
+
+commit ad3e1db92e7b4465064d407883ae4170133371f1
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Aug 31 17:56:33 2023 +0200
+
+    image header background
+
+commit 268838d8e4c39f3a249ad0d33e852e858bfc1311
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Aug 31 17:55:56 2023 +0200
+
+    image header background
+
+commit 66e01613aab7d65e561258e496354e2e4520ee17
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Thu Aug 31 16:06:35 2023 +0200
+
+    Deleting some table template
+
+commit 274144f4406253943bf1910a13b84681e0a0764f
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Aug 31 16:05:11 2023 +0200
+
+    comet?
+
+commit 59c3a17f2b232fc63ad75b1ee52e80e8f66c67b8
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Aug 31 15:50:44 2023 +0200
+
+    comet header
+
+commit 7ea16c87e952f877008e50ca7923d96c1657175d
+Merge: 4aa92a0 5f7fab8
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Aug 31 15:47:39 2023 +0200
+
+    Merge branch 'staging' of https://github.com/chingu-voyages/v45-tier2-team-19 into layout3
+
+commit 5f7fab876ec5e5bc2ddb0aea0681567497d18184
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Thu Aug 31 14:45:35 2023 +0100
+
+    add comet asset
+
+commit 4aa92a0fe7b0e3d8fba7efce0601582f22c3b7b2
+Merge: 720edcf 8e6031d
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Aug 31 15:41:57 2023 +0200
+
+    Merge branch 'staging' of https://github.com/chingu-voyages/v45-tier2-team-19 into layout3
+
+commit 720edcff8fca09bed8c525747b15f6b540055b16
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Aug 31 15:05:07 2023 +0200
+
+    adding ukijos image to navs
+
+commit 8e6031d4ba42adc9d8fd75619196ce1ebd34168c
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Thu Aug 31 13:46:24 2023 +0100
+
+    fix(App.jsx): extra curly brace issue, that makes the code broken
+
+commit 295c28e25f400da2a06a4ce605bc0563e2ff9704
+Merge: 1233a5f 51f34d7
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Thu Aug 31 14:11:11 2023 +0200
+
+    Merge pull request #38 from chingu-voyages/staging
+    
+    Staging
+
+commit 51f34d7ea1c4c3c011e931bd8628da40a4e86cdd
+Merge: 4e5ea94 1233a5f
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Thu Aug 31 14:01:55 2023 +0200
+
+    Merge branch 'display-datasets' into staging
+
+commit 4e5ea945861993b816ba7c464b2fd43f17f7614d
+Author: Crystal <crwainstock@gmail.com>
+Date:   Thu Aug 31 11:29:18 2023 +0200
+
+    update summary component styling that didn't make the merge
+
+commit b6c3da44074d70b56081431bfffe70eb1d5144fb
+Merge: ac5180d 8534920
+Author: Chris H <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Aug 31 11:12:15 2023 +0200
+
+    Merge pull request #37 from chingu-voyages/summary-styling
+    
+    Summary styling
+
+commit 853492024827b6680079f80d4ff7cb0edd745bdf
+Merge: eda8c9e ac5180d
+Author: Chris H <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Aug 31 11:11:59 2023 +0200
+
+    Merge branch 'staging' into summary-styling
+
+commit eda8c9e263193315798f635fe5b1a27f557c35fd
+Author: Crystal <crwainstock@gmail.com>
+Date:   Thu Aug 31 10:27:53 2023 +0200
+
+    update graph styling in summary.css
+
+commit ac5180df695a67d16371ac47d23743d2237d4398
+Merge: 0dfd902 80b077d
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Aug 31 04:52:43 2023 +0200
+
+    Merge branch 'map' of https://github.com/chingu-voyages/v45-tier2-team-19 into staging
+
+commit 0dfd90228b73dfcda70ee91fc271237bab296430
+Merge: 22689c2 efc2ba2
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Aug 31 04:51:10 2023 +0200
+
+    Merge branch 'staging' of https://github.com/chingu-voyages/v45-tier2-team-19 into staging
+
+commit 22689c2fd8dd4a5ec753c4451683de6649ce3b81
+Merge: 8f6c625 6ae0c79
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Wed Aug 30 22:26:56 2023 +0200
+
+    Merge branch 'layout3' into staging
+
+commit 6ae0c796dee0ada746c4383214e8be064da8546a
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Wed Aug 30 22:26:28 2023 +0200
+
+    removed map wrap
+
+commit efc2ba296445c35ae0079c48e77bd7a573f3e43e
+Merge: 8f6c625 d975262
+Author: Chris H <76125739+crisxh@users.noreply.github.com>
+Date:   Wed Aug 30 22:21:17 2023 +0200
+
+    Merge pull request #36 from chingu-voyages/layout3
+    
+    Layout3
+
+commit d9752624a82521fb1ed6ae2c5f6179e08b443360
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Wed Aug 30 22:19:04 2023 +0200
+
+    commit
+
+commit d1fd6d75b03b43d0d4484c39da16340fe40d236d
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Wed Aug 30 22:16:49 2023 +0200
+
+    removed placeholder map css
+
+commit f4bff5c675e23e39e9501fb3a2955fb973f45fcb
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Wed Aug 30 22:15:07 2023 +0200
+
+    placed real map component
+
+commit 8f6c625f7cd057d96696d45acf2ffce5ac0ab39d
+Merge: 605e025 e404745
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Wed Aug 30 22:08:06 2023 +0200
+
+    Merge branch 'staging' of https://github.com/chingu-voyages/v45-tier2-team-19 into staging
+
+commit 605e0257816bdbb5205dd29bcb5d67185d5542e9
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Wed Aug 30 22:07:46 2023 +0200
+
+    erge staging
+
+commit 7a6515706674a251adf28755d3f955b2873fdcf0
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Wed Aug 30 21:54:06 2023 +0200
+
+    merge main
+
+commit a6afe7c0f75e8499b122fd4796e3ef9a122d4bc6
+Merge: 904c5c7 8d1e3f8
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Wed Aug 30 21:53:11 2023 +0200
+
+    Merge branch 'staging'
+
+commit f1d3c0f7c94932e5b8f0fb5f306ca4dafd7fd5be
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Wed Aug 30 21:45:48 2023 +0200
+
+    commit
+
+commit 8d1e3f88383c4e12fb010a6365260c5b4722a05e
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Wed Aug 30 21:41:08 2023 +0200
+
+    added github links
+
+commit e404745684e5b70b44a2afbd2451e3f1eccc8d94
+Merge: e474149 e91c6d4
+Author: Younes Mohamed ABDAT <nes-you-ukijo@hotmail.fr>
+Date:   Wed Aug 30 20:35:54 2023 +0100
+
+    Merge pull request #35 from chingu-voyages/static-analysis
+    
+    Static analysis
+
+commit e91c6d461d82cb54351738554576a278656e8b4e
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Wed Aug 30 20:33:48 2023 +0100
+
+    fix conflicts between static-analysis and staging
+
+commit e474149a81a9548e82031ab37853c5b813f77aca
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Wed Aug 30 20:27:16 2023 +0100
+
+    fix layout for navbar and footer
+
+commit 70a9b74c16eaca459a2e93621599172bb6173bf1
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Wed Aug 30 20:17:21 2023 +0100
+
+    fix app.css
+
+commit 9f18274ee230a511d694fd0cb3a1b8eac24de503
+Merge: e9c7c27 72e0382
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Wed Aug 30 20:15:36 2023 +0100
+
+    fix navbar
+
+commit e9c7c279b1a945db8b25b16f6fc1251c461371cc
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Wed Aug 30 20:10:08 2023 +0100
+
+    fix formating in staging
+
+commit 72e0382a7a3fdb1bcbf647db33ed3af93e244e11
+Merge: 8d839a4 12697cf
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Wed Aug 30 21:04:34 2023 +0200
+
+    Merge branch 'layout3' into staging
+
+commit 12697cf7dec517b8f80f0284b939fda600fa11ac
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Wed Aug 30 21:04:15 2023 +0200
+
+    changed footer responsiveness
+
+commit 45b15bf6c539e8fa0ea2ae1f90de8b36c9527fb0
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Wed Aug 30 20:04:05 2023 +0100
+
+    fix App.css file
+
+commit 8d839a4305c5c048353940d90572a81c4eee7d0d
+Merge: ae9c0d6 5309387
+Author: Chris H <76125739+crisxh@users.noreply.github.com>
+Date:   Wed Aug 30 21:00:59 2023 +0200
+
+    Merge pull request #34 from chingu-voyages/layout3
+    
+    Layout3
+
+commit e018c44a6a9579380355a5497e18142922a85741
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Wed Aug 30 19:47:54 2023 +0100
+
+    run lint-staged on pre-commit
+
+commit 69b8916182c5abc8edc0b0cee7190c7a0dd9c5c8
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Wed Aug 30 19:45:32 2023 +0100
+
+    run format again
+
+commit 9d2c3e59e71b246b3bea9465c5507a1fa8ae7315
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Wed Aug 30 19:41:31 2023 +0100
+
+    format entire project with prettier
+
+commit 1233a5f407d8aa073793daa8fff08ff697cf95be
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Wed Aug 30 19:41:29 2023 +0200
+
+    deleting unnecesery div and adjusting css
+
+commit a2f8d4687e47a1c5fbe78fa385233af8d73229f9
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Wed Aug 30 19:32:08 2023 +0200
+
+    making additional settings for responsive desing
+
+commit 8972a37c5466e64005edbccb97bb071b5f78b7af
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Wed Aug 30 18:19:08 2023 +0100
+
+    oo
+
+commit 0458551bafecc5b546cba0c2defdb3522c6a3d39
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Wed Aug 30 18:18:35 2023 +0100
+
+    fix again
+
+commit c0df92795a0ecae81a522aa7266353a7c4a843d0
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Wed Aug 30 18:13:58 2023 +0100
+
+    fix the pre-commit hook
+
+commit 4ad7194bd1f12a76984c888b83fd0f075586f97f
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Wed Aug 30 18:02:42 2023 +0100
+
+    add git pre-commit hook to run prettier on before each commit
+
+commit 3c3a805331304682d459e1146c7ad3e0f094becf
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Wed Aug 30 18:46:01 2023 +0200
+
+    working on minor change with maping data and responsive design
+
+commit 1bc3ee58beeaeb76577c4771e33a9701b4bb4ecf
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Wed Aug 30 17:41:04 2023 +0100
+
+    install husky
+
+commit 5309387968bd5095a04f911b6268eab0f3f92af4
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Wed Aug 30 18:24:46 2023 +0200
+
+    removed css from nav
+
+commit 81c2188bd6576270f98bb9f80faeb0b499a16919
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Wed Aug 30 18:21:52 2023 +0200
+
+    footer background
+
+commit 61671a5c17d1b29a2ca2310ca8fd2128c8f94b8e
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Wed Aug 30 18:19:17 2023 +0200
+
+    footer background
+
+commit ad22cc26abdfc1700bac75c7f424a59233302bcc
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Wed Aug 30 17:03:33 2023 +0200
+
+    removed css for  header since the css is now in the navbar css
+
+commit 177d8ed72ff57ef345033b1682a9c14699fb2f58
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Wed Aug 30 16:58:03 2023 +0200
+
+    added github links to footer
+
+commit a74fac34ed18ceec1159dbf47f4c64e81092ad58
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Wed Aug 30 16:46:28 2023 +0200
+
+    started on different header for mobile
+
+commit d68c553cd9225b3aa5268af7b5d559e59ea62fe6
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Wed Aug 30 16:27:21 2023 +0200
+
+    working on responsiveness of header and footer
+
+commit 429213f71ef9988dd9d74175f5acac0286d26793
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Wed Aug 30 16:07:05 2023 +0200
+
+    attept to add react-icons to footer
+
+commit 95acde26749d034ff944d9772c2fbb356995de95
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Wed Aug 30 14:46:25 2023 +0100
+
+    install static analysis tools
+
+commit 250b8c221ecabc9a5efb6a373804e0ed00d08e6d
+Merge: ae9c0d6 05a1ae3
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Wed Aug 30 15:05:32 2023 +0200
+
+    Merge pull request #31 from vukas86/details-display
+    
+    Details display
+
+commit 05a1ae3af9b5fc343eb92bff16252f2613b26dfd
+Merge: 24523bb ae9c0d6
+Author: Aleksandar Vukasovic <83580359+vukas86@users.noreply.github.com>
+Date:   Wed Aug 30 14:54:55 2023 +0200
+
+    Merge branch 'display-datasets' into details-display
+
+commit ae9c0d6e0269442a11d8c0d8ecd768382d48b19d
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Wed Aug 30 12:39:17 2023 +0100
+
+    add tests folder
+
+commit c008fbd548425ea0e81bce4018e8e101bced4bfc
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Wed Aug 30 12:34:24 2023 +0100
+
+    Add testing setup for the project: Configure unit and integration tests with testing frameworks and necessary dependencies
+
+commit 24523bb34d3c96c41c5c65643484c2ec9759c7aa
+Author: “vukas86” <“vukasbit@gmail.com”>
+Date:   Wed Aug 30 12:56:56 2023 +0200
+
+    minor changes
+
+commit c1b4c7f5b8a0df6303544476474946311cd4edc6
+Author: “vukas86” <“vukasbit@gmail.com”>
+Date:   Wed Aug 30 12:08:54 2023 +0200
+
+    small changes
+
+commit 659bc99bcd9da67be411e13830388d2bb6452385
+Author: Crystal <crwainstock@gmail.com>
+Date:   Wed Aug 30 10:50:31 2023 +0200
+
+    mobile styling not working yet, need to revisit app.css and summary.css to figure out what's going on
+
+commit 3fa98982409aa0dd6836487ffa60ab29aec0cde3
+Author: “vukas86” <“vukasbit@gmail.com”>
+Date:   Wed Aug 30 10:45:01 2023 +0200
+
+    making minor changes with the background
+
+commit b5fbd3f24dc1b4f89b9a5f60dee96f9b76b47cb3
+Author: “vukas86” <“vukasbit@gmail.com”>
+Date:   Wed Aug 30 10:34:36 2023 +0200
+
+    work on to resolve geocode problem
+
+commit 898050fc1fd37ffabea614dccdc539a0e295d9c3
+Author: Crystal <crwainstock@gmail.com>
+Date:   Wed Aug 30 10:25:18 2023 +0200
+
+    align-self property in the app.css was causing the summary component to overflow on smaller screens, commented out with additional comment about it
+
+commit 77937c5770f702c9015f9c018c150f9c23b3800d
+Author: Crystal <crwainstock@gmail.com>
+Date:   Wed Aug 30 10:12:23 2023 +0200
+
+    update app background color to #09113D, having trouble in smaller screens with overflow
+
+commit 773d0cfed452920868b18b8f7a315c4406afcaa8
+Author: Crystal <crwainstock@gmail.com>
+Date:   Wed Aug 30 10:01:35 2023 +0200
+
+    update summaryContainer background color and padding
+
+commit 0e6aa22999e19dfcebe2590abf0372c82ead83fa
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Wed Aug 30 08:09:03 2023 +0200
+
+    allest largest list
+    
+    Signed-off-by: crisxh <76125739+crisxh@users.noreply.github.com>
+
+commit 904c5c7b204f513e8a0e560d07645b29697ebefc
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Aug 29 16:13:20 2023 +0200
+
+    commit
+
+commit 8bd1bbd75ac939550c48a2c8b63f3c70646e1d60
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Aug 29 16:12:00 2023 +0200
+
+    merged to main from staging
+
+commit 7cb3c17768007a7656a6b68bb72104aad06c16b3
+Merge: 869613a f79f80c
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Aug 29 16:09:59 2023 +0200
+
+    Merge branch 'staging'
+
+commit f79f80c8da882dfc303eda91f34642b6c860b00e
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Aug 29 16:09:37 2023 +0200
+
+    fixed header
+
+commit 441d7d79541e476830aa142eb269e6ffe6250102
+Merge: 389c465 cb0744b
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Aug 29 16:08:16 2023 +0200
+
+    Merge branch 'layout2' into staging
+
+commit cb0744bd7159ccd1ed5c89acc5d319d644fc4152
+Merge: 706c710 44b4cf7
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Aug 29 16:04:06 2023 +0200
+
+    commit
+
+commit 706c710e35676788c3887d15b065dee8159e2af0
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Aug 29 16:02:55 2023 +0200
+
+    fixed sticky header
+
+commit 389c4651ce07fd46355cf174d8be3e6d827174ca
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Aug 29 14:50:13 2023 +0200
+
+    commit
+
+commit 487ef7178fb47f50221243e791abbfd6590f06d3
+Merge: b967723 44b4cf7
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Aug 29 12:12:29 2023 +0200
+
+    Merge branch 'layout2' into staging
+
+commit b967723e5148384c035dc4e80b78bfedff112a5b
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Aug 29 12:10:25 2023 +0200
+
+    Revert "fixed navbar"
+    
+    This reverts commit 460b64aa9ed646ff562c3f436774c98785b89572.
+
+commit 869613ab7124f52b4494b625c981eef9706e3c35
+Merge: 19e1933 460b64a
+Author: Chris H <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Aug 29 12:04:09 2023 +0200
+
+    Merge pull request #22 from chingu-voyages/staging
+    
+    Staging
+
+commit 44b4cf75f61097fdddd90d7d4e1962e7df979296
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Aug 29 11:25:51 2023 +0200
+
+    fixed header
+
+commit 460b64aa9ed646ff562c3f436774c98785b89572
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Aug 29 11:21:16 2023 +0200
+
+    fixed navbar
+
+commit f26d7a21f834beaeb04d62216a6c8b573363941c
+Merge: 6cb7b84 eda97d5
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Aug 29 11:17:06 2023 +0200
+
+    Merge branch 'layout2' of https://github.com/chingu-voyages/v45-tier2-team-19 into layout2
+
+commit 6cb7b847dbcba9a61585b0f64e0341e1b4fb1f7d
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Aug 29 11:16:14 2023 +0200
+
+    Revert "header now has expected behavior of fixing itself after the header scrolls"
+    
+    This reverts commit 766a3380519b2f7c9a43b1a999a41258d4e840f7.
+
+commit 04e9a3c6a60f05240de816ea461a8e1a4f8df1e5
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Aug 29 11:14:23 2023 +0200
+
+    Revert "merged into layout2"
+    
+    This reverts commit f709322d05f44b36d3b9f098ecdc36d80f621a79.
+
+commit 29d497b5246e9bbcd3059c94c84d74e3b4aecfaf
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Aug 29 10:49:53 2023 +0200
+
+    reverted changes
+
+commit 60b3974432f6e1931e4c86ee9bca15d9259ba8ee
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Aug 29 08:36:43 2023 +0200
+
+    added style
+
+commit 27df93878af36238f84cccfa02c3a98be7342ec8
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Aug 29 08:23:39 2023 +0200
+
+    smallest meteors
+
+commit ec3fe23eb7c2215a4a583aa0efe657a975a85ea0
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Aug 29 08:14:57 2023 +0200
+
+    list of top 10
+
+commit 2fc9c9c5624ba9ed9b77fc63a8382d7f4d851ac7
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Aug 29 08:05:51 2023 +0200
+
+    tried to get largest smallest numbers
+
+commit eda97d51370b938735da6575e1dd0d7e03f5df7c
+Merge: 766a338 9286352
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Aug 29 04:38:30 2023 +0200
+
+    Merge branch 'layout2' of https://github.com/chingu-voyages/v45-tier2-team-19 into layout2
+
+commit 766a3380519b2f7c9a43b1a999a41258d4e840f7
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Aug 29 04:30:26 2023 +0200
+
+    header now has expected behavior of fixing itself after the header scrolls
+
+commit 08518c6f4880284a92b0c88881537c592fd8990f
+Merge: 0e88800 9286352
+Author: Younes Mohamed ABDAT <nes-you-ukijo@hotmail.fr>
+Date:   Mon Aug 28 23:41:29 2023 +0100
+
+    Merge pull request #26 from chingu-voyages/layout2
+    
+    Layout2
+
+commit 0e88800878ed8b294286e119f9888459635bfa93
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Mon Aug 28 23:40:57 2023 +0100
+
+    remove map componenent
+
+commit 41052417dee97a7e766b6af546cf67b90d664d08
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Mon Aug 28 23:34:54 2023 +0100
+
+    remove table component
+
+commit 9286352ded6afd724574c100779f7750c318e872
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Mon Aug 28 23:31:11 2023 +0100
+
+    fix fakedata path
+
+commit deac29a43e8779e224a4956e791a7048c2928429
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Mon Aug 28 23:18:44 2023 +0100
+
+    remove conflicts
+
+commit 5abcc0b2f3521a47430245717b66e9d28ab0de57
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Mon Aug 28 23:16:46 2023 +0100
+
+    remove useless comment
+
+commit 776b76f9468dac74474b29091dd689b15a6a1fa3
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Mon Aug 28 23:15:22 2023 +0100
+
+    modify imports
+
+commit 09b214364ef6f733781fa04755b0708e2520b934
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Mon Aug 28 23:11:40 2023 +0100
+
+    modify body.jsx to remove conflics
+
+commit f7d354057e68453adb559e8327977dea5990eda3
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Mon Aug 28 23:09:21 2023 +0100
+
+    delete some unused code
+
+commit 1965662208e5d67ebf19b76bb55da94fd70247c8
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Mon Aug 28 20:23:01 2023 +0100
+
+    format dropdown.css file
+
+commit 80b077d48d0ed65fde4e99c8bae98400439f8754
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Mon Aug 28 19:07:40 2023 +0100
+
+    add precalculated clusters
+
+commit 53de890e93af003a53f943e7f748ad2b2a88185d
+Author: “vukas86” <“vukasbit@gmail.com”>
+Date:   Mon Aug 28 15:44:35 2023 +0200
+
+    adding loading functionality
+
+commit f709322d05f44b36d3b9f098ecdc36d80f621a79
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Mon Aug 28 10:15:14 2023 +0200
+
+    merged into layout2
+
+commit b602fb639ff8efdd402ce552a2ffa510cc74f6b4
+Merge: f1da6fb 63debae
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Mon Aug 28 10:14:27 2023 +0200
+
+    Merge branch 'map' into layout2
+
+commit ab671a9952d604156f7eaedd712c7e47e12046c4
+Merge: 22c1421 4863475
+Author: Crystal Rose-Wainstock <112810064+crwainstock@users.noreply.github.com>
+Date:   Mon Aug 28 10:10:14 2023 +0200
+
+    Merge pull request #24 from chingu-voyages/layout2
+    
+    Layout2
+
+commit 4863475c40d55aa47a6276a2710d88bcf81a3c19
+Merge: f1da6fb 22c1421
+Author: Crystal Rose-Wainstock <112810064+crwainstock@users.noreply.github.com>
+Date:   Mon Aug 28 10:08:09 2023 +0200
+
+    Merge branch 'staging' into layout2
+
+commit 63debae424e1f75b2c240b02d47e8d6a85b543de
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Sun Aug 27 13:28:57 2023 +0100
+
+    add map component with minimal functionality
+
+commit 3d1ccc8e06c2bf84bd01b76574a2b2637f5e8bb8
+Author: “vukas86” <“vukasbit@gmail.com”>
+Date:   Sat Aug 26 23:15:35 2023 +0200
+
+    adjusting table
+
+commit 7c954f5573307dd5ccea5489c1dd302c576cfbb2
+Author: “vukas86” <“vukasbit@gmail.com”>
+Date:   Sat Aug 26 22:15:51 2023 +0200
+
+    working on datasets constructing table
+
+commit f8462f4503bd2089ca56170254ca509b69096b8d
+Author: “vukas86” <“vukasbit@gmail.com”>
+Date:   Sat Aug 26 21:19:23 2023 +0200
+
+    starting with component
+
+commit f1da6fb430f9e655ec6af5fb6726224bdd024bfe
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Aug 26 13:36:43 2023 +0200
+
+    scrollbar keeps style when scrolling but doesn't
+    change location in the right place
+
+commit 73b1958d6eea97f947efdb79992e1ffda5929abb
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Aug 26 12:51:41 2023 +0200
+
+    working on sticky header that stays after scrolling past logo
+
+commit a0df20ac0c91bdd300bbbe62099f009e0ed92b05
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Aug 26 11:32:15 2023 +0200
+
+    fixed loading to fill screen wherever you refresh on the page
+
+commit 9322847ecd9fe2c3073d9477818deb50f67dcd91
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Aug 26 11:27:05 2023 +0200
+
+    styling reusable components
+
+commit 01549a76e2c8dfc3cb85958c7a06fb06fdb0c215
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Aug 26 10:26:17 2023 +0200
+
+    allowed to have no placeholder
+
+commit 813ed2e2e6c8b2bc1ac8f538e9824795e4d0a17b
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Aug 26 10:20:25 2023 +0200
+
+    add button, input, and select reusable components
+
+commit 22c14218d3bdf9aa35f2c82abb79e8c20733ceb5
+Author: Crystal <crwainstock@gmail.com>
+Date:   Fri Aug 25 08:11:04 2023 +0200
+
+    updated file structure so summary is within components folder with other components, what was called layout is now called components
+
+commit 152c50d5f718f7f44dcc8409c64417ec73f5a342
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Aug 25 06:05:23 2023 +0200
+
+    colors
+
+commit 788635750876bdcbab554521385f4cd50d7774e8
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Aug 25 05:58:18 2023 +0200
+
+    updated colors to figma file
+
+commit b58ef866dd0afd3fa445e3a23d63f056ff61bd16
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Aug 25 05:27:03 2023 +0200
+
+    fixed layout
+
+commit fdead81ecbb1ca263d81f21e85aa1bbcc0733e96
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Aug 25 05:21:44 2023 +0200
+
+    moved layout to components folder, use components instead of placeholder, fixed layout after moving changed function Summary to const Summary =function() to get rid of vite ambigious export error
+
+commit c578a1e69b87b41ef8d2f1cb9060443e22ca0972
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Fri Aug 25 04:48:46 2023 +0200
+
+    initial commit
+
+commit e013a4beb93f3dffebdac5080f2d38b9922756d8
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Aug 24 17:47:25 2023 +0200
+
+    added comments to app.css
+
+commit 10fbd4f4bf4b223ef2c6d3ba03a23a3f2b86d277
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Aug 24 17:45:00 2023 +0200
+
+    header styling
+
+commit a96b553968a918a6ed8a8b449c1fa001f4caf0a3
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Aug 24 15:09:49 2023 +0200
+
+    header footer style added buttons to sections
+
+commit 663fa952cbac5a3f3ea6ddae2d2bde0127049a48
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Aug 24 15:00:43 2023 +0200
+
+    header styling and mock logo
+
+commit 2af4ca0a1e2be909eb86a703c24f9c569468651d
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Aug 24 14:39:09 2023 +0200
+
+    centered loading message
+
+commit 6c812bc8ce969c80ad688a553de14e413a2b0cdb
+Merge: 5395005 a952a34
+Author: Younes Mohamed ABDAT <nes-you-ukijo@hotmail.fr>
+Date:   Thu Aug 24 13:22:33 2023 +0100
+
+    Merge pull request #23 from chingu-voyages/layout
+    
+    Layout
+
+commit a952a34ffc6dcf5f4470310256b890083d0ebf1b
+Merge: 2c3bd54 4ab867d
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Thu Aug 24 13:17:13 2023 +0100
+
+    clean layout branch
+
+commit 4ab867db6f20835426ce5abe1af03926e1d2e602
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Aug 24 13:57:32 2023 +0200
+
+    more centering
+
+commit 81361818156e1c2d281b96af6d2124c95ebae70e
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Aug 24 13:32:17 2023 +0200
+
+    centered body
+
+commit 396c074469b45fdaf20a78b2a8cd38aa7984ebbe
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Aug 24 13:04:05 2023 +0200
+
+    centered graph
+
+commit 4042719188b5aff0b0c0cd399956ca5e5666eb5a
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Aug 24 12:57:22 2023 +0200
+
+    remove package lock
+
+commit 5395005182141d9e198450fac71bbfcbee945308
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Thu Aug 24 11:54:31 2023 +0100
+
+    update package-lock file staging
+
+commit 7a66bc149e0a76838984af6a0720d1fb0d88f8a9
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Aug 24 12:50:18 2023 +0200
+
+    Merge branch 'staging' of https://github.com/chingu-voyages/v45-tier2-team-19 into layout
+
+commit 58a4dce1a004faad8579acb3412bc52c095c005e
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Thu Aug 24 11:48:36 2023 +0100
+
+    delete node_modules from staging branch
+
+commit 2c3bd544eab89f9649d5ae37ec9fe44b124674a4
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Thu Aug 24 11:46:29 2023 +0100
+
+    delete the node modules
+
+commit ecbf86259450c9e750c2ae7531e855c768c9e7ed
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Aug 24 12:42:35 2023 +0200
+
+    added graphs to body layout
+
+commit 3fe09d20d4596e869b52a7e5cb4294c9a0767a64
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Thu Aug 24 11:32:22 2023 +0100
+
+    update package json files for the staging branch
+
+commit 3783c4c7d941b0da51f0d16b427d9e5ace4f1210
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Thu Aug 24 11:27:52 2023 +0100
+
+    remove duplicate dependency
+
+commit 84145544ab164054403f54b16272abec30702f4f
+Merge: 3636ea5 30ee22d
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Thu Aug 24 11:19:21 2023 +0100
+
+    update package json file
+
+commit 3636ea5a1d6e8073eec84646f28c42076abb867b
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Thu Aug 24 11:11:53 2023 +0100
+
+    update package json files
+
+commit 30ee22d44c1bcdb21446cee9f8a58dd8fbb37c8d
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Thu Aug 24 11:08:59 2023 +0100
+
+    restore package json files
+
+commit 0f8e0432450d6111162a0320babceaad09975b8f
+Author: Crystal <crwainstock@gmail.com>
+Date:   Thu Aug 24 11:57:15 2023 +0200
+
+    fixed the package.json file
+
+commit 26aa3d90194f80f48c88b88db771e0cf5d494200
+Author: Crystal <crwainstock@gmail.com>
+Date:   Thu Aug 24 11:50:34 2023 +0200
+
+    Adding package-lock.json file. Not running without it.
+
+commit c969b2c3af65c1857ad7ae2d37085607f6755688
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Aug 24 11:45:48 2023 +0200
+
+    commit
+
+commit 231393ab2e65b35db87bd0eaa60d3208ee522123
+Merge: 0d33037 b5e8ca3
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Aug 24 11:41:03 2023 +0200
+
+    commit
+
+commit 0d33037a8c26ef9c9f780e27fa61269e4c088aef
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Aug 24 11:39:32 2023 +0200
+
+    deleted package lock
+
+commit 16312b91e854f92650c314162b32085a53bb7416
+Merge: 5c42eec b1afffa
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Aug 24 11:37:26 2023 +0200
+
+    deleted package lock
+
+commit b5e8ca3278ac0f6829aca56a0d631541b9590db5
+Merge: 36016e0 b1afffa
+Author: Chris H <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Aug 24 11:34:39 2023 +0200
+
+    Merge branch 'staging' into layout
+
+commit 5c42eecb32a8bb643b13455f6c4b079480c61e63
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Aug 24 11:33:23 2023 +0200
+
+    deleted package lock
+
+commit d6402db2842b5c01850e6d5fb750667b52543a5c
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Aug 24 11:32:50 2023 +0200
+
+    deleted package lock
+
+commit b1afffad8735970eb2d4e4ee487b2005f08583d3
+Merge: 19e1933 c012b2d
+Author: Chris H <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Aug 24 10:51:30 2023 +0200
+
+    Merge pull request #20 from chingu-voyages/summary
+    
+    Summary
+
+commit bd1bbada0b4d56efb61454a429217acb757aa44a
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Thu Aug 24 10:01:28 2023 +0200
+
+    commit
+
+commit c012b2d440dd892b4a84db975265347cbb981260
+Author: Crystal <crwainstock@gmail.com>
+Date:   Thu Aug 24 09:44:34 2023 +0200
+
+    adjusted top margin for charts
+
+commit f56ea2d2dc77b2b4916b80b151881689e4a57831
+Author: Crystal <crwainstock@gmail.com>
+Date:   Thu Aug 24 09:37:54 2023 +0200
+
+    added mobile breakpoint for summary-container
+
+commit 7071501325b50a946a339da48c92cb171cd34313
+Author: Crystal <crwainstock@gmail.com>
+Date:   Thu Aug 24 09:34:45 2023 +0200
+
+    updated tooltip styling in strikes by year
+
+commit f8f9e37095220df883e81355410e24634db481d7
+Author: Crystal <crwainstock@gmail.com>
+Date:   Thu Aug 24 09:31:39 2023 +0200
+
+    added summary-container styling, needs work
+
+commit 2cd51da9432c2aad7425ae91089e5b976610dace
+Author: Crystal <crwainstock@gmail.com>
+Date:   Thu Aug 24 09:25:04 2023 +0200
+
+    created AverageMass.jsx, added content, rendering as expected
+
+commit 7ba290c4696f69e5f8d4361a79e96898359bbac4
+Author: Crystal <crwainstock@gmail.com>
+Date:   Thu Aug 24 09:21:46 2023 +0200
+
+    commented out learn more section, styling needs work
+
+commit 3df60472ef5a224c1bba9ec1ca79ecc4c9fff07d
+Author: Crystal <crwainstock@gmail.com>
+Date:   Thu Aug 24 09:18:36 2023 +0200
+
+    created StrikesByComposition file, copied content over, added css to summary.css
+
+commit 5b2de8085584281d3b9de8de9138c6c0704e5bd4
+Author: Crystal <crwainstock@gmail.com>
+Date:   Thu Aug 24 09:15:02 2023 +0200
+
+    filtered data after 2013 in strikesbyyear
+
+commit 5d8367c5efc02494851e917afd4514a65ba4389c
+Author: Crystal <crwainstock@gmail.com>
+Date:   Thu Aug 24 09:10:32 2023 +0200
+
+    connected useDataContext to StrikesByYear component
+
+commit 269082361acb051e9b5d15842f2d8c1a6cdc91a1
+Author: Crystal <crwainstock@gmail.com>
+Date:   Thu Aug 24 09:07:09 2023 +0200
+
+    installed chart.js for react
+
+commit 3454629d962a95a1848e924bd7dc556ed56c12c8
+Author: Crystal <crwainstock@gmail.com>
+Date:   Thu Aug 24 09:02:32 2023 +0200
+
+    created summary.css file, applied to TotalStrikes, data rendering as expected
+
+commit 11a86bd508b0b5d438fb88fe6ffd589ff2ded3e5
+Author: Crystal <crwainstock@gmail.com>
+Date:   Thu Aug 24 08:58:02 2023 +0200
+
+    added content to summary.jsx and TotalStrikes.jsx, connected useDataContext to components
+
+commit e84edecee97738504eca5676c0018246c3be2f02
+Author: Crystal <crwainstock@gmail.com>
+Date:   Thu Aug 24 08:48:05 2023 +0200
+
+    added useContext in summary.jsx, commented out useState previously used
+
+commit 235b1a5c8cd705f20f9692f6479d5ce8440038f8
+Author: Crystal <crwainstock@gmail.com>
+Date:   Thu Aug 24 08:46:46 2023 +0200
+
+    copied summary.jsx content
+
+commit 23c661f1e99125c96d3bf0f2539d05fb7e191086
+Author: Crystal <crwainstock@gmail.com>
+Date:   Thu Aug 24 08:44:44 2023 +0200
+
+     created summary folder in components folder, created TotalStrikes.jsx file
+
+commit d68a700d15033bbe294aa0a6ceb7cc4fe436acbc
+Author: Crystal <crwainstock@gmail.com>
+Date:   Thu Aug 24 08:39:40 2023 +0200
+
+    created components folder and summary.jsx file
+
+commit 36016e06997d443d64b8fb745f3799e461af3f94
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Aug 22 19:07:25 2023 +0200
+
+    placeholder table
+
+commit bfdd2c1df667b175396745bb0a9f003fdbc365bc
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Aug 22 18:41:19 2023 +0200
+
+    added react table
+
+commit 10bbaf558fda4357d599971a062d0f83f0b3857a
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Aug 22 14:32:07 2023 +0200
+
+    added search filters above map
+
+commit bb4de03e6a0a9e70f9f62437ac444f488abbf8ff
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Aug 22 14:25:35 2023 +0200
+
+    update to graph section
+
+commit cd906d56187c16020bde3f514b29de2523e038db
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Aug 22 13:41:45 2023 +0200
+
+    searchbox component breaks app
+
+commit 3dd1325f7f40e9ee4fa17d55ea13725181b635e5
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Aug 22 12:13:34 2023 +0200
+
+    added more template content
+
+commit 3b4069e076a232345b8c6c993a082a22d86c04b4
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Tue Aug 22 11:08:50 2023 +0200
+
+    added more placehoders changed some layouts to grid
+
+commit 19e19331df63514ea59c24d8c6a253f238a63c73
+Merge: 8a5094b 949ad06
+Author: Crystal Rose-Wainstock <112810064+crwainstock@users.noreply.github.com>
+Date:   Mon Aug 21 22:16:48 2023 +0200
+
+    Merge pull request #16 from uKiJo/main
+    
+    feat: data fetching hook and context
+
+commit 05f40ac8fde6b6964cd431a703c8d09d921cc136
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Mon Aug 21 21:32:33 2023 +0200
+
+    css justify items flexbox
+
+commit 949ad068f98b28a1ccecbfa1cb2faf859cf082c5
+Author: ukijo <nes-you-ukijo@hotmail.fr>
+Date:   Mon Aug 21 19:59:52 2023 +0100
+
+    feat: add a data fetching custom hook and its associated context
+
+commit 91fab12c0b50279a70cc4fa6771803b943fb33a9
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Mon Aug 21 20:42:33 2023 +0200
+
+    added layout components
+
+commit 88abdf238d6adc6d5a6dc09dc0a68f757f0abeae
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Mon Aug 21 19:09:54 2023 +0200
+
+    commit
+
+commit 49948ad2b098be998e5940a1f1bfa24d1353395c
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Mon Aug 21 19:04:41 2023 +0200
+
+    layout
+
+commit 8a5094bdfd814054884630ba4efdc19dbdadb1cf
+Merge: fc5d10e 9b81de5
+Author: Chris H <76125739+crisxh@users.noreply.github.com>
+Date:   Sun Aug 13 15:35:10 2023 +0200
+
+    Merge pull request #15 from crisxh/scaffhold
+    
+    Scaffhold
+
+commit 9b81de5de3dbe9e857baf4bfbd29168847162ee3
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sun Aug 13 15:30:20 2023 +0200
+
+    ain
+
+commit fc5d10eff0cdd8dab4560095b7d3c221cef2c7a5
+Merge: a44f177 b9adf81
+Author: Chris H <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Aug 12 14:49:47 2023 +0200
+
+    Merge pull request #14 from crisxh/testBranch
+    
+    testBranch
+
+commit b9adf81d7dd560923a3bde6850f720b47a9a3d2a
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Aug 12 14:45:29 2023 +0200
+
+    testBranch
+
+commit 811f30acc81c3f1ba2efb17e1ffede52f21b2ed9
+Author: crisxh <76125739+crisxh@users.noreply.github.com>
+Date:   Sat Aug 12 14:40:03 2023 +0200
+
+    testBranch
+
+commit a44f177dd0713f0fdd4a6f73a76cb577551efbb9
+Author: Jim Medlock <jdmedlock@gmail.com>
+Date:   Sun Aug 6 07:36:58 2023 -0500
+
+    Initial commit

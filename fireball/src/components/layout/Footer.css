@@ -50,12 +50,3 @@ color:var(--secondary2);
 
 
 
-@media screen and (max-width:900px){ 
-
-  .footerLogo{
-    width:50%;
-  }
-  
-
-  
-  }

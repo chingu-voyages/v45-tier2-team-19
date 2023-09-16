@@ -23,10 +23,12 @@
 @media screen and (max-width: 549px) {
   .container {
     width: 100%;
+    font-size: 13px;
   }
 
   .input {
     flex-grow: 1;
     width: 100%;
+    font-size: 13px;
   }
 }

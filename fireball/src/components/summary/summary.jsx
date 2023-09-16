@@ -30,7 +30,6 @@ const Summary = function () {
         data-aos="fade-up"
         data-aos-duration="3500"
         data-aos-once="true"
-        ref={targetRef}
       >
         {loading ? (
           <div>Loading...</div>

@@ -25,12 +25,13 @@ footer{
 }
 
 .madeByContainer a{
-  font-size:x-large;
-  color:var(--secondary2)
+  font-size:1.5em;
+  color:var(--secondary)
  
 }
-.madeByContainer a:hover{
+.madeByContainer > a:hover{
 cursor:pointer;
+color:var(--secondary2);
 
 }
 
@@ -42,9 +43,10 @@ cursor:pointer;
 
 .footerLogo{
   
-  width:50%;
+  width:30%;
   margin:5%;
 }
+
 
 
 

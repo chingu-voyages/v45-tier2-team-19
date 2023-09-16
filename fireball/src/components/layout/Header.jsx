@@ -62,7 +62,7 @@ const Header = function () {
               Your guide on a meteorite journey
             </motion.h2>
           )}
-          <p className={header.p}>
+          <div className={header.subtitle}>
             {componIsReady && (
               <motion.div
                 variants={textVariants}
@@ -80,7 +80,7 @@ const Header = function () {
                 ))}
               </motion.div>
             )}
-          </p>
+          </div>
         </div>
         <div className={header.cometContainer}></div>
         <Navbar headerHeight={headerHeight} />

@@ -6,6 +6,7 @@ import Stack from "@mui/material/Stack";
 import Slider from "@mui/material/Slider";
 import Typography from "@mui/material/Typography";
 import { useDataContext } from "../../hooks/useDataContext";
+import useObserver from "../../hooks/useObserver";
 // import "../summary/summary.css";
 import summary from "./Summary.module.css";
 import SliderDemo from "./Slider";
@@ -15,6 +16,10 @@ function StrikesByYearFiltered() {
   const [sliderValue, setSliderValue] = useState([0, 60000000]);
   const [strikesCount, setStrikesCount] = useState([]);
   const [years, setYears] = useState([]);
+
+  const [ref, isIntersecting] = useObserver({
+    rootMargin: "-2px",
+  });
 
   useEffect(() => {
     if (!meteorData || meteorData.length === 0) return;
@@ -165,8 +170,8 @@ function StrikesByYearFiltered() {
           <span>{sliderValue.join("-")} kg</span>
         </div>
       </div>
-      <div className={summary.chartContainer}>
-        <Bar data={chartData} options={chartOptions} />
+      <div className={summary.chartContainer} ref={ref}>
+        {isIntersecting && <Bar data={chartData} options={chartOptions} />}
       </div>
     </div>
   );

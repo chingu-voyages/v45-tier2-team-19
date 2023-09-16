@@ -1,4 +1,4 @@
-import logo from "../../assets/logo-no-background.svg";
+import logo from "../../assets/Logo.svg";
 import "./Footer.css";
 import MadeBy from "./MadeBy";
 
@@ -9,7 +9,7 @@ const Footer = function () {
         <img className="footerLogo" src={logo}></img>
 
         <div className="madeByContainer">
-          <h2>App Created By:</h2>
+
           <MadeBy />
         </div>
       </footer>

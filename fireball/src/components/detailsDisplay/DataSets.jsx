@@ -2,11 +2,10 @@ import { useEffect, useMemo, useState } from "react";
 import { useTable, useSortBy, useFilters, usePagination } from "react-table";
 import { useDataContext } from "../../hooks/useDataContext";
 
-import AOS from "aos";
-import "aos/dist/aos.css";
-
 import { COLUMNS } from "./columns";
 import { ColumnFilter } from "./ColumnFilter";
+
+import Location from "./Location.jsx";
 import ds from "./DataSets.module.css";
 import TableFilter from "./TableFilter";
 import Button from "../shared/Button";
@@ -15,17 +14,18 @@ import {
   PiCaretRightBold,
   PiCaretDoubleRightBold,
   PiCaretDoubleLeftBold,
+  PiCaretUpFill,
+  PiCaretDownFill,
 } from "react-icons/pi";
 
 // import "./table.css";
 
 function DataSets() {
-  AOS.init();
   const originalData = useDataContext().data;
 
   // const [isLoading, setIsLoading] = useState(true);
   const [formattedData, setFormattedData] = useState([]);
-  const [tableFilter, setTableFilter] = useState("name");
+  // const [tableFilter, setTableFilter] = useState("name");
 
   useEffect(() => {
     if (originalData) {
@@ -33,12 +33,16 @@ function DataSets() {
         ...item,
         name: item.name || "n/a",
         year: item.year || "n/a",
-        mass: `${item.mass} (g)` || "n/a",
+        mass: item["mass (g)"] || "n/a",
         recclass: item.recclass || "n/a",
-        // location: item.location || "n/a",
+        location:
+          item.reclat && item.reclong ? (
+            <Location reclat={item.reclat} reclong={item.reclong} />
+          ) : (
+            "n/a"
+          ),
       }));
       setFormattedData(formatted);
-      // setIsLoading(false);
     }
   }, [originalData]);
 
@@ -83,12 +87,14 @@ function DataSets() {
 
   return (
     <section className={ds.section} id="Table">
-      <div
-        className={ds.sectionContainer}
+
+
+
+      <div className={ds.sectionContainer}
         data-aos="fade-up"
-        data-aos-duration="3000"
-        data-aos-once="true"
-      >
+        data-aos-duration="3500"
+        data-aos-once="true">
+
         <div className={ds.tableContainer}>
           <TableFilter options={columnsNames} setFilter={setFilter} />
           <table className={ds.table} {...getTableProps()}>
@@ -103,7 +109,20 @@ function DataSets() {
                           column.getSortByToggleProps()
                         )}
                       >
-                        {column.render("Header")}
+                        <div className={ds.headerColumn}>
+                          {column.render("Header")}
+                          <span>
+                            {column.isSorted ? (
+                              column.isSortedDesc ? (
+                                <PiCaretUpFill />
+                              ) : (
+                                <PiCaretDownFill />
+                              )
+                            ) : (
+                              ""
+                            )}
+                          </span>
+                        </div>
                         {/* <div className="tableFilter">
                         {column.canFilter ? column.render("Filter") : null}
                       </div> */}
@@ -114,32 +133,24 @@ function DataSets() {
               ))}
             </thead>
             <tbody {...getTableBodyProps()}>
-              {page.length === 0 ? (
-                <tr>
-                  <td colSpan={columns.length} className={ds.msg}>
-                    Your search didn't match any meteors in our database
-                  </td>
-                </tr>
-              ) : (
-                page.map((row, i) => {
-                  prepareRow(row);
-                  return (
-                    <tr
-                      key={row.id}
-                      {...row.getRowProps()}
-                      className={i % 2 === 1 ? ds.coloredRows : ""}
-                    >
-                      {row.cells.map((cell) => {
-                        return (
-                          <td key={cell.column.id} {...cell.getCellProps()}>
-                            {cell.render("Cell")}
-                          </td>
-                        );
-                      })}
-                    </tr>
-                  );
-                })
-              )}
+              {page.map((row, i) => {
+                prepareRow(row);
+                return (
+                  <tr
+                    key={row.id}
+                    {...row.getRowProps()}
+                    className={i % 2 === 1 ? ds.coloredRows : ""}
+                  >
+                    {row.cells.map((cell) => {
+                      return (
+                        <td key={cell.column.id} {...cell.getCellProps()}>
+                          {cell.render("Cell")}
+                        </td>
+                      );
+                    })}
+                  </tr>
+                );
+              })}
             </tbody>
           </table>
         </div>

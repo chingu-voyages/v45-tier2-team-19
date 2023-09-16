@@ -1,32 +1,16 @@
 .container {
-  
   background-image: url("../../assets/comets.svg"),
     url("../../assets/background.svg");
   background-repeat: no-repeat, no-repeat;
   background-size: contain, cover;
-  background-position:
-    center,
-    left top;
+  background-position: center, left top;
   height: 100vh;
   position: relative;
-  padding-left:5em;
-  padding-right:5em;
- 
-
+  padding: 0em 1em 0em 1em;
 }
 
-/* .logo {
-  padding: 60px;
-} */
-
-.description{
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  justify-items:center;
-  height:50%;
- 
+.logo {
+  padding: 2em 2em 2em 0em;
 }
 .description h2 {
   display: block;
@@ -34,65 +18,64 @@
   text-align: center;
   color: #f7f7f7;
   font-weight: bold;
-  font-size: 10vh;
-
-
+  font-size: 5em;
 }
-.description p {
+.subtitle {
   display: block;
   margin: 0 auto;
   text-align: center;
   color: #f7f7f7;
-  font-size: 6vh;
+  font-size: 3em;
 }
 
-.logo{padding-top:2em;}
+.logo {
+  padding-top: 2em;
+}
 /* .description h2 {
   color: #f7f7f7;
 } */
 
-@media screen and (max-width: 700px){
-.description h2 {
-  
-  font-size:4em;
-}
-
-
-}
-.description .p{
- 
-  font-size:3em;
-}
-
-@media screen and (max-width: 500px){
-  .container{
-    display:flex;
-  flex-direction:column;
-align-items:center;}
+@media screen and (max-width: 700px) {
+  .logo {
+    padding-top: 2em;
+  }
   .description h2 {
-  
-    font-size:3em;
+    padding-top: 2em;
+    font-size: 4em;
   }
-  
-  
-  .description .p{
-   
-    font-size:2em;
+}
+.description .p {
+  font-size: 3em;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
   }
+  .description h2 {
+    padding-top: 2em;
+    font-size: 3em;
+  }
+  .logo {
+    padding-top: 2em;
   }
 
-  @media screen and (max-height: 500px){
-    .logo{
-      justify-self:center;
-    }
-    .description h2 {
-    
-      font-size:8vh;
-    }
-    
-    
-    .description .p{
-     
-      font-size:6vh;
-    }
-    }
+  .description .p {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .logo {
+    justify-self: center;
+  }
+  .description h2 {
+    font-size: 8vh;
+  }
+
+  .description .p {
+    font-size: 6vh;
+  }
+}

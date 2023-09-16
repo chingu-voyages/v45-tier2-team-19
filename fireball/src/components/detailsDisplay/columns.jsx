@@ -5,6 +5,6 @@ export const COLUMNS = [
   { Header: "Name", accessor: "name" },
   { Header: "Year", accessor: "year" },
   { Header: "Mass", accessor: "mass (g)" },
-  { Header: "Recclass", accessor: "recclass" },
-  // { Header: "Location", accessor: "location" },
+  { Header: "Comp", accessor: "recclass" },
+  { Header: "Location", accessor: "location" },
 ];

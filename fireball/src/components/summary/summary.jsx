@@ -8,16 +8,29 @@ import MostStrikesByCountry from "./MostStrikesByCountry";
 import { useDataContext } from "../../hooks/useDataContext";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import summary from './Summary.module.css'
+
+import useObserver from "../../hooks/useObserver";
+
+import summary from "./Summary.module.css";
 import "./summary.css";
 
 const Summary = function () {
-  AOS.init();
   const { data, loading } = useDataContext();
+
+  const [ref, isIntersecting] = useObserver({
+    rootMargin: "-2px",
+  });
+
+  AOS.init();
 
   return (
     <section className={summary.section} id="Summary">
-      <div className={summary.sectionContainer}>
+      <div
+        className={summary.sectionContainer}
+        data-aos="fade-up"
+        data-aos-duration="3500"
+        data-aos-once="true"
+      >
         {loading ? (
           <div>Loading...</div>
         ) : (
@@ -30,14 +43,16 @@ const Summary = function () {
 
             <StrikesByDecade />
 
-            <div className={summary.gridItem4}>
-              <MostStrikesByCountry />
+            <div className={summary.gridItem4} ref={ref}>
+              {isIntersecting && <MostStrikesByCountry />}
             </div>
+
             <div className={summary.gridItem5}>
               <AverageMass />
             </div>
-            <div className={summary.gridItem6}>
-              <StrikesByCompo />
+
+            <div className={summary.gridItem6} ref={ref}>
+              {isIntersecting && <StrikesByCompo />}
             </div>
           </div>
         )}

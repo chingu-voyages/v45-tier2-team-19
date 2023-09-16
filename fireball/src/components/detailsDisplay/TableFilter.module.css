@@ -5,6 +5,7 @@
   box-sizing: border-box;
   margin-bottom: 20px;
   border-radius: 15px;
+
 }
 
 .input {
@@ -17,4 +18,17 @@
 
 .input::placeholder {
   color: var(--text);
+}
+
+@media screen and (max-width: 549px) {
+  .container {
+    width: 100%;
+    font-size: 13px;
+  }
+
+  .input {
+    flex-grow: 1;
+    width: 100%;
+    font-size: 13px;
+  }
 }

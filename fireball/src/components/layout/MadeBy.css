@@ -16,8 +16,6 @@
     color: var(--secondary);
 }
 
-
-
 .creator {
     display: flex;
     justify-content: space-between;
@@ -48,12 +46,18 @@
 
 @media screen and (max-width: 700px) {
     .creator {
-        padding: 10px 15px;
+        /* padding: 10px 15px; */
+        padding: 0;
+        padding-left: 15px;
+        border-radius: 15px 0 0 15px;
+        height: 40px;
         font-size: 13px;
     }
 
     .creator a svg {
-        width: 20px;
-        height: 20px;
+        width: 40px;
+        height: 40px;
     }
+
+
 }

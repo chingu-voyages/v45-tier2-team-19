@@ -3,6 +3,8 @@
     height: 100%;
 }
 
+
+
 .madeBy ul {
     list-style: none;
     margin: 0px;
@@ -16,6 +18,9 @@
     color: var(--secondary);
 }
 
+.madeBy ul li:hover {
+    color: var(--secondary2);
+}
 
 
 .creator {
@@ -40,10 +45,15 @@
 .creator a {
     display: inline-flex;
     text-decoration: none;
+    font-weight:bolder;
 }
 
 .creator a svg {
+    
     fill: var(--secondary);
+}
+.creator a svg:hover {
+    fill: var(--secondary2);
 }
 
 @media screen and (max-width: 700px) {

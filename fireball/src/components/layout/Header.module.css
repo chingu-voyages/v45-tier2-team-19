@@ -12,6 +12,10 @@
   padding-right: 5em;
 }
 
+.footerLogo{
+  width:50%;
+}
+
 .headerContainer {
   height: 100%;
   max-width: 1276px;

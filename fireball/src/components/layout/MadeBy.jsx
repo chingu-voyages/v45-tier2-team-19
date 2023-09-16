@@ -42,10 +42,10 @@ const MadeBy = function () {
         <li>{creator.name}</li>
       </a>
       <a href={creator.linkedIn}>
-        <FaLinkedin size={25} />
+        <GrLinkedin size={25} />
       </a>
       <a href={creator.github}>
-        <FaGithubSquare size={25} />
+        <GrGithub size={25} />
       </a>
     </div>
   ));

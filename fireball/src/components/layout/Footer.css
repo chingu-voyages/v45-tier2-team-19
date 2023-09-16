@@ -47,7 +47,10 @@ color:var(--secondary2)
   margin:5%;
 }
 
-@media screen and (max-width:700px){ 
+
+
+
+@media screen and (max-width:900px){ 
 
 .footerLogo{
   width:50%;

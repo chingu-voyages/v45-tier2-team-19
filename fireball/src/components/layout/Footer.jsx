@@ -9,7 +9,7 @@ const Footer = function () {
         <img className="footerLogo" src={logo}></img>
 
         <div className="madeByContainer">
-          <h2>App Created By:</h2>
+
           <MadeBy />
         </div>
       </footer>

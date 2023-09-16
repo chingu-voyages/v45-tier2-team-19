@@ -3,19 +3,23 @@
     background-color: transparent;
     /* background-color:var(--primary2); */
     height:100%;
+    border-left:2px solid var(--primary);
+    padding-left: 5em;
 }
 .madeBy ul {
     list-style:none;
     margin:0px;
     padding-left:0px;
     margin-left:0px;
+    
    
     
 }
 
 .madeBy ul li{
-    color:var(--secondary2);
-    font-weight:bolder;
+    color:var(--secondary);
+    font-weight:bold;
+   
 }
 
 
@@ -33,13 +37,17 @@
 }
 
 .creator a{
+    color:var(--secondary);
     padding:.5em;
 }
 .creator a li:hover{
-    color:white;
+    color:var(--secondary2);
 }
 
+.madeBy a{
+    color:var(--primary)
+}
 .madeBy a:hover{
     cursor:pointer;
-    color:white;
+    color:var(--secondary);
 }

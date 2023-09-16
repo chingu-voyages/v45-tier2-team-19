@@ -92,6 +92,8 @@ This project was built from scratch over 6 weeks, and with such a time constrain
 
 ## 👀 App Demo
 
+![header gif](./fireball/demo/animation.gif)
+
 You can see [our deployed Fireball app here](https://main--fireball-app-voyage-45-tier2-team-19.netlify.app/).
 
 And check out [this demo video](https://drive.google.com/file/d/136zw2Aa3NH1MZWYHly3IzL8x53mMD3Kz/view?usp=drive_link) to learn more about our project and development process.

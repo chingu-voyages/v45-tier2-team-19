@@ -25,12 +25,13 @@ footer{
 }
 
 .madeByContainer a{
-  font-size:x-large;
-  color:var(--secondary2)
+  font-size:1.5em;
+  color:var(--secondary)
  
 }
 .madeByContainer a:hover{
 cursor:pointer;
+color:var(--secondary2)
 
 }
 
@@ -48,3 +49,18 @@ cursor:pointer;
 
 
 
+
+@media screen and (max-width:900px){ 
+
+.footerLogo{
+  width:50%;
+}
+
+.madeBy{
+  padding-left:0em;
+  border-left:none;
+  width:100%;
+ 
+}
+
+}

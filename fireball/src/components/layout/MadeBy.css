@@ -45,7 +45,7 @@
 }
 
 .madeBy a{
-    color:var(--primary)
+    color:var(--secondary)
 }
 .madeBy a:hover{
     cursor:pointer;

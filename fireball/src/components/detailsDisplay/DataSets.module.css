@@ -6,7 +6,6 @@
 .sectionContainer {
   max-width: 1276px;
   margin: 0 auto;
-
 }
 
 .tableContainer {
@@ -195,10 +194,9 @@ input::-webkit-inner-spin-button {
 }
 
 @media screen and (max-width: 549px) {
-
   .tableContainer {
     padding: 10px;
-    position: relative;
+    /* position: relative; */
   }
 
   .paginationContainer {
@@ -254,7 +252,6 @@ input::-webkit-inner-spin-button {
     height: 15px;
     width: 15px;
   }
-
 }
 
 @media screen and (max-width: 350px) {

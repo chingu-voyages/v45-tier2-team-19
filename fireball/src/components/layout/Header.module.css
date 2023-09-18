@@ -25,7 +25,7 @@
   margin: 0 auto;
   text-align: center;
   color: #f7f7f7;
-  font-size: 30px;
+  font-size: 3em;
 }
 
 .logo {
@@ -62,7 +62,7 @@
     padding-top: 2em;
   }
 
-  .description .p {
+  .subtitle {
     font-size: 2em;
   }
 }
